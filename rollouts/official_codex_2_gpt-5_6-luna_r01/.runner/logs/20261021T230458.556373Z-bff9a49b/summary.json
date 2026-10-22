@@ -1,0 +1,51 @@
+{
+  "as_of": "2026-10-21T19:04:58.521652-04:00",
+  "codex_session_id": "01a15e71-94e0-7ae3-8245-d5fe1635d95b",
+  "duration_seconds": 24.16753,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r01/.runner/logs/20261021T230458.556373Z-bff9a49b",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "1665.7300",
+        "reserved": "0",
+        "total": "1665.7300"
+      },
+      "equity": "97897.5100",
+      "initial_cash": "100000.00",
+      "positions_market_value": "96231.7800",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-21T19:05:22.640742-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 2700,
+        "average_cost": "36.4201",
+        "latest_price": "35.6414",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "96231.7800",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 2700,
+        "reserved_quantity": 0,
+        "symbol": "SMCI",
+        "unrealized_pnl": "-2102.4900"
+      }
+    ],
+    "settled_through": "2026-10-21T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r01",
+  "run_id": "20261021T230458.556373Z-bff9a49b",
+  "session_id": "01a15e71-94e0-7ae3-8245-d5fe1635d95b",
+  "session_resumed": true,
+  "settled": false
+}

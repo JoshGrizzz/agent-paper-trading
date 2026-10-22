@@ -1,0 +1,34 @@
+{
+  "primary": {
+    "orders": [
+      {
+        "symbol": "SMCI",
+        "side": "buy",
+        "quantity": 2700,
+        "limit_price": "36.50"
+      }
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "QQQ",
+          "side": "buy",
+          "quantity": 138,
+          "limit_price": "720.00"
+        }
+      ]
+    },
+    {
+      "orders": [
+        {
+          "symbol": "SPY",
+          "side": "buy",
+          "quantity": 129,
+          "limit_price": "775.00"
+        }
+      ]
+    }
+  ]
+}

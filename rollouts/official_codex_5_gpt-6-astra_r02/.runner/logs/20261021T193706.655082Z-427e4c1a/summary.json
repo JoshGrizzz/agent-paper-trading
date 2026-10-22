@@ -1,0 +1,64 @@
+{
+  "as_of": "2026-10-21T15:37:06.609451-04:00",
+  "codex_session_id": "01a15e73-5641-7430-9d4c-c94d6e4f2c9c",
+  "duration_seconds": 62.277001,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r02/.runner/logs/20261021T193706.655082Z-427e4c1a",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "25030.00",
+        "reserved": "0",
+        "total": "25030.00"
+      },
+      "equity": "100438.8440",
+      "initial_cash": "100000.00",
+      "positions_market_value": "75408.8440",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-21T15:38:08.866555-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 40,
+        "average_cost": "720.00",
+        "latest_price": "726.2236",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "29048.9440",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "248.9440"
+      },
+      {
+        "available_quantity": 60,
+        "average_cost": "769.50",
+        "latest_price": "772.6650",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "46359.9000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 60,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "189.9000"
+      }
+    ],
+    "settled_through": "2026-10-21T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r02",
+  "run_id": "20261021T193706.655082Z-427e4c1a",
+  "session_id": "01a15e73-5641-7430-9d4c-c94d6e4f2c9c",
+  "session_resumed": true,
+  "settled": false
+}

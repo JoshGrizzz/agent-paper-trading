@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "3812.50",
+      "reserved": "0",
+      "total": "3812.50"
+    },
+    "equity": "102261.2500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "98448.7500",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T12:03:34.751537-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "71.25",
+      "filled_at": "2026-10-21T09:43:00-04:00",
+      "limit_price": "71.25",
+      "order_id": "ord_000001",
+      "quantity": 1350,
+      "side": "buy",
+      "symbol": "TQQQ"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 1350,
+      "average_cost": "71.25",
+      "latest_price": "72.9250",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "98448.7500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 1350,
+      "reserved_quantity": 0,
+      "symbol": "TQQQ",
+      "unrealized_pnl": "2261.2500"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

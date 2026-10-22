@@ -1,0 +1,72 @@
+{
+  "as_of": "2026-10-21T08:38:36.331383-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 84.928601,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_3_haiku_r05/.runner/logs/20261021T123836.402532Z-742c6697",
+  "model": "haiku",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "61250.00",
+        "reserved": "38750.00",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T08:40:01.269782-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "775.00",
+                "order_id": "ord_000002",
+                "quantity": 50,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000001",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "765.00",
+              "order_id": "ord_000001",
+              "quantity": 50,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T08:39:47.312253-04:00",
+        "valid_from": "2026-10-21T08:40:00-04:00",
+        "valid_until": "2026-10-21T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": null
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_3_haiku_r05",
+  "run_id": "20261021T123836.402532Z-742c6697",
+  "session_id": "272c0d6c-4690-490d-aa84-dcb953bf6a00",
+  "session_resumed": false,
+  "settled": false
+}

@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-10-21T19:02:25.689483-04:00",
+  "codex_session_id": "01a15e77-3eb6-72c1-b506-79820b41abd8",
+  "duration_seconds": 86.14071,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r04/.runner/logs/20261021T230225.699999Z-57948a15",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "26740.00",
+        "reserved": "10620.00",
+        "total": "37360.00"
+      },
+      "equity": "100252.4500",
+      "initial_cash": "100000.00",
+      "positions_market_value": "62892.4500",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-21T19:03:51.754831-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "714.00",
+                "order_id": "ord_000008",
+                "quantity": 10,
+                "side": "buy",
+                "symbol": "META"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000003",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "708.00",
+              "order_id": "ord_000007",
+              "quantity": 15,
+              "side": "buy",
+              "symbol": "META"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T19:03:26.363286-04:00",
+        "valid_from": "2026-10-21T19:04:00-04:00",
+        "valid_until": "2026-10-21T20:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 180,
+        "average_cost": "219.50",
+        "latest_price": "220.5300",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "39695.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 180,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "185.4000"
+      },
+      {
+        "available_quantity": 30,
+        "average_cost": "771.00",
+        "latest_price": "773.2350",
+        "latest_price_at": "2026-10-21T15:29:00-04:00",
+        "market_value": "23197.0500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "67.0500"
+      }
+    ],
+    "settled_through": "2026-10-21T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r04",
+  "run_id": "20261021T230225.699999Z-57948a15",
+  "session_id": "01a15e77-3eb6-72c1-b506-79820b41abd8",
+  "session_resumed": true,
+  "settled": false
+}

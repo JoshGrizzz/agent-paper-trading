@@ -1,0 +1,212 @@
+#!/usr/bin/env bash
+
+# Launch one Codex rollout for each of four model configurations.
+# This is intentionally a manual launcher, not the experiment scheduler.
+
+set -uo pipefail
+
+project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+python_bin="${PYTHON_BIN:-python3}"
+timeout_seconds=900
+as_of=""
+rollout_set="manual01"
+dry_run=0
+
+usage() {
+    cat <<'EOF'
+Usage: ./run_four_high [OPTIONS]
+
+Run four isolated Codex rollouts concurrently, all at high reasoning effort.
+
+Options:
+  --as-of ISO_TIME  Freeze broker time for a smoke test. Omit for live runs.
+  --timeout SECONDS Per-agent timeout (default: 900).
+  --rollout-set NAME  Stable rollout namespace (default: manual01).
+  --dry-run         Print the four commands without starting agents.
+  -h, --help        Show this help.
+
+Environment:
+  MODELS       Comma-separated list of exactly four model IDs.
+               Default: gpt-5.6-sol,gpt-5.6-luna,gpt-6-sol,gpt-6-luna
+  PYTHON_BIN   Python interpreter to use (default: python3).
+
+Examples:
+  conda activate finance
+  ./run_four_high
+  ./run_four_high --rollout-set smoke01 --as-of 2026-10-19T17:00:00-04:00
+  MODELS=gpt-6-luna,gpt-6-luna,gpt-6-luna,gpt-6-luna ./run_four_high --rollout-set luna01
+EOF
+}
+
+fail() {
+    printf 'error: %s\n' "$*" >&2
+    exit 2
+}
+
+while (($# > 0)); do
+    case "$1" in
+        --as-of)
+            (($# >= 2)) || fail "--as-of requires a value"
+            as_of="$2"
+            shift 2
+            ;;
+        --timeout)
+            (($# >= 2)) || fail "--timeout requires a value"
+            timeout_seconds="$2"
+            shift 2
+            ;;
+        --rollout-set)
+            (($# >= 2)) || fail "--rollout-set requires a value"
+            rollout_set="$2"
+            shift 2
+            ;;
+        --dry-run)
+            dry_run=1
+            shift
+            ;;
+        -h|--help)
+            usage
+            exit 0
+            ;;
+        *)
+            fail "unknown option: $1"
+            ;;
+    esac
+done
+
+[[ "$timeout_seconds" =~ ^[1-9][0-9]*$ ]] ||
+    fail "--timeout must be a positive integer"
+[[ "$rollout_set" =~ ^[A-Za-z0-9][A-Za-z0-9_-]{0,15}$ ]] ||
+    fail "--rollout-set must be 1-16 characters using letters, numbers, _ or -"
+
+default_models="gpt-5.6-sol,gpt-5.6-luna,gpt-6-sol,gpt-6-luna"
+IFS=',' read -r -a models <<< "${MODELS:-$default_models}"
+[[ "${#models[@]}" -eq 4 ]] ||
+    fail "MODELS must contain exactly four comma-separated model IDs"
+
+for model in "${models[@]}"; do
+    [[ -n "$model" && "$model" != *[[:space:]]* ]] ||
+        fail "model IDs must be non-empty and contain no whitespace"
+done
+
+command -v "$python_bin" >/dev/null 2>&1 ||
+    fail "Python interpreter not found: $python_bin"
+command -v codex >/dev/null 2>&1 ||
+    fail "codex CLI was not found on PATH"
+"$python_bin" -c 'import yfinance' >/dev/null 2>&1 ||
+    fail "yfinance is unavailable; activate the finance environment first"
+
+batch_stamp="$(date +'%Y%m%dT%H%M%S')"
+batch_id="four_high_${batch_stamp}_$$"
+batch_log_dir="$project_dir/parallel_runs/$batch_id"
+
+pids=()
+rollout_ids=()
+log_files=()
+
+printf 'Batch: %s\n' "$batch_id"
+printf 'Persistent rollout set: %s\n' "$rollout_set"
+printf 'Reasoning effort: high\n'
+printf 'Agent timeout: %s seconds\n' "$timeout_seconds"
+if [[ -n "$as_of" ]]; then
+    printf 'Frozen broker time: %s (smoke-test mode)\n' "$as_of"
+else
+    printf 'Broker time: live\n'
+fi
+
+for index in "${!models[@]}"; do
+    model="${models[$index]}"
+    slug="$(printf '%s' "$model" | tr -c 'A-Za-z0-9_-' '_')"
+    slug="${slug:0:20}"
+    rollout_id="${rollout_set}_$((index + 1))_${slug}"
+    log_file="$batch_log_dir/$((index + 1))_${slug}.log"
+    session_file="$project_dir/rollouts/$rollout_id/.runner/session.json"
+    if [[ -f "$session_file" ]]; then
+        conversation_mode="resume"
+    else
+        conversation_mode="new"
+    fi
+    command=(
+        "$python_bin"
+        "$project_dir/run_rollout"
+        run
+        --rollout "$rollout_id"
+        --harness codex
+        --model "$model"
+        --reasoning-effort high
+        --timeout "$timeout_seconds"
+    )
+    if [[ -n "$as_of" ]]; then
+        command+=(--as-of "$as_of")
+    fi
+
+    printf '\n[%d/4] model=%s rollout=%s\n' "$((index + 1))" "$model" "$rollout_id"
+    printf 'conversation: %s\n' "$conversation_mode"
+    printf 'command:'
+    printf ' %q' "${command[@]}"
+    printf '\nlog: %s\n' "$log_file"
+
+    rollout_ids+=("$rollout_id")
+    log_files+=("$log_file")
+done
+
+if ((dry_run)); then
+    printf '\nDry run only: no rollout was started.\n'
+    exit 0
+fi
+
+mkdir -p "$batch_log_dir"
+
+cleanup() {
+    local exit_status="$1"
+    trap - INT TERM
+    for pid in "${pids[@]}"; do
+        kill "$pid" 2>/dev/null || true
+    done
+    for pid in "${pids[@]}"; do
+        wait "$pid" 2>/dev/null || true
+    done
+    printf '\nInterrupted; child processes were stopped. Logs: %s\n' "$batch_log_dir" >&2
+    exit "$exit_status"
+}
+trap 'cleanup 130' INT
+trap 'cleanup 143' TERM
+
+for index in "${!models[@]}"; do
+    command=(
+        "$python_bin"
+        "$project_dir/run_rollout"
+        run
+        --rollout "${rollout_ids[$index]}"
+        --harness codex
+        --model "${models[$index]}"
+        --reasoning-effort high
+        --timeout "$timeout_seconds"
+    )
+    if [[ -n "$as_of" ]]; then
+        command+=(--as-of "$as_of")
+    fi
+    "${command[@]}" >"${log_files[$index]}" 2>&1 &
+    pids+=("$!")
+done
+
+printf '\nStarted four agents. Waiting for completion...\n'
+failed=0
+for index in "${!pids[@]}"; do
+    if wait "${pids[$index]}"; then
+        status=0
+    else
+        status=$?
+        failed=1
+    fi
+    printf '[%d/4] model=%s exit=%d log=%s\n' \
+        "$((index + 1))" "${models[$index]}" "$status" "${log_files[$index]}"
+done
+
+trap - INT TERM
+if ((failed)); then
+    printf 'One or more rollouts failed. Inspect logs under %s\n' "$batch_log_dir" >&2
+    exit 1
+fi
+
+printf 'All four agent processes completed successfully. Review each rollout summary and broker status before treating trading actions as successful. Logs: %s\n' "$batch_log_dir"

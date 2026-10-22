@@ -1,0 +1,14 @@
+{
+  "primary": {
+    "orders": [
+      {"symbol": "SPY", "side": "buy", "quantity": 30, "limit_price": "774.00"}
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {"symbol": "SPY", "side": "buy", "quantity": 30, "limit_price": "778.00"}
+      ]
+    }
+  ]
+}

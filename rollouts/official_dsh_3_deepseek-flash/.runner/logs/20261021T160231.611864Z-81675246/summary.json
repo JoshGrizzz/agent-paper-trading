@@ -1,0 +1,215 @@
+{
+  "as_of": "2026-10-21T12:02:31.597340-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 89.277335,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "556.5500",
+      "filled_at": "2026-10-21T09:30:00-04:00",
+      "limit_price": "557.00",
+      "order_id": "ord_000001",
+      "quantity": 20,
+      "side": "buy",
+      "symbol": "SMH"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "102.8550",
+      "filled_at": "2026-10-21T09:30:00-04:00",
+      "limit_price": "104.00",
+      "order_id": "ord_000003",
+      "quantity": 60,
+      "side": "buy",
+      "symbol": "SOXL"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "177.7200",
+      "filled_at": "2026-10-21T09:30:00-04:00",
+      "limit_price": "178.50",
+      "order_id": "ord_000005",
+      "quantity": 40,
+      "side": "buy",
+      "symbol": "XOM"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "177.7500",
+      "filled_at": "2026-10-21T09:30:00-04:00",
+      "limit_price": "179.00",
+      "order_id": "ord_000007",
+      "quantity": 25,
+      "side": "buy",
+      "symbol": "XLV"
+    }
+  ],
+  "harness": "dsh",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_dsh_3_deepseek-flash/.runner/logs/20261021T160231.611864Z-81675246",
+  "model": "deepseek-flash",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "37316.1500",
+        "reserved": "33829.00",
+        "total": "71145.1500"
+      },
+      "equity": "100083.2540",
+      "initial_cash": "100000.00",
+      "positions_market_value": "28938.1040",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-21T12:04:00.809555-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000002",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "559.00",
+              "order_id": "ord_000012",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "SMH"
+            },
+            {
+              "limit_price": "553.00",
+              "order_id": "ord_000013",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "SMH"
+            },
+            {
+              "limit_price": "104.50",
+              "order_id": "ord_000014",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SOXL"
+            },
+            {
+              "limit_price": "101.50",
+              "order_id": "ord_000015",
+              "quantity": 30,
+              "side": "buy",
+              "symbol": "SOXL"
+            },
+            {
+              "limit_price": "728.00",
+              "order_id": "ord_000016",
+              "quantity": 8,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "720.00",
+              "order_id": "ord_000017",
+              "quantity": 5,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "156.00",
+              "order_id": "ord_000018",
+              "quantity": 15,
+              "side": "buy",
+              "symbol": "MSTR"
+            },
+            {
+              "limit_price": "150.00",
+              "order_id": "ord_000019",
+              "quantity": 15,
+              "side": "buy",
+              "symbol": "MSTR"
+            },
+            {
+              "limit_price": "181.00",
+              "order_id": "ord_000020",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "COIN"
+            },
+            {
+              "limit_price": "175.00",
+              "order_id": "ord_000021",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "COIN"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T12:03:47.343189-04:00",
+        "valid_from": "2026-10-21T12:04:00-04:00",
+        "valid_until": "2026-10-21T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 20,
+        "average_cost": "556.5500",
+        "latest_price": "557.4800",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "11149.6000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 20,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "18.6000"
+      },
+      {
+        "available_quantity": 60,
+        "average_cost": "102.8550",
+        "latest_price": "103.9759",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "6238.5540",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 60,
+        "reserved_quantity": 0,
+        "symbol": "SOXL",
+        "unrealized_pnl": "67.2540"
+      },
+      {
+        "available_quantity": 25,
+        "average_cost": "177.7500",
+        "latest_price": "178.1900",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "4454.7500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "XLV",
+        "unrealized_pnl": "11.0000"
+      },
+      {
+        "available_quantity": 40,
+        "average_cost": "177.7200",
+        "latest_price": "177.3800",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "7095.2000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "XOM",
+        "unrealized_pnl": "-13.6000"
+      }
+    ],
+    "settled_through": "2026-10-21T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_dsh_3_deepseek-flash",
+  "run_id": "20261021T160231.611864Z-81675246",
+  "session_id": "session-5bb11b1a-6797-4ec9-847d-3d572682f0f1",
+  "session_resumed": true,
+  "settled": true
+}

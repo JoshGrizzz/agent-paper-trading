@@ -1,0 +1,17 @@
+{
+  "primary": {
+    "orders": [
+      {"symbol": "SOXL", "side": "buy", "quantity": 500, "limit_price": "103.00"},
+      {"symbol": "SMCI", "side": "buy", "quantity": 850, "limit_price": "37.00"},
+      {"symbol": "QQQ", "side": "buy", "quantity": 23, "limit_price": "725.00"}
+    ]
+  },
+  "backups": [
+    {"orders": [
+      {"symbol": "SOXL", "side": "buy", "quantity": 900, "limit_price": "105.00"}
+    ]},
+    {"orders": [
+      {"symbol": "QQQ", "side": "buy", "quantity": 130, "limit_price": "735.00"}
+    ]}
+  ]
+}

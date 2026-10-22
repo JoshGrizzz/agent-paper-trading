@@ -1,0 +1,70 @@
+{
+  "account": {
+    "cash": {
+      "available": "12200.00",
+      "reserved": "87800.00",
+      "total": "100000.00"
+    },
+    "equity": "100000.00",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T08:39:15.234272-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "785.00",
+              "order_id": "ord_000003",
+              "quantity": 60,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "740.00",
+              "order_id": "ord_000004",
+              "quantity": 55,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000001",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "772.00",
+            "order_id": "ord_000001",
+            "quantity": 60,
+            "side": "buy",
+            "symbol": "SPY"
+          },
+          {
+            "limit_price": "725.00",
+            "order_id": "ord_000002",
+            "quantity": 55,
+            "side": "buy",
+            "symbol": "QQQ"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-21T08:39:04.793506-04:00",
+      "valid_from": "2026-10-21T08:40:00-04:00",
+      "valid_until": "2026-10-21T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": null
+}

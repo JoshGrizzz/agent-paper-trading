@@ -1,0 +1,72 @@
+{
+  "as_of": "2026-10-21T09:02:57.553206-04:00",
+  "codex_session_id": "01a15e78-f281-7820-8edb-7a4d97b2566b",
+  "duration_seconds": 85.011127,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r05/.runner/logs/20261021T130257.577120Z-e17949c7",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "22.50",
+        "reserved": "99977.50",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T09:04:22.504529-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "72.50",
+                "order_id": "ord_000002",
+                "quantity": 1379,
+                "side": "buy",
+                "symbol": "TQQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000001",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "71.69",
+              "order_id": "ord_000001",
+              "quantity": 1394,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T09:04:05.797135-04:00",
+        "valid_from": "2026-10-21T09:05:00-04:00",
+        "valid_until": "2026-10-21T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": null
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r05",
+  "run_id": "20261021T130257.577120Z-e17949c7",
+  "session_id": "01a15e78-f281-7820-8edb-7a4d97b2566b",
+  "session_resumed": true,
+  "settled": false
+}

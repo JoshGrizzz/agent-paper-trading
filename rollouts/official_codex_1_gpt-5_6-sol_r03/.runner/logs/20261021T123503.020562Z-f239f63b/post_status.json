@@ -1,0 +1,69 @@
+{
+  "account": {
+    "cash": {
+      "available": "8.80",
+      "reserved": "99991.20",
+      "total": "100000.00"
+    },
+    "equity": "100000.00",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T08:36:37.480893-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "494.00",
+              "order_id": "ord_000002",
+              "quantity": 202,
+              "side": "buy",
+              "symbol": "DELL"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "71.80",
+              "order_id": "ord_000003",
+              "quantity": 1392,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000001",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "36.60",
+            "order_id": "ord_000001",
+            "quantity": 2732,
+            "side": "buy",
+            "symbol": "SMCI"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-21T08:36:18.100559-04:00",
+      "valid_from": "2026-10-21T08:37:00-04:00",
+      "valid_until": "2026-10-21T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": null
+}

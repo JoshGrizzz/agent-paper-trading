@@ -1,0 +1,428 @@
+#!/usr/bin/env python3
+"""Launch a full broker-backed paper-trading rollout batch for one harness."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import re
+import shlex
+import shutil
+import signal
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(PROJECT_ROOT / "src"))
+
+from trading_runner.agent_client import ClaudeClient, CodexClient, DshClient
+
+DEFAULT_COUNTS = {
+    "codex": 5,
+    "claude": 3,
+    "dsh": 5,
+}
+DEFAULT_MODELS = {
+    "codex": [
+        "gpt-5.6-sol",
+        "gpt-5.6-luna",
+        "gpt-6-sol",
+        "gpt-6-luna",
+        "gpt-6-astra",
+    ],
+    "claude": ["opus", "sonnet", "haiku"],
+    "dsh": ["deepseek-flash"],
+}
+CLIENT_TYPES = {
+    "codex": CodexClient,
+    "claude": ClaudeClient,
+    "dsh": DshClient,
+}
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="run_parallel_rollouts",
+        description=(
+            "Run one full broker-backed paper-trading turn concurrently for a "
+            "single harness. This creates or resumes rollout accounts and may submit orders."
+        ),
+    )
+    parser.add_argument(
+        "--harness",
+        required=True,
+        choices=tuple(DEFAULT_COUNTS),
+    )
+    parser.add_argument(
+        "--rollout-set",
+        required=True,
+        help="Stable namespace used to derive persistent rollout IDs.",
+    )
+    parser.add_argument(
+        "--count",
+        type=int,
+        help="Concurrent rollouts; defaults to 5 codex, 3 claude, or 5 dsh.",
+    )
+    parser.add_argument(
+        "--models",
+        help=(
+            "One model label to repeat, or exactly COUNT comma-separated labels. "
+            "DSH treats this as audit metadata because its profile controls the model."
+        ),
+    )
+    parser.add_argument(
+        "--reasoning-effort",
+        default="high",
+        choices=("low", "medium", "high", "xhigh", "max"),
+    )
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=900,
+        help="Per-agent timeout passed to run_rollout (default: 900 seconds).",
+    )
+    parser.add_argument(
+        "--as-of",
+        help=(
+            "Optional ISO 8601 frozen time with UTC offset. "
+            "Omit for a live-time paper-trading smoke."
+        ),
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print commands without creating rollouts or starting agents.",
+    )
+    return parser
+
+
+def resolve_models(
+    harness: str,
+    count: int,
+    supplied: str | None,
+) -> list[str]:
+    if supplied is None:
+        models = list(DEFAULT_MODELS[harness])
+    else:
+        models = [item.strip() for item in supplied.split(",")]
+        if any(not item for item in models):
+            raise ValueError("--models contains an empty model label")
+
+    if len(models) == 1:
+        return models * count
+    if len(models) != count:
+        raise ValueError("--models must contain one label or exactly COUNT labels")
+    return models
+
+
+def safe_slug(value: str) -> str:
+    slug = re.sub(r"[^A-Za-z0-9_-]+", "_", value).strip("_")
+    return (slug or "model")[:24]
+
+
+def client_version(harness: str) -> str:
+    return CLIENT_TYPES[harness]().version()
+
+
+def parse_as_of(value: str | None) -> str | None:
+    if value is None:
+        return None
+    parsed = datetime.fromisoformat(value)
+    if parsed.tzinfo is None or parsed.utcoffset() is None:
+        raise ValueError("--as-of must include a UTC offset")
+    return parsed.isoformat()
+
+
+def load_result_document(log_path: Path) -> dict[str, Any] | None:
+    if not log_path.is_file():
+        return None
+    for line in reversed(log_path.read_text(encoding="utf-8", errors="replace").splitlines()):
+        try:
+            value = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict):
+            return value
+    return None
+
+
+def write_json(path: Path, value: Any) -> None:
+    path.write_text(
+        json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
+def stop_process_group(process: subprocess.Popen[Any], *, force: bool = False) -> None:
+    if process.poll() is not None:
+        return
+    signum = signal.SIGKILL if force else signal.SIGTERM
+    try:
+        os.killpg(process.pid, signum)
+    except ProcessLookupError:
+        return
+
+
+def main(argv: list[str] | None = None) -> int:
+    arguments = build_parser().parse_args(argv)
+    count = arguments.count or DEFAULT_COUNTS[arguments.harness]
+    if not 1 <= count <= 32:
+        raise SystemExit("--count must be between 1 and 32")
+    if arguments.timeout <= 0:
+        raise SystemExit("--timeout must be a positive integer")
+    if not re.fullmatch(
+        r"[A-Za-z0-9][A-Za-z0-9_-]{0,23}",
+        arguments.rollout_set,
+    ):
+        raise SystemExit(
+            "--rollout-set must be 1-24 characters using letters, numbers, _ or -"
+        )
+
+    try:
+        models = resolve_models(arguments.harness, count, arguments.models)
+        as_of = parse_as_of(arguments.as_of)
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
+
+    if shutil.which(arguments.harness) is None:
+        raise SystemExit(f"{arguments.harness} CLI was not found on PATH")
+    if not arguments.dry_run:
+        dependency = subprocess.run(
+            [sys.executable, "-c", "import yfinance"],
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if dependency.returncode != 0:
+            raise SystemExit(
+                "yfinance is unavailable; activate the finance environment first"
+            )
+
+    harness_version = client_version(arguments.harness)
+    stamp = datetime.now().strftime("%Y%m%dT%H%M%S")
+    batch_id = f"full_{arguments.harness}_{stamp}_{os.getpid()}"
+    batch_directory = PROJECT_ROOT / "parallel_runs" / batch_id
+
+    specs: list[dict[str, Any]] = []
+    for index, model in enumerate(models, start=1):
+        slug = safe_slug(model)
+        rollout_id = f"{arguments.rollout_set}_{index}_{slug}"
+        log_path = batch_directory / f"{index:02d}_{slug}.log"
+        session_path = (
+            PROJECT_ROOT
+            / "rollouts"
+            / rollout_id
+            / ".runner"
+            / "session.json"
+        )
+        command = [
+            sys.executable,
+            str(PROJECT_ROOT / "run_rollout"),
+            "run",
+            "--rollout",
+            rollout_id,
+            "--harness",
+            arguments.harness,
+            "--model",
+            model,
+            "--reasoning-effort",
+            arguments.reasoning_effort,
+            "--timeout",
+            str(arguments.timeout),
+        ]
+        if as_of is not None:
+            command.extend(["--as-of", as_of])
+        specs.append(
+            {
+                "command": command,
+                "conversation": "resume" if session_path.is_file() else "new",
+                "index": index,
+                "log_path": log_path,
+                "model": model,
+                "rollout_id": rollout_id,
+            }
+        )
+
+    print(f"Batch: {batch_id}")
+    print(f"Harness: {arguments.harness}")
+    print(f"Harness version: {harness_version}")
+    print(f"Persistent rollout set: {arguments.rollout_set}")
+    print(f"Concurrency: {count}")
+    print(f"Reasoning effort: {arguments.reasoning_effort}")
+    print(f"Per-agent timeout: {arguments.timeout} seconds")
+    if as_of is None:
+        print("Broker time: live")
+    else:
+        print(f"Frozen broker time: {as_of}")
+    if arguments.harness == "dsh":
+        print(
+            "Note: DSH model and reasoning are controlled by its native profile; "
+            "command-line values are audit labels."
+        )
+    print(
+        "WARNING: this is a full paper-trading run. It creates or resumes isolated "
+        "accounts and agents may submit or cancel simulated orders."
+    )
+
+    for spec in specs:
+        print(
+            f"\n[{spec['index']}/{count}] model={spec['model']} "
+            f"rollout={spec['rollout_id']}"
+        )
+        print(f"conversation: {spec['conversation']}")
+        print(f"command: {shlex.join(spec['command'])}")
+        print(f"log: {spec['log_path']}")
+
+    if arguments.dry_run:
+        print(
+            "\nDry run only: no directories, accounts, sessions, orders, or agents "
+            "were created."
+        )
+        return 0
+
+    batch_directory.mkdir(parents=True)
+    started_at = datetime.now(timezone.utc)
+    workers: list[dict[str, Any]] = []
+    try:
+        for spec in specs:
+            log_stream = spec["log_path"].open("w", encoding="utf-8")
+            process = subprocess.Popen(
+                spec["command"],
+                cwd=PROJECT_ROOT,
+                stdout=log_stream,
+                stderr=subprocess.STDOUT,
+                text=True,
+                start_new_session=True,
+            )
+            workers.append(
+                {
+                    **spec,
+                    "log_stream": log_stream,
+                    "process": process,
+                    "started_at": datetime.now(timezone.utc),
+                    "started_monotonic": time.monotonic(),
+                    "finished_at": None,
+                    "outer_timed_out": False,
+                }
+            )
+
+        print(f"\nStarted {count} full rollouts. Waiting for completion...")
+        pending = set(range(len(workers)))
+        outer_timeout = arguments.timeout + 180
+        while pending:
+            for worker_index in list(pending):
+                worker = workers[worker_index]
+                process = worker["process"]
+                returncode = process.poll()
+                elapsed = time.monotonic() - worker["started_monotonic"]
+                if returncode is None and elapsed > outer_timeout:
+                    worker["outer_timed_out"] = True
+                    stop_process_group(process)
+                    try:
+                        process.wait(timeout=5)
+                    except subprocess.TimeoutExpired:
+                        stop_process_group(process, force=True)
+                        process.wait()
+                    returncode = process.returncode
+                if returncode is None:
+                    continue
+
+                worker["finished_at"] = datetime.now(timezone.utc)
+                worker["log_stream"].close()
+                pending.remove(worker_index)
+                document = load_result_document(worker["log_path"])
+                passed = (
+                    returncode == 0
+                    and document is not None
+                    and document.get("ok") is True
+                )
+                worker["document"] = document
+                worker["passed"] = passed
+                worker["returncode"] = returncode
+                status = "PASS" if passed else "FAIL"
+                print(
+                    f"[{worker['index']}/{count}] {status} "
+                    f"model={worker['model']} exit={returncode} "
+                    f"log={worker['log_path']}"
+                )
+            if pending:
+                time.sleep(0.1)
+    except KeyboardInterrupt:
+        print("\nInterrupted; stopping every process group...", file=sys.stderr)
+        for worker in workers:
+            stop_process_group(worker["process"])
+        deadline = time.monotonic() + 5
+        for worker in workers:
+            remaining = max(0.0, deadline - time.monotonic())
+            try:
+                worker["process"].wait(timeout=remaining)
+            except subprocess.TimeoutExpired:
+                stop_process_group(worker["process"], force=True)
+        for worker in workers:
+            worker["process"].wait()
+            if not worker["log_stream"].closed:
+                worker["log_stream"].close()
+        return 130
+    finally:
+        for worker in workers:
+            if not worker["log_stream"].closed:
+                worker["log_stream"].close()
+
+    results = []
+    for worker in sorted(workers, key=lambda item: item["index"]):
+        document = worker.get("document")
+        results.append(
+            {
+                "as_of": document.get("as_of") if document else as_of,
+                "conversation": worker["conversation"],
+                "duration_seconds": (
+                    worker["finished_at"] - worker["started_at"]
+                ).total_seconds(),
+                "error": document.get("error") if document else "missing runner JSON result",
+                "fills": document.get("fills", []) if document else [],
+                "index": worker["index"],
+                "log_path": str(worker["log_path"]),
+                "model": worker["model"],
+                "ok": bool(worker["passed"]),
+                "outer_timed_out": worker["outer_timed_out"],
+                "returncode": worker["returncode"],
+                "rollout_id": worker["rollout_id"],
+                "run_id": document.get("run_id") if document else None,
+                "session_id": document.get("session_id") if document else None,
+                "session_resumed": document.get("session_resumed") if document else None,
+                "settled": document.get("settled") if document else None,
+            }
+        )
+
+    passed_count = sum(bool(item["ok"]) for item in results)
+    summary = {
+        "as_of": as_of,
+        "batch_id": batch_id,
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+        "concurrency": count,
+        "failed": count - passed_count,
+        "harness": arguments.harness,
+        "harness_version": harness_version,
+        "models": models,
+        "passed": passed_count,
+        "reasoning_effort": arguments.reasoning_effort,
+        "results": results,
+        "rollout_set": arguments.rollout_set,
+        "started_at": started_at.isoformat(),
+        "timeout_seconds": arguments.timeout,
+    }
+    write_json(batch_directory / "summary.json", summary)
+    print(
+        f"\nResult: {passed_count}/{count} full rollouts passed. "
+        f"Summary: {batch_directory / 'summary.json'}"
+    )
+    return 0 if passed_count == count else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

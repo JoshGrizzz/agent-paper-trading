@@ -1,0 +1,34 @@
+{
+  "primary": {
+    "orders": [
+      {
+        "symbol": "SOXL",
+        "side": "buy",
+        "quantity": 170,
+        "limit_price": "103.00"
+      }
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "TQQQ",
+          "side": "buy",
+          "quantity": 240,
+          "limit_price": "72.75"
+        }
+      ]
+    },
+    {
+      "orders": [
+        {
+          "symbol": "UPRO",
+          "side": "buy",
+          "quantity": 115,
+          "limit_price": "152.00"
+        }
+      ]
+    }
+  ]
+}

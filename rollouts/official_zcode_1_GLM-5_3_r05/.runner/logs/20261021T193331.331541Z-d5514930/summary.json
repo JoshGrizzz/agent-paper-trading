@@ -1,0 +1,154 @@
+{
+  "as_of": "2026-10-21T15:33:31.321736-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 59.856103,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "772.4500",
+      "filled_at": "2026-10-21T12:12:00-04:00",
+      "limit_price": "773.00",
+      "order_id": "ord_000007",
+      "quantity": 40,
+      "side": "buy",
+      "symbol": "SPY"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "723.00",
+      "filled_at": "2026-10-21T15:02:00-04:00",
+      "limit_price": "723.00",
+      "order_id": "ord_000008",
+      "quantity": 40,
+      "side": "buy",
+      "symbol": "QQQ"
+    }
+  ],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r05/.runner/logs/20261021T193331.331541Z-d5514930",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "1171.0000",
+        "reserved": "39011.00",
+        "total": "40182.0000"
+      },
+      "equity": "100152.8000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "59970.8000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-21T15:34:31.124974-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "768.00",
+                "order_id": "ord_000015",
+                "quantity": 25,
+                "side": "buy",
+                "symbol": "SPY"
+              },
+              {
+                "limit_price": "721.00",
+                "order_id": "ord_000016",
+                "quantity": 26,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "760.00",
+                "order_id": "ord_000017",
+                "quantity": 26,
+                "side": "buy",
+                "symbol": "SPY"
+              },
+              {
+                "limit_price": "713.00",
+                "order_id": "ord_000018",
+                "quantity": 27,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000003",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "773.50",
+              "order_id": "ord_000013",
+              "quantity": 25,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "726.50",
+              "order_id": "ord_000014",
+              "quantity": 26,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T15:34:14.686568-04:00",
+        "valid_from": "2026-10-21T15:35:00-04:00",
+        "valid_until": "2026-10-21T19:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 40,
+        "average_cost": "723.00",
+        "latest_price": "726.0350",
+        "latest_price_at": "2026-10-21T15:29:00-04:00",
+        "market_value": "29041.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "121.4000"
+      },
+      {
+        "available_quantity": 40,
+        "average_cost": "772.4500",
+        "latest_price": "773.2350",
+        "latest_price_at": "2026-10-21T15:29:00-04:00",
+        "market_value": "30929.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "31.4000"
+      }
+    ],
+    "settled_through": "2026-10-21T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r05",
+  "run_id": "20261021T193331.331541Z-d5514930",
+  "session_id": "sess_e8e6497d-b4c5-4478-a928-30c73df58701",
+  "session_resumed": true,
+  "settled": true
+}

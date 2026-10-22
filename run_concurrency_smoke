@@ -1,0 +1,403 @@
+#!/usr/bin/env python3
+"""Run a lightweight, broker-free concurrency smoke test for native harness CLIs."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import re
+import shlex
+import shutil
+import subprocess
+import sys
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(PROJECT_ROOT / "src"))
+
+from trading_runner.agent_client import ClaudeClient, CodexClient, DshClient
+
+EXPECTED_RESPONSE = "CONCURRENCY_OK"
+PROMPT = "这是并发连通性测试。不要调用任何工具，只回复 CONCURRENCY_OK"
+DEFAULT_COUNTS = {
+    "codex": 5,
+    "claude": 3,
+    "dsh": 5,
+}
+DEFAULT_MODELS = {
+    "codex": [
+        "gpt-5.6-sol",
+        "gpt-5.6-luna",
+        "gpt-6-sol",
+        "gpt-6-luna",
+        "gpt-6-astra",
+    ],
+    "claude": ["sonnet"],
+    "dsh": ["deepseek-flash"],
+}
+CLIENT_TYPES = {
+    "codex": CodexClient,
+    "claude": ClaudeClient,
+    "dsh": DshClient,
+}
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="run_concurrency_smoke",
+        description=(
+            "Launch independent, broker-free CLI prompts concurrently. "
+            "No rollout, account, order, or persistent experiment session is created; "
+            "each worker creates one disposable native CLI session."
+        ),
+    )
+    parser.add_argument(
+        "--harness",
+        required=True,
+        choices=tuple(DEFAULT_COUNTS),
+    )
+    parser.add_argument(
+        "--count",
+        type=int,
+        help="Concurrent workers; defaults to 5 codex, 3 claude, or 5 dsh.",
+    )
+    parser.add_argument(
+        "--models",
+        help=(
+            "One model label to repeat, or exactly COUNT comma-separated labels. "
+            "DSH treats this as an audit label because its model is profile-controlled."
+        ),
+    )
+    parser.add_argument(
+        "--reasoning-effort",
+        default="high",
+        choices=("low", "medium", "high", "xhigh", "max"),
+    )
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=120,
+        help="Per-worker timeout in seconds (default: 120).",
+    )
+    parser.add_argument(
+        "--label",
+        help="Optional batch label using letters, numbers, underscores, or hyphens.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print commands without creating directories or starting models.",
+    )
+    return parser
+
+
+def resolve_models(
+    harness: str,
+    count: int,
+    supplied: str | None,
+) -> list[str]:
+    if supplied is None:
+        models = list(DEFAULT_MODELS[harness])
+    else:
+        models = [item.strip() for item in supplied.split(",")]
+        if any(not item for item in models):
+            raise ValueError("--models contains an empty model label")
+
+    if len(models) == 1:
+        return models * count
+    if len(models) != count:
+        raise ValueError("--models must contain one label or exactly COUNT labels")
+    return models
+
+
+def safe_slug(value: str) -> str:
+    slug = re.sub(r"[^A-Za-z0-9_-]+", "_", value).strip("_")
+    return (slug or "model")[:32]
+
+
+def client_for(harness: str):
+    return CLIENT_TYPES[harness]()
+
+
+def command_for_dry_run(
+    harness: str,
+    model: str,
+    reasoning_effort: str,
+    workdir: Path,
+    output_directory: Path,
+) -> list[str]:
+    client = client_for(harness)
+    if harness == "codex":
+        return client.build_command(
+            workdir=workdir,
+            model=model,
+            reasoning_effort=reasoning_effort,
+            session_id=None,
+            final_output=output_directory / "agent_final_raw.md",
+            allow_search=False,
+        )
+    if harness == "claude":
+        return client.build_command(
+            model=model,
+            reasoning_effort=reasoning_effort,
+            session_id=None,
+            initial_session_id="<generated-uuid>",
+            allow_search=False,
+        )
+    return client.build_command(session_id=None)
+
+
+def text_value(value: str | bytes | None) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, bytes):
+        return value.decode("utf-8", errors="replace")
+    return value
+
+
+def write_json(path: Path, value: Any) -> None:
+    path.write_text(
+        json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
+def run_worker(
+    *,
+    harness: str,
+    index: int,
+    model: str,
+    reasoning_effort: str,
+    timeout_seconds: int,
+    worker_directory: Path,
+) -> dict[str, Any]:
+    output_directory = worker_directory / "logs"
+    output_directory.mkdir(parents=True)
+    (worker_directory / "prompt.txt").write_text(PROMPT + "\n", encoding="utf-8")
+    client = client_for(harness)
+    started_at = datetime.now(timezone.utc)
+    started = time.monotonic()
+
+    try:
+        result = client.invoke(
+            prompt=PROMPT,
+            workdir=worker_directory,
+            model=model,
+            reasoning_effort=reasoning_effort,
+            session_id=None,
+            allow_search=False,
+            environment={},
+            timeout_seconds=timeout_seconds,
+            output_directory=output_directory,
+        )
+        final_response = result.final_response.strip()
+        passed = (
+            result.returncode == 0
+            and final_response == EXPECTED_RESPONSE
+            and result.session_id is not None
+        )
+        record: dict[str, Any] = {
+            "command": list(result.command),
+            "duration_seconds": result.duration_seconds,
+            "error": None,
+            "final_response": final_response,
+            "finished_at": datetime.now(timezone.utc).isoformat(),
+            "harness": harness,
+            "index": index,
+            "model": model,
+            "passed": passed,
+            "reasoning_effort": reasoning_effort,
+            "returncode": result.returncode,
+            "session_id": result.session_id,
+            "started_at": started_at.isoformat(),
+            "timed_out": False,
+        }
+        (output_directory / "stdout.log").write_text(
+            result.stdout,
+            encoding="utf-8",
+        )
+        (output_directory / "stderr.log").write_text(
+            result.stderr,
+            encoding="utf-8",
+        )
+        (output_directory / "agent_final.md").write_text(
+            result.final_response,
+            encoding="utf-8",
+        )
+    except subprocess.TimeoutExpired as error:
+        record = {
+            "command": list(error.cmd) if isinstance(error.cmd, (list, tuple)) else [str(error.cmd)],
+            "duration_seconds": time.monotonic() - started,
+            "error": f"timeout after {timeout_seconds} seconds",
+            "final_response": "",
+            "finished_at": datetime.now(timezone.utc).isoformat(),
+            "harness": harness,
+            "index": index,
+            "model": model,
+            "passed": False,
+            "reasoning_effort": reasoning_effort,
+            "returncode": None,
+            "session_id": None,
+            "started_at": started_at.isoformat(),
+            "timed_out": True,
+        }
+        (output_directory / "stdout.log").write_text(
+            text_value(error.stdout),
+            encoding="utf-8",
+        )
+        (output_directory / "stderr.log").write_text(
+            text_value(error.stderr),
+            encoding="utf-8",
+        )
+    except Exception as error:
+        record = {
+            "command": [],
+            "duration_seconds": time.monotonic() - started,
+            "error": f"{type(error).__name__}: {error}",
+            "final_response": "",
+            "finished_at": datetime.now(timezone.utc).isoformat(),
+            "harness": harness,
+            "index": index,
+            "model": model,
+            "passed": False,
+            "reasoning_effort": reasoning_effort,
+            "returncode": None,
+            "session_id": None,
+            "started_at": started_at.isoformat(),
+            "timed_out": False,
+        }
+        (output_directory / "stdout.log").write_text("", encoding="utf-8")
+        (output_directory / "stderr.log").write_text(
+            record["error"] + "\n",
+            encoding="utf-8",
+        )
+
+    write_json(output_directory / "result.json", record)
+    return record
+
+
+def main(argv: list[str] | None = None) -> int:
+    arguments = build_parser().parse_args(argv)
+    count = arguments.count or DEFAULT_COUNTS[arguments.harness]
+    if not 1 <= count <= 32:
+        raise SystemExit("--count must be between 1 and 32")
+    if arguments.timeout <= 0:
+        raise SystemExit("--timeout must be a positive integer")
+    if arguments.label and not re.fullmatch(
+        r"[A-Za-z0-9][A-Za-z0-9_-]{0,31}",
+        arguments.label,
+    ):
+        raise SystemExit(
+            "--label must be 1-32 characters using letters, numbers, _ or -"
+        )
+
+    try:
+        models = resolve_models(arguments.harness, count, arguments.models)
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
+
+    executable = arguments.harness
+    if shutil.which(executable) is None:
+        raise SystemExit(f"{executable} CLI was not found on PATH")
+    harness_version = client_for(arguments.harness).version()
+
+    stamp = datetime.now().strftime("%Y%m%dT%H%M%S")
+    suffix = arguments.label or str(os.getpid())
+    batch_id = f"concurrency_{arguments.harness}_{stamp}_{suffix}"
+    batch_directory = PROJECT_ROOT / "parallel_runs" / batch_id
+
+    print(f"Batch: {batch_id}")
+    print(f"Harness: {arguments.harness}")
+    print(f"Harness version: {harness_version}")
+    print(f"Concurrency: {count}")
+    print(f"Reasoning effort: {arguments.reasoning_effort}")
+    print(f"Per-worker timeout: {arguments.timeout} seconds")
+    print(f"Prompt: {PROMPT}")
+    if arguments.harness == "dsh":
+        print("Note: DSH model and reasoning are controlled by its native profile; labels are audit-only.")
+
+    worker_specs = []
+    for offset, model in enumerate(models, start=1):
+        worker_directory = (
+            batch_directory
+            / f"worker_{offset:02d}_{safe_slug(model)}"
+        )
+        output_directory = worker_directory / "logs"
+        command = command_for_dry_run(
+            arguments.harness,
+            model,
+            arguments.reasoning_effort,
+            worker_directory,
+            output_directory,
+        )
+        worker_specs.append((offset, model, worker_directory))
+        print(f"\n[{offset}/{count}] model={model}")
+        print(f"workdir: {worker_directory}")
+        print(f"command: {shlex.join(command)}")
+        print(f"stdin: {PROMPT}")
+
+    if arguments.dry_run:
+        print("\nDry run only: no directories were created and no model was called.")
+        return 0
+
+    batch_directory.mkdir(parents=True)
+    started_at = datetime.now(timezone.utc)
+    print(f"\nStarted {count} workers. Waiting for completion...")
+    results = []
+    with ThreadPoolExecutor(max_workers=count) as executor:
+        futures = {
+            executor.submit(
+                run_worker,
+                harness=arguments.harness,
+                index=index,
+                model=model,
+                reasoning_effort=arguments.reasoning_effort,
+                timeout_seconds=arguments.timeout,
+                worker_directory=worker_directory,
+            ): (index, model, worker_directory)
+            for index, model, worker_directory in worker_specs
+        }
+        for future in as_completed(futures):
+            index, model, worker_directory = futures[future]
+            result = future.result()
+            results.append(result)
+            status = "PASS" if result["passed"] else "FAIL"
+            print(
+                f"[{index}/{count}] {status} model={model} "
+                f"duration={result['duration_seconds']:.2f}s "
+                f"log={worker_directory / 'logs' / 'result.json'}"
+            )
+
+    results.sort(key=lambda item: item["index"])
+    passed_count = sum(bool(item["passed"]) for item in results)
+    summary = {
+        "batch_id": batch_id,
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+        "concurrency": count,
+        "failed": count - passed_count,
+        "harness": arguments.harness,
+        "harness_version": harness_version,
+        "models": models,
+        "passed": passed_count,
+        "prompt": PROMPT,
+        "reasoning_effort": arguments.reasoning_effort,
+        "results": results,
+        "started_at": started_at.isoformat(),
+        "timeout_seconds": arguments.timeout,
+    }
+    write_json(batch_directory / "summary.json", summary)
+
+    print(
+        f"\nResult: {passed_count}/{count} passed. "
+        f"Summary: {batch_directory / 'summary.json'}"
+    )
+    return 0 if passed_count == count else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

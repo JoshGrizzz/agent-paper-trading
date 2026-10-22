@@ -1,0 +1,119 @@
+{
+  "account": {
+    "cash": {
+      "available": "35635.00",
+      "reserved": "64365.00",
+      "total": "100000.00"
+    },
+    "equity": "100000.00",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T08:37:16.801419-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "905.00",
+              "order_id": "ord_000009",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "GS"
+            },
+            {
+              "limit_price": "340.00",
+              "order_id": "ord_000010",
+              "quantity": 30,
+              "side": "buy",
+              "symbol": "JPM"
+            },
+            {
+              "limit_price": "320.00",
+              "order_id": "ord_000011",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "CBOE"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000001",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "557.00",
+            "order_id": "ord_000001",
+            "quantity": 20,
+            "side": "buy",
+            "symbol": "SMH"
+          },
+          {
+            "limit_price": "545.00",
+            "order_id": "ord_000002",
+            "quantity": 30,
+            "side": "buy",
+            "symbol": "SMH"
+          },
+          {
+            "limit_price": "104.00",
+            "order_id": "ord_000003",
+            "quantity": 60,
+            "side": "buy",
+            "symbol": "SOXL"
+          },
+          {
+            "limit_price": "97.00",
+            "order_id": "ord_000004",
+            "quantity": 70,
+            "side": "buy",
+            "symbol": "SOXL"
+          },
+          {
+            "limit_price": "178.50",
+            "order_id": "ord_000005",
+            "quantity": 40,
+            "side": "buy",
+            "symbol": "XOM"
+          },
+          {
+            "limit_price": "174.50",
+            "order_id": "ord_000006",
+            "quantity": 40,
+            "side": "buy",
+            "symbol": "XOM"
+          },
+          {
+            "limit_price": "179.00",
+            "order_id": "ord_000007",
+            "quantity": 25,
+            "side": "buy",
+            "symbol": "XLV"
+          },
+          {
+            "limit_price": "175.00",
+            "order_id": "ord_000008",
+            "quantity": 30,
+            "side": "buy",
+            "symbol": "XLV"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-21T08:36:58.139308-04:00",
+      "valid_from": "2026-10-21T08:37:00-04:00",
+      "valid_until": "2026-10-21T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": null
+}

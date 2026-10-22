@@ -1,0 +1,60 @@
+{
+  "account": {
+    "cash": {
+      "available": "9.7300",
+      "reserved": "0",
+      "total": "9.7300"
+    },
+    "equity": "97522.2400",
+    "initial_cash": "100000.00",
+    "positions_market_value": "97512.5100",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T15:33:07.224630-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "72.00",
+      "filled_at": "2026-10-21T15:02:00-04:00",
+      "limit_price": "72.00",
+      "order_id": "ord_000004",
+      "quantity": 23,
+      "side": "buy",
+      "symbol": "TQQQ"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 2700,
+      "average_cost": "36.4201",
+      "latest_price": "35.4950",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "95836.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 2700,
+      "reserved_quantity": 0,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-2497.7700"
+    },
+    {
+      "available_quantity": 23,
+      "average_cost": "72.00",
+      "latest_price": "72.8700",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "1676.0100",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 23,
+      "reserved_quantity": 0,
+      "symbol": "TQQQ",
+      "unrealized_pnl": "20.0100"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-21T15:29:00-04:00"
+}

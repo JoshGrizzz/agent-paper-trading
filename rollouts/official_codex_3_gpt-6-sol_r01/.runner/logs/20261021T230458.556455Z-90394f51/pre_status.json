@@ -1,0 +1,61 @@
+{
+  "account": {
+    "cash": {
+      "available": "1004.3550",
+      "reserved": "0",
+      "total": "1004.3550"
+    },
+    "equity": "99990.6378",
+    "initial_cash": "100000.00",
+    "positions_market_value": "98986.2828",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-21T19:04:58.521572-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 23,
+      "average_cost": "722.2200",
+      "latest_price": "726.2236",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "16703.1428",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 23,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "92.0828"
+    },
+    {
+      "available_quantity": 850,
+      "average_cost": "36.4201",
+      "latest_price": "35.6414",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "30295.1900",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 850,
+      "reserved_quantity": 0,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-661.8950"
+    },
+    {
+      "available_quantity": 500,
+      "average_cost": "102.8550",
+      "latest_price": "103.9759",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "51987.9500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 500,
+      "reserved_quantity": 0,
+      "symbol": "SOXL",
+      "unrealized_pnl": "560.4500"
+    }
+  ],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

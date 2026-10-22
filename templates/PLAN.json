@@ -1,0 +1,34 @@
+{
+  "primary": {
+    "orders": [
+      {
+        "symbol": "SPY",
+        "side": "buy",
+        "quantity": 20,
+        "limit_price": "500.00"
+      }
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "QQQ",
+          "side": "buy",
+          "quantity": 10,
+          "limit_price": "480.00"
+        }
+      ]
+    },
+    {
+      "orders": [
+        {
+          "symbol": "NVDA",
+          "side": "buy",
+          "quantity": 15,
+          "limit_price": "180.00"
+        }
+      ]
+    }
+  ]
+}

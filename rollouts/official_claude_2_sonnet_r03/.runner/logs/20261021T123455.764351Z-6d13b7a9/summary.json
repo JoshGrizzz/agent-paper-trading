@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-10-21T08:34:55.735320-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 48.922219,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_2_sonnet_r03/.runner/logs/20261021T123455.764351Z-6d13b7a9",
+  "model": "sonnet",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "54000.00",
+        "reserved": "46000.00",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T08:35:44.603431-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000001",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "900.00",
+              "order_id": "ord_000001",
+              "quantity": 30,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "950.00",
+              "order_id": "ord_000002",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T08:35:34.864756-04:00",
+        "valid_from": "2026-10-21T08:36:00-04:00",
+        "valid_until": "2026-10-21T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": null
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_2_sonnet_r03",
+  "run_id": "20261021T123455.764351Z-6d13b7a9",
+  "session_id": "155d1f71-99d3-4634-b556-b51dd18931ee",
+  "session_resumed": false,
+  "settled": false
+}

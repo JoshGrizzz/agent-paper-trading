@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "8.5000",
+      "reserved": "3129.00",
+      "total": "3137.5000"
+    },
+    "equity": "101586.2500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "98448.7500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-21T12:06:25.559442-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "74.50",
+              "order_id": "ord_000005",
+              "quantity": 42,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "770.00",
+              "order_id": "ord_000006",
+              "quantity": 4,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000002",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "104.00",
+            "order_id": "ord_000004",
+            "quantity": 30,
+            "side": "buy",
+            "symbol": "SOXL"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-21T12:06:12.481296-04:00",
+      "valid_from": "2026-10-21T12:07:00-04:00",
+      "valid_until": "2026-10-21T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 1350,
+      "average_cost": "71.7500",
+      "latest_price": "72.9250",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "98448.7500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 1350,
+      "reserved_quantity": 0,
+      "symbol": "TQQQ",
+      "unrealized_pnl": "1586.2500"
+    }
+  ],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

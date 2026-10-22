@@ -1,0 +1,76 @@
+{
+  "account": {
+    "cash": {
+      "available": "5140.00",
+      "reserved": "94860.00",
+      "total": "100000.00"
+    },
+    "equity": "100000.00",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T08:33:27.090759-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "558.00",
+              "order_id": "ord_000003",
+              "quantity": 170,
+              "side": "buy",
+              "symbol": "SMH"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "723.00",
+              "order_id": "ord_000004",
+              "quantity": 130,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000001",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "37.60",
+            "order_id": "ord_000001",
+            "quantity": 1400,
+            "side": "buy",
+            "symbol": "SMCI"
+          },
+          {
+            "limit_price": "930.00",
+            "order_id": "ord_000002",
+            "quantity": 45,
+            "side": "buy",
+            "symbol": "MU"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-21T08:33:17.412059-04:00",
+      "valid_from": "2026-10-21T08:34:00-04:00",
+      "valid_until": "2026-10-21T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": null
+}

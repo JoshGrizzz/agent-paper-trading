@@ -1,0 +1,72 @@
+{
+  "as_of": "2026-10-21T19:07:25.121842-04:00",
+  "codex_session_id": "01a15e75-3b19-7e61-b59f-bf7749bac1b5",
+  "duration_seconds": 34.918606,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r03/.runner/logs/20261021T230725.134691Z-19557020",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "27.0700",
+        "reserved": "100.00",
+        "total": "127.0700"
+      },
+      "equity": "100141.1100",
+      "initial_cash": "100000.00",
+      "positions_market_value": "100014.0400",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-21T19:07:59.981468-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000003",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "100.00",
+              "order_id": "ord_000007",
+              "quantity": 1,
+              "side": "buy",
+              "symbol": "INTC"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T19:07:52.706745-04:00",
+        "valid_from": "2026-10-21T19:08:00-04:00",
+        "valid_until": "2026-10-21T20:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 452,
+        "average_cost": "220.9578097345132743362831858",
+        "latest_price": "221.2700",
+        "latest_price_at": "2026-10-21T15:29:00-04:00",
+        "market_value": "100014.0400",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 452,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "141.1100000000000000000000184"
+      }
+    ],
+    "settled_through": "2026-10-21T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r03",
+  "run_id": "20261021T230725.134691Z-19557020",
+  "session_id": "01a15e75-3b19-7e61-b59f-bf7749bac1b5",
+  "session_resumed": true,
+  "settled": false
+}

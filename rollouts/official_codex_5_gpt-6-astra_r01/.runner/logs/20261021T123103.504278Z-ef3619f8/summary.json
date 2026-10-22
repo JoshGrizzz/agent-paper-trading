@@ -1,0 +1,72 @@
+{
+  "as_of": "2026-10-21T08:31:03.467665-04:00",
+  "codex_session_id": "01a15e71-94e4-7660-b71f-40a4f0a80df6",
+  "duration_seconds": 106.683211,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r01/.runner/logs/20261021T123103.504278Z-ef3619f8",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "46000.00",
+        "reserved": "54000.00",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T08:32:50.098402-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "37.00",
+                "order_id": "ord_000002",
+                "quantity": 1000,
+                "side": "buy",
+                "symbol": "SMCI"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000001",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "36.00",
+              "order_id": "ord_000001",
+              "quantity": 1500,
+              "side": "buy",
+              "symbol": "SMCI"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T08:32:27.785506-04:00",
+        "valid_from": "2026-10-21T08:33:00-04:00",
+        "valid_until": "2026-10-21T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": null
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r01",
+  "run_id": "20261021T123103.504278Z-ef3619f8",
+  "session_id": "01a15e71-94e4-7660-b71f-40a4f0a80df6",
+  "session_resumed": false,
+  "settled": false
+}

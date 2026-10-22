@@ -1,0 +1,48 @@
+{
+  "account": {
+    "cash": {
+      "available": "46.6000",
+      "reserved": "0",
+      "total": "46.6000"
+    },
+    "equity": "101533.3300",
+    "initial_cash": "100000.00",
+    "positions_market_value": "101486.7300",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T15:32:14.783850-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 30,
+      "average_cost": "103.0300",
+      "latest_price": "103.7410",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "3112.2300",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "SOXL",
+      "unrealized_pnl": "21.3300"
+    },
+    {
+      "available_quantity": 1350,
+      "average_cost": "71.7500",
+      "latest_price": "72.8700",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "98374.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 1350,
+      "reserved_quantity": 0,
+      "symbol": "TQQQ",
+      "unrealized_pnl": "1512.0000"
+    }
+  ],
+  "settled_through": "2026-10-21T15:29:00-04:00"
+}

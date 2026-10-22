@@ -1,0 +1,90 @@
+{
+  "account": {
+    "cash": {
+      "available": "9325.00",
+      "reserved": "90675.00",
+      "total": "100000.00"
+    },
+    "equity": "100000.00",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T12:10:38.478366-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "766.00",
+              "order_id": "ord_000009",
+              "quantity": 55,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "716.00",
+              "order_id": "ord_000010",
+              "quantity": 55,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "756.50",
+              "order_id": "ord_000011",
+              "quantity": 62,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "706.00",
+              "order_id": "ord_000012",
+              "quantity": 62,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000002",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "773.00",
+            "order_id": "ord_000007",
+            "quantity": 40,
+            "side": "buy",
+            "symbol": "SPY"
+          },
+          {
+            "limit_price": "723.00",
+            "order_id": "ord_000008",
+            "quantity": 40,
+            "side": "buy",
+            "symbol": "QQQ"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-21T12:10:07.773833-04:00",
+      "valid_from": "2026-10-21T12:11:00-04:00",
+      "valid_until": "2026-10-21T15:30:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

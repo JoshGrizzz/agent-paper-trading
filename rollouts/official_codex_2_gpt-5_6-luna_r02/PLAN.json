@@ -1,0 +1,34 @@
+{
+  "primary": {
+    "orders": [
+      {
+        "symbol": "NVDA",
+        "side": "buy",
+        "quantity": 275,
+        "limit_price": "221.50"
+      }
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "GOOGL",
+          "side": "buy",
+          "quantity": 180,
+          "limit_price": "333.00"
+        }
+      ]
+    },
+    {
+      "orders": [
+        {
+          "symbol": "MSFT",
+          "side": "buy",
+          "quantity": 115,
+          "limit_price": "525.00"
+        }
+      ]
+    }
+  ]
+}

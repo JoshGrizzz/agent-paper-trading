@@ -1,0 +1,111 @@
+{
+  "account": {
+    "cash": {
+      "available": "38650.00",
+      "reserved": "61350.00",
+      "total": "100000.00"
+    },
+    "equity": "100000.00",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T08:51:16.857756-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "786.00",
+              "order_id": "ord_000004",
+              "quantity": 40,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "737.00",
+              "order_id": "ord_000005",
+              "quantity": 30,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "72.00",
+              "order_id": "ord_000006",
+              "quantity": 100,
+              "side": "buy",
+              "symbol": "XLE"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "792.00",
+              "order_id": "ord_000007",
+              "quantity": 40,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "744.00",
+              "order_id": "ord_000008",
+              "quantity": 30,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "73.50",
+              "order_id": "ord_000009",
+              "quantity": 100,
+              "side": "buy",
+              "symbol": "XLE"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000001",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "780.00",
+            "order_id": "ord_000001",
+            "quantity": 40,
+            "side": "buy",
+            "symbol": "SPY"
+          },
+          {
+            "limit_price": "730.00",
+            "order_id": "ord_000002",
+            "quantity": 30,
+            "side": "buy",
+            "symbol": "QQQ"
+          },
+          {
+            "limit_price": "70.50",
+            "order_id": "ord_000003",
+            "quantity": 100,
+            "side": "buy",
+            "symbol": "XLE"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-21T08:50:47.020434-04:00",
+      "valid_from": "2026-10-21T08:51:00-04:00",
+      "valid_until": "2026-10-21T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": null
+}

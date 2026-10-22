@@ -1,0 +1,52 @@
+{
+  "primary": {
+    "orders": [
+      {
+        "symbol": "NVDA",
+        "side": "buy",
+        "quantity": 30,
+        "limit_price": "225.00"
+      },
+      {
+        "symbol": "QQQ",
+        "side": "buy",
+        "quantity": 10,
+        "limit_price": "734.00"
+      }
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "NVDA",
+          "side": "buy",
+          "quantity": 30,
+          "limit_price": "230.00"
+        },
+        {
+          "symbol": "QQQ",
+          "side": "buy",
+          "quantity": 10,
+          "limit_price": "744.00"
+        }
+      ]
+    },
+    {
+      "orders": [
+        {
+          "symbol": "NVDA",
+          "side": "buy",
+          "quantity": 30,
+          "limit_price": "235.00"
+        },
+        {
+          "symbol": "QQQ",
+          "side": "buy",
+          "quantity": 10,
+          "limit_price": "754.00"
+        }
+      ]
+    }
+  ]
+}

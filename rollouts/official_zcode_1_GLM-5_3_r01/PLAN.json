@@ -1,0 +1,40 @@
+{
+  "primary": {
+    "orders": [
+      {
+        "symbol": "SPCX",
+        "side": "buy",
+        "quantity": 30,
+        "limit_price": "153.00"
+      },
+      {
+        "symbol": "QQQ",
+        "side": "buy",
+        "quantity": 5,
+        "limit_price": "722.00"
+      }
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "SPCX",
+          "side": "buy",
+          "quantity": 20,
+          "limit_price": "158.50"
+        }
+      ]
+    },
+    {
+      "orders": [
+        {
+          "symbol": "SPY",
+          "side": "buy",
+          "quantity": 10,
+          "limit_price": "772.00"
+        }
+      ]
+    }
+  ]
+}

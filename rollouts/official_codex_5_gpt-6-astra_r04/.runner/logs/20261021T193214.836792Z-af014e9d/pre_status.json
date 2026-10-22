@@ -1,0 +1,48 @@
+{
+  "account": {
+    "cash": {
+      "available": "37360.00",
+      "reserved": "0",
+      "total": "37360.00"
+    },
+    "equity": "100252.4500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "62892.4500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-21T15:32:14.787604-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 180,
+      "average_cost": "219.50",
+      "latest_price": "220.5300",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "39695.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 180,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "185.4000"
+    },
+    {
+      "available_quantity": 30,
+      "average_cost": "771.00",
+      "latest_price": "773.2350",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "23197.0500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "67.0500"
+    }
+  ],
+  "settled_through": "2026-10-21T15:29:00-04:00"
+}

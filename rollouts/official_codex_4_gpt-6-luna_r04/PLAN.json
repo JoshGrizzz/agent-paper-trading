@@ -1,0 +1,19 @@
+{
+  "primary": {
+    "orders": [
+      {"symbol": "GOOGL", "side": "buy", "quantity": 1, "limit_price": "334.00"}
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {"symbol": "NVDA", "side": "buy", "quantity": 1, "limit_price": "224.00"}
+      ]
+    },
+    {
+      "orders": [
+        {"symbol": "AVGO", "side": "buy", "quantity": 1, "limit_price": "340.00"}
+      ]
+    }
+  ]
+}

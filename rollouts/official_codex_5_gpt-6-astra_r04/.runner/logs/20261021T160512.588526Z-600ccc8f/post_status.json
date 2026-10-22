@@ -1,0 +1,70 @@
+{
+  "account": {
+    "cash": {
+      "available": "37360.00",
+      "reserved": "23130.00",
+      "total": "60490.00"
+    },
+    "equity": "100185.4000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "39695.4000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-21T12:06:40.005713-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "773.00",
+              "order_id": "ord_000006",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000002",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "771.00",
+            "order_id": "ord_000005",
+            "quantity": 30,
+            "side": "buy",
+            "symbol": "SPY"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-21T12:06:13.493551-04:00",
+      "valid_from": "2026-10-21T12:07:00-04:00",
+      "valid_until": "2026-10-21T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 180,
+      "average_cost": "219.50",
+      "latest_price": "220.5300",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "39695.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 180,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "185.4000"
+    }
+  ],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

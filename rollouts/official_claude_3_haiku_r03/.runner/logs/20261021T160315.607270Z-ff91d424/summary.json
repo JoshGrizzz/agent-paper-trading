@@ -1,0 +1,62 @@
+{
+  "as_of": "2026-10-21T12:03:15.600167-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 31.527117,
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "771.1700",
+      "filled_at": "2026-10-21T09:30:00-04:00",
+      "limit_price": "772.00",
+      "order_id": "ord_000002",
+      "quantity": 90,
+      "side": "buy",
+      "symbol": "SPY"
+    }
+  ],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_3_haiku_r03/.runner/logs/20261021T160315.607270Z-ff91d424",
+  "model": "haiku",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "30594.7000",
+        "reserved": "0",
+        "total": "30594.7000"
+      },
+      "equity": "100134.5500",
+      "initial_cash": "100000.00",
+      "positions_market_value": "69539.8500",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T12:03:47.040153-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 90,
+        "average_cost": "771.1700",
+        "latest_price": "772.6650",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "69539.8500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 90,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "134.5500"
+      }
+    ],
+    "settled_through": "2026-10-21T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_3_haiku_r03",
+  "run_id": "20261021T160315.607270Z-ff91d424",
+  "session_id": "367cb091-2527-43f7-9dbb-0327ecfc2d7a",
+  "session_resumed": true,
+  "settled": true
+}

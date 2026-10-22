@@ -1,0 +1,24 @@
+{
+  "primary": {
+    "orders": [
+      {
+        "symbol": "SMCI",
+        "side": "buy",
+        "quantity": 1200,
+        "limit_price": "36.20"
+      }
+    ]
+  },
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "SMCI",
+          "side": "buy",
+          "quantity": 900,
+          "limit_price": "36.75"
+        }
+      ]
+    }
+  ]
+}

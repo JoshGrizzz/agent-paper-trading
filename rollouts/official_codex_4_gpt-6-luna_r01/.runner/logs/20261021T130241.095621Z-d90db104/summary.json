@@ -1,0 +1,85 @@
+{
+  "as_of": "2026-10-21T09:02:41.088486-04:00",
+  "codex_session_id": "01a15e71-94e1-7cb2-90d9-e84225c850b5",
+  "duration_seconds": 102.26168,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r01/.runner/logs/20261021T130241.095621Z-d90db104",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "59.00",
+        "reserved": "99941.00",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T09:04:23.291965-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "719.00",
+                "order_id": "ord_000002",
+                "quantity": 139,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "222.00",
+                "order_id": "ord_000003",
+                "quantity": 450,
+                "side": "buy",
+                "symbol": "NVDA"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000001",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "72.75",
+              "order_id": "ord_000001",
+              "quantity": 1373,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T09:04:00.668010-04:00",
+        "valid_from": "2026-10-21T09:05:00-04:00",
+        "valid_until": "2026-10-21T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": null
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r01",
+  "run_id": "20261021T130241.095621Z-d90db104",
+  "session_id": "01a15e71-94e1-7cb2-90d9-e84225c850b5",
+  "session_resumed": true,
+  "settled": false
+}

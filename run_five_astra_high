@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+
+# Launch the isolated five-way GPT-6 Astra/high broker-backed stress test.
+# The formal decision-window scheduler is intentionally left unchanged until
+# this pressure test demonstrates that five concurrent Codex turns are stable.
+
+set -euo pipefail
+
+project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+python_bin="${PYTHON_BIN:-python3}"
+rollout_set=""
+timeout_seconds=900
+as_of=""
+dry_run=0
+
+usage() {
+    cat <<'EOF'
+Usage: ./run_five_astra_high --rollout-set NAME [OPTIONS]
+
+Run five isolated GPT-6 Astra paper-trading rollouts concurrently, all at
+high reasoning effort. This is a pressure test, not the formal five-wave
+experiment scheduler.
+
+Options:
+  --rollout-set NAME  New persistent namespace for the five rollouts (required).
+  --timeout SECONDS   Per-agent timeout (default: 900).
+  --as-of ISO_TIME    Freeze broker time for a historical smoke test.
+  --dry-run           Print all five commands without creating any state.
+  -h, --help          Show this help.
+
+Environment:
+  PYTHON_BIN           Python interpreter to use (default: python3).
+
+Recommended first run:
+  ./run_five_astra_high --rollout-set astra_stress01 --dry-run
+  ./run_five_astra_high --rollout-set astra_stress01
+EOF
+}
+
+fail() {
+    printf 'error: %s\n' "$*" >&2
+    exit 2
+}
+
+while (($# > 0)); do
+    case "$1" in
+        --rollout-set)
+            (($# >= 2)) || fail "--rollout-set requires a value"
+            rollout_set="$2"
+            shift 2
+            ;;
+        --timeout)
+            (($# >= 2)) || fail "--timeout requires a value"
+            timeout_seconds="$2"
+            shift 2
+            ;;
+        --as-of)
+            (($# >= 2)) || fail "--as-of requires a value"
+            as_of="$2"
+            shift 2
+            ;;
+        --dry-run)
+            dry_run=1
+            shift
+            ;;
+        -h|--help)
+            usage
+            exit 0
+            ;;
+        *)
+            fail "unknown option: $1"
+            ;;
+    esac
+done
+
+[[ -n "$rollout_set" ]] || fail "--rollout-set is required"
+[[ "$rollout_set" =~ ^[A-Za-z0-9][A-Za-z0-9_-]{0,23}$ ]] ||
+    fail "--rollout-set must be 1-24 characters using letters, numbers, _ or -"
+[[ "$timeout_seconds" =~ ^[1-9][0-9]*$ ]] ||
+    fail "--timeout must be a positive integer"
+command -v "$python_bin" >/dev/null 2>&1 ||
+    fail "Python interpreter not found: $python_bin"
+
+command=(
+    "$python_bin"
+    "$project_dir/run_parallel_rollouts"
+    --harness codex
+    --rollout-set "$rollout_set"
+    --count 5
+    --models gpt-6-astra
+    --reasoning-effort high
+    --timeout "$timeout_seconds"
+)
+if [[ -n "$as_of" ]]; then
+    command+=(--as-of "$as_of")
+fi
+if ((dry_run)); then
+    command+=(--dry-run)
+fi
+
+printf 'Astra stress profile: 5 concurrent rollouts, gpt-6-astra, high\n'
+exec "${command[@]}"

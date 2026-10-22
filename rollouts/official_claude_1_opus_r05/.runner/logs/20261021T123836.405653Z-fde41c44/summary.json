@@ -1,0 +1,106 @@
+{
+  "as_of": "2026-10-21T08:38:36.332173-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 82.252562,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_1_opus_r05/.runner/logs/20261021T123836.405653Z-fde41c44",
+  "model": "opus",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "12492.50",
+        "reserved": "87507.50",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T08:39:58.575732-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "778.00",
+                "order_id": "ord_000004",
+                "quantity": 50,
+                "side": "buy",
+                "symbol": "SPY"
+              },
+              {
+                "limit_price": "731.00",
+                "order_id": "ord_000005",
+                "quantity": 50,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "785.00",
+                "order_id": "ord_000006",
+                "quantity": 100,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000001",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "724.50",
+              "order_id": "ord_000001",
+              "quantity": 55,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "773.00",
+              "order_id": "ord_000002",
+              "quantity": 40,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "558.00",
+              "order_id": "ord_000003",
+              "quantity": 30,
+              "side": "buy",
+              "symbol": "SMH"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T08:39:37.749233-04:00",
+        "valid_from": "2026-10-21T08:40:00-04:00",
+        "valid_until": "2026-10-21T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": null
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_1_opus_r05",
+  "run_id": "20261021T123836.405653Z-fde41c44",
+  "session_id": "8273fa6b-a629-4821-ba6d-4500651f53d9",
+  "session_resumed": false,
+  "settled": false
+}

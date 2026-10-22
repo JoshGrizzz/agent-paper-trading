@@ -1,0 +1,64 @@
+{
+  "as_of": "2026-10-21T19:03:18.445288-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 9.412671,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_2_sonnet_r05/.runner/logs/20261021T230318.488055Z-0ec71c86",
+  "model": "sonnet",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "14007.7000",
+        "reserved": "0",
+        "total": "14007.7000"
+      },
+      "equity": "100309.8980",
+      "initial_cash": "100000.00",
+      "positions_market_value": "86302.1980",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-21T19:03:27.817174-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 55,
+        "average_cost": "722.2200",
+        "latest_price": "726.2236",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "39942.2980",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 55,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "220.1980"
+      },
+      {
+        "available_quantity": 60,
+        "average_cost": "771.1700",
+        "latest_price": "772.6650",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "46359.9000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 60,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "89.7000"
+      }
+    ],
+    "settled_through": "2026-10-21T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_2_sonnet_r05",
+  "run_id": "20261021T230318.488055Z-0ec71c86",
+  "session_id": "176b65cc-effe-4991-b7d8-b80b083d9140",
+  "session_resumed": true,
+  "settled": false
+}

@@ -1,0 +1,156 @@
+{
+  "as_of": "2026-10-21T08:31:07.246404-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 162.063087,
+  "fills": [],
+  "harness": "dsh",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_dsh_4_deepseek-flash/.runner/logs/20261021T123107.279267Z-6c345546",
+  "model": "deepseek-flash",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "9048.00",
+        "reserved": "90952.00",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T08:33:49.255186-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "178.00",
+                "order_id": "ord_000008",
+                "quantity": 100,
+                "side": "buy",
+                "symbol": "SPCX"
+              },
+              {
+                "limit_price": "242.00",
+                "order_id": "ord_000009",
+                "quantity": 75,
+                "side": "buy",
+                "symbol": "NVDA"
+              },
+              {
+                "limit_price": "40.50",
+                "order_id": "ord_000010",
+                "quantity": 300,
+                "side": "buy",
+                "symbol": "SMCI"
+              },
+              {
+                "limit_price": "1010.00",
+                "order_id": "ord_000011",
+                "quantity": 10,
+                "side": "buy",
+                "symbol": "MU"
+              },
+              {
+                "limit_price": "184.00",
+                "order_id": "ord_000012",
+                "quantity": 55,
+                "side": "buy",
+                "symbol": "XOM"
+              },
+              {
+                "limit_price": "435.00",
+                "order_id": "ord_000013",
+                "quantity": 30,
+                "side": "buy",
+                "symbol": "UNH"
+              },
+              {
+                "limit_price": "218.00",
+                "order_id": "ord_000014",
+                "quantity": 14,
+                "side": "buy",
+                "symbol": "IBB"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000001",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "164.50",
+              "order_id": "ord_000001",
+              "quantity": 120,
+              "side": "buy",
+              "symbol": "SPCX"
+            },
+            {
+              "limit_price": "224.00",
+              "order_id": "ord_000002",
+              "quantity": 85,
+              "side": "buy",
+              "symbol": "NVDA"
+            },
+            {
+              "limit_price": "37.60",
+              "order_id": "ord_000003",
+              "quantity": 350,
+              "side": "buy",
+              "symbol": "SMCI"
+            },
+            {
+              "limit_price": "945.00",
+              "order_id": "ord_000004",
+              "quantity": 12,
+              "side": "buy",
+              "symbol": "MU"
+            },
+            {
+              "limit_price": "180.50",
+              "order_id": "ord_000005",
+              "quantity": 60,
+              "side": "buy",
+              "symbol": "XOM"
+            },
+            {
+              "limit_price": "426.00",
+              "order_id": "ord_000006",
+              "quantity": 32,
+              "side": "buy",
+              "symbol": "UNH"
+            },
+            {
+              "limit_price": "214.00",
+              "order_id": "ord_000007",
+              "quantity": 15,
+              "side": "buy",
+              "symbol": "IBB"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T08:33:38.825877-04:00",
+        "valid_from": "2026-10-21T08:34:00-04:00",
+        "valid_until": "2026-10-21T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": null
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_dsh_4_deepseek-flash",
+  "run_id": "20261021T123107.279267Z-6c345546",
+  "session_id": "session-30920917-04d2-4ce5-999e-3bb9a7a71dc9",
+  "session_resumed": false,
+  "settled": false
+}

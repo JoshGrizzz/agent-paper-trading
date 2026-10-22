@@ -1,0 +1,106 @@
+{
+  "as_of": "2026-10-21T12:07:21.946910-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 196.603828,
+  "fills": [],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r05/.runner/logs/20261021T160721.954203Z-23910e25",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "9325.00",
+        "reserved": "90675.00",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T12:10:38.478366-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "766.00",
+                "order_id": "ord_000009",
+                "quantity": 55,
+                "side": "buy",
+                "symbol": "SPY"
+              },
+              {
+                "limit_price": "716.00",
+                "order_id": "ord_000010",
+                "quantity": 55,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "756.50",
+                "order_id": "ord_000011",
+                "quantity": 62,
+                "side": "buy",
+                "symbol": "SPY"
+              },
+              {
+                "limit_price": "706.00",
+                "order_id": "ord_000012",
+                "quantity": 62,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000002",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "773.00",
+              "order_id": "ord_000007",
+              "quantity": 40,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "723.00",
+              "order_id": "ord_000008",
+              "quantity": 40,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T12:10:07.773833-04:00",
+        "valid_from": "2026-10-21T12:11:00-04:00",
+        "valid_until": "2026-10-21T15:30:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": "2026-10-21T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r05",
+  "run_id": "20261021T160721.954203Z-23910e25",
+  "session_id": "sess_e8e6497d-b4c5-4478-a928-30c73df58701",
+  "session_resumed": true,
+  "settled": true
+}

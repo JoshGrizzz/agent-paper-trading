@@ -1,0 +1,48 @@
+{
+  "account": {
+    "cash": {
+      "available": "7009.6500",
+      "reserved": "0",
+      "total": "7009.6500"
+    },
+    "equity": "99837.7950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "92828.1450",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-21T12:04:56.978090-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 1000,
+      "average_cost": "36.4201",
+      "latest_price": "35.6414",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "35641.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 1000,
+      "reserved_quantity": 0,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-778.7000"
+    },
+    {
+      "available_quantity": 550,
+      "average_cost": "102.8550",
+      "latest_price": "103.9759",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "57186.7450",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 550,
+      "reserved_quantity": 0,
+      "symbol": "SOXL",
+      "unrealized_pnl": "616.4950"
+    }
+  ],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

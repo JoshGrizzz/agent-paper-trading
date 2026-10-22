@@ -1,0 +1,93 @@
+{
+  "account": {
+    "cash": {
+      "available": "28274.7000",
+      "reserved": "0",
+      "total": "28274.7000"
+    },
+    "equity": "100459.5300",
+    "initial_cash": "100000.00",
+    "positions_market_value": "72184.8300",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T12:02:36.783675-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "722.2200",
+      "filled_at": "2026-10-21T09:30:00-04:00",
+      "limit_price": "730.00",
+      "order_id": "ord_000001",
+      "quantity": 50,
+      "side": "buy",
+      "symbol": "QQQ"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "220.9600",
+      "filled_at": "2026-10-21T09:30:00-04:00",
+      "limit_price": "223.00",
+      "order_id": "ord_000002",
+      "quantity": 80,
+      "side": "buy",
+      "symbol": "NVDA"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "71.7500",
+      "filled_at": "2026-10-21T09:30:00-04:00",
+      "limit_price": "73.00",
+      "order_id": "ord_000003",
+      "quantity": 250,
+      "side": "buy",
+      "symbol": "TQQQ"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 80,
+      "average_cost": "220.9600",
+      "latest_price": "220.5300",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "17642.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 80,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-34.4000"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "722.2200",
+      "latest_price": "726.2236",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "36311.1800",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "200.1800"
+    },
+    {
+      "available_quantity": 250,
+      "average_cost": "71.7500",
+      "latest_price": "72.9250",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "18231.2500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 250,
+      "reserved_quantity": 0,
+      "symbol": "TQQQ",
+      "unrealized_pnl": "293.7500"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

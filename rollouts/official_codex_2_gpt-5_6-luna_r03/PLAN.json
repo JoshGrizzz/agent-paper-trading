@@ -1,0 +1,13 @@
+{
+  "primary": {
+    "orders": [
+      {
+        "symbol": "INTC",
+        "side": "buy",
+        "quantity": 1,
+        "limit_price": "100.00"
+      }
+    ]
+  },
+  "backups": []
+}

@@ -1,0 +1,35 @@
+{
+  "account": {
+    "cash": {
+      "available": "127.0700",
+      "reserved": "0",
+      "total": "127.0700"
+    },
+    "equity": "100141.1100",
+    "initial_cash": "100000.00",
+    "positions_market_value": "100014.0400",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-21T15:31:29.130108-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 452,
+      "average_cost": "220.9578097345132743362831858",
+      "latest_price": "221.2700",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "100014.0400",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 452,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "141.1100000000000000000000184"
+    }
+  ],
+  "settled_through": "2026-10-21T15:29:00-04:00"
+}

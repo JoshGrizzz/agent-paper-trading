@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-10-21T08:31:10.256399-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 298.439343,
+  "fills": [],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r01/.runner/logs/20261021T123110.274865Z-d22c47f7",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "22200.00",
+        "reserved": "77800.00",
+        "total": "100000.00"
+      },
+      "equity": "100000.00",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-21T08:36:08.649560-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "732.00",
+                "order_id": "ord_000003",
+                "quantity": 60,
+                "side": "buy",
+                "symbol": "QQQ"
+              },
+              {
+                "limit_price": "178.00",
+                "order_id": "ord_000004",
+                "quantity": 100,
+                "side": "buy",
+                "symbol": "SPCX"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "778.00",
+                "order_id": "ord_000005",
+                "quantity": 100,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000001",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "726.00",
+              "order_id": "ord_000001",
+              "quantity": 60,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "166.00",
+              "order_id": "ord_000002",
+              "quantity": 100,
+              "side": "buy",
+              "symbol": "SPCX"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-21T08:35:37.798000-04:00",
+        "valid_from": "2026-10-21T08:36:00-04:00",
+        "valid_until": "2026-10-21T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": null
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r01",
+  "run_id": "20261021T123110.274865Z-d22c47f7",
+  "session_id": "sess_2cb29ebe-181c-4a47-95d0-3371ca267bf6",
+  "session_resumed": false,
+  "settled": false
+}
