@@ -24,3 +24,13 @@ rollouts/**/.runner/logs/*/agent_final_raw.md
 rollouts/**/.runner/logs/*/agent_result.json
 rollouts/**/.runner/logs/*/metadata.json
 rollouts/**/.runner/logs/*/failure.json
+rollouts/adapter_*/
+rollouts/astra_stress*/
+rollouts/live_smoke_*/
+rollouts/pilot_*/
+rollouts/official_smoke*/
+rollouts/rollout_smoke_live/
+rollouts/*/BROKER.md
+rollouts/*/DECISION_FORMAT.md
+rollouts/*/broker
+rollouts/*/universe.txt
