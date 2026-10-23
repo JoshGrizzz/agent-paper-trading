@@ -400,7 +400,10 @@ class RunnerTests(unittest.TestCase):
             agent = FakeAgent()
             result = run_once(config, agent_client=agent, broker_call=broker)
             self.assertTrue(result["ok"])
-            self.assertEqual(broker.commands, ["settle", "status", "status"])
+            self.assertEqual(
+                broker.commands,
+                ["settle", "refresh-valuation", "status", "status"],
+            )
             self.assertEqual(agent.calls, 1)
             self.assertEqual(agent.received_session_ids, [None])
             self.assertEqual(agent.received_allow_search, [True])
@@ -418,6 +421,7 @@ class RunnerTests(unittest.TestCase):
                 "metadata.json",
                 "prompt.txt",
                 "settle.json",
+                "valuation.json",
                 "pre_status.json",
                 "agent_stdout.log",
                 "agent_final.md",

@@ -162,7 +162,7 @@ def _apply_fills(
     )
 
 
-def _mark_positions(
+def mark_positions(
     positions: tuple[PositionState, ...],
     batch: MarketBatch,
 ) -> tuple[PositionState, ...]:
@@ -181,6 +181,12 @@ def _mark_positions(
     for position in positions:
         bar = latest_by_symbol.get(position.symbol)
         if bar is None:
+            marked.append(position)
+            continue
+        if (
+            position.latest_price_at is not None
+            and bar.start_at < position.latest_price_at
+        ):
             marked.append(position)
             continue
         assert bar.close is not None
@@ -215,7 +221,7 @@ def settle_open_plan(
     match = match_trade_plan(plan, batch.bars)
     fills = match.fills
     cash, positions, directions = _apply_fills(state, fills)
-    positions = _mark_positions(positions, batch)
+    positions = mark_positions(positions, batch)
     settled_through = plan.valid_until - timedelta(minutes=1)
     if state.settled_through is not None:
         settled_through = max(state.settled_through, settled_through)

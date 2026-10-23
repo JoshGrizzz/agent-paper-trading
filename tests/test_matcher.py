@@ -157,6 +157,41 @@ class LimitOrderMatchingTests(unittest.TestCase):
         )
         self.assertIsNone(no_fill)
 
+    def test_extended_hours_require_enough_trigger_bar_volume(self) -> None:
+        item = order("o1", "AAPL", Side.BUY, "100")
+        fill = match_limit_order(
+            item,
+            [
+                make_bar("AAPL", 8, 5, "99", "101", "98", "100", 9),
+                make_bar("AAPL", 8, 6, "99", "101", "98", "100", 10),
+            ],
+            at(8),
+            at(9),
+            CandidateName.PRIMARY,
+        )
+        self.assertIsNotNone(fill)
+        self.assertEqual(fill.bar.start_at, at(8, 6))
+
+        after_hours = match_limit_order(
+            item,
+            [make_bar("AAPL", 16, 0, "99", "101", "98", "100", 9)],
+            at(16),
+            at(19),
+            CandidateName.PRIMARY,
+        )
+        self.assertIsNone(after_hours)
+
+    def test_regular_session_does_not_apply_volume_sufficiency_rule(self) -> None:
+        item = order("o1", "AAPL", Side.BUY, "100")
+        fill = match_limit_order(
+            item,
+            [make_bar("AAPL", 9, 30, "99", "101", "98", "100", 1)],
+            at(9, 30),
+            at(11),
+            CandidateName.PRIMARY,
+        )
+        self.assertIsNotNone(fill)
+
 
 class CandidateSelectionTests(unittest.TestCase):
     def test_any_primary_fill_selects_primary_without_mixing_backup(self) -> None:

@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from decimal import Decimal
 import tempfile
 import unittest
@@ -32,12 +32,14 @@ class FakeProvider:
     def __init__(self, *, fill: bool = True) -> None:
         self.calls = 0
         self.fill = fill
+        self.requests: list[MarketRequest] = []
+        self.price: Decimal | None = None
 
     def fetch(self, request: MarketRequest) -> MarketBatch:
         self.calls += 1
-        start_at = request.start + (request.end - request.start) / 2
-        start_at = start_at.replace(second=0, microsecond=0)
-        price = D("99") if self.fill else D("110")
+        self.requests.append(request)
+        start_at = request.end - timedelta(minutes=1)
+        price = self.price or (D("99") if self.fill else D("110"))
         bars = tuple(
             Bar(
                 symbol,
@@ -155,6 +157,53 @@ class ServiceTests(unittest.TestCase):
             status = service.status()
             self.assertEqual(provider.calls, 1)
             self.assertEqual(status["open_plans"], [])
+
+    def test_refresh_valuation_marks_all_positions_through_completed_minute(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            provider = FakeProvider()
+            clock = MutableClock(at(8, 3))
+            service = BrokerService(
+                StateStore(directory),
+                MarketCache(f"{directory}/cache"),
+                provider,
+                frozenset({"AAPL"}),
+                clock=clock,
+            )
+            service.submit_plan(request())
+            clock.value = at(12, 1)
+            service.settle()
+            provider.price = D("105")
+            clock.value = at(12, 3, 27)
+
+            refreshed = service.refresh_valuation()
+
+            self.assertTrue(refreshed["refreshed"])
+            self.assertEqual(provider.calls, 2)
+            self.assertEqual(provider.requests[-1].symbols, ("AAPL",))
+            self.assertEqual(provider.requests[-1].start, at(8))
+            self.assertEqual(provider.requests[-1].end, at(12, 3))
+            self.assertEqual(refreshed["positions"][0]["latest_price"], "105")
+            self.assertEqual(
+                refreshed["positions"][0]["latest_price_at"],
+                at(12, 2).isoformat(),
+            )
+            self.assertEqual(refreshed["account"]["valuation_status"], "fresh")
+            ledger = service.state_store.ledger.path.read_text(encoding="utf-8")
+            self.assertIn('\"event\":\"valuation_refreshed\"', ledger)
+
+    def test_refresh_valuation_without_positions_does_not_call_provider(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            provider = FakeProvider()
+            service = BrokerService(
+                StateStore(directory),
+                MarketCache(f"{directory}/cache"),
+                provider,
+                frozenset({"AAPL"}),
+                clock=lambda: at(8, 30),
+            )
+            refreshed = service.refresh_valuation()
+            self.assertFalse(refreshed["refreshed"])
+            self.assertEqual(provider.calls, 0)
 
     def test_cancel_replays_complete_minutes_before_cancelling(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

@@ -23,11 +23,18 @@ from .models import (
 _NEW_YORK = ZoneInfo("America/New_York")
 _SESSION_START = time(8, 0)
 _SESSION_END = time(20, 0)
+_REGULAR_SESSION_START = time(9, 30)
+_REGULAR_SESSION_END = time(16, 0)
 
 
 def _inside_supported_session(value: datetime) -> bool:
     local_time = value.astimezone(_NEW_YORK).time().replace(tzinfo=None)
     return _SESSION_START <= local_time < _SESSION_END
+
+
+def _inside_regular_session(value: datetime) -> bool:
+    local_time = value.astimezone(_NEW_YORK).time().replace(tzinfo=None)
+    return _REGULAR_SESSION_START <= local_time < _REGULAR_SESSION_END
 
 
 def _eligible_bars(
@@ -59,6 +66,13 @@ def match_limit_order(
     """Return the first whole-order fill in the half-open validity interval."""
 
     for bar in _eligible_bars(order.symbol, bars, valid_from, valid_until):
+        # Outside the regular session, require the trigger minute to report
+        # enough prints for this whole order. Regular-session matching keeps
+        # the frozen price-touch rule and does not model queue position.
+        if not _inside_regular_session(bar.start_at):
+            assert bar.volume is not None
+            if bar.volume < order.quantity:
+                continue
         assert bar.open is not None
         assert bar.high is not None
         assert bar.low is not None

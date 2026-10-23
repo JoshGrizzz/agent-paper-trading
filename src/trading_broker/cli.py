@@ -25,7 +25,7 @@ def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="broker")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    for name in ("status", "settle"):
+    for name in ("status", "settle", "refresh-valuation"):
         command = subparsers.add_parser(name)
         command.add_argument("--json", action="store_true")
         command.add_argument("--as-of", help=argparse.SUPPRESS)
@@ -159,6 +159,8 @@ def main(argv: list[str] | None = None) -> int:
             document = service.status(as_of=as_of)
         elif arguments.command == "settle":
             document = service.settle(as_of=as_of)
+        elif arguments.command == "refresh-valuation":
+            document = service.refresh_valuation(as_of=as_of)
         elif arguments.command == "submit-plan":
             document = service.submit_plan(
                 load_plan_file(arguments.file),

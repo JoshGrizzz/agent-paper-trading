@@ -501,12 +501,20 @@ def _run_once_locked(
     try:
         settled = broker_call(workdir, "settle", environment, config.as_of, config.timeout_seconds)
         _write_text(log_directory / "settle.json", _json_text(settled.document))
+        valuation = broker_call(
+            workdir,
+            "refresh-valuation",
+            environment,
+            config.as_of,
+            config.timeout_seconds,
+        )
+        _write_text(log_directory / "valuation.json", _json_text(valuation.document))
         pre_status = broker_call(workdir, "status", environment, config.as_of, config.timeout_seconds)
         _write_text(log_directory / "pre_status.json", _json_text(pre_status.document))
 
-        # Settlement belongs to the completed market window and must survive
-        # an Agent failure. Snapshot immediately afterwards so only mutations
-        # made during this Agent turn are rolled back.
+        # Settlement and the pre-decision valuation refresh belong to the
+        # completed market window and must survive an Agent failure. Snapshot
+        # immediately afterwards so only mutations from this turn roll back.
         broker_transaction_snapshot = _snapshot_paths((
             workdir / ".broker" / "state.json",
             workdir / ".broker" / "ledger.jsonl",
@@ -650,6 +658,7 @@ def _run_once_locked(
             "log_directory": str(log_directory),
             "settled": settled.document.get("settled", False),
             "fills": settled.document.get("fills", []),
+            "valuation_refreshed": valuation.document.get("refreshed", False),
             "post_status": post_status.document,
         }
         _write_text(log_directory / "summary.json", _json_text(summary))

@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
-from .market_cache import MarketCache
+from .market_cache import MarketCache, market_batch_checksum
 from .market_data import (
     MarketDataProvider,
     MarketDataUnavailable,
@@ -21,6 +21,7 @@ from .settlement import (
     SettlementOutcome,
     SettlementStatus,
     accepted_plan_symbols,
+    mark_positions,
     settle_open_plan,
 )
 from .state_models import (
@@ -224,6 +225,92 @@ class BrokerService:
         result = self._status_document(state, now, outcome)
         result["command"] = "settle"
         result["settled"] = outcome is not None
+        return result
+
+    def refresh_valuation(self, *, as_of: datetime | None = None) -> dict[str, Any]:
+        """Refresh every held symbol through the latest completed minute."""
+
+        now = self._now(as_of)
+        state = self._load(now)
+        state, outcome = self._settle_due(state, now)
+        symbols = tuple(sorted(item.symbol for item in state.positions))
+        end = now.replace(second=0, microsecond=0)
+        start = datetime.combine(now.date(), time(8), _NEW_YORK)
+
+        if not symbols or end <= start:
+            result = self._status_document(state, now, outcome)
+            result["command"] = "refresh-valuation"
+            result["refreshed"] = False
+            result["valuation_refresh"] = {
+                "symbols": list(symbols),
+                "updated_symbols": [],
+                "missing_symbols": list(symbols),
+                "start": None,
+                "end": None,
+            }
+            return result
+
+        request = MarketRequest(symbols=symbols, start=start, end=end)
+        try:
+            batch = self.market_cache.get_or_fetch(request, self.market_provider)
+        except MarketDataUnavailable as error:
+            raise ServiceError(
+                "MARKET_DATA_UNAVAILABLE",
+                str(error),
+                {
+                    "symbols": list(request.symbols),
+                    "start": request.start.isoformat(),
+                    "end": request.end.isoformat(),
+                },
+            ) from error
+
+        marked = mark_positions(state.positions, batch)
+        before = {
+            item.symbol: (item.latest_price, item.latest_price_at)
+            for item in state.positions
+        }
+        updated_symbols = tuple(
+            item.symbol
+            for item in marked
+            if (item.latest_price, item.latest_price_at) != before[item.symbol]
+        )
+        covered_symbols = {bar.symbol for bar in batch.bars if bar.is_usable}
+        missing_symbols = tuple(
+            symbol for symbol in symbols if symbol not in covered_symbols
+        )
+        proposed = replace(state, positions=marked)
+        event = {
+            "event": "valuation_refreshed",
+            "occurred_at": now.isoformat(),
+            "symbols": list(symbols),
+            "updated_symbols": list(updated_symbols),
+            "missing_symbols": list(missing_symbols),
+            "market_data": {
+                "provider": batch.provider,
+                "provider_version": batch.provider_version,
+                "fetched_at": batch.fetched_at.isoformat(),
+                "start": request.start.isoformat(),
+                "end": request.end.isoformat(),
+                "interval": request.interval,
+                "prepost": request.prepost,
+                "sha256": market_batch_checksum(batch),
+            },
+        }
+        committed = self.state_store.commit(
+            state.state_version,
+            proposed,
+            (event,),
+        )
+        result = self._status_document(committed, now, outcome)
+        result["command"] = "refresh-valuation"
+        result["refreshed"] = True
+        result["valuation_refresh"] = {
+            "symbols": list(symbols),
+            "updated_symbols": list(updated_symbols),
+            "missing_symbols": list(missing_symbols),
+            "start": request.start.isoformat(),
+            "end": request.end.isoformat(),
+        }
         return result
 
     def status(self, *, as_of: datetime | None = None) -> dict[str, Any]:
