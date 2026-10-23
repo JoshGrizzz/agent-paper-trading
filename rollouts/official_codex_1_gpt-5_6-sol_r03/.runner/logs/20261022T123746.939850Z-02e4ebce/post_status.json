@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "2.1528",
+      "reserved": "0",
+      "total": "2.1528"
+    },
+    "equity": "97471.4228",
+    "initial_cash": "100000.00",
+    "positions_market_value": "97469.2700",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T08:38:42.419384-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "33.80",
+              "order_id": "ord_000008",
+              "quantity": 2746,
+              "side": "sell",
+              "symbol": "SMCI"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "33.20",
+              "order_id": "ord_000009",
+              "quantity": 2746,
+              "side": "sell",
+              "symbol": "SMCI"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000003",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "34.20",
+            "order_id": "ord_000007",
+            "quantity": 2746,
+            "side": "sell",
+            "symbol": "SMCI"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T08:38:25.793334-04:00",
+      "valid_from": "2026-10-22T08:39:00-04:00",
+      "valid_until": "2026-10-22T12:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 0,
+      "average_cost": "36.41582199563000728332119446",
+      "latest_price": "35.4950",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "97469.2700",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 2746,
+      "reserved_quantity": 2746,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-2528.577199999999999999999987"
+    }
+  ],
+  "settled_through": "2026-10-21T15:29:00-04:00"
+}

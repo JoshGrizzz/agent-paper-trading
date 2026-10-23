@@ -1,0 +1,96 @@
+{
+  "account": {
+    "cash": {
+      "available": "67897.2750",
+      "reserved": "0",
+      "total": "67897.2750"
+    },
+    "equity": "98557.2950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "30660.0200",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:33:56.426655-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "202.00",
+              "order_id": "ord_000029",
+              "quantity": 50,
+              "side": "sell",
+              "symbol": "NVDA"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "196.00",
+              "order_id": "ord_000030",
+              "quantity": 50,
+              "side": "sell",
+              "symbol": "NVDA"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000005",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "208.00",
+            "order_id": "ord_000028",
+            "quantity": 50,
+            "side": "sell",
+            "symbol": "NVDA"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T15:33:32.593689-04:00",
+      "valid_from": "2026-10-22T15:34:00-04:00",
+      "valid_until": "2026-10-22T19:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 38,
+      "average_cost": "526.8300",
+      "latest_price": "527.2900",
+      "latest_price_at": "2026-10-22T15:31:00-04:00",
+      "market_value": "20037.0200",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "DIA",
+      "unrealized_pnl": "17.4800"
+    },
+    {
+      "available_quantity": 0,
+      "average_cost": "220.4101",
+      "latest_price": "212.4600",
+      "latest_price_at": "2026-10-22T15:31:00-04:00",
+      "market_value": "10623.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 50,
+      "reserved_quantity": 50,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-397.5050"
+    }
+  ],
+  "settled_through": "2026-10-22T15:29:00-04:00"
+}

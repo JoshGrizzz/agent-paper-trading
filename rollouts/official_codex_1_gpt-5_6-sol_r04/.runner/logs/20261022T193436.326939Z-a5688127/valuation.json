@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "929.4001",
+      "reserved": "0",
+      "total": "929.4001"
+    },
+    "equity": "96878.5189",
+    "initial_cash": "100000.00",
+    "positions_market_value": "95949.1188",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:34:36.316471-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 2412,
+      "average_cost": "38.8255",
+      "latest_price": "39.7799",
+      "latest_price_at": "2026-10-22T15:33:00-04:00",
+      "market_value": "95949.1188",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 2412,
+      "reserved_quantity": 0,
+      "symbol": "SQQQ",
+      "unrealized_pnl": "2302.0128"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-22T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-22T15:34:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-22T08:00:00-04:00",
+    "symbols": [
+      "SQQQ"
+    ],
+    "updated_symbols": [
+      "SQQQ"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "34446.6700",
+      "reserved": "0",
+      "total": "34446.6700"
+    },
+    "equity": "93801.8200",
+    "initial_cash": "100000.00",
+    "positions_market_value": "59355.1500",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:31:27.076053-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "38.9850",
+      "filled_at": "2026-10-22T12:06:00-04:00",
+      "limit_price": "39.20",
+      "order_id": "ord_000011",
+      "quantity": 1500,
+      "side": "buy",
+      "symbol": "SQQQ"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 1500,
+      "average_cost": "38.9850",
+      "latest_price": "39.5701",
+      "latest_price_at": "2026-10-22T15:29:00-04:00",
+      "market_value": "59355.1500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 1500,
+      "reserved_quantity": 0,
+      "symbol": "SQQQ",
+      "unrealized_pnl": "877.6500"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T15:29:00-04:00"
+}

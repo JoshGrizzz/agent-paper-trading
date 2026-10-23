@@ -1,0 +1,117 @@
+{
+  "account": {
+    "cash": {
+      "available": "2084.9500",
+      "reserved": "0",
+      "total": "2084.9500"
+    },
+    "equity": "101362.3510",
+    "initial_cash": "100000.00",
+    "positions_market_value": "99277.4010",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T08:37:45.083358-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "145.00",
+              "order_id": "ord_000007",
+              "quantity": 360,
+              "side": "sell",
+              "symbol": "SPCX"
+            },
+            {
+              "limit_price": "84.00",
+              "order_id": "ord_000008",
+              "quantity": 390,
+              "side": "sell",
+              "symbol": "SOXL"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "140.00",
+              "order_id": "ord_000009",
+              "quantity": 360,
+              "side": "sell",
+              "symbol": "SPCX"
+            },
+            {
+              "limit_price": "80.00",
+              "order_id": "ord_000010",
+              "quantity": 390,
+              "side": "sell",
+              "symbol": "SOXL"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000002",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "150.00",
+            "order_id": "ord_000005",
+            "quantity": 360,
+            "side": "sell",
+            "symbol": "SPCX"
+          },
+          {
+            "limit_price": "88.00",
+            "order_id": "ord_000006",
+            "quantity": 390,
+            "side": "sell",
+            "symbol": "SOXL"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T08:37:25.441180-04:00",
+      "valid_from": "2026-10-22T08:38:00-04:00",
+      "valid_until": "2026-10-22T12:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 0,
+      "average_cost": "102.8550",
+      "latest_price": "103.9759",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "40550.6010",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 390,
+      "reserved_quantity": 390,
+      "symbol": "SOXL",
+      "unrealized_pnl": "437.1510"
+    },
+    {
+      "available_quantity": 0,
+      "average_cost": "160.5600",
+      "latest_price": "163.1300",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "58726.8000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 360,
+      "reserved_quantity": 360,
+      "symbol": "SPCX",
+      "unrealized_pnl": "925.2000"
+    }
+  ],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

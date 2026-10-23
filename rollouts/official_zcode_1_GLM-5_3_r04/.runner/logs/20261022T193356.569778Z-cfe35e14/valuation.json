@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "15638.8000",
+      "reserved": "0",
+      "total": "15638.8000"
+    },
+    "equity": "98955.1500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "83316.3500",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:33:56.562614-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "718.1866666666666666666666667",
+      "latest_price": "704.0300",
+      "latest_price_at": "2026-10-22T15:32:00-04:00",
+      "market_value": "31681.3500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-637.0500000000000000000000015"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "769.9360",
+      "latest_price": "762.7200",
+      "latest_price_at": "2026-10-22T15:32:00-04:00",
+      "market_value": "38136.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-360.8000"
+    },
+    {
+      "available_quantity": 200,
+      "average_cost": "67.7300",
+      "latest_price": "67.4950",
+      "latest_price_at": "2026-10-22T15:32:00-04:00",
+      "market_value": "13499.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 200,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "-47.0000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-22T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-22T15:33:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-22T08:00:00-04:00",
+    "symbols": [
+      "QQQ",
+      "SPY",
+      "XLE"
+    ],
+    "updated_symbols": [
+      "QQQ",
+      "SPY",
+      "XLE"
+    ]
+  }
+}

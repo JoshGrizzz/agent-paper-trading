@@ -3,15 +3,9 @@
     "orders": [
       {
         "symbol": "SOXL",
-        "side": "buy",
-        "quantity": 550,
-        "limit_price": "105.00"
-      },
-      {
-        "symbol": "SMCI",
-        "side": "buy",
-        "quantity": 1000,
-        "limit_price": "37.50"
+        "side": "sell",
+        "quantity": 150,
+        "limit_price": "88.00"
       }
     ]
   },
@@ -19,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "TQQQ",
-          "side": "buy",
-          "quantity": 1300,
-          "limit_price": "74.00"
+          "symbol": "SOXL",
+          "side": "sell",
+          "quantity": 150,
+          "limit_price": "84.00"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "SPY",
-          "side": "buy",
-          "quantity": 120,
-          "limit_price": "775.00"
+          "symbol": "SOXL",
+          "side": "sell",
+          "quantity": 150,
+          "limit_price": "78.00"
         }
       ]
     }

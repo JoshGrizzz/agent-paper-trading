@@ -1,0 +1,70 @@
+{
+  "account": {
+    "cash": {
+      "available": "64833.4000",
+      "reserved": "0",
+      "total": "64833.4000"
+    },
+    "equity": "96415.1500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "31581.7500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T12:04:57.472795-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "34.4400",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "33.50",
+      "order_id": "ord_000005",
+      "quantity": 600,
+      "side": "sell",
+      "symbol": "SMCI"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "154.1920",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "154.00",
+      "order_id": "ord_000006",
+      "quantity": 75,
+      "side": "sell",
+      "symbol": "SPCX"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 600,
+      "average_cost": "36.35",
+      "latest_price": "33.8400",
+      "latest_price_at": "2026-10-22T11:59:00-04:00",
+      "market_value": "20304.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 600,
+      "reserved_quantity": 0,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-1506.0000"
+    },
+    {
+      "available_quantity": 75,
+      "average_cost": "158.50",
+      "latest_price": "150.3700",
+      "latest_price_at": "2026-10-22T11:59:00-04:00",
+      "market_value": "11277.7500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 75,
+      "reserved_quantity": 0,
+      "symbol": "SPCX",
+      "unrealized_pnl": "-609.7500"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T11:59:00-04:00"
+}

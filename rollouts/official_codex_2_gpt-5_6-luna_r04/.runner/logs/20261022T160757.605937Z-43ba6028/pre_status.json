@@ -1,0 +1,35 @@
+{
+  "account": {
+    "cash": {
+      "available": "28.0000",
+      "reserved": "0",
+      "total": "28.0000"
+    },
+    "equity": "84023.8000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "83995.8000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T12:07:57.596097-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 980,
+      "average_cost": "102.0122448979591836734693878",
+      "latest_price": "85.7100",
+      "latest_price_at": "2026-10-22T12:06:00-04:00",
+      "market_value": "83995.8000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 980,
+      "reserved_quantity": 0,
+      "symbol": "SOXL",
+      "unrealized_pnl": "-15976.20000000000000000000004"
+    }
+  ],
+  "settled_through": "2026-10-22T11:59:00-04:00"
+}

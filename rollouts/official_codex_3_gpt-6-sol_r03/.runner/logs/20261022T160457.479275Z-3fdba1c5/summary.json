@@ -1,0 +1,124 @@
+{
+  "as_of": "2026-10-22T12:04:57.469648-04:00",
+  "codex_session_id": "01a15e75-3b18-79c0-94e7-aad5e9576f4c",
+  "duration_seconds": 97.023931,
+  "fills": [
+    {
+      "candidate": "backup_2",
+      "fill_price": "90.5900",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "80.00",
+      "order_id": "ord_000007",
+      "quantity": 400,
+      "side": "sell",
+      "symbol": "SOXL"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_3_gpt-6-sol_r03/.runner/logs/20261022T160457.479275Z-3fdba1c5",
+  "model": "gpt-6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "43245.6500",
+        "reserved": "0",
+        "total": "43245.6500"
+      },
+      "equity": "89904.1500",
+      "initial_cash": "100000.00",
+      "positions_market_value": "46658.5000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T12:06:34.436770-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "84.00",
+                "order_id": "ord_000009",
+                "quantity": 150,
+                "side": "sell",
+                "symbol": "SOXL"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "78.00",
+                "order_id": "ord_000010",
+                "quantity": 150,
+                "side": "sell",
+                "symbol": "SOXL"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000003",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "88.00",
+              "order_id": "ord_000008",
+              "quantity": 150,
+              "side": "sell",
+              "symbol": "SOXL"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-22T12:06:20.974299-04:00",
+        "valid_from": "2026-10-22T12:07:00-04:00",
+        "valid_until": "2026-10-22T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 1000,
+        "average_cost": "36.4201",
+        "latest_price": "33.8050",
+        "latest_price_at": "2026-10-22T12:03:00-04:00",
+        "market_value": "33805.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 1000,
+        "reserved_quantity": 0,
+        "symbol": "SMCI",
+        "unrealized_pnl": "-2615.1000"
+      },
+      {
+        "available_quantity": 0,
+        "average_cost": "102.8550",
+        "latest_price": "85.6900",
+        "latest_price_at": "2026-10-22T12:03:00-04:00",
+        "market_value": "12853.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 150,
+        "reserved_quantity": 150,
+        "symbol": "SOXL",
+        "unrealized_pnl": "-2574.7500"
+      }
+    ],
+    "settled_through": "2026-10-22T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_3_gpt-6-sol_r03",
+  "run_id": "20261022T160457.479275Z-3fdba1c5",
+  "session_id": "01a15e75-3b18-79c0-94e7-aad5e9576f4c",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

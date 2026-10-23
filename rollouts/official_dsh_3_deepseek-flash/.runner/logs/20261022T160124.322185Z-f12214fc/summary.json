@@ -1,0 +1,135 @@
+{
+  "as_of": "2026-10-22T12:01:24.309302-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 59.432992,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "90.5900",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "85.00",
+      "order_id": "ord_000022",
+      "quantity": 60,
+      "side": "sell",
+      "symbol": "SOXL"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "145.0800",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "135.00",
+      "order_id": "ord_000024",
+      "quantity": 15,
+      "side": "sell",
+      "symbol": "MSTR"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "170.4500",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "160.00",
+      "order_id": "ord_000025",
+      "quantity": 10,
+      "side": "sell",
+      "symbol": "COIN"
+    }
+  ],
+  "harness": "dsh",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_dsh_3_deepseek-flash/.runner/logs/20261022T160124.322185Z-f12214fc",
+  "model": "deepseek-flash",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "59888.4310",
+        "reserved": "0",
+        "total": "59888.4310"
+      },
+      "equity": "97374.8950",
+      "initial_cash": "100000.00",
+      "positions_market_value": "37486.4640",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T12:02:23.669982-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 8,
+        "average_cost": "725.8100",
+        "latest_price": "710.0500",
+        "latest_price_at": "2026-10-22T12:00:00-04:00",
+        "market_value": "5680.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 8,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-126.0800"
+      },
+      {
+        "available_quantity": 30,
+        "average_cost": "556.5233333333333333333333333",
+        "latest_price": "530.2000",
+        "latest_price_at": "2026-10-22T12:00:00-04:00",
+        "market_value": "15906.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "-789.6999999999999999999999990"
+      },
+      {
+        "available_quantity": 50,
+        "average_cost": "102.5886545454545454545454545",
+        "latest_price": "86.5682",
+        "latest_price_at": "2026-10-22T12:00:00-04:00",
+        "market_value": "4328.4100",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 50,
+        "reserved_quantity": 0,
+        "symbol": "SOXL",
+        "unrealized_pnl": "-801.0227272727272727272727250"
+      },
+      {
+        "available_quantity": 25,
+        "average_cost": "177.7500",
+        "latest_price": "181.6100",
+        "latest_price_at": "2026-10-22T12:00:00-04:00",
+        "market_value": "4540.2500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "XLV",
+        "unrealized_pnl": "96.5000"
+      },
+      {
+        "available_quantity": 40,
+        "average_cost": "177.7200",
+        "latest_price": "175.7851",
+        "latest_price_at": "2026-10-22T12:00:00-04:00",
+        "market_value": "7031.4040",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "XOM",
+        "unrealized_pnl": "-77.3960"
+      }
+    ],
+    "settled_through": "2026-10-22T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_dsh_3_deepseek-flash",
+  "run_id": "20261022T160124.322185Z-f12214fc",
+  "session_id": "session-5bb11b1a-6797-4ec9-847d-3d572682f0f1",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

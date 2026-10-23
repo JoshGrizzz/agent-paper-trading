@@ -1,0 +1,92 @@
+{
+  "account": {
+    "cash": {
+      "available": "6558.0900",
+      "reserved": "0",
+      "total": "6558.0900"
+    },
+    "equity": "96976.8700",
+    "initial_cash": "100000.00",
+    "positions_market_value": "90418.7800",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:34:36.316567-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 75,
+      "average_cost": "338.0250",
+      "latest_price": "323.3600",
+      "latest_price_at": "2026-10-22T15:33:00-04:00",
+      "market_value": "24252.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 75,
+      "reserved_quantity": 0,
+      "symbol": "AVGO",
+      "unrealized_pnl": "-1099.8750"
+    },
+    {
+      "available_quantity": 38,
+      "average_cost": "336.9100",
+      "latest_price": "322.7700",
+      "latest_price_at": "2026-10-22T15:33:00-04:00",
+      "market_value": "12265.2600",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "GOOGL",
+      "unrealized_pnl": "-537.3200"
+    },
+    {
+      "available_quantity": 150,
+      "average_cost": "218.00",
+      "latest_price": "211.9500",
+      "latest_price_at": "2026-10-22T15:33:00-04:00",
+      "market_value": "31792.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 150,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-907.5000"
+    },
+    {
+      "available_quantity": 29,
+      "average_cost": "765.2713793103448275862068966",
+      "latest_price": "762.3800",
+      "latest_price_at": "2026-10-22T15:33:00-04:00",
+      "market_value": "22109.0200",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 29,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-83.8500000000000000000000014"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-22T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-22T15:34:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-22T08:00:00-04:00",
+    "symbols": [
+      "AVGO",
+      "GOOGL",
+      "NVDA",
+      "SPY"
+    ],
+    "updated_symbols": [
+      "AVGO",
+      "GOOGL",
+      "NVDA",
+      "SPY"
+    ]
+  }
+}

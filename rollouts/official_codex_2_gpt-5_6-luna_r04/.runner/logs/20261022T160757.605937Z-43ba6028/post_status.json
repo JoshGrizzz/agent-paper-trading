@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "28.0000",
+      "reserved": "0",
+      "total": "28.0000"
+    },
+    "equity": "84023.8000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "83995.8000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T12:08:25.948475-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "84.50",
+              "order_id": "ord_000011",
+              "quantity": 980,
+              "side": "sell",
+              "symbol": "SOXL"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "83.50",
+              "order_id": "ord_000012",
+              "quantity": 980,
+              "side": "sell",
+              "symbol": "SOXL"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000004",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "85.50",
+            "order_id": "ord_000010",
+            "quantity": 980,
+            "side": "sell",
+            "symbol": "SOXL"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T12:08:18.845593-04:00",
+      "valid_from": "2026-10-22T12:09:00-04:00",
+      "valid_until": "2026-10-22T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 0,
+      "average_cost": "102.0122448979591836734693878",
+      "latest_price": "85.7100",
+      "latest_price_at": "2026-10-22T12:06:00-04:00",
+      "market_value": "83995.8000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 980,
+      "reserved_quantity": 980,
+      "symbol": "SOXL",
+      "unrealized_pnl": "-15976.20000000000000000000004"
+    }
+  ],
+  "settled_through": "2026-10-22T11:59:00-04:00"
+}

@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-10-22T15:31:27.076053-04:00",
+  "codex_session_id": "01a15e73-562f-7b41-823b-c6fd13832534",
+  "duration_seconds": 35.890606,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "38.9850",
+      "filled_at": "2026-10-22T12:06:00-04:00",
+      "limit_price": "39.20",
+      "order_id": "ord_000011",
+      "quantity": 1500,
+      "side": "buy",
+      "symbol": "SQQQ"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_3_gpt-6-sol_r02/.runner/logs/20261022T193127.091282Z-b8e265d9",
+  "model": "gpt-6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "34446.6700",
+        "reserved": "0",
+        "total": "34446.6700"
+      },
+      "equity": "93846.6700",
+      "initial_cash": "100000.00",
+      "positions_market_value": "59400.0000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T15:32:02.826964-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 1500,
+        "average_cost": "38.9850",
+        "latest_price": "39.6000",
+        "latest_price_at": "2026-10-22T15:30:00-04:00",
+        "market_value": "59400.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 1500,
+        "reserved_quantity": 0,
+        "symbol": "SQQQ",
+        "unrealized_pnl": "922.5000"
+      }
+    ],
+    "settled_through": "2026-10-22T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_3_gpt-6-sol_r02",
+  "run_id": "20261022T193127.091282Z-b8e265d9",
+  "session_id": "01a15e73-562f-7b41-823b-c6fd13832534",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

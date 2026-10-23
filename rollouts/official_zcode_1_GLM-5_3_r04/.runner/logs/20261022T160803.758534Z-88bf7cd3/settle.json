@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "19153.8000",
+      "reserved": "0",
+      "total": "19153.8000"
+    },
+    "equity": "99413.3400",
+    "initial_cash": "100000.00",
+    "positions_market_value": "80259.5400",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T12:08:03.750398-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "713.6800",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "716.00",
+      "order_id": "ord_000024",
+      "quantity": 10,
+      "side": "buy",
+      "symbol": "QQQ"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "765.00",
+      "filled_at": "2026-10-22T10:22:00-04:00",
+      "limit_price": "765.00",
+      "order_id": "ord_000025",
+      "quantity": 10,
+      "side": "buy",
+      "symbol": "SPY"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 40,
+      "average_cost": "720.0850",
+      "latest_price": "709.4010",
+      "latest_price_at": "2026-10-22T11:59:00-04:00",
+      "market_value": "28376.0400",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-427.3600"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "769.9360",
+      "latest_price": "764.7700",
+      "latest_price_at": "2026-10-22T11:59:00-04:00",
+      "market_value": "38238.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-258.3000"
+    },
+    {
+      "available_quantity": 200,
+      "average_cost": "67.7300",
+      "latest_price": "68.2250",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "13645.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 200,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "99.0000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T11:59:00-04:00"
+}

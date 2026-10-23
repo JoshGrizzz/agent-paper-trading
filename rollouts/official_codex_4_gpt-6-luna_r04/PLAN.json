@@ -1,18 +1,18 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "GOOGL", "side": "buy", "quantity": 1, "limit_price": "334.00"}
+      {"symbol": "SPY", "side": "buy", "quantity": 8, "limit_price": "750.00"}
     ]
   },
   "backups": [
     {
       "orders": [
-        {"symbol": "NVDA", "side": "buy", "quantity": 1, "limit_price": "224.00"}
+        {"symbol": "SPY", "side": "buy", "quantity": 8, "limit_price": "756.00"}
       ]
     },
     {
       "orders": [
-        {"symbol": "AVGO", "side": "buy", "quantity": 1, "limit_price": "340.00"}
+        {"symbol": "SPY", "side": "buy", "quantity": 8, "limit_price": "761.00"}
       ]
     }
   ]

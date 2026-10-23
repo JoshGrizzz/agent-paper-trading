@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "8419.6600",
+      "reserved": "0",
+      "total": "8419.6600"
+    },
+    "equity": "97503.4535",
+    "initial_cash": "100000.00",
+    "positions_market_value": "89083.7935",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T12:02:51.843371-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 95,
+      "average_cost": "220.3710526315789473684210526",
+      "latest_price": "213.6350",
+      "latest_price_at": "2026-10-22T12:01:00-04:00",
+      "market_value": "20295.3250",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 95,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-639.9249999999999999999999970"
+    },
+    {
+      "available_quantity": 73,
+      "average_cost": "722.0217808219178082191780822",
+      "latest_price": "709.6595",
+      "latest_price_at": "2026-10-22T12:01:00-04:00",
+      "market_value": "51805.1435",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 73,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-902.4465000000000000000000006"
+    },
+    {
+      "available_quantity": 250,
+      "average_cost": "71.7500",
+      "latest_price": "67.9333",
+      "latest_price_at": "2026-10-22T12:01:00-04:00",
+      "market_value": "16983.3250",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 250,
+      "reserved_quantity": 0,
+      "symbol": "TQQQ",
+      "unrealized_pnl": "-954.1750"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-22T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-22T12:02:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-22T08:00:00-04:00",
+    "symbols": [
+      "NVDA",
+      "QQQ",
+      "TQQQ"
+    ],
+    "updated_symbols": [
+      "NVDA",
+      "QQQ",
+      "TQQQ"
+    ]
+  }
+}

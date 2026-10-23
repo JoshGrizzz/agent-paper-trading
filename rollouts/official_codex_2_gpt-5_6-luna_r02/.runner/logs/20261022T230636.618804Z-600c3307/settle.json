@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "26565.6250",
+      "reserved": "0",
+      "total": "26565.6250"
+    },
+    "equity": "96438.2250",
+    "initial_cash": "100000.00",
+    "positions_market_value": "69872.6000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T19:06:36.584925-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "212.00",
+      "filled_at": "2026-10-22T15:35:00-04:00",
+      "limit_price": "212.00",
+      "order_id": "ord_000021",
+      "quantity": 125,
+      "side": "sell",
+      "symbol": "NVDA"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 280,
+      "average_cost": "256.5178571428571428571428571",
+      "latest_price": "249.5450",
+      "latest_price_at": "2026-10-22T15:30:00-04:00",
+      "market_value": "69872.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 280,
+      "reserved_quantity": 0,
+      "symbol": "AMZN",
+      "unrealized_pnl": "-1952.399999999999999999999988"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T18:59:00-04:00"
+}

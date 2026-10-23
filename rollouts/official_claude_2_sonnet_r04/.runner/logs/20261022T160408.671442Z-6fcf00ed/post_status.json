@@ -1,0 +1,56 @@
+{
+  "account": {
+    "cash": {
+      "available": "30929.8000",
+      "reserved": "22800.00",
+      "total": "53729.8000"
+    },
+    "equity": "99615.4000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "45885.6000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T12:05:03.301886-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [],
+      "plan_id": "plan_000002",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "760.00",
+            "order_id": "ord_000003",
+            "quantity": 30,
+            "side": "buy",
+            "symbol": "SPY"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T12:04:53.811015-04:00",
+      "valid_from": "2026-10-22T12:05:00-04:00",
+      "valid_until": "2026-10-22T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 60,
+      "average_cost": "771.1700",
+      "latest_price": "764.7600",
+      "latest_price_at": "2026-10-22T12:03:00-04:00",
+      "market_value": "45885.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 60,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-384.6000"
+    }
+  ],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

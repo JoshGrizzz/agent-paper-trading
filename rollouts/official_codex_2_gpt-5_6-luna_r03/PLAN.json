@@ -2,12 +2,33 @@
   "primary": {
     "orders": [
       {
-        "symbol": "INTC",
+        "symbol": "PSQ",
         "side": "buy",
-        "quantity": 1,
-        "limit_price": "100.00"
+        "quantity": 500,
+        "limit_price": "26.20"
       }
     ]
   },
-  "backups": []
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "PSQ",
+          "side": "buy",
+          "quantity": 750,
+          "limit_price": "26.00"
+        }
+      ]
+    },
+    {
+      "orders": [
+        {
+          "symbol": "PSQ",
+          "side": "buy",
+          "quantity": 1000,
+          "limit_price": "25.80"
+        }
+      ]
+    }
+  ]
 }

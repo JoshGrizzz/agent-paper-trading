@@ -1,0 +1,35 @@
+{
+  "account": {
+    "cash": {
+      "available": "64.14",
+      "reserved": "0",
+      "total": "64.14"
+    },
+    "equity": "101721.5900",
+    "initial_cash": "100000.00",
+    "positions_market_value": "101657.4500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T08:32:03.549110-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 1394,
+      "average_cost": "71.69",
+      "latest_price": "72.9250",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "101657.4500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 1394,
+      "reserved_quantity": 0,
+      "symbol": "TQQQ",
+      "unrealized_pnl": "1721.5900"
+    }
+  ],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

@@ -1,0 +1,62 @@
+{
+  "account": {
+    "cash": {
+      "available": "67897.2750",
+      "reserved": "0",
+      "total": "67897.2750"
+    },
+    "equity": "98557.2950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "30660.0200",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:32:37.796847-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 38,
+      "average_cost": "526.8300",
+      "latest_price": "527.2900",
+      "latest_price_at": "2026-10-22T15:31:00-04:00",
+      "market_value": "20037.0200",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "DIA",
+      "unrealized_pnl": "17.4800"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "220.4101",
+      "latest_price": "212.4600",
+      "latest_price_at": "2026-10-22T15:31:00-04:00",
+      "market_value": "10623.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-397.5050"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-22T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-22T15:32:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-22T08:00:00-04:00",
+    "symbols": [
+      "DIA",
+      "NVDA"
+    ],
+    "updated_symbols": [
+      "DIA",
+      "NVDA"
+    ]
+  }
+}

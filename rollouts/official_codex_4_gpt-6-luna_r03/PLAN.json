@@ -3,9 +3,9 @@
     "orders": [
       {
         "symbol": "TQQQ",
-        "side": "buy",
-        "quantity": 52,
-        "limit_price": "72.75"
+        "side": "sell",
+        "quantity": 702,
+        "limit_price": "67.50"
       }
     ]
   },
@@ -13,20 +13,10 @@
     {
       "orders": [
         {
-          "symbol": "QQQ",
-          "side": "buy",
-          "quantity": 5,
-          "limit_price": "717.00"
-        }
-      ]
-    },
-    {
-      "orders": [
-        {
-          "symbol": "SPY",
-          "side": "buy",
-          "quantity": 4,
-          "limit_price": "768.00"
+          "symbol": "TQQQ",
+          "side": "sell",
+          "quantity": 702,
+          "limit_price": "66.00"
         }
       ]
     }

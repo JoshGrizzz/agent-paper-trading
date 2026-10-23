@@ -1,0 +1,139 @@
+{
+  "as_of": "2026-10-22T08:32:07.351352-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 121.3133,
+  "fills": [],
+  "harness": "dsh",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_dsh_2_deepseek-flash/.runner/logs/20261022T123207.369417Z-717f8f84",
+  "model": "deepseek-flash",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "4402.0250",
+        "reserved": "0",
+        "total": "4402.0250"
+      },
+      "equity": "99197.6950",
+      "initial_cash": "100000.00",
+      "positions_market_value": "94795.6700",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-22T08:34:08.619048-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "33.00",
+                "order_id": "ord_000012",
+                "quantity": 650,
+                "side": "sell",
+                "symbol": "SMCI"
+              },
+              {
+                "limit_price": "195.00",
+                "order_id": "ord_000013",
+                "quantity": 110,
+                "side": "sell",
+                "symbol": "VRT"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000002",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "34.05",
+              "order_id": "ord_000010",
+              "quantity": 650,
+              "side": "sell",
+              "symbol": "SMCI"
+            },
+            {
+              "limit_price": "201.60",
+              "order_id": "ord_000011",
+              "quantity": 110,
+              "side": "sell",
+              "symbol": "VRT"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-22T08:33:58.376647-04:00",
+        "valid_from": "2026-10-22T08:34:00-04:00",
+        "valid_until": "2026-10-22T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 26,
+        "average_cost": "923.7350",
+        "latest_price": "914.0600",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "23765.5600",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 26,
+        "reserved_quantity": 0,
+        "symbol": "MU",
+        "unrealized_pnl": "-251.5500"
+      },
+      {
+        "available_quantity": 0,
+        "average_cost": "36.4201",
+        "latest_price": "35.6414",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "23166.9100",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 650,
+        "reserved_quantity": 650,
+        "symbol": "SMCI",
+        "unrealized_pnl": "-506.1550"
+      },
+      {
+        "available_quantity": 150,
+        "average_cost": "160.5600",
+        "latest_price": "163.1300",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "24469.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 150,
+        "reserved_quantity": 0,
+        "symbol": "SPCX",
+        "unrealized_pnl": "385.5000"
+      },
+      {
+        "available_quantity": 0,
+        "average_cost": "216.5800",
+        "latest_price": "212.6700",
+        "latest_price_at": "2026-10-21T11:59:00-04:00",
+        "market_value": "23393.7000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 110,
+        "reserved_quantity": 110,
+        "symbol": "VRT",
+        "unrealized_pnl": "-430.1000"
+      }
+    ],
+    "settled_through": "2026-10-21T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_dsh_2_deepseek-flash",
+  "run_id": "20261022T123207.369417Z-717f8f84",
+  "session_id": "session-c7c7cbae-2159-4026-b6a7-23294508d17d",
+  "session_resumed": true,
+  "settled": false
+}

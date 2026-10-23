@@ -1,0 +1,62 @@
+{
+  "account": {
+    "cash": {
+      "available": "825.7000",
+      "reserved": "0",
+      "total": "825.7000"
+    },
+    "equity": "95895.0700",
+    "initial_cash": "100000.00",
+    "positions_market_value": "95069.3700",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:36:47.861853-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 100,
+      "average_cost": "721.72900000000000000000000",
+      "latest_price": "703.3777",
+      "latest_price_at": "2026-10-22T15:35:00-04:00",
+      "market_value": "70337.7700",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 100,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-1835.13000000000000000000000"
+    },
+    {
+      "available_quantity": 170,
+      "average_cost": "158.8317647058823529411764706",
+      "latest_price": "145.4800",
+      "latest_price_at": "2026-10-22T15:35:00-04:00",
+      "market_value": "24731.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 170,
+      "reserved_quantity": 0,
+      "symbol": "SPCX",
+      "unrealized_pnl": "-2269.800000000000000000000002"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-22T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-22T15:36:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-22T08:00:00-04:00",
+    "symbols": [
+      "QQQ",
+      "SPCX"
+    ],
+    "updated_symbols": [
+      "QQQ",
+      "SPCX"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "25030.00",
+      "reserved": "0",
+      "total": "25030.00"
+    },
+    "equity": "100438.8440",
+    "initial_cash": "100000.00",
+    "positions_market_value": "75408.8440",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T08:37:46.772317-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "710.00",
+              "order_id": "ord_000006",
+              "quantity": 20,
+              "side": "sell",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000002",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "716.00",
+            "order_id": "ord_000005",
+            "quantity": 20,
+            "side": "sell",
+            "symbol": "QQQ"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T08:37:12.619476-04:00",
+      "valid_from": "2026-10-22T08:38:00-04:00",
+      "valid_until": "2026-10-22T12:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 20,
+      "average_cost": "720.00",
+      "latest_price": "726.2236",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "29048.9440",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 20,
+      "symbol": "QQQ",
+      "unrealized_pnl": "248.9440"
+    },
+    {
+      "available_quantity": 60,
+      "average_cost": "769.50",
+      "latest_price": "772.6650",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "46359.9000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 60,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "189.9000"
+    }
+  ],
+  "settled_through": "2026-10-21T11:59:00-04:00"
+}

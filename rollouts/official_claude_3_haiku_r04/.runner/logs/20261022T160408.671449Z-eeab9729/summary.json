@@ -1,0 +1,73 @@
+{
+  "as_of": "2026-10-22T12:04:08.660191-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 56.841739,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_3_haiku_r04/.runner/logs/20261022T160408.671449Z-eeab9729",
+  "model": "haiku",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "22883.0000",
+        "reserved": "0",
+        "total": "22883.0000"
+      },
+      "equity": "99359.0000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "76476.0000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T12:05:05.422776-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000002",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "760.00",
+              "order_id": "ord_000003",
+              "quantity": 30,
+              "side": "sell",
+              "symbol": "SPY"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-22T12:04:51.266690-04:00",
+        "valid_from": "2026-10-22T12:05:00-04:00",
+        "valid_until": "2026-10-22T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 70,
+        "average_cost": "771.1700",
+        "latest_price": "764.7600",
+        "latest_price_at": "2026-10-22T12:03:00-04:00",
+        "market_value": "76476.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 100,
+        "reserved_quantity": 30,
+        "symbol": "SPY",
+        "unrealized_pnl": "-641.0000"
+      }
+    ],
+    "settled_through": "2026-10-21T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_3_haiku_r04",
+  "run_id": "20261022T160408.671449Z-eeab9729",
+  "session_id": "a10ebfb7-e322-43f6-9e61-efe2d13cb1cc",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

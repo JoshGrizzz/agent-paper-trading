@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "48425.6500",
+      "reserved": "0",
+      "total": "48425.6500"
+    },
+    "equity": "94092.9640",
+    "initial_cash": "100000.00",
+    "positions_market_value": "45667.3140",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:38:29.829961-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "64.50",
+              "order_id": "ord_000010",
+              "quantity": 693,
+              "side": "sell",
+              "symbol": "TQQQ"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "62.00",
+              "order_id": "ord_000011",
+              "quantity": 693,
+              "side": "sell",
+              "symbol": "TQQQ"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000004",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "65.50",
+            "order_id": "ord_000009",
+            "quantity": 350,
+            "side": "sell",
+            "symbol": "TQQQ"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T15:38:20.169723-04:00",
+      "valid_from": "2026-10-22T15:39:00-04:00",
+      "valid_until": "2026-10-22T19:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 0,
+      "average_cost": "71.76514716439339554917444365",
+      "latest_price": "65.8980",
+      "latest_price_at": "2026-10-22T15:36:00-04:00",
+      "market_value": "45667.3140",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 693,
+      "reserved_quantity": 693,
+      "symbol": "TQQQ",
+      "unrealized_pnl": "-4065.932984924623115577889449"
+    }
+  ],
+  "settled_through": "2026-10-22T11:59:00-04:00"
+}

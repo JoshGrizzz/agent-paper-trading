@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-10-22T15:34:36.313865-04:00",
+  "codex_session_id": "01a15e77-3eb6-72c1-b506-79820b41abd8",
+  "duration_seconds": 70.112861,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "213.7600",
+      "filled_at": "2026-10-22T12:13:00-04:00",
+      "limit_price": "213.00",
+      "order_id": "ord_000011",
+      "quantity": 45,
+      "side": "sell",
+      "symbol": "NVDA"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r04/.runner/logs/20261022T193436.326980Z-57a89e5e",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "66599.2000",
+        "reserved": "0",
+        "total": "66599.2000"
+      },
+      "equity": "99008.3500",
+      "initial_cash": "100000.00",
+      "positions_market_value": "32409.1500",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T15:35:46.370684-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 45,
+        "average_cost": "219.50",
+        "latest_price": "211.9500",
+        "latest_price_at": "2026-10-22T15:33:00-04:00",
+        "market_value": "9537.7500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 45,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "-339.7500"
+      },
+      {
+        "available_quantity": 30,
+        "average_cost": "771.00",
+        "latest_price": "762.3800",
+        "latest_price_at": "2026-10-22T15:33:00-04:00",
+        "market_value": "22871.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-258.6000"
+      }
+    ],
+    "settled_through": "2026-10-22T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r04",
+  "run_id": "20261022T193436.326980Z-57a89e5e",
+  "session_id": "01a15e77-3eb6-72c1-b506-79820b41abd8",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-10-22T19:02:07.289886-04:00",
+  "codex_session_id": "01a15e75-3b19-7e61-b59f-bf7749bac1b5",
+  "duration_seconds": 42.113752,
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "212.00",
+      "filled_at": "2026-10-22T15:44:00-04:00",
+      "limit_price": "212.00",
+      "order_id": "ord_000014",
+      "quantity": 152,
+      "side": "sell",
+      "symbol": "NVDA"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r03/.runner/logs/20261022T230207.303911Z-3623afb7",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "6720.0700",
+        "reserved": "25800.00",
+        "total": "32520.0700"
+      },
+      "equity": "97361.6300",
+      "initial_cash": "100000.00",
+      "positions_market_value": "64841.5600",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-22T19:02:49.336411-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "26.00",
+                "order_id": "ord_000017",
+                "quantity": 750,
+                "side": "buy",
+                "symbol": "PSQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "25.80",
+                "order_id": "ord_000018",
+                "quantity": 1000,
+                "side": "buy",
+                "symbol": "PSQ"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000007",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "26.20",
+              "order_id": "ord_000016",
+              "quantity": 500,
+              "side": "buy",
+              "symbol": "PSQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-22T19:02:40.435816-04:00",
+        "valid_from": "2026-10-22T19:03:00-04:00",
+        "valid_until": "2026-10-22T20:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 100,
+        "average_cost": "650.00",
+        "latest_price": "648.4156",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "64841.5600",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 100,
+        "reserved_quantity": 0,
+        "symbol": "META",
+        "unrealized_pnl": "-158.4400"
+      }
+    ],
+    "settled_through": "2026-10-22T18:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r03",
+  "run_id": "20261022T230207.303911Z-3623afb7",
+  "session_id": "01a15e75-3b19-7e61-b59f-bf7749bac1b5",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

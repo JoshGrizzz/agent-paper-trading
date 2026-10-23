@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "75.7000",
+      "reserved": "750.00",
+      "total": "825.7000"
+    },
+    "equity": "95785.1000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "94959.4000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T19:06:31.759560-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "150.00",
+              "order_id": "ord_000025",
+              "quantity": 5,
+              "side": "buy",
+              "symbol": "SPCX"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000006",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "147.00",
+            "order_id": "ord_000024",
+            "quantity": 5,
+            "side": "buy",
+            "symbol": "SPCX"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T19:06:11.376936-04:00",
+      "valid_from": "2026-10-22T19:07:00-04:00",
+      "valid_until": "2026-10-22T20:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 100,
+      "average_cost": "721.72900000000000000000000",
+      "latest_price": "704.5900",
+      "latest_price_at": "2026-10-22T15:59:00-04:00",
+      "market_value": "70459.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 100,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-1713.90000000000000000000000"
+    },
+    {
+      "available_quantity": 170,
+      "average_cost": "158.8317647058823529411764706",
+      "latest_price": "144.1200",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "24500.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 170,
+      "reserved_quantity": 0,
+      "symbol": "SPCX",
+      "unrealized_pnl": "-2501.000000000000000000000002"
+    }
+  ],
+  "settled_through": "2026-10-22T11:59:00-04:00"
+}

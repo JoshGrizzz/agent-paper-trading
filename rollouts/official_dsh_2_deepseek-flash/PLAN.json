@@ -1,24 +1,15 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "SMCI", "side": "buy", "quantity": 650, "limit_price": "37.20"},
-      {"symbol": "SPCX", "side": "buy", "quantity": 150, "limit_price": "163.50"},
-      {"symbol": "VRT", "side": "buy", "quantity": 110, "limit_price": "221.50"},
-      {"symbol": "MU", "side": "buy", "quantity": 26, "limit_price": "938.00"}
+      {"symbol": "MU", "side": "sell", "quantity": 26, "limit_price": "846.00"},
+      {"symbol": "SPCX", "side": "sell", "quantity": 150, "limit_price": "143.20"}
     ]
   },
   "backups": [
     {
       "orders": [
-        {"symbol": "SMCI", "side": "buy", "quantity": 640, "limit_price": "38.50"},
-        {"symbol": "SPCX", "side": "buy", "quantity": 148, "limit_price": "169.50"},
-        {"symbol": "VRT", "side": "buy", "quantity": 108, "limit_price": "229.50"},
-        {"symbol": "MU", "side": "buy", "quantity": 25, "limit_price": "972.00"}
-      ]
-    },
-    {
-      "orders": [
-        {"symbol": "SPY", "side": "buy", "quantity": 127, "limit_price": "782.00"}
+        {"symbol": "MU", "side": "sell", "quantity": 26, "limit_price": "835.00"},
+        {"symbol": "SPCX", "side": "sell", "quantity": 150, "limit_price": "141.00"}
       ]
     }
   ]

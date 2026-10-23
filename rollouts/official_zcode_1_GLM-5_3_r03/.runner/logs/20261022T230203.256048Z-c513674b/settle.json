@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "78490.2750",
+      "reserved": "0",
+      "total": "78490.2750"
+    },
+    "equity": "98527.2950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "20037.0200",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T19:02:03.227960-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "211.8600",
+      "filled_at": "2026-10-22T15:35:00-04:00",
+      "limit_price": "208.00",
+      "order_id": "ord_000028",
+      "quantity": 50,
+      "side": "sell",
+      "symbol": "NVDA"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 38,
+      "average_cost": "526.8300",
+      "latest_price": "527.2900",
+      "latest_price_at": "2026-10-22T15:31:00-04:00",
+      "market_value": "20037.0200",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "DIA",
+      "unrealized_pnl": "17.4800"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T18:59:00-04:00"
+}

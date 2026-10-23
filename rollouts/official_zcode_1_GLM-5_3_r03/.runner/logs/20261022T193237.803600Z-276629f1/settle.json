@@ -1,0 +1,70 @@
+{
+  "account": {
+    "cash": {
+      "available": "67897.2750",
+      "reserved": "0",
+      "total": "67897.2750"
+    },
+    "equity": "98622.7350",
+    "initial_cash": "100000.00",
+    "positions_market_value": "30725.4600",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T15:32:37.796847-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "709.4400",
+      "filled_at": "2026-10-22T12:09:00-04:00",
+      "limit_price": "707.00",
+      "order_id": "ord_000022",
+      "quantity": 26,
+      "side": "sell",
+      "symbol": "QQQ"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "66.8600",
+      "filled_at": "2026-10-22T12:09:00-04:00",
+      "limit_price": "65.90",
+      "order_id": "ord_000023",
+      "quantity": 146,
+      "side": "sell",
+      "symbol": "XLE"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 38,
+      "average_cost": "526.8300",
+      "latest_price": "527.6700",
+      "latest_price_at": "2026-10-22T12:04:00-04:00",
+      "market_value": "20051.4600",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "DIA",
+      "unrealized_pnl": "31.9200"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "220.4101",
+      "latest_price": "213.4800",
+      "latest_price_at": "2026-10-22T12:04:00-04:00",
+      "market_value": "10674.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-346.5050"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T15:29:00-04:00"
+}

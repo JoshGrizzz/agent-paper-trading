@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "SOXL",
+        "symbol": "SQQQ",
         "side": "buy",
-        "quantity": 10,
-        "limit_price": "104.00"
+        "quantity": 24,
+        "limit_price": "40.00"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-        "symbol": "TQQQ",
-          "side": "buy",
-        "quantity": 14,
-        "limit_price": "75.00"
+        "symbol": "SOXS",
+        "side": "buy",
+        "quantity": 17,
+        "limit_price": "55.00"
         }
       ]
     },
     {
       "orders": [
         {
-        "symbol": "NVDA",
-          "side": "buy",
-        "quantity": 4,
-        "limit_price": "250.00"
+        "symbol": "SQQQ",
+        "side": "buy",
+        "quantity": 24,
+        "limit_price": "39.00"
         }
       ]
     }

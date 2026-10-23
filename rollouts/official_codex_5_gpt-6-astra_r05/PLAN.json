@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "SMCI",
+        "symbol": "LMT",
         "side": "buy",
-        "quantity": 1200,
-        "limit_price": "36.20"
+        "quantity": 35,
+        "limit_price": "580.00"
       }
     ]
   },
@@ -13,10 +13,10 @@
     {
       "orders": [
         {
-          "symbol": "SMCI",
+          "symbol": "LMT",
           "side": "buy",
-          "quantity": 900,
-          "limit_price": "36.75"
+          "quantity": 25,
+          "limit_price": "584.00"
         }
       ]
     }

@@ -3,22 +3,11 @@
     "orders": [
       {
         "symbol": "SPY",
-        "side": "buy",
-        "quantity": 100,
-        "limit_price": "765.00"
+        "side": "sell",
+        "quantity": 30,
+        "limit_price": "760.00"
       }
     ]
   },
-  "backups": [
-    {
-      "orders": [
-        {
-          "symbol": "SPY",
-          "side": "buy",
-          "quantity": 100,
-          "limit_price": "775.00"
-        }
-      ]
-    }
-  ]
+  "backups": []
 }

@@ -1,0 +1,62 @@
+{
+  "account": {
+    "cash": {
+      "available": "65.6250",
+      "reserved": "0",
+      "total": "65.6250"
+    },
+    "equity": "96498.2250",
+    "initial_cash": "100000.00",
+    "positions_market_value": "96432.6000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T15:31:27.071280-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 280,
+      "average_cost": "256.5178571428571428571428571",
+      "latest_price": "249.5450",
+      "latest_price_at": "2026-10-22T15:30:00-04:00",
+      "market_value": "69872.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 280,
+      "reserved_quantity": 0,
+      "symbol": "AMZN",
+      "unrealized_pnl": "-1952.399999999999999999999988"
+    },
+    {
+      "available_quantity": 125,
+      "average_cost": "221.1250",
+      "latest_price": "212.4800",
+      "latest_price_at": "2026-10-22T15:30:00-04:00",
+      "market_value": "26560.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 125,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-1080.6250"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-22T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-22T15:31:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-22T08:00:00-04:00",
+    "symbols": [
+      "AMZN",
+      "NVDA"
+    ],
+    "updated_symbols": [
+      "AMZN",
+      "NVDA"
+    ]
+  }
+}

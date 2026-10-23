@@ -1,0 +1,124 @@
+{
+  "as_of": "2026-10-22T12:02:36.465477-04:00",
+  "codex_session_id": "01a15e73-5646-7230-8bf8-b8e426ee526e",
+  "duration_seconds": 44.588589,
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "218.00",
+      "filled_at": "2026-10-22T09:32:00-04:00",
+      "limit_price": "218.00",
+      "order_id": "ord_000016",
+      "quantity": 150,
+      "side": "sell",
+      "symbol": "NVDA"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r02/.runner/logs/20261022T160236.476213Z-eb5b88d9",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "65.6250",
+        "reserved": "32825.00",
+        "total": "32890.6250"
+      },
+      "equity": "97500.0000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "64609.3750",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T12:03:20.999696-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "250.00",
+                "order_id": "ord_000019",
+                "quantity": 130,
+                "side": "buy",
+                "symbol": "AMZN"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "247.50",
+                "order_id": "ord_000020",
+                "quantity": 130,
+                "side": "buy",
+                "symbol": "AMZN"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000005",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "252.50",
+              "order_id": "ord_000018",
+              "quantity": 130,
+              "side": "buy",
+              "symbol": "AMZN"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-22T12:03:12.846423-04:00",
+        "valid_from": "2026-10-22T12:04:00-04:00",
+        "valid_until": "2026-10-22T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 150,
+        "average_cost": "260.00",
+        "latest_price": "252.7000",
+        "latest_price_at": "2026-10-22T12:01:00-04:00",
+        "market_value": "37905.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 150,
+        "reserved_quantity": 0,
+        "symbol": "AMZN",
+        "unrealized_pnl": "-1095.0000"
+      },
+      {
+        "available_quantity": 125,
+        "average_cost": "221.1250",
+        "latest_price": "213.6350",
+        "latest_price_at": "2026-10-22T12:01:00-04:00",
+        "market_value": "26704.3750",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 125,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "-936.2500"
+      }
+    ],
+    "settled_through": "2026-10-22T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r02",
+  "run_id": "20261022T160236.476213Z-eb5b88d9",
+  "session_id": "01a15e73-5646-7230-8bf8-b8e426ee526e",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

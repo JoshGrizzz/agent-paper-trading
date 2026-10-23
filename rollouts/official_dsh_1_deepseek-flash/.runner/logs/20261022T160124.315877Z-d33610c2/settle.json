@@ -1,0 +1,142 @@
+{
+  "account": {
+    "cash": {
+      "available": "36090.1850",
+      "reserved": "0",
+      "total": "36090.1850"
+    },
+    "equity": "96576.0885",
+    "initial_cash": "100000.00",
+    "positions_market_value": "60485.9035",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T12:01:24.304880-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "90.5900",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "89.50",
+      "order_id": "ord_000020",
+      "quantity": 120,
+      "side": "sell",
+      "symbol": "SOXL"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "34.4400",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "33.60",
+      "order_id": "ord_000021",
+      "quantity": 400,
+      "side": "sell",
+      "symbol": "SMCI"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "203.6100",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "198.50",
+      "order_id": "ord_000022",
+      "quantity": 40,
+      "side": "sell",
+      "symbol": "VRT"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "523.6200",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "520.00",
+      "order_id": "ord_000023",
+      "quantity": 6,
+      "side": "sell",
+      "symbol": "AMD"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 10,
+      "average_cost": "923.7350",
+      "latest_price": "914.0600",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "9140.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "MU",
+      "unrealized_pnl": "-96.7500"
+    },
+    {
+      "available_quantity": 35,
+      "average_cost": "220.9600",
+      "latest_price": "220.5300",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "7718.5500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-15.0500"
+    },
+    {
+      "available_quantity": 12,
+      "average_cost": "725.8100",
+      "latest_price": "726.0350",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "8712.4200",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 12,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "2.7000"
+    },
+    {
+      "available_quantity": 135,
+      "average_cost": "161.2587037037037037037037037",
+      "latest_price": "158.9321",
+      "latest_price_at": "2026-10-21T15:29:00-04:00",
+      "market_value": "21455.8335",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 135,
+      "reserved_quantity": 0,
+      "symbol": "SPCX",
+      "unrealized_pnl": "-314.0914999999999999999999995"
+    },
+    {
+      "available_quantity": 16,
+      "average_cost": "420.7200",
+      "latest_price": "416.0000",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "6656.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 16,
+      "reserved_quantity": 0,
+      "symbol": "UNH",
+      "unrealized_pnl": "-75.5200"
+    },
+    {
+      "available_quantity": 100,
+      "average_cost": "67.8600",
+      "latest_price": "68.0250",
+      "latest_price_at": "2026-10-21T11:59:00-04:00",
+      "market_value": "6802.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 100,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "16.5000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T11:59:00-04:00"
+}

@@ -1,0 +1,107 @@
+{
+  "as_of": "2026-10-22T12:04:57.472795-04:00",
+  "codex_session_id": "01a15e75-3b0f-7962-97df-926033a171a8",
+  "duration_seconds": 179.969588,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "34.4400",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "33.50",
+      "order_id": "ord_000005",
+      "quantity": 600,
+      "side": "sell",
+      "symbol": "SMCI"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "154.1920",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "154.00",
+      "order_id": "ord_000006",
+      "quantity": 75,
+      "side": "sell",
+      "symbol": "SPCX"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r03/.runner/logs/20261022T160457.482205Z-f3a1eea4",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "64833.4000",
+        "reserved": "0",
+        "total": "64833.4000"
+      },
+      "equity": "96380.6500",
+      "initial_cash": "100000.00",
+      "positions_market_value": "31547.2500",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T12:07:57.387074-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000003",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "149.00",
+              "order_id": "ord_000007",
+              "quantity": 75,
+              "side": "sell",
+              "symbol": "SPCX"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-22T12:07:34.578438-04:00",
+        "valid_from": "2026-10-22T12:08:00-04:00",
+        "valid_until": "2026-10-22T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 600,
+        "average_cost": "36.35",
+        "latest_price": "33.8050",
+        "latest_price_at": "2026-10-22T12:03:00-04:00",
+        "market_value": "20283.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 600,
+        "reserved_quantity": 0,
+        "symbol": "SMCI",
+        "unrealized_pnl": "-1527.0000"
+      },
+      {
+        "available_quantity": 0,
+        "average_cost": "158.50",
+        "latest_price": "150.1900",
+        "latest_price_at": "2026-10-22T12:03:00-04:00",
+        "market_value": "11264.2500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 75,
+        "reserved_quantity": 75,
+        "symbol": "SPCX",
+        "unrealized_pnl": "-623.2500"
+      }
+    ],
+    "settled_through": "2026-10-22T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r03",
+  "run_id": "20261022T160457.482205Z-f3a1eea4",
+  "session_id": "01a15e75-3b0f-7962-97df-926033a171a8",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

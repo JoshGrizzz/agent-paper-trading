@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-10-22T15:33:42.647079-04:00",
+  "codex_session_id": "01a15e75-3b39-79d2-987e-a09894549add",
+  "duration_seconds": 46.833641,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "67.6950",
+      "filled_at": "2026-10-22T12:07:00-04:00",
+      "limit_price": "67.50",
+      "order_id": "ord_000010",
+      "quantity": 702,
+      "side": "sell",
+      "symbol": "TQQQ"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r03/.runner/logs/20261022T193342.659549Z-6f5d3891",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "95945.8900",
+        "reserved": "0",
+        "total": "95945.8900"
+      },
+      "equity": "95945.8900",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T15:34:29.428441-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [],
+    "settled_through": "2026-10-22T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r03",
+  "run_id": "20261022T193342.659549Z-6f5d3891",
+  "session_id": "01a15e75-3b39-79d2-987e-a09894549add",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": false
+}

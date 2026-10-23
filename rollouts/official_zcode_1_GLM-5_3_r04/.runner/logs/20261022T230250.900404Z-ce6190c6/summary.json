@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-10-22T19:02:50.893644-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 65.270637,
+  "fills": [],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r04/.runner/logs/20261022T230250.900404Z-ce6190c6",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "15638.8000",
+        "reserved": "0",
+        "total": "15638.8000"
+      },
+      "equity": "99065.3500",
+      "initial_cash": "100000.00",
+      "positions_market_value": "83426.5500",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-22T19:03:56.106349-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 45,
+        "average_cost": "718.1866666666666666666666667",
+        "latest_price": "704.5900",
+        "latest_price_at": "2026-10-22T15:59:00-04:00",
+        "market_value": "31706.5500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 45,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-611.8500000000000000000000015"
+      },
+      {
+        "available_quantity": 50,
+        "average_cost": "769.9360",
+        "latest_price": "764.1200",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "38206.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 50,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-290.8000"
+      },
+      {
+        "available_quantity": 200,
+        "average_cost": "67.7300",
+        "latest_price": "67.5700",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "13514.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 200,
+        "reserved_quantity": 0,
+        "symbol": "XLE",
+        "unrealized_pnl": "-32.0000"
+      }
+    ],
+    "settled_through": "2026-10-22T18:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r04",
+  "run_id": "20261022T230250.900404Z-ce6190c6",
+  "session_id": "sess_4a53b65f-5fd1-4628-804a-27243ff80a3f",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

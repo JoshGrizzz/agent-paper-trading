@@ -1,0 +1,181 @@
+{
+  "as_of": "2026-10-22T12:05:35.564218-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 148.109284,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "713.6800",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "712.00",
+      "order_id": "ord_000017",
+      "quantity": 15,
+      "side": "sell",
+      "symbol": "QQQ"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "539.00",
+      "filled_at": "2026-10-22T09:56:00-04:00",
+      "limit_price": "539.00",
+      "order_id": "ord_000016",
+      "quantity": 26,
+      "side": "sell",
+      "symbol": "SMH"
+    }
+  ],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r03/.runner/logs/20261022T160535.570935Z-2b9bdfcf",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "39690.2750",
+        "reserved": "0",
+        "total": "39690.2750"
+      },
+      "equity": "98608.6298",
+      "initial_cash": "100000.00",
+      "positions_market_value": "58918.3548",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T12:08:03.614328-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "700.00",
+                "order_id": "ord_000024",
+                "quantity": 26,
+                "side": "sell",
+                "symbol": "QQQ"
+              },
+              {
+                "limit_price": "64.90",
+                "order_id": "ord_000025",
+                "quantity": 146,
+                "side": "sell",
+                "symbol": "XLE"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "693.00",
+                "order_id": "ord_000026",
+                "quantity": 26,
+                "side": "sell",
+                "symbol": "QQQ"
+              },
+              {
+                "limit_price": "63.90",
+                "order_id": "ord_000027",
+                "quantity": 146,
+                "side": "sell",
+                "symbol": "XLE"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000004",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "707.00",
+              "order_id": "ord_000022",
+              "quantity": 26,
+              "side": "sell",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "65.90",
+              "order_id": "ord_000023",
+              "quantity": 146,
+              "side": "sell",
+              "symbol": "XLE"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-22T12:07:18.581977-04:00",
+        "valid_from": "2026-10-22T12:08:00-04:00",
+        "valid_until": "2026-10-22T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 38,
+        "average_cost": "526.8300",
+        "latest_price": "527.6700",
+        "latest_price_at": "2026-10-22T12:04:00-04:00",
+        "market_value": "20051.4600",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 38,
+        "reserved_quantity": 0,
+        "symbol": "DIA",
+        "unrealized_pnl": "31.9200"
+      },
+      {
+        "available_quantity": 50,
+        "average_cost": "220.4101",
+        "latest_price": "213.4800",
+        "latest_price_at": "2026-10-22T12:04:00-04:00",
+        "market_value": "10674.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 50,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "-346.5050"
+      },
+      {
+        "available_quantity": 0,
+        "average_cost": "722.2200",
+        "latest_price": "709.3748",
+        "latest_price_at": "2026-10-22T12:04:00-04:00",
+        "market_value": "18443.7448",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 26,
+        "reserved_quantity": 26,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-333.9752"
+      },
+      {
+        "available_quantity": 0,
+        "average_cost": "67.8600",
+        "latest_price": "66.7750",
+        "latest_price_at": "2026-10-22T12:04:00-04:00",
+        "market_value": "9749.1500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 146,
+        "reserved_quantity": 146,
+        "symbol": "XLE",
+        "unrealized_pnl": "-158.4100"
+      }
+    ],
+    "settled_through": "2026-10-22T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r03",
+  "run_id": "20261022T160535.570935Z-2b9bdfcf",
+  "session_id": "sess_dd7c10cb-4e51-44c3-9263-7d7ad279522f",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

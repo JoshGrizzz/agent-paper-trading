@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "SOXL",
+        "symbol": "SQQQ",
         "side": "buy",
-        "quantity": 170,
-        "limit_price": "103.00"
+        "quantity": 2100,
+        "limit_price": "39.25"
       }
     ]
   },
@@ -13,20 +13,10 @@
     {
       "orders": [
         {
-          "symbol": "TQQQ",
+          "symbol": "SOXS",
           "side": "buy",
-          "quantity": 240,
-          "limit_price": "72.75"
-        }
-      ]
-    },
-    {
-      "orders": [
-        {
-          "symbol": "UPRO",
-          "side": "buy",
-          "quantity": 115,
-          "limit_price": "152.00"
+          "quantity": 1600,
+          "limit_price": "51.75"
         }
       ]
     }

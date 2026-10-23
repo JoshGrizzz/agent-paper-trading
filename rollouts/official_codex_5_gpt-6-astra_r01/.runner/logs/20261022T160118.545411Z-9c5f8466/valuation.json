@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "80440.0000",
+      "reserved": "0",
+      "total": "80440.0000"
+    },
+    "equity": "97415.0000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "16975.0000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T12:01:18.532781-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 500,
+      "average_cost": "36.00",
+      "latest_price": "33.9500",
+      "latest_price_at": "2026-10-22T12:00:00-04:00",
+      "market_value": "16975.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 500,
+      "reserved_quantity": 0,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-1025.0000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-22T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-22T12:01:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-22T08:00:00-04:00",
+    "symbols": [
+      "SMCI"
+    ],
+    "updated_symbols": [
+      "SMCI"
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "account": {
+    "cash": {
+      "available": "6558.0900",
+      "reserved": "0",
+      "total": "6558.0900"
+    },
+    "equity": "97027.3300",
+    "initial_cash": "100000.00",
+    "positions_market_value": "90469.2400",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T19:02:57.368464-04:00",
+  "command": "settle",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 75,
+      "average_cost": "338.0250",
+      "latest_price": "323.3600",
+      "latest_price_at": "2026-10-22T15:33:00-04:00",
+      "market_value": "24252.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 75,
+      "reserved_quantity": 0,
+      "symbol": "AVGO",
+      "unrealized_pnl": "-1099.8750"
+    },
+    {
+      "available_quantity": 38,
+      "average_cost": "336.9100",
+      "latest_price": "322.7700",
+      "latest_price_at": "2026-10-22T15:33:00-04:00",
+      "market_value": "12265.2600",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "GOOGL",
+      "unrealized_pnl": "-537.3200"
+    },
+    {
+      "available_quantity": 150,
+      "average_cost": "218.00",
+      "latest_price": "211.9500",
+      "latest_price_at": "2026-10-22T15:33:00-04:00",
+      "market_value": "31792.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 150,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-907.5000"
+    },
+    {
+      "available_quantity": 29,
+      "average_cost": "765.2713793103448275862068966",
+      "latest_price": "764.1200",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "22159.4800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 29,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-33.3900000000000000000000014"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T18:59:00-04:00"
+}

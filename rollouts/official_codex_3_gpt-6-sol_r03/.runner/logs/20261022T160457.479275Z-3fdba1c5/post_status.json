@@ -1,0 +1,96 @@
+{
+  "account": {
+    "cash": {
+      "available": "43245.6500",
+      "reserved": "0",
+      "total": "43245.6500"
+    },
+    "equity": "89904.1500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "46658.5000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-22T12:06:34.436770-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "84.00",
+              "order_id": "ord_000009",
+              "quantity": 150,
+              "side": "sell",
+              "symbol": "SOXL"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "78.00",
+              "order_id": "ord_000010",
+              "quantity": 150,
+              "side": "sell",
+              "symbol": "SOXL"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000003",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "88.00",
+            "order_id": "ord_000008",
+            "quantity": 150,
+            "side": "sell",
+            "symbol": "SOXL"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-22T12:06:20.974299-04:00",
+      "valid_from": "2026-10-22T12:07:00-04:00",
+      "valid_until": "2026-10-22T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 1000,
+      "average_cost": "36.4201",
+      "latest_price": "33.8050",
+      "latest_price_at": "2026-10-22T12:03:00-04:00",
+      "market_value": "33805.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 1000,
+      "reserved_quantity": 0,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-2615.1000"
+    },
+    {
+      "available_quantity": 0,
+      "average_cost": "102.8550",
+      "latest_price": "85.6900",
+      "latest_price_at": "2026-10-22T12:03:00-04:00",
+      "market_value": "12853.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 150,
+      "reserved_quantity": 150,
+      "symbol": "SOXL",
+      "unrealized_pnl": "-2574.7500"
+    }
+  ],
+  "settled_through": "2026-10-22T11:59:00-04:00"
+}

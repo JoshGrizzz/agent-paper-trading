@@ -3,9 +3,9 @@
     "orders": [
       {
         "symbol": "NVDA",
-        "side": "buy",
-        "quantity": 275,
-        "limit_price": "221.50"
+        "side": "sell",
+        "quantity": 125,
+        "limit_price": "212.00"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "GOOGL",
-          "side": "buy",
-          "quantity": 180,
-          "limit_price": "333.00"
+          "symbol": "NVDA",
+          "side": "sell",
+          "quantity": 125,
+          "limit_price": "210.00"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "MSFT",
-          "side": "buy",
-          "quantity": 115,
-          "limit_price": "525.00"
+          "symbol": "NVDA",
+          "side": "sell",
+          "quantity": 125,
+          "limit_price": "208.00"
         }
       ]
     }

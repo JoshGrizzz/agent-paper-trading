@@ -1,0 +1,104 @@
+{
+  "as_of": "2026-10-22T12:01:18.532839-04:00",
+  "codex_session_id": "01a15e71-94e0-7ae3-8245-d5fe1635d95b",
+  "duration_seconds": 44.86349,
+  "fills": [
+    {
+      "candidate": "backup_2",
+      "fill_price": "34.50",
+      "filled_at": "2026-10-22T09:30:00-04:00",
+      "limit_price": "34.50",
+      "order_id": "ord_000006",
+      "quantity": 2700,
+      "side": "sell",
+      "symbol": "SMCI"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r01/.runner/logs/20261022T160118.541680Z-f0dbee5c",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "105.7300",
+        "reserved": "94710.00",
+        "total": "94815.7300"
+      },
+      "equity": "94815.7300",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-22T12:02:03.339975-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "710.00",
+                "order_id": "ord_000009",
+                "quantity": 133,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "770.00",
+                "order_id": "ord_000010",
+                "quantity": 123,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000003",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "710.00",
+              "order_id": "ord_000007",
+              "quantity": 90,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "770.00",
+              "order_id": "ord_000008",
+              "quantity": 40,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-22T12:01:53.946072-04:00",
+        "valid_from": "2026-10-22T12:02:00-04:00",
+        "valid_until": "2026-10-22T15:30:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": "2026-10-22T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r01",
+  "run_id": "20261022T160118.541680Z-f0dbee5c",
+  "session_id": "01a15e71-94e0-7ae3-8245-d5fe1635d95b",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": false
+}

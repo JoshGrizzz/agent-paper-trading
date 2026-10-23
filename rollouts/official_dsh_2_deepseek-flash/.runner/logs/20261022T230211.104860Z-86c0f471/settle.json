@@ -1,0 +1,70 @@
+{
+  "account": {
+    "cash": {
+      "available": "71601.8750",
+      "reserved": "0",
+      "total": "71601.8750"
+    },
+    "equity": "93380.6000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "21778.7250",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-22T19:02:11.094294-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "855.6000",
+      "filled_at": "2026-10-22T15:34:00-04:00",
+      "limit_price": "846.00",
+      "order_id": "ord_000018",
+      "quantity": 26,
+      "side": "sell",
+      "symbol": "MU"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "145.7050",
+      "filled_at": "2026-10-22T15:34:00-04:00",
+      "limit_price": "143.20",
+      "order_id": "ord_000019",
+      "quantity": 150,
+      "side": "sell",
+      "symbol": "SPCX"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 175,
+      "average_cost": "66.8000",
+      "latest_price": "67.4950",
+      "latest_price_at": "2026-10-22T15:30:00-04:00",
+      "market_value": "11811.6250",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 175,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "121.6250"
+    },
+    {
+      "available_quantity": 55,
+      "average_cost": "181.7200",
+      "latest_price": "181.2200",
+      "latest_price_at": "2026-10-22T15:30:00-04:00",
+      "market_value": "9967.1000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 55,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "-27.5000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-22T18:59:00-04:00"
+}
