@@ -1,0 +1,113 @@
+{
+  "as_of": "2026-10-23T08:34:11.316231-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 36.732118,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_3_haiku_r01/.runner/logs/20261023T123411.354289Z-76ac39bd",
+  "model": "haiku",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "336.6000",
+        "reserved": "2800.00",
+        "total": "3136.6000"
+      },
+      "equity": "100620.4500",
+      "initial_cash": "100000.00",
+      "positions_market_value": "97483.8500",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-23T08:34:48.018576-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "758.00",
+                "order_id": "ord_000015",
+                "quantity": 3,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000007",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "700.00",
+              "order_id": "ord_000014",
+              "quantity": 4,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-23T08:34:39.068686-04:00",
+        "valid_from": "2026-10-23T08:35:00-04:00",
+        "valid_until": "2026-10-23T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 35,
+        "average_cost": "708.00",
+        "latest_price": "704.5900",
+        "latest_price_at": "2026-10-22T15:59:00-04:00",
+        "market_value": "24660.6500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 35,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-119.3500"
+      },
+      {
+        "available_quantity": 60,
+        "average_cost": "766.3900",
+        "latest_price": "764.1200",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "45847.2000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 60,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-136.2000"
+      },
+      {
+        "available_quantity": 300,
+        "average_cost": "87.00",
+        "latest_price": "89.9200",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "26976.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 300,
+        "reserved_quantity": 0,
+        "symbol": "XLP",
+        "unrealized_pnl": "876.0000"
+      }
+    ],
+    "settled_through": "2026-10-22T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_3_haiku_r01",
+  "run_id": "20261023T123411.354289Z-76ac39bd",
+  "session_id": "74649516-aeda-4aa4-bf5c-616eb9049e16",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

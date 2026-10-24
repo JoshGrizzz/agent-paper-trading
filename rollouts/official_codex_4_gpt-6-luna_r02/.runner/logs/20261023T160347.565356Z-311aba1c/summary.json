@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-10-23T12:03:47.555095-04:00",
+  "codex_session_id": "01a15e73-5635-7f72-aced-5a6607555c77",
+  "duration_seconds": 39.570544,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r02/.runner/logs/20261023T160347.565356Z-311aba1c",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "15817.8700",
+        "reserved": "0",
+        "total": "15817.8700"
+      },
+      "equity": "98984.8591",
+      "initial_cash": "100000.00",
+      "positions_market_value": "83166.9891",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T12:04:27.071239-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 109,
+        "average_cost": "771.1700",
+        "latest_price": "762.9999",
+        "latest_price_at": "2026-10-23T12:02:00-04:00",
+        "market_value": "83166.9891",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 109,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-890.5409"
+      }
+    ],
+    "settled_through": "2026-10-23T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r02",
+  "run_id": "20261023T160347.565356Z-311aba1c",
+  "session_id": "01a15e73-5635-7f72-aced-5a6607555c77",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

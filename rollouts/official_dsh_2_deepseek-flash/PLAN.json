@@ -1,16 +1,9 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "MU", "side": "sell", "quantity": 26, "limit_price": "846.00"},
-      {"symbol": "SPCX", "side": "sell", "quantity": 150, "limit_price": "143.20"}
+      {"symbol": "SPY", "side": "buy", "quantity": 26, "limit_price": "763.50"},
+      {"symbol": "XLV", "side": "buy", "quantity": 50, "limit_price": "180.00"},
+      {"symbol": "SMH", "side": "buy", "quantity": 25, "limit_price": "520.00"}
     ]
-  },
-  "backups": [
-    {
-      "orders": [
-        {"symbol": "MU", "side": "sell", "quantity": 26, "limit_price": "835.00"},
-        {"symbol": "SPCX", "side": "sell", "quantity": 150, "limit_price": "141.00"}
-      ]
-    }
-  ]
+  }
 }

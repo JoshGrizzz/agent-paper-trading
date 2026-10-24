@@ -1,0 +1,110 @@
+{
+  "account": {
+    "cash": {
+      "available": "7515.7000",
+      "reserved": "14460.00",
+      "total": "21975.7000"
+    },
+    "equity": "96709.0500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "74733.3500",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T12:06:25.241768-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "150.00",
+              "order_id": "ord_000032",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SPCX"
+            },
+            {
+              "limit_price": "764.00",
+              "order_id": "ord_000033",
+              "quantity": 15,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "752.00",
+              "order_id": "ord_000034",
+              "quantity": 15,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000008",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "146.00",
+            "order_id": "ord_000030",
+            "quantity": 20,
+            "side": "buy",
+            "symbol": "SPCX"
+          },
+          {
+            "limit_price": "758.00",
+            "order_id": "ord_000031",
+            "quantity": 15,
+            "side": "buy",
+            "symbol": "SPY"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T12:05:59.528062-04:00",
+      "valid_from": "2026-10-23T12:06:00-04:00",
+      "valid_until": "2026-10-23T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 70,
+      "average_cost": "721.72900000000000000000000",
+      "latest_price": "708.6400",
+      "latest_price_at": "2026-10-23T12:02:00-04:00",
+      "market_value": "49604.8000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 70,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-916.23000000000000000000000"
+    },
+    {
+      "available_quantity": 170,
+      "average_cost": "158.8317647058823529411764706",
+      "latest_price": "147.8150",
+      "latest_price_at": "2026-10-23T12:02:00-04:00",
+      "market_value": "25128.5500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 170,
+      "reserved_quantity": 0,
+      "symbol": "SPCX",
+      "unrealized_pnl": "-1872.850000000000000000000002"
+    }
+  ],
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

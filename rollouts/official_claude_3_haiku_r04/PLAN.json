@@ -3,9 +3,9 @@
     "orders": [
       {
         "symbol": "SPY",
-        "side": "sell",
+        "side": "buy",
         "quantity": 30,
-        "limit_price": "760.00"
+        "limit_price": "750.00"
       }
     ]
   },

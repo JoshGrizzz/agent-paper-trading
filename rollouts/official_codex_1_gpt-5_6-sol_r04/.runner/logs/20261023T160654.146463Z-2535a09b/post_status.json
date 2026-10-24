@@ -1,0 +1,69 @@
+{
+  "account": {
+    "cash": {
+      "available": "40.7401",
+      "reserved": "97537.50",
+      "total": "97578.2401"
+    },
+    "equity": "97578.2401",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T12:08:47.592331-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "127.00",
+              "order_id": "ord_000014",
+              "quantity": 768,
+              "side": "buy",
+              "symbol": "ERX"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "67.50",
+              "order_id": "ord_000015",
+              "quantity": 1445,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000005",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "125.00",
+            "order_id": "ord_000013",
+            "quantity": 780,
+            "side": "buy",
+            "symbol": "ERX"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T12:08:28.644593-04:00",
+      "valid_from": "2026-10-23T12:09:00-04:00",
+      "valid_until": "2026-10-23T15:30:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

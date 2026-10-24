@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "56860.2500",
+      "reserved": "0",
+      "total": "56860.2500"
+    },
+    "equity": "97796.5500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "40936.3000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T15:40:12.079287-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "32.50",
+              "order_id": "ord_000010",
+              "quantity": 600,
+              "side": "sell",
+              "symbol": "SMCI"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000005",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "33.10",
+            "order_id": "ord_000009",
+            "quantity": 600,
+            "side": "sell",
+            "symbol": "SMCI"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T15:39:54.722257-04:00",
+      "valid_from": "2026-10-23T15:40:00-04:00",
+      "valid_until": "2026-10-23T19:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 35,
+      "average_cost": "582.8500",
+      "latest_price": "606.9800",
+      "latest_price_at": "2026-10-23T15:36:00-04:00",
+      "market_value": "21244.3000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "LMT",
+      "unrealized_pnl": "844.5500"
+    },
+    {
+      "available_quantity": 0,
+      "average_cost": "36.20",
+      "latest_price": "32.8200",
+      "latest_price_at": "2026-10-23T15:37:00-04:00",
+      "market_value": "19692.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 600,
+      "reserved_quantity": 600,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-2028.0000"
+    }
+  ],
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

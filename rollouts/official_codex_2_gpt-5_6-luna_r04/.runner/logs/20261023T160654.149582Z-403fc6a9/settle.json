@@ -1,0 +1,33 @@
+{
+  "account": {
+    "cash": {
+      "available": "85131.2000",
+      "reserved": "0",
+      "total": "85131.2000"
+    },
+    "equity": "85131.2000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T12:06:54.136183-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "40.0700",
+      "filled_at": "2026-10-23T09:30:00-04:00",
+      "limit_price": "39.80",
+      "order_id": "ord_000019",
+      "quantity": 2100,
+      "side": "sell",
+      "symbol": "SQQQ"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [],
+  "settled": true,
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

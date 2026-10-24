@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "42784.1550",
+      "reserved": "0",
+      "total": "42784.1550"
+    },
+    "equity": "93487.2100",
+    "initial_cash": "100000.00",
+    "positions_market_value": "50703.0550",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T15:32:41.468976-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 26,
+      "average_cost": "762.9700",
+      "latest_price": "760.3800",
+      "latest_price_at": "2026-10-23T15:31:00-04:00",
+      "market_value": "19769.8800",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 26,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-67.3400"
+    },
+    {
+      "available_quantity": 175,
+      "average_cost": "66.8000",
+      "latest_price": "69.3550",
+      "latest_price_at": "2026-10-23T15:31:00-04:00",
+      "market_value": "12137.1250",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 175,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "447.1250"
+    },
+    {
+      "available_quantity": 105,
+      "average_cost": "180.7152380952380952380952381",
+      "latest_price": "179.0100",
+      "latest_price_at": "2026-10-23T15:31:00-04:00",
+      "market_value": "18796.0500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 105,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "-179.0500000000000000000000005"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-23T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-23T15:32:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-23T08:00:00-04:00",
+    "symbols": [
+      "SPY",
+      "XLE",
+      "XLV"
+    ],
+    "updated_symbols": [
+      "SPY",
+      "XLE",
+      "XLV"
+    ]
+  }
+}

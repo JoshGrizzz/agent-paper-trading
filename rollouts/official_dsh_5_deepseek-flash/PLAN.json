@@ -2,30 +2,29 @@
   "primary": {
     "orders": [
       {
-        "symbol": "MU",
-        "side": "sell",
-        "quantity": 45,
-        "limit_price": "869.00"
+        "symbol": "XLE",
+        "side": "buy",
+        "quantity": 70,
+        "limit_price": "69.75"
       },
       {
-        "symbol": "XLV",
+        "symbol": "XLE",
         "side": "buy",
-        "quantity": 110,
-        "limit_price": "182.50"
-      },
-      {
-        "symbol": "XLF",
-        "side": "buy",
-        "quantity": 500,
-        "limit_price": "56.90"
-      },
-      {
-        "symbol": "NOC",
-        "side": "buy",
-        "quantity": 12,
-        "limit_price": "554.00"
+        "quantity": 70,
+        "limit_price": "68.60"
       }
     ]
   },
-  "backups": []
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "XLF",
+          "side": "buy",
+          "quantity": 170,
+          "limit_price": "56.10"
+        }
+      ]
+    }
+  ]
 }

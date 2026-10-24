@@ -1,0 +1,69 @@
+{
+  "account": {
+    "cash": {
+      "available": "17579.9062",
+      "reserved": "77000.00",
+      "total": "94579.9062"
+    },
+    "equity": "94579.9062",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T08:37:47.012669-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "345.00",
+              "order_id": "ord_000015",
+              "quantity": 220,
+              "side": "buy",
+              "symbol": "WDC"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "350.00",
+              "order_id": "ord_000016",
+              "quantity": 220,
+              "side": "buy",
+              "symbol": "WDC"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000006",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "340.00",
+            "order_id": "ord_000014",
+            "quantity": 220,
+            "side": "buy",
+            "symbol": "WDC"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T08:37:33.118415-04:00",
+      "valid_from": "2026-10-23T08:38:00-04:00",
+      "valid_until": "2026-10-23T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": "2026-10-22T19:59:00-04:00"
+}

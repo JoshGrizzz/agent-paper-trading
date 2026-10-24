@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-10-23T19:02:39.130751-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 88.58896,
+  "fills": [],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r03/.runner/logs/20261023T230239.140118Z-31195044",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "82609.1950",
+        "reserved": "0",
+        "total": "82609.1950"
+      },
+      "equity": "98447.4950",
+      "initial_cash": "100000.00",
+      "positions_market_value": "15838.3000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-23T19:04:07.644077-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 15,
+        "average_cost": "702.1020",
+        "latest_price": "704.5400",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "10568.1000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 15,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "36.5700"
+      },
+      {
+        "available_quantity": 10,
+        "average_cost": "522.5450",
+        "latest_price": "527.0200",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "5270.2000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 10,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "44.7500"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r03",
+  "run_id": "20261023T230239.140118Z-31195044",
+  "session_id": "sess_dd7c10cb-4e51-44c3-9263-7d7ad279522f",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

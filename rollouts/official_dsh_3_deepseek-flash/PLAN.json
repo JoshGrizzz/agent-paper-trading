@@ -1,9 +1,9 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "SMH", "side": "buy", "quantity": 20, "limit_price": "528.00"},
-      {"symbol": "QQQ", "side": "buy", "quantity": 10, "limit_price": "708.00"},
-      {"symbol": "SPY", "side": "buy", "quantity": 5, "limit_price": "768.00"}
+      {"symbol": "SMH", "side": "buy", "quantity": 10, "limit_price": "520.00"},
+      {"symbol": "QQQ", "side": "buy", "quantity": 5, "limit_price": "700.00"},
+      {"symbol": "SOXL", "side": "buy", "quantity": 20, "limit_price": "80.50"}
     ]
   }
 }

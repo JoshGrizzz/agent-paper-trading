@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-10-23T15:38:04.898014-04:00",
+  "codex_session_id": "01a15e78-f29b-7021-bb41-8065ff413351",
+  "duration_seconds": 40.872094,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r05/.runner/logs/20261023T193804.907905Z-c909255c",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "31227.8350",
+        "reserved": "0",
+        "total": "31227.8350"
+      },
+      "equity": "94611.8350",
+      "initial_cash": "100000.00",
+      "positions_market_value": "63384.0000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T15:38:45.716878-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 1600,
+        "average_cost": "39.60",
+        "latest_price": "39.6150",
+        "latest_price_at": "2026-10-23T15:36:00-04:00",
+        "market_value": "63384.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 1600,
+        "reserved_quantity": 0,
+        "symbol": "SQQQ",
+        "unrealized_pnl": "24.0000"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r05",
+  "run_id": "20261023T193804.907905Z-c909255c",
+  "session_id": "01a15e78-f29b-7021-bb41-8065ff413351",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

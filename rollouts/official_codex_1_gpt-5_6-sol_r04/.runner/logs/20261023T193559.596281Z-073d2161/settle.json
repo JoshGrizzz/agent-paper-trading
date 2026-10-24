@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "72.9601",
+      "reserved": "0",
+      "total": "72.9601"
+    },
+    "equity": "97416.9601",
+    "initial_cash": "100000.00",
+    "positions_market_value": "97344.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T15:35:59.585250-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "126.9600",
+      "filled_at": "2026-10-23T13:01:00-04:00",
+      "limit_price": "127.00",
+      "order_id": "ord_000014",
+      "quantity": 768,
+      "side": "buy",
+      "symbol": "ERX"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 768,
+      "average_cost": "126.9600",
+      "latest_price": "126.7500",
+      "latest_price_at": "2026-10-23T15:29:00-04:00",
+      "market_value": "97344.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 768,
+      "reserved_quantity": 0,
+      "symbol": "ERX",
+      "unrealized_pnl": "-161.2800"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-23T15:29:00-04:00"
+}

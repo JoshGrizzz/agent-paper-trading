@@ -1,0 +1,76 @@
+{
+  "account": {
+    "cash": {
+      "available": "56174.2000",
+      "reserved": "10425.00",
+      "total": "66599.2000"
+    },
+    "equity": "98934.0085",
+    "initial_cash": "100000.00",
+    "positions_market_value": "32334.8085",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T15:37:24.960466-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [],
+      "plan_id": "plan_000007",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "760.00",
+            "order_id": "ord_000014",
+            "quantity": 15,
+            "side": "sell",
+            "symbol": "SPY"
+          },
+          {
+            "limit_price": "69.50",
+            "order_id": "ord_000015",
+            "quantity": 150,
+            "side": "buy",
+            "symbol": "XLE"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T15:37:01.209429-04:00",
+      "valid_from": "2026-10-23T15:38:00-04:00",
+      "valid_until": "2026-10-23T19:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "219.50",
+      "latest_price": "211.6313",
+      "latest_price_at": "2026-10-23T15:34:00-04:00",
+      "market_value": "9523.4085",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-354.0915"
+    },
+    {
+      "available_quantity": 15,
+      "average_cost": "771.00",
+      "latest_price": "760.3800",
+      "latest_price_at": "2026-10-23T15:34:00-04:00",
+      "market_value": "22811.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 30,
+      "reserved_quantity": 15,
+      "symbol": "SPY",
+      "unrealized_pnl": "-318.6000"
+    }
+  ],
+  "settled_through": "2026-10-23T15:29:00-04:00"
+}

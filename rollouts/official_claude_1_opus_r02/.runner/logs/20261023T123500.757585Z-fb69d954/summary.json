@@ -1,0 +1,132 @@
+{
+  "as_of": "2026-10-23T08:35:00.746410-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 74.851349,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_1_opus_r02/.runner/logs/20261023T123500.757585Z-fb69d954",
+  "model": "opus",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "9628.0000",
+        "reserved": "12100.00",
+        "total": "21728.0000"
+      },
+      "equity": "98178.5485",
+      "initial_cash": "100000.00",
+      "positions_market_value": "76450.5485",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-23T08:36:15.547124-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000007",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "515.00",
+              "order_id": "ord_000019",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "SMH"
+            },
+            {
+              "limit_price": "695.00",
+              "order_id": "ord_000020",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-23T08:35:52.607413-04:00",
+        "valid_from": "2026-10-23T08:36:00-04:00",
+        "valid_until": "2026-10-23T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 5,
+        "average_cost": "915.00",
+        "latest_price": "857.9997",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "4289.9985",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 5,
+        "reserved_quantity": 0,
+        "symbol": "MU",
+        "unrealized_pnl": "-285.0015"
+      },
+      {
+        "available_quantity": 25,
+        "average_cost": "724.00",
+        "latest_price": "704.5900",
+        "latest_price_at": "2026-10-22T15:59:00-04:00",
+        "market_value": "17614.7500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-485.2500"
+      },
+      {
+        "available_quantity": 20,
+        "average_cost": "552.00",
+        "latest_price": "523.3500",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "10467.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 20,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "-573.0000"
+      },
+      {
+        "available_quantity": 40,
+        "average_cost": "768.50",
+        "latest_price": "764.1200",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "30564.8000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-175.2000"
+      },
+      {
+        "available_quantity": 200,
+        "average_cost": "68.7100",
+        "latest_price": "67.5700",
+        "latest_price_at": "2026-10-22T16:00:00-04:00",
+        "market_value": "13514.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 200,
+        "reserved_quantity": 0,
+        "symbol": "XLE",
+        "unrealized_pnl": "-228.0000"
+      }
+    ],
+    "settled_through": "2026-10-22T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_1_opus_r02",
+  "run_id": "20261023T123500.757585Z-fb69d954",
+  "session_id": "d15cf44a-be6c-4f53-b577-acc7311a96e6",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

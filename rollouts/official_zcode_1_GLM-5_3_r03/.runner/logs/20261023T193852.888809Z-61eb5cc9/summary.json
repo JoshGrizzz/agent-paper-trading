@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-10-23T15:38:52.881440-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 52.39239,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "523.0500",
+      "filled_at": "2026-10-23T12:10:00-04:00",
+      "limit_price": "519.50",
+      "order_id": "ord_000037",
+      "quantity": 38,
+      "side": "sell",
+      "symbol": "DIA"
+    }
+  ],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r03/.runner/logs/20261023T193852.888809Z-61eb5cc9",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "82609.1950",
+        "reserved": "0",
+        "total": "82609.1950"
+      },
+      "equity": "98453.3950",
+      "initial_cash": "100000.00",
+      "positions_market_value": "15844.2000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T15:39:45.219590-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 15,
+        "average_cost": "702.1020",
+        "latest_price": "704.8400",
+        "latest_price_at": "2026-10-23T15:37:00-04:00",
+        "market_value": "10572.6000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 15,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "41.0700"
+      },
+      {
+        "available_quantity": 10,
+        "average_cost": "522.5450",
+        "latest_price": "527.1600",
+        "latest_price_at": "2026-10-23T15:37:00-04:00",
+        "market_value": "5271.6000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 10,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "46.1500"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r03",
+  "run_id": "20261023T193852.888809Z-61eb5cc9",
+  "session_id": "sess_dd7c10cb-4e51-44c3-9263-7d7ad279522f",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

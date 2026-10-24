@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "SOXL",
-        "side": "sell",
-        "quantity": 150,
-        "limit_price": "88.00"
+        "symbol": "XLE",
+        "side": "buy",
+        "quantity": 200,
+        "limit_price": "69.00"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "SOXL",
-          "side": "sell",
-          "quantity": 150,
-          "limit_price": "84.00"
+          "symbol": "XLE",
+          "side": "buy",
+          "quantity": 200,
+          "limit_price": "69.50"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "SOXL",
-          "side": "sell",
-          "quantity": 150,
-          "limit_price": "78.00"
+          "symbol": "XLE",
+          "side": "buy",
+          "quantity": 200,
+          "limit_price": "70.00"
         }
       ]
     }

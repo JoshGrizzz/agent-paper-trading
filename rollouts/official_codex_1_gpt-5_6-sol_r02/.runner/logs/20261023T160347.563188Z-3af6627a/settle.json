@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "19779.9062",
+      "reserved": "0",
+      "total": "19779.9062"
+    },
+    "equity": "97983.3062",
+    "initial_cash": "100000.00",
+    "positions_market_value": "78203.4000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T12:03:47.551334-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "340.00",
+      "filled_at": "2026-10-23T09:34:00-04:00",
+      "limit_price": "340.00",
+      "order_id": "ord_000014",
+      "quantity": 220,
+      "side": "buy",
+      "symbol": "WDC"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 220,
+      "average_cost": "340.00",
+      "latest_price": "355.4700",
+      "latest_price_at": "2026-10-23T11:59:00-04:00",
+      "market_value": "78203.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 220,
+      "reserved_quantity": 0,
+      "symbol": "WDC",
+      "unrealized_pnl": "3403.4000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

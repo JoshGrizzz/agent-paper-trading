@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "62733.2950",
+      "reserved": "0",
+      "total": "62733.2950"
+    },
+    "equity": "98739.3650",
+    "initial_cash": "100000.00",
+    "positions_market_value": "36006.0700",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T12:07:07.805810-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "702.1020",
+      "filled_at": "2026-10-23T09:30:00-04:00",
+      "limit_price": "704.00",
+      "order_id": "ord_000031",
+      "quantity": 15,
+      "side": "buy",
+      "symbol": "QQQ"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "522.5450",
+      "filled_at": "2026-10-23T09:30:00-04:00",
+      "limit_price": "528.50",
+      "order_id": "ord_000032",
+      "quantity": 10,
+      "side": "buy",
+      "symbol": "SMH"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 38,
+      "average_cost": "526.8300",
+      "latest_price": "527.8900",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "20059.8200",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "DIA",
+      "unrealized_pnl": "40.2800"
+    },
+    {
+      "available_quantity": 15,
+      "average_cost": "702.1020",
+      "latest_price": "708.5500",
+      "latest_price_at": "2026-10-23T11:59:00-04:00",
+      "market_value": "10628.2500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 15,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "96.7200"
+    },
+    {
+      "available_quantity": 10,
+      "average_cost": "522.5450",
+      "latest_price": "531.8000",
+      "latest_price_at": "2026-10-23T11:59:00-04:00",
+      "market_value": "5318.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "92.5500"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

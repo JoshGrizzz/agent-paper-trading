@@ -1,7 +1,8 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "NVDA", "side": "sell", "quantity": 45, "limit_price": "213.00"}
+      {"symbol": "SPY", "side": "sell", "quantity": 15, "limit_price": "760.00"},
+      {"symbol": "XLE", "side": "buy", "quantity": 150, "limit_price": "69.50"}
     ]
   },
   "backups": []

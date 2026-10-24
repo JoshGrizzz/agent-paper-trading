@@ -1,0 +1,139 @@
+{
+  "account": {
+    "cash": {
+      "available": "3959.1205",
+      "reserved": "0",
+      "total": "3959.1205"
+    },
+    "equity": "97460.3005",
+    "initial_cash": "100000.00",
+    "positions_market_value": "93501.1800",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T19:02:13.884963-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 8,
+      "average_cost": "233.0900",
+      "latest_price": "233.2100",
+      "latest_price_at": "2026-10-23T16:02:00-04:00",
+      "market_value": "1865.6800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 8,
+      "reserved_quantity": 0,
+      "symbol": "CVX",
+      "unrealized_pnl": "0.9600"
+    },
+    {
+      "available_quantity": 15,
+      "average_cost": "210.3850",
+      "latest_price": "207.7200",
+      "latest_price_at": "2026-10-23T15:59:00-04:00",
+      "market_value": "3115.8000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 15,
+      "reserved_quantity": 0,
+      "symbol": "IBB",
+      "unrealized_pnl": "-39.9750"
+    },
+    {
+      "available_quantity": 10,
+      "average_cost": "527.4500",
+      "latest_price": "527.0200",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "5270.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "-4.3000"
+    },
+    {
+      "available_quantity": 200,
+      "average_cost": "81.4775",
+      "latest_price": "81.3200",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "16264.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 200,
+      "reserved_quantity": 0,
+      "symbol": "TLT",
+      "unrealized_pnl": "-31.5000"
+    },
+    {
+      "available_quantity": 32,
+      "average_cost": "420.7200",
+      "latest_price": "418.0900",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "13378.8800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 32,
+      "reserved_quantity": 0,
+      "symbol": "UNH",
+      "unrealized_pnl": "-84.1600"
+    },
+    {
+      "available_quantity": 320,
+      "average_cost": "68.52046875000000000000000",
+      "latest_price": "69.3800",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "22201.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 320,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "275.05000000000000000000000"
+    },
+    {
+      "available_quantity": 90,
+      "average_cost": "42.5050",
+      "latest_price": "42.5800",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "3832.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 90,
+      "reserved_quantity": 0,
+      "symbol": "XLRE",
+      "unrealized_pnl": "6.7500"
+    },
+    {
+      "available_quantity": 70,
+      "average_cost": "181.7200",
+      "latest_price": "179.2800",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "12549.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 70,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "-170.8000"
+    },
+    {
+      "available_quantity": 82,
+      "average_cost": "179.1634146341463414634146341",
+      "latest_price": "183.2100",
+      "latest_price_at": "2026-10-23T16:02:00-04:00",
+      "market_value": "15023.2200",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 82,
+      "reserved_quantity": 0,
+      "symbol": "XOM",
+      "unrealized_pnl": "331.8200000000000000000000038"
+    }
+  ],
+  "settled_through": "2026-10-23T18:59:00-04:00"
+}

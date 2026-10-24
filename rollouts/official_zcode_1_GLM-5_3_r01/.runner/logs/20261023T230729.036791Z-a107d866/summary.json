@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-10-23T19:07:29.011472-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 92.00744,
+  "fills": [],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r01/.runner/logs/20261023T230729.036791Z-a107d866",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "19055.7000",
+        "reserved": "0",
+        "total": "19055.7000"
+      },
+      "equity": "96398.5000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "77342.8000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-23T19:09:00.974121-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 70,
+        "average_cost": "721.72900000000000000000000",
+        "latest_price": "704.5400",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "49317.8000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 70,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-1203.23000000000000000000000"
+      },
+      {
+        "available_quantity": 190,
+        "average_cost": "157.4810526315789473684210526",
+        "latest_price": "147.5000",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "28025.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 190,
+        "reserved_quantity": 0,
+        "symbol": "SPCX",
+        "unrealized_pnl": "-1896.399999999999999999999994"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r01",
+  "run_id": "20261023T230729.036791Z-a107d866",
+  "session_id": "sess_2cb29ebe-181c-4a47-95d0-3371ca267bf6",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

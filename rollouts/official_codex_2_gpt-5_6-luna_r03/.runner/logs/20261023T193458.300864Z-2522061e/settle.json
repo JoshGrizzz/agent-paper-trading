@@ -1,0 +1,49 @@
+{
+  "account": {
+    "cash": {
+      "available": "19420.0700",
+      "reserved": "0",
+      "total": "19420.0700"
+    },
+    "equity": "96972.0700",
+    "initial_cash": "100000.00",
+    "positions_market_value": "77552.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T15:34:58.264426-04:00",
+  "command": "settle",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 100,
+      "average_cost": "650.00",
+      "latest_price": "645.6950",
+      "latest_price_at": "2026-10-23T12:04:00-04:00",
+      "market_value": "64569.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 100,
+      "reserved_quantity": 0,
+      "symbol": "META",
+      "unrealized_pnl": "-430.5000"
+    },
+    {
+      "available_quantity": 500,
+      "average_cost": "26.20",
+      "latest_price": "25.9650",
+      "latest_price_at": "2026-10-23T12:03:00-04:00",
+      "market_value": "12982.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 500,
+      "reserved_quantity": 0,
+      "symbol": "PSQ",
+      "unrealized_pnl": "-117.5000"
+    }
+  ],
+  "settled": false,
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "account": {
+    "cash": {
+      "available": "46750.3680",
+      "reserved": "0",
+      "total": "46750.3680"
+    },
+    "equity": "97849.5380",
+    "initial_cash": "100000.00",
+    "positions_market_value": "51099.1700",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T15:41:34.518397-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 38,
+      "average_cost": "723.8729411764705882352941176",
+      "latest_price": "704.5550",
+      "latest_price_at": "2026-10-23T15:40:00-04:00",
+      "market_value": "26773.0900",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-734.0817647058823529411764688"
+    },
+    {
+      "available_quantity": 32,
+      "average_cost": "772.6576923076923076923076923",
+      "latest_price": "760.1900",
+      "latest_price_at": "2026-10-23T15:40:00-04:00",
+      "market_value": "24326.0800",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 32,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-398.9661538461538461538461536"
+    }
+  ],
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

@@ -1,0 +1,97 @@
+{
+  "as_of": "2026-10-23T15:34:58.264640-04:00",
+  "codex_session_id": "01a15e75-3b0f-7962-97df-926033a171a8",
+  "duration_seconds": 61.215221,
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "69.25",
+      "filled_at": "2026-10-23T13:16:00-04:00",
+      "limit_price": "69.25",
+      "order_id": "ord_000009",
+      "quantity": 200,
+      "side": "buy",
+      "symbol": "XLE"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r03/.runner/logs/20261023T193458.297215Z-1dd0529e",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "62254.4000",
+        "reserved": "0",
+        "total": "62254.4000"
+      },
+      "equity": "95804.3200",
+      "initial_cash": "100000.00",
+      "positions_market_value": "33549.9200",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T15:35:59.447144-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000005",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "32.60",
+              "order_id": "ord_000010",
+              "quantity": 600,
+              "side": "sell",
+              "symbol": "SMCI"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-23T15:35:41.873593-04:00",
+        "valid_from": "2026-10-23T15:36:00-04:00",
+        "valid_until": "2026-10-23T19:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 0,
+        "average_cost": "36.35",
+        "latest_price": "32.8100",
+        "latest_price_at": "2026-10-23T15:33:00-04:00",
+        "market_value": "19686.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 600,
+        "reserved_quantity": 600,
+        "symbol": "SMCI",
+        "unrealized_pnl": "-2124.0000"
+      },
+      {
+        "available_quantity": 200,
+        "average_cost": "69.25",
+        "latest_price": "69.3196",
+        "latest_price_at": "2026-10-23T15:33:00-04:00",
+        "market_value": "13863.9200",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 200,
+        "reserved_quantity": 0,
+        "symbol": "XLE",
+        "unrealized_pnl": "13.9200"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r03",
+  "run_id": "20261023T193458.297215Z-1dd0529e",
+  "session_id": "01a15e75-3b0f-7962-97df-926033a171a8",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

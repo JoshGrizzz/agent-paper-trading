@@ -1,21 +1,18 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "TQQQ", "side": "sell", "quantity": 450, "limit_price": "60.00"},
-      {"symbol": "SOXL", "side": "sell", "quantity": 30, "limit_price": "70.00"}
+      {"symbol": "UCO", "side": "buy", "quantity": 350, "limit_price": "67.50"}
     ]
   },
   "backups": [
     {
       "orders": [
-        {"symbol": "TQQQ", "side": "sell", "quantity": 450, "limit_price": "55.00"},
-        {"symbol": "SOXL", "side": "sell", "quantity": 30, "limit_price": "65.00"}
+        {"symbol": "USO", "side": "buy", "quantity": 140, "limit_price": "170.00"}
       ]
     },
     {
       "orders": [
-        {"symbol": "TQQQ", "side": "sell", "quantity": 450, "limit_price": "50.00"},
-        {"symbol": "SOXL", "side": "sell", "quantity": 30, "limit_price": "60.00"}
+        {"symbol": "ERX", "side": "buy", "quantity": 185, "limit_price": "129.00"}
       ]
     }
   ]

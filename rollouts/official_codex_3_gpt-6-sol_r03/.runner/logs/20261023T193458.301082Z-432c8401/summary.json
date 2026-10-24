@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-23T15:34:58.268324-04:00",
+  "codex_session_id": "01a15e75-3b18-79c0-94e7-aad5e9576f4c",
+  "duration_seconds": 61.152347,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_3_gpt-6-sol_r03/.runner/logs/20261023T193458.301082Z-432c8401",
+  "model": "gpt-6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "42188.0700",
+        "reserved": "14000.00",
+        "total": "56188.0700"
+      },
+      "equity": "88998.0700",
+      "initial_cash": "100000.00",
+      "positions_market_value": "32810.0000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T15:35:59.388162-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "69.50",
+                "order_id": "ord_000015",
+                "quantity": 200,
+                "side": "buy",
+                "symbol": "XLE"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "70.00",
+                "order_id": "ord_000016",
+                "quantity": 200,
+                "side": "buy",
+                "symbol": "XLE"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000005",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "69.00",
+              "order_id": "ord_000014",
+              "quantity": 200,
+              "side": "buy",
+              "symbol": "XLE"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-23T15:35:46.819516-04:00",
+        "valid_from": "2026-10-23T15:36:00-04:00",
+        "valid_until": "2026-10-23T19:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 1000,
+        "average_cost": "36.4201",
+        "latest_price": "32.8100",
+        "latest_price_at": "2026-10-23T15:33:00-04:00",
+        "market_value": "32810.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 1000,
+        "reserved_quantity": 0,
+        "symbol": "SMCI",
+        "unrealized_pnl": "-3610.1000"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_3_gpt-6-sol_r03",
+  "run_id": "20261023T193458.301082Z-432c8401",
+  "session_id": "01a15e75-3b18-79c0-94e7-aad5e9576f4c",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

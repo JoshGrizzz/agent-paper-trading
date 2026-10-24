@@ -1,0 +1,152 @@
+{
+  "as_of": "2026-10-23T15:32:41.467375-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 65.509151,
+  "fills": [],
+  "harness": "dsh",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_dsh_3_deepseek-flash/.runner/logs/20261023T193241.482060Z-d20dd51c",
+  "model": "deepseek-flash",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "28271.7810",
+        "reserved": "10310.00",
+        "total": "38581.7810"
+      },
+      "equity": "97423.3110",
+      "initial_cash": "100000.00",
+      "positions_market_value": "58841.5300",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T15:33:46.910592-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000006",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "520.00",
+              "order_id": "ord_000031",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "SMH"
+            },
+            {
+              "limit_price": "700.00",
+              "order_id": "ord_000032",
+              "quantity": 5,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "80.50",
+              "order_id": "ord_000033",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SOXL"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-23T15:33:36.054678-04:00",
+        "valid_from": "2026-10-23T15:34:00-04:00",
+        "valid_until": "2026-10-23T19:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 18,
+        "average_cost": "713.4016666666666666666666667",
+        "latest_price": "704.8600",
+        "latest_price_at": "2026-10-23T15:31:00-04:00",
+        "market_value": "12687.4800",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 18,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-153.7500000000000000000000006"
+      },
+      {
+        "available_quantity": 50,
+        "average_cost": "543.11400000000000000000000",
+        "latest_price": "527.3500",
+        "latest_price_at": "2026-10-23T15:31:00-04:00",
+        "market_value": "26367.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 50,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "-788.20000000000000000000000"
+      },
+      {
+        "available_quantity": 50,
+        "average_cost": "102.5886545454545454545454545",
+        "latest_price": "83.6600",
+        "latest_price_at": "2026-10-23T15:31:00-04:00",
+        "market_value": "4183.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 50,
+        "reserved_quantity": 0,
+        "symbol": "SOXL",
+        "unrealized_pnl": "-946.4327272727272727272727250"
+      },
+      {
+        "available_quantity": 5,
+        "average_cost": "762.3800",
+        "latest_price": "760.3800",
+        "latest_price_at": "2026-10-23T15:31:00-04:00",
+        "market_value": "3801.9000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 5,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-10.0000"
+      },
+      {
+        "available_quantity": 25,
+        "average_cost": "177.7500",
+        "latest_price": "179.0100",
+        "latest_price_at": "2026-10-23T15:31:00-04:00",
+        "market_value": "4475.2500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "XLV",
+        "unrealized_pnl": "31.5000"
+      },
+      {
+        "available_quantity": 40,
+        "average_cost": "177.7200",
+        "latest_price": "183.1600",
+        "latest_price_at": "2026-10-23T15:31:00-04:00",
+        "market_value": "7326.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "XOM",
+        "unrealized_pnl": "217.6000"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_dsh_3_deepseek-flash",
+  "run_id": "20261023T193241.482060Z-d20dd51c",
+  "session_id": "session-5bb11b1a-6797-4ec9-847d-3d572682f0f1",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

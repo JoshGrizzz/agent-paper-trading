@@ -2,16 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "QQQ",
+        "symbol": "VTI",
         "side": "buy",
-        "quantity": 90,
-        "limit_price": "710.00"
-      },
-      {
-        "symbol": "SPY",
-        "side": "buy",
-        "quantity": 40,
-        "limit_price": "770.00"
+        "quantity": 250,
+        "limit_price": "374.00"
       }
     ]
   },
@@ -19,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "QQQ",
+          "symbol": "VTI",
           "side": "buy",
-          "quantity": 133,
-          "limit_price": "710.00"
+          "quantity": 251,
+          "limit_price": "373.00"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "SPY",
+          "symbol": "VTI",
           "side": "buy",
-          "quantity": 123,
-          "limit_price": "770.00"
+          "quantity": 252,
+          "limit_price": "372.00"
         }
       ]
     }

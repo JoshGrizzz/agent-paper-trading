@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "61565.6250",
+      "reserved": "0",
+      "total": "61565.6250"
+    },
+    "equity": "96320.6250",
+    "initial_cash": "100000.00",
+    "positions_market_value": "34755.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T15:34:00.757320-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "250.00",
+      "filled_at": "2026-10-23T12:17:00-04:00",
+      "limit_price": "250.00",
+      "order_id": "ord_000024",
+      "quantity": 140,
+      "side": "sell",
+      "symbol": "AMZN"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 140,
+      "average_cost": "256.5178571428571428571428571",
+      "latest_price": "248.2500",
+      "latest_price_at": "2026-10-23T15:29:00-04:00",
+      "market_value": "34755.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 140,
+      "reserved_quantity": 0,
+      "symbol": "AMZN",
+      "unrealized_pnl": "-1157.499999999999999999999994"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-23T15:29:00-04:00"
+}

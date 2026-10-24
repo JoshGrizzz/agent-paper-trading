@@ -1,18 +1,33 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "SPY", "side": "buy", "quantity": 8, "limit_price": "750.00"}
+      {
+        "symbol": "RSP",
+        "side": "buy",
+        "quantity": 3,
+        "limit_price": "216.00"
+      }
     ]
   },
   "backups": [
     {
       "orders": [
-        {"symbol": "SPY", "side": "buy", "quantity": 8, "limit_price": "756.00"}
+        {
+          "symbol": "RSP",
+          "side": "buy",
+          "quantity": 3,
+          "limit_price": "214.00"
+        }
       ]
     },
     {
       "orders": [
-        {"symbol": "SPY", "side": "buy", "quantity": 8, "limit_price": "761.00"}
+        {
+          "symbol": "RSP",
+          "side": "buy",
+          "quantity": 3,
+          "limit_price": "212.00"
+        }
       ]
     }
   ]

@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-10-23T12:02:21.971294-04:00",
+  "codex_session_id": "01a15e71-94e0-7832-bee6-0b0574d3c70c",
+  "duration_seconds": 35.304337,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "81.6400",
+      "filled_at": "2026-10-23T09:30:00-04:00",
+      "limit_price": "85.00",
+      "order_id": "ord_000010",
+      "quantity": 600,
+      "side": "buy",
+      "symbol": "SOXL"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r01/.runner/logs/20261023T160222.016349Z-ece1dfe0",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "36721.0000",
+        "reserved": "0",
+        "total": "36721.0000"
+      },
+      "equity": "88411.0000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "51690.0000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T12:02:57.245903-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 600,
+        "average_cost": "81.6400",
+        "latest_price": "86.1500",
+        "latest_price_at": "2026-10-23T12:01:00-04:00",
+        "market_value": "51690.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 600,
+        "reserved_quantity": 0,
+        "symbol": "SOXL",
+        "unrealized_pnl": "2706.0000"
+      }
+    ],
+    "settled_through": "2026-10-23T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r01",
+  "run_id": "20261023T160222.016349Z-ece1dfe0",
+  "session_id": "01a15e71-94e0-7832-bee6-0b0574d3c70c",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

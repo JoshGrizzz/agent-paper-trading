@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "56324.2000",
+      "reserved": "10275.00",
+      "total": "66599.2000"
+    },
+    "equity": "99064.6000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "32465.4000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T12:08:35.661411-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "69.00",
+              "order_id": "ord_000013",
+              "quantity": 100,
+              "side": "buy",
+              "symbol": "XLE"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000006",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "68.50",
+            "order_id": "ord_000012",
+            "quantity": 150,
+            "side": "buy",
+            "symbol": "XLE"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T12:08:05.630349-04:00",
+      "valid_from": "2026-10-23T12:09:00-04:00",
+      "valid_until": "2026-10-23T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "219.50",
+      "latest_price": "212.9000",
+      "latest_price_at": "2026-10-23T12:05:00-04:00",
+      "market_value": "9580.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-297.0000"
+    },
+    {
+      "available_quantity": 30,
+      "average_cost": "771.00",
+      "latest_price": "762.8300",
+      "latest_price_at": "2026-10-23T12:05:00-04:00",
+      "market_value": "22884.9000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-245.1000"
+    }
+  ],
+  "settled_through": "2026-10-22T15:29:00-04:00"
+}

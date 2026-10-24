@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "746.2328",
+      "reserved": "0",
+      "total": "746.2328"
+    },
+    "equity": "97854.0728",
+    "initial_cash": "100000.00",
+    "positions_market_value": "97107.8400",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T15:34:58.265247-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "65.9300",
+      "filled_at": "2026-10-23T12:08:00-04:00",
+      "limit_price": "66.40",
+      "order_id": "ord_000016",
+      "quantity": 1472,
+      "side": "buy",
+      "symbol": "UCO"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 1472,
+      "average_cost": "65.9300",
+      "latest_price": "65.9700",
+      "latest_price_at": "2026-10-23T15:29:00-04:00",
+      "market_value": "97107.8400",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 1472,
+      "reserved_quantity": 0,
+      "symbol": "UCO",
+      "unrealized_pnl": "58.8800"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-23T15:29:00-04:00"
+}

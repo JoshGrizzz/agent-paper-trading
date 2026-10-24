@@ -1,0 +1,86 @@
+{
+  "as_of": "2026-10-23T08:35:16.388309-04:00",
+  "codex_session_id": "01a15e71-94e0-7832-bee6-0b0574d3c70c",
+  "duration_seconds": 90.715072,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r01/.runner/logs/20261023T123516.399642Z-9f079787",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "32505.0000",
+        "reserved": "53200.00",
+        "total": "85705.0000"
+      },
+      "equity": "85705.0000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T08:36:47.044551-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "66.00",
+                "order_id": "ord_000011",
+                "quantity": 800,
+                "side": "buy",
+                "symbol": "TQQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "760.00",
+                "order_id": "ord_000012",
+                "quantity": 70,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000004",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "85.00",
+              "order_id": "ord_000010",
+              "quantity": 600,
+              "side": "buy",
+              "symbol": "SOXL"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-23T08:36:30.340151-04:00",
+        "valid_from": "2026-10-23T08:37:00-04:00",
+        "valid_until": "2026-10-23T12:00:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": "2026-10-22T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r01",
+  "run_id": "20261023T123516.399642Z-9f079787",
+  "session_id": "01a15e71-94e0-7832-bee6-0b0574d3c70c",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": false
+}

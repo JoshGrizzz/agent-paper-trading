@@ -1,0 +1,65 @@
+{
+  "account": {
+    "cash": {
+      "available": "631.2000",
+      "reserved": "84500.00",
+      "total": "85131.2000"
+    },
+    "equity": "85131.2000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T12:07:45.652560-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "84.50",
+              "order_id": "ord_000023",
+              "quantity": 1000,
+              "side": "buy",
+              "symbol": "SOXL"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "error": {
+            "code": "CANDIDATE_REJECTED",
+            "message": "SQQQ already has a sell fill today"
+          },
+          "orders": [],
+          "priority": 2,
+          "status": "rejected"
+        }
+      ],
+      "plan_id": "plan_000008",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "67.50",
+            "order_id": "ord_000022",
+            "quantity": 1250,
+            "side": "buy",
+            "symbol": "TQQQ"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T12:07:36.083037-04:00",
+      "valid_from": "2026-10-23T12:08:00-04:00",
+      "valid_until": "2026-10-23T15:30:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

@@ -1,10 +1,9 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "XLP", "side": "buy", "quantity": 55, "limit_price": "90.00"},
-      {"symbol": "XLV", "side": "buy", "quantity": 30, "limit_price": "183.00"},
-      {"symbol": "UNH", "side": "buy", "quantity": 10, "limit_price": "429.50"},
-      {"symbol": "XLU", "side": "buy", "quantity": 50, "limit_price": "42.85"}
+      {"symbol": "QQQ", "side": "buy", "quantity": 12, "limit_price": "711.00"},
+      {"symbol": "XLE", "side": "buy", "quantity": 40, "limit_price": "69.80"},
+      {"symbol": "NVDA", "side": "buy", "quantity": 10, "limit_price": "214.00"}
     ]
   },
   "backups": []

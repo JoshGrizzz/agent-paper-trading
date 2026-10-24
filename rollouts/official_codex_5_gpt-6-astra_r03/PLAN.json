@@ -1,7 +1,7 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "SPCX", "side": "sell", "quantity": 75, "limit_price": "149.00"}
+      {"symbol": "SMCI", "side": "sell", "quantity": 600, "limit_price": "32.60"}
     ]
   },
   "backups": []

@@ -1,15 +1,15 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "SMCI", "side": "sell", "quantity": 850, "limit_price": "33.35"}
+      {"symbol": "XLE", "side": "buy", "quantity": 350, "limit_price": "69.65"}
     ]
   },
   "backups": [
     {"orders": [
-      {"symbol": "SMCI", "side": "sell", "quantity": 850, "limit_price": "33.10"}
+      {"symbol": "XLE", "side": "buy", "quantity": 350, "limit_price": "69.90"}
     ]},
     {"orders": [
-      {"symbol": "SMCI", "side": "sell", "quantity": 850, "limit_price": "32.80"}
+      {"symbol": "XLE", "side": "buy", "quantity": 350, "limit_price": "70.10"}
     ]}
   ]
 }

@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-10-23T15:34:00.771380-04:00",
+  "codex_session_id": "01a15e73-5641-7430-9d4c-c94d6e4f2c9c",
+  "duration_seconds": 46.195869,
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "762.7900",
+      "filled_at": "2026-10-23T12:06:00-04:00",
+      "limit_price": "761.75",
+      "order_id": "ord_000012",
+      "quantity": 10,
+      "side": "sell",
+      "symbol": "SPY"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r02/.runner/logs/20261023T193400.779160Z-456811e2",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "76399.0000",
+        "reserved": "0",
+        "total": "76399.0000"
+      },
+      "equity": "99203.2000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "22804.2000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-23T15:34:46.893788-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 30,
+        "average_cost": "769.50",
+        "latest_price": "760.1400",
+        "latest_price_at": "2026-10-23T15:33:00-04:00",
+        "market_value": "22804.2000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-280.8000"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r02",
+  "run_id": "20261023T193400.779160Z-456811e2",
+  "session_id": "01a15e73-5641-7430-9d4c-c94d6e4f2c9c",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

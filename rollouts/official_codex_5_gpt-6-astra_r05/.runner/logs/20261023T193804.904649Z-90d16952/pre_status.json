@@ -1,0 +1,48 @@
+{
+  "account": {
+    "cash": {
+      "available": "56860.2500",
+      "reserved": "0",
+      "total": "56860.2500"
+    },
+    "equity": "97796.5500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "40936.3000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T15:38:04.895116-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 35,
+      "average_cost": "582.8500",
+      "latest_price": "606.9800",
+      "latest_price_at": "2026-10-23T15:36:00-04:00",
+      "market_value": "21244.3000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "LMT",
+      "unrealized_pnl": "844.5500"
+    },
+    {
+      "available_quantity": 600,
+      "average_cost": "36.20",
+      "latest_price": "32.8200",
+      "latest_price_at": "2026-10-23T15:37:00-04:00",
+      "market_value": "19692.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 600,
+      "reserved_quantity": 0,
+      "symbol": "SMCI",
+      "unrealized_pnl": "-2028.0000"
+    }
+  ],
+  "settled_through": "2026-10-23T11:59:00-04:00"
+}

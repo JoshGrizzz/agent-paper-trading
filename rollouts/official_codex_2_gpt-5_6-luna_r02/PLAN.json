@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "NVDA",
-        "side": "sell",
-        "quantity": 125,
-        "limit_price": "212.00"
+        "symbol": "SPY",
+        "side": "buy",
+        "quantity": 40,
+        "limit_price": "763.00"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "NVDA",
-          "side": "sell",
-          "quantity": 125,
-          "limit_price": "210.00"
+          "symbol": "SPY",
+          "side": "buy",
+          "quantity": 40,
+          "limit_price": "760.00"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "NVDA",
-          "side": "sell",
-          "quantity": 125,
-          "limit_price": "208.00"
+          "symbol": "SPY",
+          "side": "buy",
+          "quantity": 40,
+          "limit_price": "757.00"
         }
       ]
     }

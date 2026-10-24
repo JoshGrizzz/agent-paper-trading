@@ -1,0 +1,117 @@
+{
+  "account": {
+    "cash": {
+      "available": "19608.1400",
+      "reserved": "0",
+      "total": "19608.1400"
+    },
+    "equity": "98085.0600",
+    "initial_cash": "100000.00",
+    "positions_market_value": "78476.9200",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T08:36:37.656757-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "693.00",
+              "order_id": "ord_000031",
+              "quantity": 30,
+              "side": "sell",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "753.00",
+              "order_id": "ord_000032",
+              "quantity": 8,
+              "side": "sell",
+              "symbol": "SPY"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "687.00",
+              "order_id": "ord_000033",
+              "quantity": 35,
+              "side": "sell",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "748.00",
+              "order_id": "ord_000034",
+              "quantity": 8,
+              "side": "sell",
+              "symbol": "SPY"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000007",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "698.00",
+            "order_id": "ord_000029",
+            "quantity": 30,
+            "side": "sell",
+            "symbol": "QQQ"
+          },
+          {
+            "limit_price": "758.00",
+            "order_id": "ord_000030",
+            "quantity": 8,
+            "side": "sell",
+            "symbol": "SPY"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T08:36:01.894826-04:00",
+      "valid_from": "2026-10-23T08:37:00-04:00",
+      "valid_until": "2026-10-23T12:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 33,
+      "average_cost": "723.8729411764705882352941176",
+      "latest_price": "704.5900",
+      "latest_price_at": "2026-10-22T15:59:00-04:00",
+      "market_value": "47912.1200",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 68,
+      "reserved_quantity": 35,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-1311.239999999999999999999997"
+    },
+    {
+      "available_quantity": 32,
+      "average_cost": "772.6576923076923076923076923",
+      "latest_price": "764.1200",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "30564.8000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 8,
+      "symbol": "SPY",
+      "unrealized_pnl": "-341.5076923076923076923076920"
+    }
+  ],
+  "settled_through": "2026-10-22T18:59:00-04:00"
+}

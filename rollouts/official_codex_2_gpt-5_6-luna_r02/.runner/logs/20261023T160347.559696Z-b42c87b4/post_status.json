@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "26565.6250",
+      "reserved": "0",
+      "total": "26565.6250"
+    },
+    "equity": "96403.2250",
+    "initial_cash": "100000.00",
+    "positions_market_value": "69837.6000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-23T12:04:34.337687-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "248.00",
+              "order_id": "ord_000025",
+              "quantity": 140,
+              "side": "sell",
+              "symbol": "AMZN"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "246.00",
+              "order_id": "ord_000026",
+              "quantity": 140,
+              "side": "sell",
+              "symbol": "AMZN"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000007",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "250.00",
+            "order_id": "ord_000024",
+            "quantity": 140,
+            "side": "sell",
+            "symbol": "AMZN"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-23T12:04:23.099972-04:00",
+      "valid_from": "2026-10-23T12:05:00-04:00",
+      "valid_until": "2026-10-23T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 140,
+      "average_cost": "256.5178571428571428571428571",
+      "latest_price": "249.4200",
+      "latest_price_at": "2026-10-23T12:02:00-04:00",
+      "market_value": "69837.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 280,
+      "reserved_quantity": 140,
+      "symbol": "AMZN",
+      "unrealized_pnl": "-1987.399999999999999999999988"
+    }
+  ],
+  "settled_through": "2026-10-22T18:59:00-04:00"
+}

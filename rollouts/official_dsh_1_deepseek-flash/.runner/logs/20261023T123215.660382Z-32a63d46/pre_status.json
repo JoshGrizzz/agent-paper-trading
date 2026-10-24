@@ -1,0 +1,139 @@
+{
+  "account": {
+    "cash": {
+      "available": "19339.2850",
+      "reserved": "0",
+      "total": "19339.2850"
+    },
+    "equity": "93602.6420",
+    "initial_cash": "100000.00",
+    "positions_market_value": "74263.3570",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T08:32:15.648797-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 10,
+      "average_cost": "923.7350",
+      "latest_price": "857.9997",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "8579.9970",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "MU",
+      "unrealized_pnl": "-657.3530"
+    },
+    {
+      "available_quantity": 35,
+      "average_cost": "220.9600",
+      "latest_price": "212.5000",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "7437.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-296.1000"
+    },
+    {
+      "available_quantity": 12,
+      "average_cost": "725.8100",
+      "latest_price": "704.5900",
+      "latest_price_at": "2026-10-22T15:59:00-04:00",
+      "market_value": "8455.0800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 12,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-254.6400"
+    },
+    {
+      "available_quantity": 135,
+      "average_cost": "161.2587037037037037037037037",
+      "latest_price": "144.1200",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "19456.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 135,
+      "reserved_quantity": 0,
+      "symbol": "SPCX",
+      "unrealized_pnl": "-2313.725000000000000000000000"
+    },
+    {
+      "available_quantity": 26,
+      "average_cost": "422.7853846153846153846153846",
+      "latest_price": "424.9800",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "11049.4800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 26,
+      "reserved_quantity": 0,
+      "symbol": "UNH",
+      "unrealized_pnl": "57.0600000000000000000000004"
+    },
+    {
+      "available_quantity": 100,
+      "average_cost": "67.8600",
+      "latest_price": "67.5700",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "6757.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 100,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "-29.0000"
+    },
+    {
+      "available_quantity": 55,
+      "average_cost": "89.3300",
+      "latest_price": "89.9200",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "4945.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 55,
+      "reserved_quantity": 0,
+      "symbol": "XLP",
+      "unrealized_pnl": "32.4500"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "42.5050",
+      "latest_price": "42.8700",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "2143.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "XLU",
+      "unrealized_pnl": "18.2500"
+    },
+    {
+      "available_quantity": 30,
+      "average_cost": "181.7200",
+      "latest_price": "181.3000",
+      "latest_price_at": "2026-10-22T16:00:00-04:00",
+      "market_value": "5439.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "-12.6000"
+    }
+  ],
+  "settled_through": "2026-10-22T15:29:00-04:00"
+}

@@ -1,0 +1,35 @@
+{
+  "account": {
+    "cash": {
+      "available": "1005.5300",
+      "reserved": "0",
+      "total": "1005.5300"
+    },
+    "equity": "94258.0300",
+    "initial_cash": "100000.00",
+    "positions_market_value": "93252.5000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-23T19:08:04.759373-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 250,
+      "average_cost": "373.2700",
+      "latest_price": "373.0100",
+      "latest_price_at": "2026-10-23T15:59:00-04:00",
+      "market_value": "93252.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 250,
+      "reserved_quantity": 0,
+      "symbol": "VTI",
+      "unrealized_pnl": "-65.0000"
+    }
+  ],
+  "settled_through": "2026-10-23T18:59:00-04:00"
+}
