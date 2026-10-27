@@ -56,7 +56,7 @@ Portfolio values use the latest marks stored by each broker account, dated betwe
 | R04 | NVDA 45 (-162.90); SPY 25 (-92.98); VZ 200 (-76.00); XLE 150 (+39.00) | $51,237.72 | $99,155.20 | $-844.80 | -0.84% |
 | R05 | LMT 35 (+1,832.25) | $76,534.25 | $98,766.25 | $-1,233.75 | -1.23% |
 
-### Claude Code: Opus
+### Claude Code: Claude Opus 5.5 (`claude-opus-5-5`)
 
 | Rollout | Current positions (unrealized P&L) | Cash | Equity | Total P&L | Return |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -66,7 +66,7 @@ Portfolio values use the latest marks stored by each broker account, dated betwe
 | R04 | QQQ 48 (-370.72); SMH 10 (-113.80); SPY 63 (-299.27); XLE 150 (+225.00) | $1,058.50 | $99,301.21 | $-698.79 | -0.70% |
 | R05 | QQQ 55 (-569.80); SMH 15 (-223.95); SPY 40 (-242.21); XLE 150 (+255.00) | $10,582.32 | $98,918.52 | $-1,081.48 | -1.08% |
 
-### Claude Code: Sonnet
+### Claude Code: Claude Sonnet 5.5 (`claude-sonnet-5-5`)
 
 | Rollout | Current positions (unrealized P&L) | Cash | Equity | Total P&L | Return |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -76,7 +76,7 @@ Portfolio values use the latest marks stored by each broker account, dated betwe
 | R04 | SPY 90 (-206.75) | $30,932.92 | $99,793.25 | $-206.75 | -0.21% |
 | R05 | QQQ 55 (-569.80); SPY 60 (-363.31) | $14,007.70 | $99,066.89 | $-933.11 | -0.93% |
 
-### Claude Code: Haiku
+### Claude Code: Claude Haiku 5.5 (`claude-haiku-5-5`)
 
 | Rollout | Current positions (unrealized P&L) | Cash | Equity | Total P&L | Return |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -86,7 +86,7 @@ Portfolio values use the latest marks stored by each broker account, dated betwe
 | R04 | SPY 70 (-423.86) | $45,814.10 | $99,372.14 | $-627.86 | -0.63% |
 | R05 | SPY 50 (-302.76) | $61,441.50 | $99,697.24 | $-302.76 | -0.30% |
 
-### DSH: DeepSeek Flash
+### DSH 0.2.1-rc.2: DeepSeek-V4.1-Flash-1017 (`deepseek-flash`)
 
 | Rollout | Current positions (unrealized P&L) | Cash | Equity | Total P&L | Return |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -120,13 +120,13 @@ Each line is the union of tickers that appeared in submitted order plans or actu
 
 ### Claude Code
 
-- **Opus:** MU, QQQ, SMH, SPY, XLE
-- **Sonnet:** QQQ, SPY
-- **Haiku:** QQQ, SPY, XLP, XLV
+- **Claude Opus 5.5 (`claude-opus-5-5`):** MU, QQQ, SMH, SPY, XLE
+- **Claude Sonnet 5.5 (`claude-sonnet-5-5`):** QQQ, SPY
+- **Claude Haiku 5.5 (`claude-haiku-5-5`):** QQQ, SPY, XLP, XLV
 
 ### DSH
 
-- **DeepSeek Flash:** AMD, CBOE, COIN, CVX, GS, IBB, JPM, LLY, MSTR, MU, NOC, NVDA, QQQ, SMCI, SMH, SOXL, SPCX, SPY, TLT, UNH, VRT, XLE, XLF, XLP, XLRE, XLU, XLV, XOM
+- **DeepSeek-V4.1-Flash-1017 (`deepseek-flash`; DSH 0.2.1-rc.2):** AMD, CBOE, COIN, CVX, GS, IBB, JPM, LLY, MSTR, MU, NOC, NVDA, QQQ, SMCI, SMH, SOXL, SPCX, SPY, TLT, UNH, VRT, XLE, XLF, XLP, XLRE, XLU, XLV, XOM
 
 ### ZCode
 
