@@ -1,0 +1,33 @@
+{
+  "account": {
+    "cash": {
+      "available": "89221.0000",
+      "reserved": "0",
+      "total": "89221.0000"
+    },
+    "equity": "89221.0000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-26T12:06:03.416045-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "87.50",
+      "filled_at": "2026-10-26T09:37:00-04:00",
+      "limit_price": "87.50",
+      "order_id": "ord_000013",
+      "quantity": 600,
+      "side": "sell",
+      "symbol": "SOXL"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [],
+  "settled": true,
+  "settled_through": "2026-10-26T11:59:00-04:00"
+}

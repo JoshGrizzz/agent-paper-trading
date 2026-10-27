@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "3374.9000",
+      "reserved": "0",
+      "total": "3374.9000"
+    },
+    "equity": "98578.1000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "95203.2000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-26T08:44:33.805243-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 35,
+      "average_cost": "722.50",
+      "latest_price": "704.5400",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "24658.9000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-628.6000"
+    },
+    {
+      "available_quantity": 70,
+      "average_cost": "770.9785714285714285714285714",
+      "latest_price": "759.9900",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "53199.3000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 70,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-769.1999999999999999999999980"
+    },
+    {
+      "available_quantity": 250,
+      "average_cost": "68.9600",
+      "latest_price": "69.3800",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "17345.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 250,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "105.0000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-23T18:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-26T08:44:00-04:00",
+    "missing_symbols": [
+      "QQQ",
+      "SPY",
+      "XLE"
+    ],
+    "start": "2026-10-26T08:00:00-04:00",
+    "symbols": [
+      "QQQ",
+      "SPY",
+      "XLE"
+    ],
+    "updated_symbols": []
+  }
+}

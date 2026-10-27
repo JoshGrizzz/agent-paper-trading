@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-10-26T08:41:18.346621-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 11.750653,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_2_sonnet_r03/.runner/logs/20261026T124118.360730Z-a323b6ab",
+  "model": "sonnet",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "43574.7500",
+        "reserved": "0",
+        "total": "43574.7500"
+      },
+      "equity": "98910.5000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "55335.7500",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-26T08:41:30.042263-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 30,
+        "average_cost": "723.4166666666666666666666667",
+        "latest_price": "704.5400",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "21136.2000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-566.3000000000000000000000010"
+      },
+      {
+        "available_quantity": 45,
+        "average_cost": "771.6166666666666666666666667",
+        "latest_price": "759.9900",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "34199.5500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 45,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-523.2000000000000000000000015"
+      }
+    ],
+    "settled_through": "2026-10-21T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_2_sonnet_r03",
+  "run_id": "20261026T124118.360730Z-a323b6ab",
+  "session_id": "155d1f71-99d3-4634-b556-b51dd18931ee",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

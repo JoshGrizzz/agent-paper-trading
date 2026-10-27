@@ -1,0 +1,94 @@
+{
+  "as_of": "2026-10-26T12:04:11.006895-04:00",
+  "codex_session_id": "01a15e78-f28b-7383-aa78-be784a51dcaa",
+  "duration_seconds": 92.710164,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "64.9000",
+      "filled_at": "2026-10-26T09:30:00-04:00",
+      "limit_price": "64.50",
+      "order_id": "ord_000021",
+      "quantity": 550,
+      "side": "sell",
+      "symbol": "UCO"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "66.25",
+      "filled_at": "2026-10-26T11:51:00-04:00",
+      "limit_price": "66.25",
+      "order_id": "ord_000022",
+      "quantity": 550,
+      "side": "sell",
+      "symbol": "UCO"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_3_gpt-6-sol_r05/.runner/logs/20261026T160411.016547Z-6fdbec8c",
+  "model": "gpt-6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "12848.5000",
+        "reserved": "79350.00",
+        "total": "92198.5000"
+      },
+      "equity": "92198.5000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-26T12:05:43.656840-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "69.00",
+                "order_id": "ord_000026",
+                "quantity": 1150,
+                "side": "buy",
+                "symbol": "TQQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000009",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "68.50",
+              "order_id": "ord_000025",
+              "quantity": 1150,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T12:05:30.875501-04:00",
+        "valid_from": "2026-10-26T12:06:00-04:00",
+        "valid_until": "2026-10-26T15:30:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": "2026-10-26T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_3_gpt-6-sol_r05",
+  "run_id": "20261026T160411.016547Z-6fdbec8c",
+  "session_id": "01a15e78-f28b-7383-aa78-be784a51dcaa",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": false
+}

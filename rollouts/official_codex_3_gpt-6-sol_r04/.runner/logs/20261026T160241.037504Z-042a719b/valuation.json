@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "71255.5200",
+      "reserved": "0",
+      "total": "71255.5200"
+    },
+    "equity": "94506.0200",
+    "initial_cash": "100000.00",
+    "positions_market_value": "23250.5000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-26T12:02:41.015587-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 350,
+      "average_cost": "65.9900",
+      "latest_price": "66.4300",
+      "latest_price_at": "2026-10-26T12:01:00-04:00",
+      "market_value": "23250.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 350,
+      "reserved_quantity": 0,
+      "symbol": "UCO",
+      "unrealized_pnl": "154.0000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-23T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-26T12:02:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-26T08:00:00-04:00",
+    "symbols": [
+      "UCO"
+    ],
+    "updated_symbols": [
+      "UCO"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "account": {
+    "cash": {
+      "available": "75.0900",
+      "reserved": "0",
+      "total": "75.0900"
+    },
+    "equity": "97909.4192",
+    "initial_cash": "100000.00",
+    "positions_market_value": "97834.3292",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-26T19:07:06.212916-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 75,
+      "average_cost": "338.0250",
+      "latest_price": "329.4000",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "24705.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 75,
+      "reserved_quantity": 0,
+      "symbol": "AVGO",
+      "unrealized_pnl": "-646.8750"
+    },
+    {
+      "available_quantity": 38,
+      "average_cost": "336.9100",
+      "latest_price": "316.8500",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "12040.3000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 38,
+      "reserved_quantity": 0,
+      "symbol": "GOOGL",
+      "unrealized_pnl": "-762.2800"
+    },
+    {
+      "available_quantity": 150,
+      "average_cost": "218.00",
+      "latest_price": "215.8800",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "32382.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 150,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-318.0000"
+    },
+    {
+      "available_quantity": 30,
+      "average_cost": "216.10",
+      "latest_price": "217.2900",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "6518.7000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "RSP",
+      "unrealized_pnl": "35.7000"
+    },
+    {
+      "available_quantity": 29,
+      "average_cost": "765.2713793103448275862068966",
+      "latest_price": "765.1148",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "22188.3292",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 29,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-4.5408000000000000000000014"
+    }
+  ],
+  "settled_through": "2026-10-26T15:29:00-04:00"
+}

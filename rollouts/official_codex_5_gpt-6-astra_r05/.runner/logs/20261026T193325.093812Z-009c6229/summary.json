@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-10-26T15:33:25.079008-04:00",
+  "codex_session_id": "01a15e78-f28b-7c91-8da9-2f67a4f4582a",
+  "duration_seconds": 52.004315,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r05/.runner/logs/20261026T193325.093812Z-009c6229",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "76534.2500",
+        "reserved": "0",
+        "total": "76534.2500"
+      },
+      "equity": "98588.8000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "22054.5500",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-26T15:34:17.029512-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 35,
+        "average_cost": "582.8500",
+        "latest_price": "630.1300",
+        "latest_price_at": "2026-10-26T15:32:00-04:00",
+        "market_value": "22054.5500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 35,
+        "reserved_quantity": 0,
+        "symbol": "LMT",
+        "unrealized_pnl": "1654.8000"
+      }
+    ],
+    "settled_through": "2026-10-26T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r05",
+  "run_id": "20261026T193325.093812Z-009c6229",
+  "session_id": "01a15e78-f28b-7c91-8da9-2f67a4f4582a",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

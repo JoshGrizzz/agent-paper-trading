@@ -3,9 +3,15 @@
     "orders": [
       {
         "symbol": "QQQ",
-        "side": "sell",
-        "quantity": 10,
-        "limit_price": "702.50"
+        "side": "buy",
+        "quantity": 12,
+        "limit_price": "713.50"
+      },
+      {
+        "symbol": "SPY",
+        "side": "buy",
+        "quantity": 11,
+        "limit_price": "766.00"
       }
     ]
   },
@@ -14,9 +20,15 @@
       "orders": [
         {
           "symbol": "QQQ",
-          "side": "sell",
+          "side": "buy",
           "quantity": 14,
-          "limit_price": "698.50"
+          "limit_price": "708.00"
+        },
+        {
+          "symbol": "SPY",
+          "side": "buy",
+          "quantity": 12,
+          "limit_price": "760.00"
         }
       ]
     },
@@ -24,9 +36,15 @@
       "orders": [
         {
           "symbol": "QQQ",
-          "side": "sell",
-          "quantity": 18,
-          "limit_price": "694.00"
+          "side": "buy",
+          "quantity": 16,
+          "limit_price": "700.00"
+        },
+        {
+          "symbol": "SPY",
+          "side": "buy",
+          "quantity": 14,
+          "limit_price": "752.00"
         }
       ]
     }

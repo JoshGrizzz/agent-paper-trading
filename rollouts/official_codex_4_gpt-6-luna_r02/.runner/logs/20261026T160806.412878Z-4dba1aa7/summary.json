@@ -1,0 +1,73 @@
+{
+  "as_of": "2026-10-26T12:08:06.400880-04:00",
+  "codex_session_id": "01a15e73-5635-7f72-aced-5a6607555c77",
+  "duration_seconds": 40.410699,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r02/.runner/logs/20261026T160806.412878Z-4dba1aa7",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "8217.8700",
+        "reserved": "7600.00",
+        "total": "15817.8700"
+      },
+      "equity": "99253.0100",
+      "initial_cash": "100000.00",
+      "positions_market_value": "83435.1400",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-26T12:08:46.254427-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000005",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "760.00",
+              "order_id": "ord_000006",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T12:08:35.486402-04:00",
+        "valid_from": "2026-10-26T12:09:00-04:00",
+        "valid_until": "2026-10-26T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 109,
+        "average_cost": "771.1700",
+        "latest_price": "765.4600",
+        "latest_price_at": "2026-10-26T12:07:00-04:00",
+        "market_value": "83435.1400",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 109,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-622.3900"
+      }
+    ],
+    "settled_through": "2026-10-26T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r02",
+  "run_id": "20261026T160806.412878Z-4dba1aa7",
+  "session_id": "01a15e73-5635-7f72-aced-5a6607555c77",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

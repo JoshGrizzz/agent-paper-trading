@@ -1,18 +1,18 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "UCO", "side": "buy", "quantity": 350, "limit_price": "67.50"}
+      {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "65.50"}
     ]
   },
   "backups": [
     {
       "orders": [
-        {"symbol": "USO", "side": "buy", "quantity": 140, "limit_price": "170.00"}
+        {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "65.00"}
       ]
     },
     {
       "orders": [
-        {"symbol": "ERX", "side": "buy", "quantity": 185, "limit_price": "129.00"}
+        {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "64.50"}
       ]
     }
   ]

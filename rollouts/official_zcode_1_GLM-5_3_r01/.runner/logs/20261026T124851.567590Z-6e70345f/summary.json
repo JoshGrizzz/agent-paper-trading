@@ -1,0 +1,134 @@
+{
+  "as_of": "2026-10-26T08:48:51.560940-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 171.143383,
+  "fills": [],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r01/.runner/logs/20261026T124851.567590Z-6e70345f",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "5745.7000",
+        "reserved": "13310.00",
+        "total": "19055.7000"
+      },
+      "equity": "96398.5000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "77342.8000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-26T08:51:42.644233-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "712.00",
+                "order_id": "ord_000037",
+                "quantity": 10,
+                "side": "buy",
+                "symbol": "QQQ"
+              },
+              {
+                "limit_price": "151.00",
+                "order_id": "ord_000038",
+                "quantity": 15,
+                "side": "buy",
+                "symbol": "SPCX"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "698.00",
+                "order_id": "ord_000039",
+                "quantity": 15,
+                "side": "buy",
+                "symbol": "QQQ"
+              },
+              {
+                "limit_price": "142.00",
+                "order_id": "ord_000040",
+                "quantity": 20,
+                "side": "buy",
+                "symbol": "SPCX"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000009",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "704.00",
+              "order_id": "ord_000035",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "146.00",
+              "order_id": "ord_000036",
+              "quantity": 15,
+              "side": "buy",
+              "symbol": "SPCX"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T08:50:54.094140-04:00",
+        "valid_from": "2026-10-26T08:51:00-04:00",
+        "valid_until": "2026-10-26T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 70,
+        "average_cost": "721.72900000000000000000000",
+        "latest_price": "704.5400",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "49317.8000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 70,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-1203.23000000000000000000000"
+      },
+      {
+        "available_quantity": 190,
+        "average_cost": "157.4810526315789473684210526",
+        "latest_price": "147.5000",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "28025.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 190,
+        "reserved_quantity": 0,
+        "symbol": "SPCX",
+        "unrealized_pnl": "-1896.399999999999999999999994"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r01",
+  "run_id": "20261026T124851.567590Z-6e70345f",
+  "session_id": "sess_2cb29ebe-181c-4a47-95d0-3371ca267bf6",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

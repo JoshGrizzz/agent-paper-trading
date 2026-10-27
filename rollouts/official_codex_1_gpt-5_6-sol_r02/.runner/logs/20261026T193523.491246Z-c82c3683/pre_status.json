@@ -1,0 +1,21 @@
+{
+  "account": {
+    "cash": {
+      "available": "96779.9062",
+      "reserved": "0",
+      "total": "96779.9062"
+    },
+    "equity": "96779.9062",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-26T15:35:23.462457-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [],
+  "settled_through": "2026-10-26T15:29:00-04:00"
+}

@@ -1,0 +1,70 @@
+{
+  "account": {
+    "cash": {
+      "available": "61774.2500",
+      "reserved": "14760.00",
+      "total": "76534.2500"
+    },
+    "equity": "98766.2500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "22232.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-26T19:10:18.929068-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "331.00",
+              "order_id": "ord_000014",
+              "quantity": 35,
+              "side": "buy",
+              "symbol": "CDNS"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000007",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "328.00",
+            "order_id": "ord_000013",
+            "quantity": 45,
+            "side": "buy",
+            "symbol": "CDNS"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-26T19:09:56.196159-04:00",
+      "valid_from": "2026-10-26T19:10:00-04:00",
+      "valid_until": "2026-10-26T20:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 35,
+      "average_cost": "582.8500",
+      "latest_price": "635.2000",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "22232.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "LMT",
+      "unrealized_pnl": "1832.2500"
+    }
+  ],
+  "settled_through": "2026-10-26T11:59:00-04:00"
+}

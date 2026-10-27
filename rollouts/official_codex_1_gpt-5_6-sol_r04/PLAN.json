@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "ERX",
+        "symbol": "SOXL",
         "side": "buy",
-        "quantity": 780,
-        "limit_price": "125.00"
+        "quantity": 1078,
+        "limit_price": "90.50"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "ERX",
+          "symbol": "TQQQ",
           "side": "buy",
-          "quantity": 768,
-          "limit_price": "127.00"
+          "quantity": 1424,
+          "limit_price": "68.50"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "TQQQ",
+          "symbol": "SOXL",
           "side": "buy",
-          "quantity": 1445,
-          "limit_price": "67.50"
+          "quantity": 1060,
+          "limit_price": "92.00"
         }
       ]
     }

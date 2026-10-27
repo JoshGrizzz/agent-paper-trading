@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "UCO",
+        "symbol": "SOXL",
         "side": "buy",
-        "quantity": 11,
-        "limit_price": "66.10"
+        "quantity": 1067,
+        "limit_price": "91.00"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "UCO",
+          "symbol": "NVDA",
           "side": "buy",
-          "quantity": 11,
-          "limit_price": "66.50"
+          "quantity": 449,
+          "limit_price": "216.00"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "UCO",
+          "symbol": "TQQQ",
           "side": "buy",
-          "quantity": 11,
-          "limit_price": "67.50"
+          "quantity": 1408,
+          "limit_price": "69.00"
         }
       ]
     }

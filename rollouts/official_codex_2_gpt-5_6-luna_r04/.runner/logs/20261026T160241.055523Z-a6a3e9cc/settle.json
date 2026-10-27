@@ -1,0 +1,33 @@
+{
+  "account": {
+    "cash": {
+      "available": "85106.2000",
+      "reserved": "0",
+      "total": "85106.2000"
+    },
+    "equity": "85106.2000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-26T12:02:41.017334-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "67.40",
+      "filled_at": "2026-10-26T09:36:00-04:00",
+      "limit_price": "67.40",
+      "order_id": "ord_000024",
+      "quantity": 1250,
+      "side": "sell",
+      "symbol": "TQQQ"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [],
+  "settled": true,
+  "settled_through": "2026-10-26T11:59:00-04:00"
+}

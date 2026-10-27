@@ -1,0 +1,138 @@
+{
+  "account": {
+    "cash": {
+      "available": "59049.1950",
+      "reserved": "23560.00",
+      "total": "82609.1950"
+    },
+    "equity": "98447.4950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "15838.3000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-26T08:43:56.100591-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "541.00",
+              "order_id": "ord_000043",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SMH"
+            },
+            {
+              "limit_price": "216.50",
+              "order_id": "ord_000044",
+              "quantity": 25,
+              "side": "buy",
+              "symbol": "NVDA"
+            },
+            {
+              "limit_price": "713.00",
+              "order_id": "ord_000045",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "546.00",
+              "order_id": "ord_000046",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SMH"
+            },
+            {
+              "limit_price": "219.00",
+              "order_id": "ord_000047",
+              "quantity": 25,
+              "side": "buy",
+              "symbol": "NVDA"
+            },
+            {
+              "limit_price": "716.50",
+              "order_id": "ord_000048",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000008",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "536.00",
+            "order_id": "ord_000040",
+            "quantity": 20,
+            "side": "buy",
+            "symbol": "SMH"
+          },
+          {
+            "limit_price": "214.00",
+            "order_id": "ord_000041",
+            "quantity": 25,
+            "side": "buy",
+            "symbol": "NVDA"
+          },
+          {
+            "limit_price": "709.50",
+            "order_id": "ord_000042",
+            "quantity": 10,
+            "side": "buy",
+            "symbol": "QQQ"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-26T08:43:15.948387-04:00",
+      "valid_from": "2026-10-26T08:44:00-04:00",
+      "valid_until": "2026-10-26T12:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 15,
+      "average_cost": "702.1020",
+      "latest_price": "704.5400",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "10568.1000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 15,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "36.5700"
+    },
+    {
+      "available_quantity": 10,
+      "average_cost": "522.5450",
+      "latest_price": "527.0200",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "5270.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "44.7500"
+    }
+  ],
+  "settled_through": "2026-10-23T15:29:00-04:00"
+}

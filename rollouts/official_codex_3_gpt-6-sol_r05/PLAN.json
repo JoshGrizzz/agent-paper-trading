@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "UCO",
+        "symbol": "TQQQ",
         "side": "buy",
-        "quantity": 1100,
-        "limit_price": "66.00"
+        "quantity": 1150,
+        "limit_price": "68.50"
       }
     ]
   },
@@ -13,10 +13,10 @@
     {
       "orders": [
         {
-          "symbol": "UCO",
+          "symbol": "TQQQ",
           "side": "buy",
-          "quantity": 1100,
-          "limit_price": "66.50"
+          "quantity": 1150,
+          "limit_price": "69.00"
         }
       ]
     }

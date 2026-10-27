@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "SMCI",
-        "side": "sell",
-        "quantity": 600,
-        "limit_price": "33.10"
+        "symbol": "CDNS",
+        "side": "buy",
+        "quantity": 45,
+        "limit_price": "328.00"
       }
     ]
   },
@@ -13,10 +13,10 @@
     {
       "orders": [
         {
-          "symbol": "SMCI",
-          "side": "sell",
-          "quantity": 600,
-          "limit_price": "32.50"
+          "symbol": "CDNS",
+          "side": "buy",
+          "quantity": 35,
+          "limit_price": "331.00"
         }
       ]
     }

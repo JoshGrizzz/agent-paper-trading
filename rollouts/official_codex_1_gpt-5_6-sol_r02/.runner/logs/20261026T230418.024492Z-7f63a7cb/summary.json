@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-10-26T19:04:18.012426-04:00",
+  "codex_session_id": "01a15e73-563c-71b2-bd51-fe3c461d12ce",
+  "duration_seconds": 59.059909,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "68.50",
+      "filled_at": "2026-10-26T15:53:00-04:00",
+      "limit_price": "68.50",
+      "order_id": "ord_000023",
+      "quantity": 1400,
+      "side": "buy",
+      "symbol": "TQQQ"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r02/.runner/logs/20261026T230418.024492Z-7f63a7cb",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "56.7062",
+        "reserved": "823.20",
+        "total": "879.9062"
+      },
+      "equity": "96569.9062",
+      "initial_cash": "100000.00",
+      "positions_market_value": "95690.0000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-26T19:05:17.019027-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "68.20",
+                "order_id": "ord_000027",
+                "quantity": 12,
+                "side": "buy",
+                "symbol": "TQQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "68.60",
+                "order_id": "ord_000028",
+                "quantity": 12,
+                "side": "buy",
+                "symbol": "TQQQ"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000010",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "67.80",
+              "order_id": "ord_000026",
+              "quantity": 12,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T19:04:59.078697-04:00",
+        "valid_from": "2026-10-26T19:05:00-04:00",
+        "valid_until": "2026-10-26T20:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 1400,
+        "average_cost": "68.50",
+        "latest_price": "68.3500",
+        "latest_price_at": "2026-10-26T16:00:00-04:00",
+        "market_value": "95690.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 1400,
+        "reserved_quantity": 0,
+        "symbol": "TQQQ",
+        "unrealized_pnl": "-210.0000"
+      }
+    ],
+    "settled_through": "2026-10-26T18:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r02",
+  "run_id": "20261026T230418.024492Z-7f63a7cb",
+  "session_id": "01a15e73-563c-71b2-bd51-fe3c461d12ce",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

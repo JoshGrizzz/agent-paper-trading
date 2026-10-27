@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-26T08:49:14.414098-04:00",
+  "codex_session_id": "01a15e73-563c-71b2-bd51-fe3c461d12ce",
+  "duration_seconds": 113.038075,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r02/.runner/logs/20261026T124914.460604Z-147668bd",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "19779.9062",
+        "reserved": "0",
+        "total": "19779.9062"
+      },
+      "equity": "95041.9062",
+      "initial_cash": "100000.00",
+      "positions_market_value": "75262.0000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-26T08:51:07.410918-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "344.00",
+                "order_id": "ord_000018",
+                "quantity": 110,
+                "side": "sell",
+                "symbol": "WDC"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "320.00",
+                "order_id": "ord_000019",
+                "quantity": 220,
+                "side": "sell",
+                "symbol": "WDC"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000007",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "350.00",
+              "order_id": "ord_000017",
+              "quantity": 220,
+              "side": "sell",
+              "symbol": "WDC"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T08:50:35.575719-04:00",
+        "valid_from": "2026-10-26T08:51:00-04:00",
+        "valid_until": "2026-10-26T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 0,
+        "average_cost": "340.00",
+        "latest_price": "342.1000",
+        "latest_price_at": "2026-10-23T16:00:00-04:00",
+        "market_value": "75262.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 220,
+        "reserved_quantity": 220,
+        "symbol": "WDC",
+        "unrealized_pnl": "462.0000"
+      }
+    ],
+    "settled_through": "2026-10-23T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r02",
+  "run_id": "20261026T124914.460604Z-147668bd",
+  "session_id": "01a15e73-563c-71b2-bd51-fe3c461d12ce",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

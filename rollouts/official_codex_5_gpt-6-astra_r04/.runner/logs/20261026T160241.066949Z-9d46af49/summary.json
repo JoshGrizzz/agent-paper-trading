@@ -1,0 +1,102 @@
+{
+  "as_of": "2026-10-26T12:02:41.027407-04:00",
+  "codex_session_id": "01a15e77-3eb6-72c1-b506-79820b41abd8",
+  "duration_seconds": 74.825157,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "43.4800",
+      "filled_at": "2026-10-26T09:30:00-04:00",
+      "limit_price": "44.30",
+      "order_id": "ord_000016",
+      "quantity": 200,
+      "side": "buy",
+      "symbol": "VZ"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r04/.runner/logs/20261026T160241.066949Z-9d46af49",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "58893.5750",
+        "reserved": "0",
+        "total": "58893.5750"
+      },
+      "equity": "99192.4250",
+      "initial_cash": "100000.00",
+      "positions_market_value": "40298.8500",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-26T12:03:55.818393-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 45,
+        "average_cost": "219.50",
+        "latest_price": "215.4850",
+        "latest_price_at": "2026-10-26T12:01:00-04:00",
+        "market_value": "9696.8250",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 45,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "-180.6750"
+      },
+      {
+        "available_quantity": 15,
+        "average_cost": "771.00",
+        "latest_price": "765.1850",
+        "latest_price_at": "2026-10-26T12:01:00-04:00",
+        "market_value": "11477.7750",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 15,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-87.2250"
+      },
+      {
+        "available_quantity": 200,
+        "average_cost": "43.4800",
+        "latest_price": "43.6050",
+        "latest_price_at": "2026-10-26T12:01:00-04:00",
+        "market_value": "8721.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 200,
+        "reserved_quantity": 0,
+        "symbol": "VZ",
+        "unrealized_pnl": "25.0000"
+      },
+      {
+        "available_quantity": 150,
+        "average_cost": "69.4400",
+        "latest_price": "69.3550",
+        "latest_price_at": "2026-10-26T12:01:00-04:00",
+        "market_value": "10403.2500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 150,
+        "reserved_quantity": 0,
+        "symbol": "XLE",
+        "unrealized_pnl": "-12.7500"
+      }
+    ],
+    "settled_through": "2026-10-26T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r04",
+  "run_id": "20261026T160241.066949Z-9d46af49",
+  "session_id": "01a15e77-3eb6-72c1-b506-79820b41abd8",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

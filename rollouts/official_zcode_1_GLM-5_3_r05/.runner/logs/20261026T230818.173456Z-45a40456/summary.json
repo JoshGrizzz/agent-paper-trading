@@ -1,0 +1,86 @@
+{
+  "as_of": "2026-10-26T19:08:18.165693-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 110.745201,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "713.3150",
+      "filled_at": "2026-10-26T15:36:00-04:00",
+      "limit_price": "713.50",
+      "order_id": "ord_000050",
+      "quantity": 12,
+      "side": "buy",
+      "symbol": "QQQ"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "765.6500",
+      "filled_at": "2026-10-26T15:36:00-04:00",
+      "limit_price": "766.00",
+      "order_id": "ord_000051",
+      "quantity": 11,
+      "side": "buy",
+      "symbol": "SPY"
+    }
+  ],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r05/.runner/logs/20261026T230818.173456Z-45a40456",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "29768.4380",
+        "reserved": "0",
+        "total": "29768.4380"
+      },
+      "equity": "98261.3744",
+      "initial_cash": "100000.00",
+      "positions_market_value": "68492.9364",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-26T19:10:08.857636-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 50,
+        "average_cost": "721.3390352941176470588235294",
+        "latest_price": "711.8600",
+        "latest_price_at": "2026-10-26T16:00:00-04:00",
+        "market_value": "35593.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 50,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-473.9517647058823529411764700"
+      },
+      {
+        "available_quantity": 43,
+        "average_cost": "770.8650268336314847942754919",
+        "latest_price": "765.1148",
+        "latest_price_at": "2026-10-26T16:00:00-04:00",
+        "market_value": "32899.9364",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 43,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-247.2597538461538461538461517"
+      }
+    ],
+    "settled_through": "2026-10-26T18:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r05",
+  "run_id": "20261026T230818.173456Z-45a40456",
+  "session_id": "sess_e8e6497d-b4c5-4478-a928-30c73df58701",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

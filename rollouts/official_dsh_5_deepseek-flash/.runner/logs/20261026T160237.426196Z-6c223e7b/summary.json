@@ -1,0 +1,147 @@
+{
+  "as_of": "2026-10-26T12:02:37.410208-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 45.528472,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "68.7300",
+      "filled_at": "2026-10-26T09:30:00-04:00",
+      "limit_price": "67.80",
+      "order_id": "ord_000019",
+      "quantity": 250,
+      "side": "sell",
+      "symbol": "XLE"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "531.4800",
+      "filled_at": "2026-10-26T09:30:00-04:00",
+      "limit_price": "540.00",
+      "order_id": "ord_000020",
+      "quantity": 27,
+      "side": "buy",
+      "symbol": "SMH"
+    }
+  ],
+  "harness": "dsh",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_dsh_5_deepseek-flash/.runner/logs/20261026T160237.426196Z-6c223e7b",
+  "model": "deepseek-flash",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "8058.0250",
+        "reserved": "9996.00",
+        "total": "18054.0250"
+      },
+      "equity": "95124.6850",
+      "initial_cash": "100000.00",
+      "positions_market_value": "77070.6600",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-26T12:03:22.865425-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "545.00",
+                "order_id": "ord_000023",
+                "quantity": 18,
+                "side": "buy",
+                "symbol": "SMH"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000008",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "714.00",
+              "order_id": "ord_000022",
+              "quantity": 14,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T12:03:12.814873-04:00",
+        "valid_from": "2026-10-26T12:04:00-04:00",
+        "valid_until": "2026-10-26T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 12,
+        "average_cost": "551.1750",
+        "latest_price": "558.5450",
+        "latest_price_at": "2026-10-26T12:01:00-04:00",
+        "market_value": "6702.5400",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 12,
+        "reserved_quantity": 0,
+        "symbol": "NOC",
+        "unrealized_pnl": "88.4400"
+      },
+      {
+        "available_quantity": 27,
+        "average_cost": "531.4800",
+        "latest_price": "541.7600",
+        "latest_price_at": "2026-10-26T12:01:00-04:00",
+        "market_value": "14627.5200",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 27,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "277.5600"
+      },
+      {
+        "available_quantity": 500,
+        "average_cost": "56.5700",
+        "latest_price": "55.9850",
+        "latest_price_at": "2026-10-26T12:01:00-04:00",
+        "market_value": "27992.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 500,
+        "reserved_quantity": 0,
+        "symbol": "XLF",
+        "unrealized_pnl": "-292.5000"
+      },
+      {
+        "available_quantity": 155,
+        "average_cost": "181.3367741935483870967741935",
+        "latest_price": "179.0200",
+        "latest_price_at": "2026-10-26T12:01:00-04:00",
+        "market_value": "27748.1000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 155,
+        "reserved_quantity": 0,
+        "symbol": "XLV",
+        "unrealized_pnl": "-359.0999999999999999999999925"
+      }
+    ],
+    "settled_through": "2026-10-26T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_dsh_5_deepseek-flash",
+  "run_id": "20261026T160237.426196Z-6c223e7b",
+  "session_id": "session-dc6c2f33-557c-4243-9333-89f49d39c6d1",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

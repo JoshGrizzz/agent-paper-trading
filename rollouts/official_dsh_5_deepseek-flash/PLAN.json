@@ -2,16 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "XLE",
-        "side": "buy",
-        "quantity": 70,
-        "limit_price": "69.75"
-      },
-      {
-        "symbol": "XLE",
-        "side": "buy",
-        "quantity": 70,
-        "limit_price": "68.60"
+        "symbol": "XLV",
+        "side": "sell",
+        "quantity": 50,
+        "limit_price": "178.40"
       }
     ]
   },
@@ -19,10 +13,10 @@
     {
       "orders": [
         {
-          "symbol": "XLF",
-          "side": "buy",
-          "quantity": 170,
-          "limit_price": "56.10"
+          "symbol": "XLV",
+          "side": "sell",
+          "quantity": 50,
+          "limit_price": "176.00"
         }
       ]
     }

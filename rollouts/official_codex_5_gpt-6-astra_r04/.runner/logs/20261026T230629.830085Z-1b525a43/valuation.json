@@ -1,0 +1,91 @@
+{
+  "account": {
+    "cash": {
+      "available": "51237.7250",
+      "reserved": "0",
+      "total": "51237.7250"
+    },
+    "equity": "99155.1950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "47917.4700",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-26T19:06:29.817900-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "219.50",
+      "latest_price": "215.8800",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "9714.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-162.9000"
+    },
+    {
+      "available_quantity": 25,
+      "average_cost": "768.8340",
+      "latest_price": "765.1148",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "19127.8700",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-92.9800"
+    },
+    {
+      "available_quantity": 200,
+      "average_cost": "43.4800",
+      "latest_price": "43.1000",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "8620.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 200,
+      "reserved_quantity": 0,
+      "symbol": "VZ",
+      "unrealized_pnl": "-76.0000"
+    },
+    {
+      "available_quantity": 150,
+      "average_cost": "69.4400",
+      "latest_price": "69.7000",
+      "latest_price_at": "2026-10-26T16:00:00-04:00",
+      "market_value": "10455.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 150,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "39.0000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-26T18:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-26T19:06:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-26T08:00:00-04:00",
+    "symbols": [
+      "NVDA",
+      "SPY",
+      "VZ",
+      "XLE"
+    ],
+    "updated_symbols": [
+      "NVDA",
+      "VZ",
+      "XLE"
+    ]
+  }
+}

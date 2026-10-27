@@ -4,8 +4,8 @@
       {
         "symbol": "QQQ",
         "side": "buy",
-        "quantity": 100,
-        "limit_price": "698.00"
+        "quantity": 10,
+        "limit_price": "700.00"
       }
     ]
   },
@@ -15,18 +15,8 @@
         {
           "symbol": "QQQ",
           "side": "buy",
-          "quantity": 110,
-          "limit_price": "706.00"
-        }
-      ]
-    },
-    {
-      "orders": [
-        {
-          "symbol": "QQQ",
-          "side": "buy",
-          "quantity": 120,
-          "limit_price": "713.00"
+          "quantity": 15,
+          "limit_price": "710.00"
         }
       ]
     }

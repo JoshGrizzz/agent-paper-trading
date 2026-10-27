@@ -1,8 +1,14 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "SMCI", "side": "sell", "quantity": 600, "limit_price": "32.60"}
+      {"symbol": "CDNS", "side": "buy", "quantity": 30, "limit_price": "326.00"}
     ]
   },
-  "backups": []
+  "backups": [
+    {
+      "orders": [
+        {"symbol": "CDNS", "side": "buy", "quantity": 20, "limit_price": "329.00"}
+      ]
+    }
+  ]
 }

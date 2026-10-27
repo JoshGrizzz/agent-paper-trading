@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-26T15:37:13.136274-04:00",
+  "codex_session_id": "01a15e77-3ec7-7220-baed-0d063c399c8a",
+  "duration_seconds": 47.234866,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_3_gpt-6-sol_r04/.runner/logs/20261026T193713.148343Z-dbb1591a",
+  "model": "gpt-6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "71255.5200",
+        "reserved": "0",
+        "total": "71255.5200"
+      },
+      "equity": "94240.0200",
+      "initial_cash": "100000.00",
+      "positions_market_value": "22984.5000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-26T15:38:00.312816-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "65.00",
+                "order_id": "ord_000020",
+                "quantity": 175,
+                "side": "sell",
+                "symbol": "UCO"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "64.50",
+                "order_id": "ord_000021",
+                "quantity": 175,
+                "side": "sell",
+                "symbol": "UCO"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000006",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "65.50",
+              "order_id": "ord_000019",
+              "quantity": 175,
+              "side": "sell",
+              "symbol": "UCO"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T15:37:47.896439-04:00",
+        "valid_from": "2026-10-26T15:38:00-04:00",
+        "valid_until": "2026-10-26T19:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 175,
+        "average_cost": "65.9900",
+        "latest_price": "65.6700",
+        "latest_price_at": "2026-10-26T15:36:00-04:00",
+        "market_value": "22984.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 350,
+        "reserved_quantity": 175,
+        "symbol": "UCO",
+        "unrealized_pnl": "-112.0000"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_3_gpt-6-sol_r04",
+  "run_id": "20261026T193713.148343Z-dbb1591a",
+  "session_id": "01a15e77-3ec7-7220-baed-0d063c399c8a",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

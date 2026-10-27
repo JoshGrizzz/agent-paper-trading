@@ -4,8 +4,8 @@
       {
         "symbol": "SPY",
         "side": "buy",
-        "quantity": 40,
-        "limit_price": "763.00"
+        "quantity": 20,
+        "limit_price": "762.00"
       }
     ]
   },
@@ -15,8 +15,8 @@
         {
           "symbol": "SPY",
           "side": "buy",
-          "quantity": 40,
-          "limit_price": "760.00"
+          "quantity": 20,
+          "limit_price": "758.00"
         }
       ]
     },
@@ -25,8 +25,8 @@
         {
           "symbol": "SPY",
           "side": "buy",
-          "quantity": 40,
-          "limit_price": "757.00"
+          "quantity": 20,
+          "limit_price": "754.00"
         }
       ]
     }

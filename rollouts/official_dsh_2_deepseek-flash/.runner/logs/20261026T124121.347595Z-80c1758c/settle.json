@@ -1,0 +1,62 @@
+{
+  "account": {
+    "cash": {
+      "available": "42784.1550",
+      "reserved": "0",
+      "total": "42784.1550"
+    },
+    "equity": "93509.7950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "50725.6400",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-26T08:41:21.336681-04:00",
+  "command": "settle",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 26,
+      "average_cost": "762.9700",
+      "latest_price": "759.9900",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "19759.7400",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 26,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-77.4800"
+    },
+    {
+      "available_quantity": 175,
+      "average_cost": "66.8000",
+      "latest_price": "69.3800",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "12141.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 175,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "451.5000"
+    },
+    {
+      "available_quantity": 105,
+      "average_cost": "180.7152380952380952380952381",
+      "latest_price": "179.2800",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "18824.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 105,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "-150.7000000000000000000000005"
+    }
+  ],
+  "settled": false,
+  "settled_through": "2026-10-23T15:29:00-04:00"
+}

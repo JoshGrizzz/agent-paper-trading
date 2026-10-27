@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "19779.9062",
+      "reserved": "0",
+      "total": "19779.9062"
+    },
+    "equity": "95041.9062",
+    "initial_cash": "100000.00",
+    "positions_market_value": "75262.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-26T08:49:14.414098-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 220,
+      "average_cost": "340.00",
+      "latest_price": "342.1000",
+      "latest_price_at": "2026-10-23T16:00:00-04:00",
+      "market_value": "75262.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 220,
+      "reserved_quantity": 0,
+      "symbol": "WDC",
+      "unrealized_pnl": "462.0000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-23T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-26T08:49:00-04:00",
+    "missing_symbols": [
+      "WDC"
+    ],
+    "start": "2026-10-26T08:00:00-04:00",
+    "symbols": [
+      "WDC"
+    ],
+    "updated_symbols": []
+  }
+}

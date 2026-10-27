@@ -1,0 +1,87 @@
+{
+  "as_of": "2026-10-26T12:08:06.404003-04:00",
+  "codex_session_id": "01a15e73-5641-7430-9d4c-c94d6e4f2c9c",
+  "duration_seconds": 96.58735,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r02/.runner/logs/20261026T160806.416390Z-3ee4609b",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "61109.0000",
+        "reserved": "15290.00",
+        "total": "76399.0000"
+      },
+      "equity": "99362.8000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "22963.8000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-26T12:09:42.936184-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "766.00",
+                "order_id": "ord_000014",
+                "quantity": 10,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000006",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "764.50",
+              "order_id": "ord_000013",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T12:09:10.527431-04:00",
+        "valid_from": "2026-10-26T12:10:00-04:00",
+        "valid_until": "2026-10-26T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 30,
+        "average_cost": "769.50",
+        "latest_price": "765.4600",
+        "latest_price_at": "2026-10-26T12:07:00-04:00",
+        "market_value": "22963.8000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-121.2000"
+      }
+    ],
+    "settled_through": "2026-10-23T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r02",
+  "run_id": "20261026T160806.416390Z-3ee4609b",
+  "session_id": "01a15e73-5641-7430-9d4c-c94d6e4f2c9c",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

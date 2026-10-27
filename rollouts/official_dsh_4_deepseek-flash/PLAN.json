@@ -1,19 +1,15 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "XLE", "side": "buy", "quantity": 110, "limit_price": "69.80"},
-      {"symbol": "XOM", "side": "buy", "quantity": 22, "limit_price": "184.00"},
-      {"symbol": "CVX", "side": "buy", "quantity": 8, "limit_price": "233.80"},
-      {"symbol": "SMH", "side": "buy", "quantity": 10, "limit_price": "529.00"}
+      {"symbol": "QQQ", "side": "buy", "quantity": 20, "limit_price": "716.00"},
+      {"symbol": "SMH", "side": "buy", "quantity": 8, "limit_price": "545.00"}
     ]
   },
   "backups": [
     {
       "orders": [
-        {"symbol": "XLE", "side": "buy", "quantity": 110, "limit_price": "70.50"},
-        {"symbol": "XOM", "side": "buy", "quantity": 22, "limit_price": "185.50"},
-        {"symbol": "CVX", "side": "buy", "quantity": 8, "limit_price": "236.00"},
-        {"symbol": "SMH", "side": "buy", "quantity": 10, "limit_price": "534.00"}
+        {"symbol": "QQQ", "side": "buy", "quantity": 20, "limit_price": "720.00"},
+        {"symbol": "SMH", "side": "buy", "quantity": 8, "limit_price": "549.00"}
       ]
     }
   ]

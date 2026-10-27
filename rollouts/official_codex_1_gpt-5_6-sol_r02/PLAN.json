@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "WDC",
+        "symbol": "TQQQ",
         "side": "buy",
-        "quantity": 220,
-        "limit_price": "340.00"
+        "quantity": 12,
+        "limit_price": "67.80"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "WDC",
+          "symbol": "TQQQ",
           "side": "buy",
-          "quantity": 220,
-          "limit_price": "345.00"
+          "quantity": 12,
+          "limit_price": "68.20"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "WDC",
+          "symbol": "TQQQ",
           "side": "buy",
-          "quantity": 220,
-          "limit_price": "350.00"
+          "quantity": 12,
+          "limit_price": "68.60"
         }
       ]
     }

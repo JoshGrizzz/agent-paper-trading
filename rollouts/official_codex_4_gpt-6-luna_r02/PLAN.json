@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "XOM",
+        "symbol": "SPY",
         "side": "buy",
-        "quantity": 60,
-        "limit_price": "174.00"
+        "quantity": 10,
+        "limit_price": "760.00"
       }
     ]
   }

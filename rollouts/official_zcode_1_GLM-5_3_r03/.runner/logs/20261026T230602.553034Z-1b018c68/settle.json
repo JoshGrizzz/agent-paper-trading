@@ -1,0 +1,62 @@
+{
+  "account": {
+    "cash": {
+      "available": "59573.9950",
+      "reserved": "0",
+      "total": "59573.9950"
+    },
+    "equity": "99141.7700",
+    "initial_cash": "100000.00",
+    "positions_market_value": "39567.7750",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-26T19:06:02.544785-04:00",
+  "command": "settle",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 25,
+      "average_cost": "213.4000",
+      "latest_price": "216.4250",
+      "latest_price_at": "2026-10-26T15:37:00-04:00",
+      "market_value": "5410.6250",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "75.6250"
+    },
+    {
+      "available_quantity": 25,
+      "average_cost": "704.0852",
+      "latest_price": "713.3900",
+      "latest_price_at": "2026-10-26T15:37:00-04:00",
+      "market_value": "17834.7500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "232.6200"
+    },
+    {
+      "available_quantity": 30,
+      "average_cost": "528.5016666666666666666666667",
+      "latest_price": "544.0800",
+      "latest_price_at": "2026-10-26T15:37:00-04:00",
+      "market_value": "16322.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "467.3499999999999999999999990"
+    }
+  ],
+  "settled": false,
+  "settled_through": "2026-10-26T11:59:00-04:00"
+}

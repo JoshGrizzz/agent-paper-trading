@@ -1,0 +1,97 @@
+{
+  "as_of": "2026-10-26T12:02:41.017334-04:00",
+  "codex_session_id": "01a15e77-3ebe-7a22-98f2-186643c91163",
+  "duration_seconds": 51.647829,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "67.40",
+      "filled_at": "2026-10-26T09:36:00-04:00",
+      "limit_price": "67.40",
+      "order_id": "ord_000024",
+      "quantity": 1250,
+      "side": "sell",
+      "symbol": "TQQQ"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r04/.runner/logs/20261026T160241.055523Z-a6a3e9cc",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "36.2000",
+        "reserved": "85070.00",
+        "total": "85106.2000"
+      },
+      "equity": "85106.2000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-26T12:03:32.635426-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "710.00",
+                "order_id": "ord_000028",
+                "quantity": 119,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "70.00",
+                "order_id": "ord_000029",
+                "quantity": 1200,
+                "side": "buy",
+                "symbol": "SSO"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000010",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "90.50",
+              "order_id": "ord_000027",
+              "quantity": 940,
+              "side": "buy",
+              "symbol": "SOXL"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-26T12:03:21.742942-04:00",
+        "valid_from": "2026-10-26T12:04:00-04:00",
+        "valid_until": "2026-10-26T15:30:00-04:00"
+      }
+    ],
+    "positions": [],
+    "settled_through": "2026-10-26T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r04",
+  "run_id": "20261026T160241.055523Z-a6a3e9cc",
+  "session_id": "01a15e77-3ebe-7a22-98f2-186643c91163",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": false
+}

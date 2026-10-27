@@ -1,0 +1,43 @@
+{
+  "account": {
+    "cash": {
+      "available": "92198.5000",
+      "reserved": "0",
+      "total": "92198.5000"
+    },
+    "equity": "92198.5000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-26T12:04:11.006895-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "64.9000",
+      "filled_at": "2026-10-26T09:30:00-04:00",
+      "limit_price": "64.50",
+      "order_id": "ord_000021",
+      "quantity": 550,
+      "side": "sell",
+      "symbol": "UCO"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "66.25",
+      "filled_at": "2026-10-26T11:51:00-04:00",
+      "limit_price": "66.25",
+      "order_id": "ord_000022",
+      "quantity": 550,
+      "side": "sell",
+      "symbol": "UCO"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [],
+  "settled": true,
+  "settled_through": "2026-10-26T11:59:00-04:00"
+}

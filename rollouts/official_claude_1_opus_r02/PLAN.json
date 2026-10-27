@@ -1,8 +1,8 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "MU", "side": "sell", "quantity": 5, "limit_price": "875.00"},
-      {"symbol": "SMH", "side": "sell", "quantity": 5, "limit_price": "525.00"}
+      {"symbol": "QQQ", "side": "buy", "quantity": 10, "limit_price": "714.00"},
+      {"symbol": "SMH", "side": "buy", "quantity": 5, "limit_price": "545.00"}
     ]
   },
   "backups": []

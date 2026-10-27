@@ -3,10 +3,32 @@
     "orders": [
       {
         "symbol": "TQQQ",
-        "side": "sell",
-        "quantity": 200,
-        "limit_price": "66.00"
+        "side": "buy",
+        "quantity": 100,
+        "limit_price": "68.25"
       }
     ]
-  }
+  },
+  "backups": [
+    {
+      "orders": [
+        {
+          "symbol": "TQQQ",
+          "side": "buy",
+          "quantity": 100,
+          "limit_price": "66.50"
+        }
+      ]
+    },
+    {
+      "orders": [
+        {
+          "symbol": "TQQQ",
+          "side": "buy",
+          "quantity": 100,
+          "limit_price": "64.50"
+        }
+      ]
+    }
+  ]
 }
