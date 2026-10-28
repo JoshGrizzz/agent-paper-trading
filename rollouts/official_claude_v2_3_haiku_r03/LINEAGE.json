@@ -1,0 +1,12 @@
+{
+  "clean_restart": true,
+  "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+  "model": "haiku",
+  "predecessor": "official_claude_3_haiku_r03",
+  "predecessor_final_equity": "99948.5000",
+  "predecessor_state_checksum": "ac5f2cb63dcc1101281185444f1c342149164626a37a4ee3be586f832a0a5670",
+  "schema_version": 1,
+  "successor": "official_claude_v2_3_haiku_r03",
+  "successor_initial_cash": "99948.5000",
+  "successor_state_checksum": "8e3339451c26a0d4d9f36d31046c61ef41733cb7e53627a577fae1c8022505c2"
+}

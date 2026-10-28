@@ -1,0 +1,7 @@
+{
+  "archived_at": "2026-10-28T03:08:11.127856+00:00",
+  "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+  "manifest": "cohorts/official_claude_v2.json",
+  "schema_version": 1,
+  "successor": "official_claude_v2_1_opus_r05"
+}

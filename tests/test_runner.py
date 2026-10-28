@@ -281,6 +281,10 @@ class RunnerTests(unittest.TestCase):
         )
         self.assertIn("可以使用 sed 等只读命令读取这四个文件", prompt)
         self.assertIn("必须明确包含 `提交交易方案`、`撤销交易方案` 或 `不操作`", prompt)
+        self.assertIn(
+            "本次比赛统一结束时间为 2026-12-02T16:00:00-05:00（美东时间）。",
+            prompt,
+        )
 
     def test_normalizes_final_section_list_label(self) -> None:
         malformed = decision_record().replace(

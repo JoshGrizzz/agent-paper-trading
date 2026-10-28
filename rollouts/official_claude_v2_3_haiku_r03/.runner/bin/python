@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /home/josh/miniconda3/envs/finance/bin/python3 /home/josh/tst-ttt/src/trading_runner/research_sandbox.py "$@"

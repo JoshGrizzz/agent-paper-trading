@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 
 from trading_broker.state_models import initial_state
 from trading_broker.state_store import (
+    InitialCashMismatchError,
     StateConflictError,
     StateStore,
     state_from_dict,
@@ -38,6 +39,16 @@ class StateStoreTests(unittest.TestCase):
         restored = state_from_dict(state_to_dict(state))
         self.assertEqual(restored, state)
         self.assertIsInstance(restored.cash_total, Decimal)
+
+    def test_existing_account_rejects_different_initial_cash(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            store = StateStore(directory)
+            occurred_at = datetime(2026, 1, 5, 8, tzinfo=ET)
+            store.initialize(D("100001.2345"), occurred_at=occurred_at)
+            self.assertEqual(store.ledger.read_all()[0]["initial_cash"], "100001.2345")
+            with self.assertRaises(InitialCashMismatchError):
+                store.initialize(D("100001.2346"), occurred_at=occurred_at)
+            self.assertEqual(store.load().initial_cash, D("100001.2345"))
 
     def test_commit_updates_snapshot_and_appends_history(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

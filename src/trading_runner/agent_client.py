@@ -38,6 +38,7 @@ class AgentClient(Protocol):
         reasoning_effort: str,
         session_id: str | None,
         allow_search: bool,
+        allow_isolated_python: bool,
         environment: Mapping[str, str],
         timeout_seconds: int,
         output_directory: Path,
@@ -193,6 +194,7 @@ class CodexClient:
         reasoning_effort: str,
         session_id: str | None,
         allow_search: bool,
+        allow_isolated_python: bool,
         environment: Mapping[str, str],
         timeout_seconds: int,
         output_directory: Path,
@@ -251,9 +253,12 @@ class ClaudeClient:
         session_id: str | None,
         initial_session_id: str | None = None,
         allow_search: bool = True,
+        allow_isolated_python: bool = False,
     ) -> list[str]:
         tools = ["Read", "Write", "Edit", "Bash"]
         allowed_tools = ["Read", "Write", "Edit", "Bash(./broker *)"]
+        if allow_isolated_python:
+            allowed_tools.extend(["Bash(python3 *)", "Bash(python *)"])
         denied_tools = ["Agent"]
         if allow_search:
             tools.extend(["WebSearch", "WebFetch"])
@@ -297,6 +302,7 @@ class ClaudeClient:
         reasoning_effort: str,
         session_id: str | None,
         allow_search: bool,
+        allow_isolated_python: bool,
         environment: Mapping[str, str],
         timeout_seconds: int,
         output_directory: Path,
@@ -308,6 +314,7 @@ class ClaudeClient:
             session_id=session_id,
             initial_session_id=expected_session_id,
             allow_search=allow_search,
+            allow_isolated_python=allow_isolated_python,
         )
         started = time.monotonic()
         completed = subprocess.run(
@@ -358,6 +365,7 @@ class DshClient:
         reasoning_effort: str,
         session_id: str | None,
         allow_search: bool,
+        allow_isolated_python: bool,
         environment: Mapping[str, str],
         timeout_seconds: int,
         output_directory: Path,
@@ -434,6 +442,7 @@ class ZCodeClient:
         reasoning_effort: str,
         session_id: str | None,
         allow_search: bool,
+        allow_isolated_python: bool,
         environment: Mapping[str, str],
         timeout_seconds: int,
         output_directory: Path,

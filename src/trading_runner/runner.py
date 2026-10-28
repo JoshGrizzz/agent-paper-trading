@@ -26,11 +26,13 @@ from .agent_client import (
     ZCodeClient,
     session_id_from_output,
 )
+from .rollout_profile import RolloutProfile, load_profile
 
 
 _NEW_YORK = ZoneInfo("America/New_York")
 _ROLLOUT_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$")
 _PROJECT_ROOT = Path(__file__).resolve().parents[2]
+_COMPETITION_END_AT = datetime(2026, 12, 2, 16, 0, tzinfo=_NEW_YORK)
 
 FIXED_PROMPT = """你正在参加一个美股模拟交易比赛。你的目标是在比赛结束时尽可能提高账户价值。
 
@@ -42,7 +44,7 @@ FIXED_PROMPT = """你正在参加一个美股模拟交易比赛。你的目标�
 
 完成操作后再次查看账户状态，并逐项确认主方案和每个 backup 是否被接受。你的预算仅用于决策说明，最终结果始终以 broker 的独立校验为准。
 
-若 harness 实际对 Bash 使用命令白名单：请使用文件写入工具单独创建 PLAN.json；每次 Bash 调用只能执行一条以 `./broker` 开头的命令。不要把 `cat`、`mkdir`、`cd`、重定向、管道、分号、`echo` 或第二条命令与 `./broker` 拼在同一次 Bash 调用中。提交和随后查询状态必须分成两次独立的 `./broker` 调用。不要仅因本提示提到白名单就假定当前 harness 禁止读取文件；有专用读取工具时，读取文件不属于 Bash 调用。
+若 harness 实际对 Bash 使用命令白名单：只能执行该白名单明确允许的命令。请使用文件写入工具单独创建 PLAN.json；不要把 `cat`、`mkdir`、`cd`、重定向、管道、分号、`echo` 或第二条命令与 `./broker` 拼在同一次 Bash 调用中。提交和随后查询状态必须分成两次独立的 `./broker` 调用。不要仅因本提示提到白名单就假定当前 harness 禁止读取文件；有专用读取工具时，读取文件不属于 Bash 调用。
 
 不得创建子 Agent、并行 Agent 或委派任务。不要修改 broker、共享规则文件、DECISIONS.md 或 .runner；每轮结束时，最终回复必须且只能包含一条符合 DECISION_FORMAT.md 的决策记录，runner 会自动追加该记录。`### 本轮判断`、`### 资金与持仓检查`、`### 本轮操作`、`### 后续计划` 四个标题必须分别独占一行，并保留三个 `#`，不得改写成列表项或加粗文本。`### 本轮操作` 必须明确包含 `提交交易方案`、`撤销交易方案` 或 `不操作` 三者之一。
 """
@@ -109,11 +111,71 @@ def _write_text(path: Path, content: str) -> None:
     _atomic_write(path, content.encode("utf-8"))
 
 
+def _render_broker_rules(source: bytes, profile: RolloutProfile) -> bytes:
+    if not profile.is_v2:
+        return source
+    text = source.decode("utf-8")
+    old = "- 初始现金为 100,000 美元，所有金额以美元计。"
+    if old not in text:
+        raise RunnerError("BROKER.md initial-cash rule was not found")
+    amount = format(profile.initial_cash, "f")
+    text = text.replace(
+        old, f"- 初始现金为 {amount} 美元，所有金额以美元计。", 1
+    )
+    if profile.overnight_smoke_until_next_noon:
+        text += (
+            "\n\n## 隔离 smoke 临时覆盖\n\n"
+            "- 若方案在当日 20:00 之后提交，valid_until 为下一个交易日 "
+            "12:00；该方案可在隔夜后的盘前和开盘后按正常真实行情触发。\n"
+        )
+    return text.encode("utf-8")
+
+
+def _compatibility_link(directory: Path, target_directory: Path, name: str) -> None:
+    if target_directory == directory:
+        return
+    link = directory / name
+    expected = Path(target_directory.name) / name
+    if link.is_symlink():
+        if Path(os.readlink(link)) != expected:
+            raise RunnerError(f"unexpected compatibility symlink: {link}")
+        return
+    if link.exists():
+        raise RunnerError(f"compatibility path already exists: {link}")
+    link.symlink_to(expected)
+
+
+def _write_python_launchers(config: RunConfig, directory: Path) -> None:
+    runtime_bin = directory / ".runner" / "bin"
+    runtime_bin.mkdir(parents=True, exist_ok=True)
+    sandbox_script = config.project_root / "src" / "trading_runner" / "research_sandbox.py"
+    forward_arguments = chr(34) + chr(36) + chr(64) + chr(34)
+    for name in ("python", "python3"):
+        launcher = runtime_bin / name
+        text = (
+            "#!/bin/sh\nexec "
+            + shlex.quote(sys.executable)
+            + " "
+            + shlex.quote(str(sandbox_script))
+            + " "
+            + forward_arguments
+            + "\n"
+        )
+        _write_text(launcher, text)
+        launcher.chmod(0o755)
+
+
 def initialize_rollout(config: RunConfig) -> Path:
     directory = config.rollout_directory
     directory.mkdir(parents=True, exist_ok=True)
     (directory / ".broker").mkdir(exist_ok=True)
     (directory / ".runner" / "logs").mkdir(parents=True, exist_ok=True)
+    profile = load_profile(directory)
+    document_directory = profile.workspace(directory)
+    document_directory.mkdir(parents=True, exist_ok=True)
+    if profile.allow_isolated_python:
+        (document_directory / "research").mkdir(exist_ok=True)
+        (directory / ".runner" / "research_runs").mkdir(exist_ok=True)
 
     shared = {
         "BROKER.md": config.project_root / "BROKER.md",
@@ -123,63 +185,88 @@ def initialize_rollout(config: RunConfig) -> Path:
     for name, source in shared.items():
         if not source.is_file():
             raise RunnerError(f"missing shared file: {source}")
-        target = directory / name
+        target = document_directory / name
         source_bytes = source.read_bytes()
+        if name == "BROKER.md":
+            source_bytes = _render_broker_rules(source_bytes, profile)
         if target.is_symlink():
-            if target.resolve() != source.resolve():
+            if profile.is_v2 or target.resolve() != source.resolve():
                 raise RunnerError(f"unexpected shared-file symlink: {target}")
             target.unlink()
-        elif target.exists():
+        if target.exists():
             if not target.is_file() or target.read_bytes() != source_bytes:
                 raise RunnerError(
                     f"rollout rule snapshot does not match project source: {target}"
                 )
-        if not target.exists():
+        else:
             _atomic_write(target, source_bytes)
         target.chmod(0o444)
+        _compatibility_link(directory, document_directory, name)
 
-    decisions = directory / "DECISIONS.md"
+    decisions = document_directory / "DECISIONS.md"
     if not decisions.exists():
         template = config.project_root / "templates" / "DECISIONS.md"
         _atomic_write(decisions, template.read_bytes())
+    _compatibility_link(directory, document_directory, "DECISIONS.md")
 
     broker_source = config.project_root / "broker"
     if not broker_source.is_file():
         raise RunnerError(f"missing broker executable: {broker_source}")
-    launcher = directory / "broker"
+    launcher = document_directory / "broker"
+    broker_data = directory / ".broker"
+    market_cache = config.project_root / ".market-cache"
+    universe = config.project_root / "universe.txt"
+    forward_arguments = chr(34) + chr(36) + chr(64) + chr(34)
     launcher_lines = [
         "#!/bin/sh",
-        f"export BROKER_DATA_DIR={shlex.quote(str(directory / '.broker'))}",
-        f"export BROKER_MARKET_CACHE={shlex.quote(str(config.project_root / '.market-cache'))}",
-        f"export BROKER_UNIVERSE={shlex.quote(str(config.project_root / 'universe.txt'))}",
+        f"export BROKER_DATA_DIR={shlex.quote(str(broker_data))}",
+        f"export BROKER_MARKET_CACHE={shlex.quote(str(market_cache))}",
+        f"export BROKER_UNIVERSE={shlex.quote(str(universe))}",
+        f"export BROKER_INITIAL_CASH={shlex.quote(str(profile.initial_cash))}",
+        (
+            "export BROKER_OVERNIGHT_SMOKE_UNTIL_NEXT_NOON=1"
+            if profile.overnight_smoke_until_next_noon
+            else "unset BROKER_OVERNIGHT_SMOKE_UNTIL_NEXT_NOON"
+        ),
         "unset BROKER_AS_OF",
     ]
     command = (
         f"exec {shlex.quote(sys.executable)} "
-        f"{shlex.quote(str(broker_source.resolve()))} \"$@\""
+        f"{shlex.quote(str(broker_source.resolve()))} " + forward_arguments
     )
     if config.frozen_time:
         command += f" --as-of {shlex.quote(config.as_of.isoformat())}"
     launcher_lines.append(command)
-    launcher_text = "\n".join(launcher_lines) + "\n"
-    _write_text(launcher, launcher_text)
+    _write_text(launcher, "\n".join(launcher_lines) + "\n")
     launcher.chmod(0o755)
+    _compatibility_link(directory, document_directory, "broker")
+    if profile.allow_isolated_python:
+        _write_python_launchers(config, directory)
     return directory
 
 
 def build_environment(config: RunConfig) -> dict[str, str]:
     directory = config.rollout_directory
-    return {
+    profile = load_profile(directory)
+    environment = {
         "BROKER_DATA_DIR": str(directory / ".broker"),
         "BROKER_MARKET_CACHE": str(config.project_root / ".market-cache"),
         "BROKER_UNIVERSE": str(config.project_root / "universe.txt"),
-        # Mask inherited test overrides during real runs. Only explicit
-        # --as-of tests freeze the time seen by Agent-issued broker commands.
-        "BROKER_AS_OF": (
-            config.as_of.isoformat() if config.frozen_time else ""
+        "BROKER_INITIAL_CASH": str(profile.initial_cash),
+        "BROKER_OVERNIGHT_SMOKE_UNTIL_NEXT_NOON": (
+            "1" if profile.overnight_smoke_until_next_noon else "0"
         ),
+        "BROKER_AS_OF": config.as_of.isoformat() if config.frozen_time else "",
         "PYTHONUNBUFFERED": "1",
     }
+    if profile.allow_isolated_python:
+        environment.update({
+            "PATH": str(directory / ".runner" / "bin") + os.pathsep + os.environ.get("PATH", ""),
+            "TRADING_RESEARCH_WORKSPACE": str(profile.workspace(directory)),
+            "TRADING_RESEARCH_AUDIT_DIR": str(directory / ".runner" / "research_runs"),
+            "TRADING_RESEARCH_PYTHON_ENV": str(Path(sys.executable).resolve().parents[1]),
+        })
+    return environment
 
 
 def run_broker(
@@ -226,6 +313,10 @@ def run_broker(
 
 def build_prompt(as_of: datetime, *, frozen_time: bool = False) -> str:
     local = as_of.astimezone(_NEW_YORK)
+    competition_notice = (
+        "本次比赛统一结束时间为 "
+        f"{_COMPETITION_END_AT.isoformat()}（美东时间）。\n\n"
+    )
     test_notice = ""
     if frozen_time:
         test_notice = (
@@ -238,7 +329,7 @@ def build_prompt(as_of: datetime, *, frozen_time: bool = False) -> str:
         "不要把决策记录放进代码围栏。"
     )
     return (
-        f"{FIXED_PROMPT}\n{test_notice}{output_notice}\n\n"
+        f"{FIXED_PROMPT}\n{competition_notice}{test_notice}{output_notice}\n\n"
         f"当前时间：{local.isoformat()}。继续。\n"
     )
 
@@ -441,8 +532,14 @@ def run_once(
     broker_call: BrokerCall = run_broker,
 ) -> dict[str, Any]:
     workdir = config.rollout_directory
+    for marker in ("ARCHIVED.json", "PENDING.json"):
+        if (workdir / ".runner" / marker).exists():
+            raise RunnerError(f"rollout is not runnable: {marker}")
     (workdir / ".runner").mkdir(parents=True, exist_ok=True)
     with _rollout_lock(workdir):
+        for marker in ("ARCHIVED.json", "PENDING.json"):
+            if (workdir / ".runner" / marker).exists():
+                raise RunnerError(f"rollout is not runnable: {marker}")
         initialize_rollout(config)
         return _run_once_locked(
             config,
@@ -458,6 +555,8 @@ def _run_once_locked(
     broker_call: BrokerCall = run_broker,
 ) -> dict[str, Any]:
     workdir = config.rollout_directory
+    profile = load_profile(workdir)
+    agent_workdir = profile.workspace(workdir)
     environment = build_environment(config)
     client = agent_client or _client_for(config.harness)
     session_path = workdir / ".runner" / "session.json"
@@ -487,10 +586,10 @@ def _run_once_locked(
     _write_text(log_directory / "metadata.json", _json_text(metadata))
     _write_text(log_directory / "prompt.txt", prompt)
 
-    decisions_path = workdir / "DECISIONS.md"
-    broker_path = workdir / "broker"
+    decisions_path = agent_workdir / "DECISIONS.md"
+    broker_path = agent_workdir / "broker"
     rule_paths = tuple(
-        workdir / name
+        agent_workdir / name
         for name in ("BROKER.md", "universe.txt", "DECISION_FORMAT.md")
     )
     decisions_before = decisions_path.read_bytes()
@@ -523,11 +622,12 @@ def _run_once_locked(
         try:
             agent_result = client.invoke(
                 prompt=prompt,
-                workdir=workdir,
+                workdir=agent_workdir,
                 model=config.model,
                 reasoning_effort=config.reasoning_effort,
                 session_id=session_id,
                 allow_search=not config.frozen_time,
+                allow_isolated_python=profile.allow_isolated_python,
                 environment=environment,
                 timeout_seconds=config.timeout_seconds,
                 output_directory=log_directory,

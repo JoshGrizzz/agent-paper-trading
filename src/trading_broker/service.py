@@ -50,7 +50,10 @@ class ServiceError(RuntimeError):
         return f"{self.code}: {self.message}"
 
 
-def submission_window(as_of: datetime) -> tuple[datetime, datetime]:
+def submission_window(
+    as_of: datetime,
+    *, overnight_smoke_until_next_noon: bool = False,
+) -> tuple[datetime, datetime]:
     if as_of.tzinfo is None or as_of.utcoffset() is None:
         raise ValueError("as_of must be timezone-aware")
     local = as_of.astimezone(_NEW_YORK)
@@ -70,6 +73,11 @@ def submission_window(as_of: datetime) -> tuple[datetime, datetime]:
         datetime.combine(local.date(), time(20), _NEW_YORK),
     )
     valid_until = next((item for item in endpoints if item > valid_from), None)
+    if valid_until is None and overnight_smoke_until_next_noon:
+        next_session = local.date() + timedelta(days=1)
+        while next_session.weekday() >= 5:
+            next_session += timedelta(days=1)
+        valid_until = datetime.combine(next_session, time(12), _NEW_YORK)
     if valid_until is None:
         raise ServiceError(
             "INVALID_ARGUMENT",
@@ -142,9 +150,13 @@ class BrokerService:
         *,
         clock: Callable[[], datetime],
         initial_cash: Decimal = _INITIAL_CASH,
+        overnight_smoke_until_next_noon: bool = False,
     ) -> None:
         self.state_store = state_store
         self.market_cache = market_cache
+        self.overnight_smoke_until_next_noon = (
+            overnight_smoke_until_next_noon
+        )
         self.market_provider = market_provider
         self.allowed_symbols = allowed_symbols
         self.clock = clock
@@ -159,6 +171,8 @@ class BrokerService:
         market_provider: MarketDataProvider,
         *,
         clock: Callable[[], datetime],
+        initial_cash: Decimal = _INITIAL_CASH,
+        overnight_smoke_until_next_noon: bool = False,
     ) -> "BrokerService":
         return cls(
             StateStore(data_directory),
@@ -166,6 +180,8 @@ class BrokerService:
             market_provider,
             load_symbol_universe(universe_path),
             clock=clock,
+            initial_cash=initial_cash,
+            overnight_smoke_until_next_noon=overnight_smoke_until_next_noon,
         )
 
     def _now(self, value: datetime | None = None) -> datetime:
@@ -336,7 +352,10 @@ class BrokerService:
                 prior_outcome.match.fills if prior_outcome else (),
             )
 
-        valid_from, valid_until = submission_window(now)
+        valid_from, valid_until = submission_window(
+            now,
+            overnight_smoke_until_next_noon=self.overnight_smoke_until_next_noon,
+        )
         plan_id = f"plan_{state.next_plan_number:06d}"
         try:
             validation = validate_plan_request(

@@ -1,0 +1,12 @@
+{
+  "clean_restart": true,
+  "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+  "model": "opus",
+  "predecessor": "official_claude_1_opus_r01",
+  "predecessor_final_equity": "99723.9000",
+  "predecessor_state_checksum": "0e3fea431b79d08ed5f1800c164ef69027473471ca5786cf26141a817fe8b889",
+  "schema_version": 1,
+  "successor": "official_claude_v2_1_opus_r01",
+  "successor_initial_cash": "99723.9000",
+  "successor_state_checksum": "b01b0e09ca6bb5405c315bfaaa113e076934061d1b9d24128d1fb20a2231c17c"
+}

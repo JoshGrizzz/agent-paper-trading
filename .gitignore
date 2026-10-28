@@ -34,3 +34,5 @@ rollouts/*/BROKER.md
 rollouts/*/DECISION_FORMAT.md
 rollouts/*/broker
 rollouts/*/universe.txt
+
+rollouts/.*.lock

@@ -8,13 +8,14 @@ import os
 import sys
 import traceback
 from datetime import datetime
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from .market_data import YahooFinanceProvider
 from .plan_io import PlanInputError, load_plan_file
 from .service import BrokerService, ServiceError
-from .state_store import StateConflictError
+from .state_store import InitialCashMismatchError, StateConflictError
 from .validator import PlanValidationError
 
 
@@ -60,12 +61,26 @@ def _service() -> BrokerService:
     universe_path = Path(
         os.environ.get("BROKER_UNIVERSE", repository / "universe.txt")
     )
+    raw_initial_cash = os.environ.get("BROKER_INITIAL_CASH", "100000.00")
+    try:
+        initial_cash = Decimal(raw_initial_cash)
+    except InvalidOperation as error:
+        raise ValueError("BROKER_INITIAL_CASH must be a decimal number") from error
+    if not initial_cash.is_finite() or initial_cash <= 0:
+        raise ValueError("BROKER_INITIAL_CASH must be a positive finite number")
+    raw_overnight_smoke = os.environ.get(
+        "BROKER_OVERNIGHT_SMOKE_UNTIL_NEXT_NOON", "0"
+    )
+    if raw_overnight_smoke not in {"0", "1"}:
+        raise ValueError("BROKER_OVERNIGHT_SMOKE_UNTIL_NEXT_NOON must be 0 or 1")
     return BrokerService.from_paths(
         data_directory,
         cache_directory,
         universe_path,
         YahooFinanceProvider(),
         clock=lambda: datetime.now(_NEW_YORK),
+        initial_cash=initial_cash,
+        overnight_smoke_until_next_noon=raw_overnight_smoke == "1",
     )
 
 
@@ -89,7 +104,7 @@ def _error_document(command: str, error: Exception, now: datetime) -> dict:
         code = error.issue.code.value
         message = error.issue.message
         details = dict(error.issue.details)
-    elif isinstance(error, StateConflictError):
+    elif isinstance(error, (StateConflictError, InitialCashMismatchError)):
         code = "STATE_CONFLICT"
         message = str(error)
     elif isinstance(error, (ValueError, FileNotFoundError)):
@@ -117,6 +132,7 @@ def _is_public_error(error: Exception) -> bool:
             PlanInputError,
             PlanValidationError,
             StateConflictError,
+            InitialCashMismatchError,
             ValueError,
             FileNotFoundError,
         ),

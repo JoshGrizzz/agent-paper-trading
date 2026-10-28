@@ -1,0 +1,12 @@
+{
+  "clean_restart": true,
+  "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+  "model": "sonnet",
+  "predecessor": "official_claude_2_sonnet_r02",
+  "predecessor_final_equity": "99816.7000",
+  "predecessor_state_checksum": "0f75b5b9a62f5b2ba57e07adeb775c4466c2f18c52d4a6efd1d47df8c3f637a8",
+  "schema_version": 1,
+  "successor": "official_claude_v2_2_sonnet_r02",
+  "successor_initial_cash": "99816.7000",
+  "successor_state_checksum": "d8c195cf870c5d7762bc58c45476bfe7988a80429cac393b48fd4f3f5f8c7809"
+}

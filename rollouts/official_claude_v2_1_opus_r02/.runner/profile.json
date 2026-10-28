@@ -1,0 +1,8 @@
+{
+  "allow_isolated_python": true,
+  "cohort": "official_claude_v2",
+  "initial_cash": "99701.8250",
+  "predecessor": "official_claude_1_opus_r02",
+  "schema_version": 1,
+  "workspace": "workspace"
+}

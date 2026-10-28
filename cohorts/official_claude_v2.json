@@ -1,0 +1,159 @@
+{
+  "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+  "rollouts": [
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "opus",
+      "predecessor": "official_claude_1_opus_r01",
+      "predecessor_final_equity": "99723.9000",
+      "predecessor_state_checksum": "0e3fea431b79d08ed5f1800c164ef69027473471ca5786cf26141a817fe8b889",
+      "successor": "official_claude_v2_1_opus_r01",
+      "successor_initial_cash": "99723.9000",
+      "successor_state_checksum": "b01b0e09ca6bb5405c315bfaaa113e076934061d1b9d24128d1fb20a2231c17c"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "opus",
+      "predecessor": "official_claude_1_opus_r02",
+      "predecessor_final_equity": "99701.8250",
+      "predecessor_state_checksum": "32c2f465ad3b7a273edec3182348db8fef7fbac0b6a91df1b55fdb50ac88da6f",
+      "successor": "official_claude_v2_1_opus_r02",
+      "successor_initial_cash": "99701.8250",
+      "successor_state_checksum": "efad242dcceabb65341e67e9267bcf12804b2eb576fda117690fe06bc765ef2b"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "opus",
+      "predecessor": "official_claude_1_opus_r03",
+      "predecessor_final_equity": "99848.4000",
+      "predecessor_state_checksum": "d852ee32583dd9e9889e4c06e3ef326577ed86d0b69f5eb82f245f0305b2b6e5",
+      "successor": "official_claude_v2_1_opus_r03",
+      "successor_initial_cash": "99848.4000",
+      "successor_state_checksum": "fc7877b33be88e2b6a246e3ba585426f2878d549e83a123183468b6ba57de3ce"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "opus",
+      "predecessor": "official_claude_1_opus_r04",
+      "predecessor_final_equity": "99957.4400",
+      "predecessor_state_checksum": "3dbed6002641c4cb64c83794f345a2d9861c34d34631cd0a700ba0ddbb0406ee",
+      "successor": "official_claude_v2_1_opus_r04",
+      "successor_initial_cash": "99957.4400",
+      "successor_state_checksum": "74ad8f3c417ba48769e97749b1a32feffa7321bfe588d889abbcb4f1f2797448"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "opus",
+      "predecessor": "official_claude_1_opus_r05",
+      "predecessor_final_equity": "99619.2250",
+      "predecessor_state_checksum": "5d2f729e09be68b1a7ea13b8bc4fc6838338301e29890af8a5090d7a33269323",
+      "successor": "official_claude_v2_1_opus_r05",
+      "successor_initial_cash": "99619.2250",
+      "successor_state_checksum": "a00eefdc1fefe84b82af19273e5f7a894c859471b575a86d628ca8a62efad5fc"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "sonnet",
+      "predecessor": "official_claude_2_sonnet_r01",
+      "predecessor_final_equity": "99872.8000",
+      "predecessor_state_checksum": "c1e505524ced2a134e0cd126b6a05b3ca294e830e8cbefe18a0a269f258c2b0c",
+      "successor": "official_claude_v2_2_sonnet_r01",
+      "successor_initial_cash": "99872.8000",
+      "successor_state_checksum": "1bbe8c136fe08a5f3a73b08b45319413f0cd914bb0a4b53dca707065d87b263f"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "sonnet",
+      "predecessor": "official_claude_2_sonnet_r02",
+      "predecessor_final_equity": "99816.7000",
+      "predecessor_state_checksum": "0f75b5b9a62f5b2ba57e07adeb775c4466c2f18c52d4a6efd1d47df8c3f637a8",
+      "successor": "official_claude_v2_2_sonnet_r02",
+      "successor_initial_cash": "99816.7000",
+      "successor_state_checksum": "d8c195cf870c5d7762bc58c45476bfe7988a80429cac393b48fd4f3f5f8c7809"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "sonnet",
+      "predecessor": "official_claude_2_sonnet_r03",
+      "predecessor_final_equity": "99986.1000",
+      "predecessor_state_checksum": "11f087216acd310338ef57899b6b5065dd9336bab658ddaf071d7406e0c0c58f",
+      "successor": "official_claude_v2_2_sonnet_r03",
+      "successor_initial_cash": "99986.1000",
+      "successor_state_checksum": "b9857c26f1bba87ce1ad1972779b6ebfa68a23c655ae7432093ed64045a3414a"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "sonnet",
+      "predecessor": "official_claude_2_sonnet_r04",
+      "predecessor_final_equity": "100195.1200",
+      "predecessor_state_checksum": "b10a73245ccd7986054e47c3ce94042119d2a47f11035d625a5adee55935f761",
+      "successor": "official_claude_v2_2_sonnet_r04",
+      "successor_initial_cash": "100195.1200",
+      "successor_state_checksum": "f54ff21350ebefb6ee10986b93a42e7a5cb3d1e6c95df3ff5fc45b66c1f29160"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "sonnet",
+      "predecessor": "official_claude_2_sonnet_r05",
+      "predecessor_final_equity": "99830.8000",
+      "predecessor_state_checksum": "072f63adab0ab7344e1898d07fc24dd40409f159fca454b46651028a953a8d37",
+      "successor": "official_claude_v2_2_sonnet_r05",
+      "successor_initial_cash": "99830.8000",
+      "successor_state_checksum": "5091df8f42e564b7b2111013527d47f91bcdf6e3595573da8d9b63f855155010"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "haiku",
+      "predecessor": "official_claude_3_haiku_r01",
+      "predecessor_final_equity": "100698.4000",
+      "predecessor_state_checksum": "73ca639db91bb9758b650a798a9df36c0fa73a8362a0efa15e2bd69851fe1b17",
+      "successor": "official_claude_v2_3_haiku_r01",
+      "successor_initial_cash": "100698.4000",
+      "successor_state_checksum": "eec4896fc44033006dca442dac287faa0c1f1e2544e6cc4e0c9273d064285b11"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "haiku",
+      "predecessor": "official_claude_3_haiku_r02",
+      "predecessor_final_equity": "99904.6000",
+      "predecessor_state_checksum": "2986095fe7f42084338a0b3c0b673be071812689cc913828eb8cd50c93f07d67",
+      "successor": "official_claude_v2_3_haiku_r02",
+      "successor_initial_cash": "99904.6000",
+      "successor_state_checksum": "b0095fa08c71aedd0457ddd3bbbe6089b4db3af2ffc0fca32f932892ff9fcbcb"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "haiku",
+      "predecessor": "official_claude_3_haiku_r03",
+      "predecessor_final_equity": "99948.5000",
+      "predecessor_state_checksum": "ac5f2cb63dcc1101281185444f1c342149164626a37a4ee3be586f832a0a5670",
+      "successor": "official_claude_v2_3_haiku_r03",
+      "successor_initial_cash": "99948.5000",
+      "successor_state_checksum": "8e3339451c26a0d4d9f36d31046c61ef41733cb7e53627a577fae1c8022505c2"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "haiku",
+      "predecessor": "official_claude_3_haiku_r04",
+      "predecessor_final_equity": "99684.7000",
+      "predecessor_state_checksum": "eae31e22b04fc2b39e06c78a49e9fc7fe87ad18362da64c5b40c328b69f9a135",
+      "successor": "official_claude_v2_3_haiku_r04",
+      "successor_initial_cash": "99684.7000",
+      "successor_state_checksum": "693f7a7b2c899b46dbc2df4ec8f13b82c522a0311d625f76a9c1cc35afd1c329"
+    },
+    {
+      "handoff_as_of": "2026-10-27T23:08:02.458187-04:00",
+      "model": "haiku",
+      "predecessor": "official_claude_3_haiku_r05",
+      "predecessor_final_equity": "99920.5000",
+      "predecessor_state_checksum": "27ad5dbfe6edd7bd79365e4a6b177d12359cbb90e7794cbc52156eed9872b79e",
+      "successor": "official_claude_v2_3_haiku_r05",
+      "successor_initial_cash": "99920.5000",
+      "successor_state_checksum": "af1a589bfea1a3fb9ad5761a565c7ec898b5d782575e2eb57b53116890acf2c4"
+    }
+  ],
+  "schema_version": 1,
+  "source_set": "official_claude",
+  "status": "committed",
+  "target_set": "official_claude_v2"
+}

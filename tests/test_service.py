@@ -98,6 +98,13 @@ class ServiceTests(unittest.TestCase):
         )
         with self.assertRaises(ServiceError):
             submission_window(at(19, 59))
+        self.assertEqual(
+            submission_window(
+                at(19, 59),
+                overnight_smoke_until_next_noon=True,
+            ),
+            (at(20), at(12) + timedelta(days=1)),
+        )
 
     def test_submit_reserves_resources_without_calling_yahoo(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

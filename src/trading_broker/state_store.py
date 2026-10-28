@@ -34,6 +34,10 @@ class StateCorruptError(RuntimeError):
     pass
 
 
+class InitialCashMismatchError(RuntimeError):
+    pass
+
+
 def _candidate_to_dict(candidate: CandidatePlan) -> dict[str, Any]:
     return {
         "name": candidate.name.value,
@@ -325,7 +329,14 @@ class StateStore:
         with self._lock():
             self._recover_unlocked()
             if self.state_path.exists():
-                return self._read_state_unlocked()
+                state = self._read_state_unlocked()
+                if state.initial_cash != initial_cash:
+                    raise InitialCashMismatchError(
+                        "configured initial cash "
+                        f"{initial_cash} does not match existing account "
+                        f"{state.initial_cash}"
+                    )
+                return state
             state = initial_state(initial_cash)
             self._commit_unlocked(
                 state,
