@@ -1,0 +1,62 @@
+{
+  "account": {
+    "cash": {
+      "available": "31151.4250",
+      "reserved": "0",
+      "total": "31151.4250"
+    },
+    "equity": "97393.5250",
+    "initial_cash": "100000.00",
+    "positions_market_value": "66242.1000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-27T12:10:14.145804-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 140,
+      "average_cost": "256.5178571428571428571428571",
+      "latest_price": "253.0650",
+      "latest_price_at": "2026-10-27T12:09:00-04:00",
+      "market_value": "35429.1000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 140,
+      "reserved_quantity": 0,
+      "symbol": "AMZN",
+      "unrealized_pnl": "-483.3999999999999999999999940"
+    },
+    {
+      "available_quantity": 40,
+      "average_cost": "760.3550",
+      "latest_price": "770.3250",
+      "latest_price_at": "2026-10-27T12:09:00-04:00",
+      "market_value": "30813.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "398.8000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-26T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-27T12:10:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-27T08:00:00-04:00",
+    "symbols": [
+      "AMZN",
+      "SPY"
+    ],
+    "updated_symbols": [
+      "AMZN",
+      "SPY"
+    ]
+  }
+}

@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "SPY",
-        "side": "buy",
-        "quantity": 25,
-        "limit_price": "765.00"
+        "symbol": "XLE",
+        "side": "sell",
+        "quantity": 200,
+        "limit_price": "69.00"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "SPY",
-          "side": "buy",
-          "quantity": 25,
-          "limit_price": "766.00"
+          "symbol": "XLE",
+          "side": "sell",
+          "quantity": 200,
+          "limit_price": "68.75"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "SPY",
-          "side": "buy",
-          "quantity": 25,
-          "limit_price": "767.50"
+          "symbol": "XLE",
+          "side": "sell",
+          "quantity": 200,
+          "limit_price": "65.00"
         }
       ]
     }

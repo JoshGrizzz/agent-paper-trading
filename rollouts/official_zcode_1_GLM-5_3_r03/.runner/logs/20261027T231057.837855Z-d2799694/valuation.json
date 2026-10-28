@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "59573.9950",
+      "reserved": "0",
+      "total": "59573.9950"
+    },
+    "equity": "99790.8950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "40216.9000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-27T19:10:57.829964-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 25,
+      "average_cost": "213.4000",
+      "latest_price": "217.9000",
+      "latest_price_at": "2026-10-27T16:00:00-04:00",
+      "market_value": "5447.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "112.5000"
+    },
+    {
+      "available_quantity": 25,
+      "average_cost": "704.0852",
+      "latest_price": "721.2000",
+      "latest_price_at": "2026-10-27T16:00:00-04:00",
+      "market_value": "18030.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "427.8700"
+    },
+    {
+      "available_quantity": 30,
+      "average_cost": "528.5016666666666666666666667",
+      "latest_price": "557.9800",
+      "latest_price_at": "2026-10-27T16:00:00-04:00",
+      "market_value": "16739.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "884.3499999999999999999999990"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-26T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-27T19:10:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-27T08:00:00-04:00",
+    "symbols": [
+      "NVDA",
+      "QQQ",
+      "SMH"
+    ],
+    "updated_symbols": [
+      "NVDA",
+      "QQQ",
+      "SMH"
+    ]
+  }
+}

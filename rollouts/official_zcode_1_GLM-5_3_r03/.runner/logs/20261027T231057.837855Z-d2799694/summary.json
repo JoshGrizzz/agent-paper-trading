@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-10-27T19:10:57.829964-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 24.880107,
+  "fills": [],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r03/.runner/logs/20261027T231057.837855Z-d2799694",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "59573.9950",
+        "reserved": "0",
+        "total": "59573.9950"
+      },
+      "equity": "99790.8950",
+      "initial_cash": "100000.00",
+      "positions_market_value": "40216.9000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-27T19:11:22.633707-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 25,
+        "average_cost": "213.4000",
+        "latest_price": "217.9000",
+        "latest_price_at": "2026-10-27T16:00:00-04:00",
+        "market_value": "5447.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "112.5000"
+      },
+      {
+        "available_quantity": 25,
+        "average_cost": "704.0852",
+        "latest_price": "721.2000",
+        "latest_price_at": "2026-10-27T16:00:00-04:00",
+        "market_value": "18030.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "427.8700"
+      },
+      {
+        "available_quantity": 30,
+        "average_cost": "528.5016666666666666666666667",
+        "latest_price": "557.9800",
+        "latest_price_at": "2026-10-27T16:00:00-04:00",
+        "market_value": "16739.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "884.3499999999999999999999990"
+      }
+    ],
+    "settled_through": "2026-10-26T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r03",
+  "run_id": "20261027T231057.837855Z-d2799694",
+  "session_id": "sess_dd7c10cb-4e51-44c3-9263-7d7ad279522f",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

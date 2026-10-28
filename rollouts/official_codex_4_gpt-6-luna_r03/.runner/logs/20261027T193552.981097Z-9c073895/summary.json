@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-10-27T15:35:52.970402-04:00",
+  "codex_session_id": "01a15e75-3b39-79d2-987e-a09894549add",
+  "duration_seconds": 27.278218,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r03/.runner/logs/20261027T193552.981097Z-9c073895",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "65345.8900",
+        "reserved": "0",
+        "total": "65345.8900"
+      },
+      "equity": "96174.6900",
+      "initial_cash": "100000.00",
+      "positions_market_value": "30828.8000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-27T15:36:20.188479-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 40,
+        "average_cost": "765.00",
+        "latest_price": "770.7200",
+        "latest_price_at": "2026-10-27T15:34:00-04:00",
+        "market_value": "30828.8000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "228.8000"
+      }
+    ],
+    "settled_through": "2026-10-27T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r03",
+  "run_id": "20261027T193552.981097Z-9c073895",
+  "session_id": "01a15e75-3b39-79d2-987e-a09894549add",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

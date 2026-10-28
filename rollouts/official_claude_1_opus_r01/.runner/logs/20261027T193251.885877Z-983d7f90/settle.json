@@ -1,0 +1,73 @@
+{
+  "account": {
+    "cash": {
+      "available": "6313.7800",
+      "reserved": "0",
+      "total": "6313.7800"
+    },
+    "equity": "99864.1400",
+    "initial_cash": "100000.00",
+    "positions_market_value": "93550.3600",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-27T15:32:51.873721-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "68.40",
+      "filled_at": "2026-10-27T12:12:00-04:00",
+      "limit_price": "68.40",
+      "order_id": "ord_000025",
+      "quantity": 90,
+      "side": "sell",
+      "symbol": "XLE"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 43,
+      "average_cost": "720.7911627906976744186046512",
+      "latest_price": "722.2600",
+      "latest_price_at": "2026-10-27T12:05:00-04:00",
+      "market_value": "31057.1800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 43,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "63.1599999999999999999999984"
+    },
+    {
+      "available_quantity": 74,
+      "average_cost": "770.6905405405405405405405405",
+      "latest_price": "770.6700",
+      "latest_price_at": "2026-10-27T12:05:00-04:00",
+      "market_value": "57029.5800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 74,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-1.5199999999999999999999970"
+    },
+    {
+      "available_quantity": 80,
+      "average_cost": "68.9600",
+      "latest_price": "68.2950",
+      "latest_price_at": "2026-10-27T15:29:00-04:00",
+      "market_value": "5463.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 80,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "-53.2000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-27T15:29:00-04:00"
+}

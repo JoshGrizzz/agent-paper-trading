@@ -1,0 +1,73 @@
+{
+  "account": {
+    "cash": {
+      "available": "8828.8000",
+      "reserved": "0",
+      "total": "8828.8000"
+    },
+    "equity": "100315.5800",
+    "initial_cash": "100000.00",
+    "positions_market_value": "91486.7800",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-27T15:31:25.200911-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "68.10",
+      "filled_at": "2026-10-27T14:59:00-04:00",
+      "limit_price": "68.10",
+      "order_id": "ord_000045",
+      "quantity": 100,
+      "side": "buy",
+      "symbol": "XLE"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "718.1866666666666666666666667",
+      "latest_price": "721.4950",
+      "latest_price_at": "2026-10-27T15:29:00-04:00",
+      "market_value": "32467.2750",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "148.8749999999999999999999985"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "769.9360",
+      "latest_price": "770.6201",
+      "latest_price_at": "2026-10-27T12:03:00-04:00",
+      "market_value": "38531.0050",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "34.2050"
+    },
+    {
+      "available_quantity": 300,
+      "average_cost": "67.85333333333333333333333333",
+      "latest_price": "68.2950",
+      "latest_price_at": "2026-10-27T15:29:00-04:00",
+      "market_value": "20488.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 300,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "132.5000000000000000000000010"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-27T15:29:00-04:00"
+}

@@ -1,18 +1,20 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "65.50"}
+      {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "64.50"},
+      {"symbol": "TQQQ", "side": "buy", "quantity": 300, "limit_price": "69.75"}
     ]
   },
   "backups": [
     {
       "orders": [
-        {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "65.00"}
+        {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "64.00"},
+        {"symbol": "QLD", "side": "buy", "quantity": 230, "limit_price": "89.50"}
       ]
     },
     {
       "orders": [
-        {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "64.50"}
+        {"symbol": "UCO", "side": "sell", "quantity": 175, "limit_price": "63.50"}
       ]
     }
   ]

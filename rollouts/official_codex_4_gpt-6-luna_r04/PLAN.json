@@ -4,8 +4,8 @@
       {
         "symbol": "RSP",
         "side": "buy",
-        "quantity": 3,
-        "limit_price": "213.00"
+        "quantity": 2,
+        "limit_price": "217.50"
       }
     ]
   },
@@ -15,8 +15,8 @@
         {
           "symbol": "RSP",
           "side": "buy",
-          "quantity": 3,
-          "limit_price": "215.00"
+          "quantity": 2,
+          "limit_price": "216.50"
         }
       ]
     },
@@ -25,8 +25,8 @@
         {
           "symbol": "RSP",
           "side": "buy",
-          "quantity": 3,
-          "limit_price": "217.00"
+          "quantity": 2,
+          "limit_price": "215.50"
         }
       ]
     }

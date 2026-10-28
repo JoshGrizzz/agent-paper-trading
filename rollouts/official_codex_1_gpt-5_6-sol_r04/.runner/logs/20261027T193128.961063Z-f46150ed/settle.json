@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "1584.8601",
+      "reserved": "0",
+      "total": "1584.8601"
+    },
+    "equity": "105079.6251",
+    "initial_cash": "100000.00",
+    "positions_market_value": "103494.7650",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-27T15:31:28.948254-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "backup_2",
+      "fill_price": "206.9000",
+      "filled_at": "2026-10-27T12:10:00-04:00",
+      "limit_price": "210.00",
+      "order_id": "ord_000027",
+      "quantity": 503,
+      "side": "buy",
+      "symbol": "TECL"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 503,
+      "average_cost": "206.9000",
+      "latest_price": "205.7550",
+      "latest_price_at": "2026-10-27T15:27:00-04:00",
+      "market_value": "103494.7650",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 503,
+      "reserved_quantity": 0,
+      "symbol": "TECL",
+      "unrealized_pnl": "-575.9350"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-27T15:29:00-04:00"
+}

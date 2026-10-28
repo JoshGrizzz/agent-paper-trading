@@ -3,32 +3,16 @@
     "orders": [
       {
         "symbol": "QQQ",
-        "side": "buy",
-        "quantity": 120,
-        "limit_price": "714.50"
+        "side": "sell",
+        "quantity": 20,
+        "limit_price": "724.50"
+      },
+      {
+        "symbol": "QQQ",
+        "side": "sell",
+        "quantity": 20,
+        "limit_price": "727.50"
       }
     ]
-  },
-  "backups": [
-    {
-      "orders": [
-        {
-          "symbol": "NVDA",
-          "side": "buy",
-          "quantity": 395,
-          "limit_price": "216.50"
-        }
-      ]
-    },
-    {
-      "orders": [
-        {
-          "symbol": "SOXL",
-          "side": "buy",
-          "quantity": 940,
-          "limit_price": "91.00"
-        }
-      ]
-    }
-  ]
+  }
 }

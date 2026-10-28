@@ -5,7 +5,7 @@
         "symbol": "TQQQ",
         "side": "buy",
         "quantity": 100,
-        "limit_price": "68.25"
+        "limit_price": "70.75"
       }
     ]
   },
@@ -16,7 +16,7 @@
           "symbol": "TQQQ",
           "side": "buy",
           "quantity": 100,
-          "limit_price": "66.50"
+          "limit_price": "69.00"
         }
       ]
     },
@@ -26,7 +26,7 @@
           "symbol": "TQQQ",
           "side": "buy",
           "quantity": 100,
-          "limit_price": "64.50"
+          "limit_price": "67.00"
         }
       ]
     }

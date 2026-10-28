@@ -1,0 +1,163 @@
+{
+  "as_of": "2026-10-27T15:31:28.952833-04:00",
+  "codex_session_id": "01a15e77-3ebe-79f0-8a84-69393a213a09",
+  "duration_seconds": 59.355904,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "217.3000",
+      "filled_at": "2026-10-27T12:08:00-04:00",
+      "limit_price": "217.50",
+      "order_id": "ord_000039",
+      "quantity": 7,
+      "side": "buy",
+      "symbol": "RSP"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r04/.runner/logs/20261027T193128.964122Z-95514b75",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "38.9900",
+        "reserved": "435.00",
+        "total": "473.9900"
+      },
+      "equity": "99498.5229",
+      "initial_cash": "100000.00",
+      "positions_market_value": "99024.5329",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-27T15:32:28.252796-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "216.50",
+                "order_id": "ord_000043",
+                "quantity": 2,
+                "side": "buy",
+                "symbol": "RSP"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "215.50",
+                "order_id": "ord_000044",
+                "quantity": 2,
+                "side": "buy",
+                "symbol": "RSP"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000013",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "217.50",
+              "order_id": "ord_000042",
+              "quantity": 2,
+              "side": "buy",
+              "symbol": "RSP"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-27T15:32:18.728768-04:00",
+        "valid_from": "2026-10-27T15:33:00-04:00",
+        "valid_until": "2026-10-27T19:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 75,
+        "average_cost": "338.0250",
+        "latest_price": "342.3200",
+        "latest_price_at": "2026-10-27T15:30:00-04:00",
+        "market_value": "25674.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 75,
+        "reserved_quantity": 0,
+        "symbol": "AVGO",
+        "unrealized_pnl": "322.1250"
+      },
+      {
+        "available_quantity": 32,
+        "average_cost": "336.9100",
+        "latest_price": "323.4300",
+        "latest_price_at": "2026-10-27T15:30:00-04:00",
+        "market_value": "10349.7600",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 32,
+        "reserved_quantity": 0,
+        "symbol": "GOOGL",
+        "unrealized_pnl": "-431.3600"
+      },
+      {
+        "available_quantity": 150,
+        "average_cost": "218.00",
+        "latest_price": "217.4400",
+        "latest_price_at": "2026-10-27T15:30:00-04:00",
+        "market_value": "32616.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 150,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "-84.0000"
+      },
+      {
+        "available_quantity": 37,
+        "average_cost": "216.3270270270270270270270270",
+        "latest_price": "217.4300",
+        "latest_price_at": "2026-10-27T15:30:00-04:00",
+        "market_value": "8044.9100",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 37,
+        "reserved_quantity": 0,
+        "symbol": "RSP",
+        "unrealized_pnl": "40.8100000000000000000000010"
+      },
+      {
+        "available_quantity": 29,
+        "average_cost": "765.2713793103448275862068966",
+        "latest_price": "770.3401",
+        "latest_price_at": "2026-10-27T15:30:00-04:00",
+        "market_value": "22339.8629",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 29,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "146.9928999999999999999999986"
+      }
+    ],
+    "settled_through": "2026-10-27T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r04",
+  "run_id": "20261027T193128.964122Z-95514b75",
+  "session_id": "01a15e77-3ebe-79f0-8a84-69393a213a09",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

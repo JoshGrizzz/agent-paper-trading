@@ -1,0 +1,60 @@
+{
+  "account": {
+    "cash": {
+      "available": "20482.3485",
+      "reserved": "0",
+      "total": "20482.3485"
+    },
+    "equity": "98161.7220",
+    "initial_cash": "100000.00",
+    "positions_market_value": "77679.3735",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-27T12:06:54.109561-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "715.50",
+      "filled_at": "2026-10-27T09:30:00-04:00",
+      "limit_price": "715.50",
+      "order_id": "ord_000044",
+      "quantity": 20,
+      "side": "sell",
+      "symbol": "QQQ"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 65,
+      "average_cost": "720.17800000000000000000000",
+      "latest_price": "721.9399",
+      "latest_price_at": "2026-10-27T11:59:00-04:00",
+      "market_value": "46926.0935",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 65,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "114.52350000000000000000000"
+    },
+    {
+      "available_quantity": 205,
+      "average_cost": "156.6373243902439024390243902",
+      "latest_price": "150.0160",
+      "latest_price_at": "2026-10-27T11:59:00-04:00",
+      "market_value": "30753.2800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 205,
+      "reserved_quantity": 0,
+      "symbol": "SPCX",
+      "unrealized_pnl": "-1357.371499999999999999999991"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-27T11:59:00-04:00"
+}

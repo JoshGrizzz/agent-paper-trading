@@ -1,0 +1,80 @@
+{
+  "as_of": "2026-10-27T08:54:25.729997-04:00",
+  "codex_session_id": "01a15e71-94e4-7660-b71f-40a4f0a80df6",
+  "duration_seconds": 248.425087,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r01/.runner/logs/20261027T125425.762129Z-9888d8b2",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "60398.0000",
+        "reserved": "19500.00",
+        "total": "79898.0000"
+      },
+      "equity": "97138.0000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "17240.0000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-27T08:58:34.109047-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000007",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "43.00",
+              "order_id": "ord_000013",
+              "quantity": 400,
+              "side": "sell",
+              "symbol": "VZ"
+            },
+            {
+              "limit_price": "325.00",
+              "order_id": "ord_000014",
+              "quantity": 60,
+              "side": "buy",
+              "symbol": "CDNS"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-27T08:58:11.190589-04:00",
+        "valid_from": "2026-10-27T08:59:00-04:00",
+        "valid_until": "2026-10-27T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 0,
+        "average_cost": "43.4800",
+        "latest_price": "43.1000",
+        "latest_price_at": "2026-10-26T16:00:00-04:00",
+        "market_value": "17240.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 400,
+        "reserved_quantity": 400,
+        "symbol": "VZ",
+        "unrealized_pnl": "-152.0000"
+      }
+    ],
+    "settled_through": "2026-10-26T19:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r01",
+  "run_id": "20261027T125425.762129Z-9888d8b2",
+  "session_id": "01a15e71-94e4-7660-b71f-40a4f0a80df6",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

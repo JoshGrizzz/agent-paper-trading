@@ -5,7 +5,7 @@
         "symbol": "CDNS",
         "side": "buy",
         "quantity": 45,
-        "limit_price": "328.00"
+        "limit_price": "326.00"
       }
     ]
   },
@@ -16,7 +16,7 @@
           "symbol": "CDNS",
           "side": "buy",
           "quantity": 35,
-          "limit_price": "331.00"
+          "limit_price": "328.50"
         }
       ]
     }

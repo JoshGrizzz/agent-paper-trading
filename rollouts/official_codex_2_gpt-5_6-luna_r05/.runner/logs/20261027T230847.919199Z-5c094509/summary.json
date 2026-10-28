@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-27T19:08:47.906400-04:00",
+  "codex_session_id": "01a15e78-f28a-7a30-a7da-aa218bf0bfe6",
+  "duration_seconds": 26.699848,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r05/.runner/logs/20261027T230847.919199Z-5c094509",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "102718.3039",
+        "reserved": "0",
+        "total": "102718.3039"
+      },
+      "equity": "102718.3039",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-27T19:09:14.546244-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [],
+    "settled_through": "2026-10-27T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r05",
+  "run_id": "20261027T230847.919199Z-5c094509",
+  "session_id": "01a15e78-f28a-7a30-a7da-aa218bf0bfe6",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": false
+}

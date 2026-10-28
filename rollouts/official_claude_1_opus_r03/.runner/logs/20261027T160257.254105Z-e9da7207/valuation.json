@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "31825.2000",
+      "reserved": "0",
+      "total": "31825.2000"
+    },
+    "equity": "99945.3000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "68120.1000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-27T12:02:57.241145-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 30,
+      "average_cost": "551.3816666666666666666666667",
+      "latest_price": "558.0300",
+      "latest_price_at": "2026-10-27T12:01:00-04:00",
+      "market_value": "16740.9000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "199.4499999999999999999999990"
+    },
+    {
+      "available_quantity": 60,
+      "average_cost": "769.6933333333333333333333333",
+      "latest_price": "770.8200",
+      "latest_price_at": "2026-10-27T12:01:00-04:00",
+      "market_value": "46249.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 60,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "67.6000000000000000000000020"
+    },
+    {
+      "available_quantity": 75,
+      "average_cost": "68.7100",
+      "latest_price": "68.4000",
+      "latest_price_at": "2026-10-27T12:01:00-04:00",
+      "market_value": "5130.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 75,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "-23.2500"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-26T18:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-27T12:02:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-27T08:00:00-04:00",
+    "symbols": [
+      "SMH",
+      "SPY",
+      "XLE"
+    ],
+    "updated_symbols": [
+      "SMH",
+      "SPY",
+      "XLE"
+    ]
+  }
+}

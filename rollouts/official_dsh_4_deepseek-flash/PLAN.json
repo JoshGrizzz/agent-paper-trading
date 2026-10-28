@@ -1,15 +1,15 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "QQQ", "side": "buy", "quantity": 20, "limit_price": "716.00"},
-      {"symbol": "SMH", "side": "buy", "quantity": 8, "limit_price": "545.00"}
+      {"symbol": "QQQ", "side": "buy", "quantity": 7, "limit_price": "723.50"},
+      {"symbol": "SMH", "side": "buy", "quantity": 6, "limit_price": "559.50"}
     ]
   },
   "backups": [
     {
       "orders": [
-        {"symbol": "QQQ", "side": "buy", "quantity": 20, "limit_price": "720.00"},
-        {"symbol": "SMH", "side": "buy", "quantity": 8, "limit_price": "549.00"}
+        {"symbol": "QQQ", "side": "buy", "quantity": 7, "limit_price": "728.00"},
+        {"symbol": "SMH", "side": "buy", "quantity": 6, "limit_price": "563.00"}
       ]
     }
   ]

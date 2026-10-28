@@ -1,0 +1,87 @@
+{
+  "account": {
+    "cash": {
+      "available": "47278.2250",
+      "reserved": "0",
+      "total": "47278.2250"
+    },
+    "equity": "99375.2250",
+    "initial_cash": "100000.00",
+    "positions_market_value": "52097.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-27T19:12:43.285885-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 100,
+      "average_cost": "90.8200",
+      "latest_price": "91.6100",
+      "latest_price_at": "2026-10-27T16:00:00-04:00",
+      "market_value": "9161.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 100,
+      "reserved_quantity": 0,
+      "symbol": "KO",
+      "unrealized_pnl": "79.0000"
+    },
+    {
+      "available_quantity": 45,
+      "average_cost": "219.50",
+      "latest_price": "217.9000",
+      "latest_price_at": "2026-10-27T16:00:00-04:00",
+      "market_value": "9805.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-72.0000"
+    },
+    {
+      "available_quantity": 25,
+      "average_cost": "768.8340",
+      "latest_price": "769.5800",
+      "latest_price_at": "2026-10-27T16:00:00-04:00",
+      "market_value": "19239.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "18.6500"
+    },
+    {
+      "available_quantity": 200,
+      "average_cost": "43.4800",
+      "latest_price": "43.9100",
+      "latest_price_at": "2026-10-27T16:00:00-04:00",
+      "market_value": "8782.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 200,
+      "reserved_quantity": 0,
+      "symbol": "VZ",
+      "unrealized_pnl": "86.0000"
+    },
+    {
+      "available_quantity": 75,
+      "average_cost": "69.4400",
+      "latest_price": "68.1200",
+      "latest_price_at": "2026-10-27T16:00:00-04:00",
+      "market_value": "5109.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 75,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "-99.0000"
+    }
+  ],
+  "settled_through": "2026-10-27T15:29:00-04:00"
+}

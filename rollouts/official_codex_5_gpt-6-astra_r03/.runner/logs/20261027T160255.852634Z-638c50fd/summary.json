@@ -1,0 +1,110 @@
+{
+  "as_of": "2026-10-27T12:02:55.840805-04:00",
+  "codex_session_id": "01a15e75-3b0f-7962-97df-926033a171a8",
+  "duration_seconds": 93.682029,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "326.00",
+      "filled_at": "2026-10-27T09:30:00-04:00",
+      "limit_price": "326.00",
+      "order_id": "ord_000015",
+      "quantity": 30,
+      "side": "buy",
+      "symbol": "CDNS"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r03/.runner/logs/20261027T160255.852634Z-638c50fd",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "50770.1000",
+        "reserved": "0",
+        "total": "50770.1000"
+      },
+      "equity": "96371.4500",
+      "initial_cash": "100000.00",
+      "positions_market_value": "45601.3500",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-27T12:04:29.462477-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000009",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "68.20",
+              "order_id": "ord_000017",
+              "quantity": 100,
+              "side": "sell",
+              "symbol": "XLE"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-27T12:04:09.436295-04:00",
+        "valid_from": "2026-10-27T12:05:00-04:00",
+        "valid_until": "2026-10-27T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 30,
+        "average_cost": "326.00",
+        "latest_price": "341.6500",
+        "latest_price_at": "2026-10-27T12:01:00-04:00",
+        "market_value": "10249.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "CDNS",
+        "unrealized_pnl": "469.5000"
+      },
+      {
+        "available_quantity": 30,
+        "average_cost": "712.9100",
+        "latest_price": "722.3950",
+        "latest_price_at": "2026-10-27T12:01:00-04:00",
+        "market_value": "21671.8500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 30,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "284.5500"
+      },
+      {
+        "available_quantity": 100,
+        "average_cost": "69.25",
+        "latest_price": "68.4000",
+        "latest_price_at": "2026-10-27T12:01:00-04:00",
+        "market_value": "13680.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 200,
+        "reserved_quantity": 100,
+        "symbol": "XLE",
+        "unrealized_pnl": "-170.0000"
+      }
+    ],
+    "settled_through": "2026-10-27T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r03",
+  "run_id": "20261027T160255.852634Z-638c50fd",
+  "session_id": "01a15e75-3b0f-7962-97df-926033a171a8",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

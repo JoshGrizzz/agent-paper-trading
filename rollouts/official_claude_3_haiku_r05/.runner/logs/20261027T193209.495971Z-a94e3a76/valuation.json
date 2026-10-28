@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "61441.5000",
+      "reserved": "0",
+      "total": "61441.5000"
+    },
+    "equity": "99961.5250",
+    "initial_cash": "100000.00",
+    "positions_market_value": "38520.0250",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-27T15:32:09.485769-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 50,
+      "average_cost": "771.1700",
+      "latest_price": "770.4005",
+      "latest_price_at": "2026-10-27T15:31:00-04:00",
+      "market_value": "38520.0250",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-38.4750"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-21T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-27T15:32:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-27T08:00:00-04:00",
+    "symbols": [
+      "SPY"
+    ],
+    "updated_symbols": [
+      "SPY"
+    ]
+  }
+}

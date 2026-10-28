@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "XLV",
-        "side": "sell",
-        "quantity": 50,
-        "limit_price": "178.40"
+        "symbol": "SMH",
+        "side": "buy",
+        "quantity": 16,
+        "limit_price": "552.00"
       }
     ]
   },
@@ -13,10 +13,10 @@
     {
       "orders": [
         {
-          "symbol": "XLV",
-          "side": "sell",
-          "quantity": 50,
-          "limit_price": "176.00"
+          "symbol": "QQQ",
+          "side": "buy",
+          "quantity": 12,
+          "limit_price": "718.00"
         }
       ]
     }

@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "157.7800",
+      "reserved": "0",
+      "total": "157.7800"
+    },
+    "equity": "99886.1400",
+    "initial_cash": "100000.00",
+    "positions_market_value": "99728.3600",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-27T12:06:08.905081-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 43,
+      "average_cost": "720.7911627906976744186046512",
+      "latest_price": "722.2600",
+      "latest_price_at": "2026-10-27T12:05:00-04:00",
+      "market_value": "31057.1800",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 43,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "63.1599999999999999999999984"
+    },
+    {
+      "available_quantity": 74,
+      "average_cost": "770.6905405405405405405405405",
+      "latest_price": "770.6700",
+      "latest_price_at": "2026-10-27T12:05:00-04:00",
+      "market_value": "57029.5800",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 74,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-1.5199999999999999999999970"
+    },
+    {
+      "available_quantity": 170,
+      "average_cost": "68.9600",
+      "latest_price": "68.4800",
+      "latest_price_at": "2026-10-27T12:05:00-04:00",
+      "market_value": "11641.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 170,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "-81.6000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-26T18:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-27T12:06:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-27T08:00:00-04:00",
+    "symbols": [
+      "QQQ",
+      "SPY",
+      "XLE"
+    ],
+    "updated_symbols": [
+      "QQQ",
+      "SPY",
+      "XLE"
+    ]
+  }
+}

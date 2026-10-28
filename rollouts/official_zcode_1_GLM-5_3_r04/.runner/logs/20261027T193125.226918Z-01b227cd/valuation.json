@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "8828.8000",
+      "reserved": "0",
+      "total": "8828.8000"
+    },
+    "equity": "100316.8050",
+    "initial_cash": "100000.00",
+    "positions_market_value": "91488.0050",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-27T15:31:25.200911-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "718.1866666666666666666666667",
+      "latest_price": "721.7000",
+      "latest_price_at": "2026-10-27T15:30:00-04:00",
+      "market_value": "32476.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "158.0999999999999999999999985"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "769.9360",
+      "latest_price": "770.3401",
+      "latest_price_at": "2026-10-27T15:30:00-04:00",
+      "market_value": "38517.0050",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "20.2050"
+    },
+    {
+      "available_quantity": 300,
+      "average_cost": "67.85333333333333333333333333",
+      "latest_price": "68.3150",
+      "latest_price_at": "2026-10-27T15:30:00-04:00",
+      "market_value": "20494.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 300,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "138.5000000000000000000000010"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-27T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-27T15:31:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-27T08:00:00-04:00",
+    "symbols": [
+      "QQQ",
+      "SPY",
+      "XLE"
+    ],
+    "updated_symbols": [
+      "QQQ",
+      "SPY",
+      "XLE"
+    ]
+  }
+}

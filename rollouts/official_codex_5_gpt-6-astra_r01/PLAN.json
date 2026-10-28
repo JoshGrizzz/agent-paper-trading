@@ -1,14 +1,9 @@
 {
   "primary": {
     "orders": [
-      {"symbol": "CDNS", "side": "buy", "quantity": 40, "limit_price": "325.00"}
+      {"symbol": "VZ", "side": "sell", "quantity": 400, "limit_price": "43.00"},
+      {"symbol": "CDNS", "side": "buy", "quantity": 60, "limit_price": "325.00"}
     ]
   },
-  "backups": [
-    {
-      "orders": [
-        {"symbol": "CDNS", "side": "buy", "quantity": 25, "limit_price": "328.00"}
-      ]
-    }
-  ]
+  "backups": []
 }

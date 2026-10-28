@@ -1,0 +1,114 @@
+{
+  "as_of": "2026-10-27T08:49:33.311161-04:00",
+  "codex_session_id": "01a15e77-3ec7-7220-baed-0d063c399c8a",
+  "duration_seconds": 82.311461,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_3_gpt-6-sol_r04/.runner/logs/20261027T124933.321357Z-10a152de",
+  "model": "gpt-6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "61817.5200",
+        "reserved": "20925.00",
+        "total": "82742.5200"
+      },
+      "equity": "94187.5200",
+      "initial_cash": "100000.00",
+      "positions_market_value": "11445.0000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-27T08:50:55.556071-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "64.00",
+                "order_id": "ord_000024",
+                "quantity": 175,
+                "side": "sell",
+                "symbol": "UCO"
+              },
+              {
+                "limit_price": "89.50",
+                "order_id": "ord_000025",
+                "quantity": 230,
+                "side": "buy",
+                "symbol": "QLD"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "63.50",
+                "order_id": "ord_000026",
+                "quantity": 175,
+                "side": "sell",
+                "symbol": "UCO"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000007",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "64.50",
+              "order_id": "ord_000022",
+              "quantity": 175,
+              "side": "sell",
+              "symbol": "UCO"
+            },
+            {
+              "limit_price": "69.75",
+              "order_id": "ord_000023",
+              "quantity": 300,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-27T08:50:41.642440-04:00",
+        "valid_from": "2026-10-27T08:51:00-04:00",
+        "valid_until": "2026-10-27T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 0,
+        "average_cost": "65.9900",
+        "latest_price": "65.4000",
+        "latest_price_at": "2026-10-26T16:00:00-04:00",
+        "market_value": "11445.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 175,
+        "reserved_quantity": 175,
+        "symbol": "UCO",
+        "unrealized_pnl": "-103.2500"
+      }
+    ],
+    "settled_through": "2026-10-26T18:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_3_gpt-6-sol_r04",
+  "run_id": "20261027T124933.321357Z-10a152de",
+  "session_id": "01a15e77-3ec7-7220-baed-0d063c399c8a",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}
