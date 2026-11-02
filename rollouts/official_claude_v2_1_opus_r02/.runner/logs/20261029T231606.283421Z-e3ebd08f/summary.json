@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-10-29T19:16:06.236712-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 31.24911,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_v2_1_opus_r02/.runner/logs/20261029T231606.283421Z-e3ebd08f",
+  "model": "opus",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "29784.8250",
+        "reserved": "0",
+        "total": "29784.8250"
+      },
+      "equity": "99685.4450",
+      "initial_cash": "99701.8250",
+      "positions_market_value": "69900.6200",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-29T19:16:37.464599-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 27,
+        "average_cost": "717.4444444444444444444444444",
+        "latest_price": "715.7100",
+        "latest_price_at": "2026-10-29T16:00:00-04:00",
+        "market_value": "19324.1700",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 27,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-46.8299999999999999999999988"
+      },
+      {
+        "available_quantity": 55,
+        "average_cost": "770.00",
+        "latest_price": "769.7900",
+        "latest_price_at": "2026-10-29T16:00:00-04:00",
+        "market_value": "42338.4500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 55,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-11.5500"
+      },
+      {
+        "available_quantity": 120,
+        "average_cost": "68.30",
+        "latest_price": "68.6500",
+        "latest_price_at": "2026-10-29T16:00:00-04:00",
+        "market_value": "8238.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 120,
+        "reserved_quantity": 0,
+        "symbol": "XLE",
+        "unrealized_pnl": "42.0000"
+      }
+    ],
+    "settled_through": "2026-10-29T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_v2_1_opus_r02",
+  "run_id": "20261029T231606.283421Z-e3ebd08f",
+  "session_id": "d4978fa2-925f-4ac3-9038-d9cad79c4056",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

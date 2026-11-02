@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "QLD",
+        "symbol": "CVX",
         "side": "buy",
-        "quantity": 600,
-        "limit_price": "89.50"
+        "quantity": 250,
+        "limit_price": "233.50"
       }
     ]
   },
@@ -13,20 +13,20 @@
     {
       "orders": [
         {
-          "symbol": "QLD",
+          "symbol": "XOM",
           "side": "buy",
-          "quantity": 600,
-          "limit_price": "89.80"
+          "quantity": 315,
+          "limit_price": "185.50"
         }
       ]
     },
     {
       "orders": [
         {
-          "symbol": "QLD",
+          "symbol": "XLE",
           "side": "buy",
-          "quantity": 600,
-          "limit_price": "90.00"
+          "quantity": 840,
+          "limit_price": "69.50"
         }
       ]
     }

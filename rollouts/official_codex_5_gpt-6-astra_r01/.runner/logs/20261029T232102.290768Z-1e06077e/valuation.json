@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "52198.0000",
+      "reserved": "0",
+      "total": "52198.0000"
+    },
+    "equity": "99065.2000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "46867.2000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-29T19:21:02.279715-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 60,
+      "average_cost": "325.00",
+      "latest_price": "342.7600",
+      "latest_price_at": "2026-10-29T15:59:00-04:00",
+      "market_value": "20565.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 60,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "1065.6000"
+    },
+    {
+      "available_quantity": 12,
+      "average_cost": "1330.00",
+      "latest_price": "1373.7000",
+      "latest_price_at": "2026-10-29T16:03:00-04:00",
+      "market_value": "16484.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 12,
+      "reserved_quantity": 0,
+      "symbol": "LLY",
+      "unrealized_pnl": "524.4000"
+    },
+    {
+      "available_quantity": 40,
+      "average_cost": "236.00",
+      "latest_price": "245.4300",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "9817.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "VRT",
+      "unrealized_pnl": "377.2000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-29T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-29T19:21:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-29T08:00:00-04:00",
+    "symbols": [
+      "CDNS",
+      "LLY",
+      "VRT"
+    ],
+    "updated_symbols": [
+      "CDNS",
+      "LLY",
+      "VRT"
+    ]
+  }
+}

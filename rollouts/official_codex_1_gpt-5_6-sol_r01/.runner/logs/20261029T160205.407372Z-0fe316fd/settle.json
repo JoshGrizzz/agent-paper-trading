@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "35227.6200",
+      "reserved": "0",
+      "total": "35227.6200"
+    },
+    "equity": "92261.5200",
+    "initial_cash": "100000.00",
+    "positions_market_value": "57033.9000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-29T12:02:05.393701-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "510.50",
+      "filled_at": "2026-10-29T09:32:00-04:00",
+      "limit_price": "510.50",
+      "order_id": "ord_000032",
+      "quantity": 110,
+      "side": "buy",
+      "symbol": "SOXX"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 110,
+      "average_cost": "510.50",
+      "latest_price": "518.4900",
+      "latest_price_at": "2026-10-29T11:59:00-04:00",
+      "market_value": "57033.9000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 110,
+      "reserved_quantity": 0,
+      "symbol": "SOXX",
+      "unrealized_pnl": "878.9000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-29T11:59:00-04:00"
+}

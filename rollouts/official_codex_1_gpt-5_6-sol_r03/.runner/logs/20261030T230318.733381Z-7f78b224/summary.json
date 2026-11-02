@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-30T19:03:18.721879-04:00",
+  "codex_session_id": "01a15e75-3b14-7270-b126-64b7db13446c",
+  "duration_seconds": 43.249785,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r03/.runner/logs/20261030T230318.733381Z-7f78b224",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "103438.9878",
+        "reserved": "0",
+        "total": "103438.9878"
+      },
+      "equity": "103438.9878",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-30T19:04:01.907464-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [],
+    "settled_through": "2026-10-30T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r03",
+  "run_id": "20261030T230318.733381Z-7f78b224",
+  "session_id": "01a15e75-3b14-7270-b126-64b7db13446c",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": false
+}

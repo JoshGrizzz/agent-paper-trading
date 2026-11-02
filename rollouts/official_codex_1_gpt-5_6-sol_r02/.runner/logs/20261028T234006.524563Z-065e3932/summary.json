@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-28T19:40:06.487276-04:00",
+  "codex_session_id": "01a15e73-563c-71b2-bd51-fe3c461d12ce",
+  "duration_seconds": 63.848697,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r02/.runner/logs/20261028T234006.524563Z-065e3932",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "43859.9062",
+        "reserved": "18120.00",
+        "total": "61979.9062"
+      },
+      "equity": "98519.9062",
+      "initial_cash": "100000.00",
+      "positions_market_value": "36540.0000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-28T19:41:10.305039-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "90.20",
+                "order_id": "ord_000042",
+                "quantity": 200,
+                "side": "buy",
+                "symbol": "QLD"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "90.60",
+                "order_id": "ord_000043",
+                "quantity": 200,
+                "side": "buy",
+                "symbol": "QLD"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000015",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "89.80",
+              "order_id": "ord_000041",
+              "quantity": 200,
+              "side": "buy",
+              "symbol": "QLD"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-28T19:40:55.652590-04:00",
+        "valid_from": "2026-10-28T19:41:00-04:00",
+        "valid_until": "2026-10-28T20:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 400,
+        "average_cost": "90.50",
+        "latest_price": "91.3500",
+        "latest_price_at": "2026-10-28T15:59:00-04:00",
+        "market_value": "36540.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 400,
+        "reserved_quantity": 0,
+        "symbol": "QLD",
+        "unrealized_pnl": "340.0000"
+      }
+    ],
+    "settled_through": "2026-10-28T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r02",
+  "run_id": "20261028T234006.524563Z-065e3932",
+  "session_id": "01a15e73-563c-71b2-bd51-fe3c461d12ce",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

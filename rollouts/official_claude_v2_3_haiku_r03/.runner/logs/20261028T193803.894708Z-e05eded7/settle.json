@@ -1,0 +1,22 @@
+{
+  "account": {
+    "cash": {
+      "available": "99948.5000",
+      "reserved": "0",
+      "total": "99948.5000"
+    },
+    "equity": "99948.5000",
+    "initial_cash": "99948.5000",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-28T15:38:03.868704-04:00",
+  "command": "settle",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [],
+  "settled": false,
+  "settled_through": null
+}

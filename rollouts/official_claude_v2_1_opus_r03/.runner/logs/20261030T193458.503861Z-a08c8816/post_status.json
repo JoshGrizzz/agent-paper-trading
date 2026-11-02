@@ -1,0 +1,74 @@
+{
+  "account": {
+    "cash": {
+      "available": "21828.3000",
+      "reserved": "0",
+      "total": "21828.3000"
+    },
+    "equity": "96287.7500",
+    "initial_cash": "99848.4000",
+    "positions_market_value": "74459.4500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T15:35:30.990492-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "720.8145454545454545454545455",
+      "latest_price": "687.7400",
+      "latest_price_at": "2026-10-30T15:27:00-04:00",
+      "market_value": "30948.3000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-1488.354545454545454545454548"
+    },
+    {
+      "available_quantity": 10,
+      "average_cost": "562.00",
+      "latest_price": "511.8150",
+      "latest_price_at": "2026-10-30T14:34:00-04:00",
+      "market_value": "5118.1500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "-501.8500"
+    },
+    {
+      "available_quantity": 40,
+      "average_cost": "771.4300",
+      "latest_price": "750.6350",
+      "latest_price_at": "2026-10-30T14:34:00-04:00",
+      "market_value": "30025.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-831.8000"
+    },
+    {
+      "available_quantity": 120,
+      "average_cost": "69.5200",
+      "latest_price": "69.7300",
+      "latest_price_at": "2026-10-30T15:33:00-04:00",
+      "market_value": "8367.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 120,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "25.2000"
+    }
+  ],
+  "settled_through": "2026-10-30T15:29:00-04:00"
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "-I",
+    "-c",
+    "\nimport yfinance as yf\nt=['SPY','QQQ','SMH','GOOGL','XLE','NVDA','AAPL','AMZN']\nd=yf.download(t,period='1d',interval='1m',prepost=True,auto_adjust=False,progress=False)\nfor s in t:\n    c=d['Close'][s].dropna(); l=d['Low'][s].dropna()\n    rc=c[(c.index.hour<16)]\n    print(s, 'close~',round(rc.iloc[-1],2), 'last',round(c.iloc[-1],2), c.index[-1].strftime('%H:%M'),'lo',round(l.min(),2))\n"
+  ],
+  "duration_seconds": 0.8929534640046768,
+  "occurred_at": "2026-10-30T23:02:47.966213+00:00",
+  "output_truncated": false,
+  "returncode": 0,
+  "run_id": "20261030T230247.072397Z-e040c386",
+  "source_file": "inline.py",
+  "source_sha256": "f432fc883bd47283d56d0b15afcb9f9113de70af5964d7321192dff33e361ea0",
+  "source_snapshot": "source_snapshot.py",
+  "stderr_bytes": 0,
+  "stdout_bytes": 366
+}

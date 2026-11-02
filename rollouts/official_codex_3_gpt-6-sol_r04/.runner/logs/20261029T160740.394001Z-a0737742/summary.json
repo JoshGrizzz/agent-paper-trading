@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-10-29T12:07:40.383338-04:00",
+  "codex_session_id": "01a15e77-3ec7-7220-baed-0d063c399c8a",
+  "duration_seconds": 63.224054,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "69.6100",
+      "filled_at": "2026-10-29T09:30:00-04:00",
+      "limit_price": "69.50",
+      "order_id": "ord_000028",
+      "quantity": 150,
+      "side": "sell",
+      "symbol": "TQQQ"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_3_gpt-6-sol_r04/.runner/logs/20261029T160740.394001Z-a0737742",
+  "model": "gpt-6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "94607.7700",
+        "reserved": "0",
+        "total": "94607.7700"
+      },
+      "equity": "94607.7700",
+      "initial_cash": "100000.00",
+      "positions_market_value": "0",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-29T12:08:43.530984-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [],
+    "settled_through": "2026-10-29T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_3_gpt-6-sol_r04",
+  "run_id": "20261029T160740.394001Z-a0737742",
+  "session_id": "01a15e77-3ec7-7220-baed-0d063c399c8a",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": false
+}

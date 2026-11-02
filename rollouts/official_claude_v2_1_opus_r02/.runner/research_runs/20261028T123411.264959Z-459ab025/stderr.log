@@ -1,0 +1,4 @@
+Failed to get ticker 'AMZN' reason: Failed to perform, curl: (28) Resolving timed out after 10011 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'AAPL' reason: Failed to perform, curl: (28) Resolving timed out after 10012 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'XLF' reason: Failed to perform, curl: (28) Resolving timed out after 10011 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'XLP' reason: Failed to perform, curl: (28) Resolving timed out after 10012 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.

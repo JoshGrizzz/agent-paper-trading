@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-10-30T13:14:04.417020-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 111.102028,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "697.1300",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "706.00",
+      "order_id": "ord_000054",
+      "quantity": 5,
+      "side": "buy",
+      "symbol": "QQQ"
+    }
+  ],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r04/.runner/logs/20261030T171404.424303Z-c68684db",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "1760.3250",
+        "reserved": "0",
+        "total": "1760.3250"
+      },
+      "equity": "98410.1750",
+      "initial_cash": "100000.00",
+      "positions_market_value": "96649.8500",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-30T13:15:55.458675-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 55,
+        "average_cost": "716.12500000000000000000000",
+        "latest_price": "689.1700",
+        "latest_price_at": "2026-10-30T13:11:00-04:00",
+        "market_value": "37904.3500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 55,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-1482.52500000000000000000000"
+      },
+      {
+        "available_quantity": 50,
+        "average_cost": "769.9360",
+        "latest_price": "755.6600",
+        "latest_price_at": "2026-10-30T12:53:00-04:00",
+        "market_value": "37783.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 50,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-713.8000"
+      },
+      {
+        "available_quantity": 300,
+        "average_cost": "67.85333333333333333333333333",
+        "latest_price": "69.8750",
+        "latest_price_at": "2026-10-30T13:12:00-04:00",
+        "market_value": "20962.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 300,
+        "reserved_quantity": 0,
+        "symbol": "XLE",
+        "unrealized_pnl": "606.5000000000000000000000010"
+      }
+    ],
+    "settled_through": "2026-10-30T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r04",
+  "run_id": "20261030T171404.424303Z-c68684db",
+  "session_id": "sess_4a53b65f-5fd1-4628-804a-27243ff80a3f",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

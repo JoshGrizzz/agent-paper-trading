@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-10-30T13:13:07.399852-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 56.933813,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "532.5800",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "530.50",
+      "order_id": "ord_000063",
+      "quantity": 15,
+      "side": "sell",
+      "symbol": "SMH"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "697.1300",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "697.00",
+      "order_id": "ord_000064",
+      "quantity": 10,
+      "side": "sell",
+      "symbol": "QQQ"
+    }
+  ],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r03/.runner/logs/20261030T171307.409637Z-cfb3b4eb",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "62323.9450",
+        "reserved": "0",
+        "total": "62323.9450"
+      },
+      "equity": "97082.4735",
+      "initial_cash": "100000.00",
+      "positions_market_value": "34758.5285",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-30T13:14:04.274946-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 35,
+        "average_cost": "213.7600",
+        "latest_price": "203.9451",
+        "latest_price_at": "2026-10-30T12:59:00-04:00",
+        "market_value": "7138.0785",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 35,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "-343.5215"
+      },
+      {
+        "available_quantity": 25,
+        "average_cost": "709.5722857142857142857142857",
+        "latest_price": "689.2900",
+        "latest_price_at": "2026-10-30T13:08:00-04:00",
+        "market_value": "17232.2500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-507.0571428571428571428571425"
+      },
+      {
+        "available_quantity": 20,
+        "average_cost": "533.8742857142857142857142857",
+        "latest_price": "519.4100",
+        "latest_price_at": "2026-10-30T12:53:00-04:00",
+        "market_value": "10388.2000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 20,
+        "reserved_quantity": 0,
+        "symbol": "SMH",
+        "unrealized_pnl": "-289.2857142857142857142857140"
+      }
+    ],
+    "settled_through": "2026-10-30T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r03",
+  "run_id": "20261030T171307.409637Z-cfb3b4eb",
+  "session_id": "sess_dd7c10cb-4e51-44c3-9263-7d7ad279522f",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

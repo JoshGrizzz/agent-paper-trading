@@ -1,0 +1,126 @@
+{
+  "as_of": "2026-10-30T08:35:26.147514-04:00",
+  "codex_session_id": "01a15e78-f28b-7c91-8da9-2f67a4f4582a",
+  "duration_seconds": 131.849343,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r05/.runner/logs/20261030T123526.159047Z-76bafac6",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "20319.1500",
+        "reserved": "9200.00",
+        "total": "29519.1500"
+      },
+      "equity": "100840.4000",
+      "initial_cash": "100000.00",
+      "positions_market_value": "71321.2500",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-30T08:37:37.942417-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "186.00",
+                "order_id": "ord_000024",
+                "quantity": 40,
+                "side": "buy",
+                "symbol": "XOM"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000012",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "184.00",
+              "order_id": "ord_000023",
+              "quantity": 50,
+              "side": "buy",
+              "symbol": "XOM"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-30T08:37:12.993813-04:00",
+        "valid_from": "2026-10-30T08:38:00-04:00",
+        "valid_until": "2026-10-30T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 45,
+        "average_cost": "326.00",
+        "latest_price": "342.7600",
+        "latest_price_at": "2026-10-29T15:59:00-04:00",
+        "market_value": "15424.2000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 45,
+        "reserved_quantity": 0,
+        "symbol": "CDNS",
+        "unrealized_pnl": "754.2000"
+      },
+      {
+        "available_quantity": 10,
+        "average_cost": "1338.5100",
+        "latest_price": "1373.7000",
+        "latest_price_at": "2026-10-29T16:03:00-04:00",
+        "market_value": "13737.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 10,
+        "reserved_quantity": 0,
+        "symbol": "LLY",
+        "unrealized_pnl": "351.9000"
+      },
+      {
+        "available_quantity": 35,
+        "average_cost": "582.8500",
+        "latest_price": "643.5900",
+        "latest_price_at": "2026-10-29T16:00:00-04:00",
+        "market_value": "22525.6500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 35,
+        "reserved_quantity": 0,
+        "symbol": "LMT",
+        "unrealized_pnl": "2125.9000"
+      },
+      {
+        "available_quantity": 80,
+        "average_cost": "237.00",
+        "latest_price": "245.4300",
+        "latest_price_at": "2026-10-29T16:00:00-04:00",
+        "market_value": "19634.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 80,
+        "reserved_quantity": 0,
+        "symbol": "VRT",
+        "unrealized_pnl": "674.4000"
+      }
+    ],
+    "settled_through": "2026-10-29T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r05",
+  "run_id": "20261030T123526.159047Z-76bafac6",
+  "session_id": "01a15e78-f28b-7c91-8da9-2f67a4f4582a",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

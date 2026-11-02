@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-10-30T15:32:41.030444-04:00",
+  "codex_session_id": "01a15e71-94e0-7ae3-8245-d5fe1635d95b",
+  "duration_seconds": 19.365701,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "371.25",
+      "filled_at": "2026-10-30T13:15:00-04:00",
+      "limit_price": "371.25",
+      "order_id": "ord_000026",
+      "quantity": 126,
+      "side": "sell",
+      "symbol": "VTI"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r01/.runner/logs/20261030T193241.044091Z-0ff5e930",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "47025.6498",
+        "reserved": "0",
+        "total": "47025.6498"
+      },
+      "equity": "93703.6098",
+      "initial_cash": "100000.00",
+      "positions_market_value": "46677.9600",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-30T15:33:00.345965-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 126,
+        "average_cost": "373.3130166666666666666666667",
+        "latest_price": "370.4600",
+        "latest_price_at": "2026-10-30T15:26:00-04:00",
+        "market_value": "46677.9600",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 126,
+        "reserved_quantity": 0,
+        "symbol": "VTI",
+        "unrealized_pnl": "-359.4801000000000000000000042"
+      }
+    ],
+    "settled_through": "2026-10-30T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r01",
+  "run_id": "20261030T193241.044091Z-0ff5e930",
+  "session_id": "01a15e71-94e0-7ae3-8245-d5fe1635d95b",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

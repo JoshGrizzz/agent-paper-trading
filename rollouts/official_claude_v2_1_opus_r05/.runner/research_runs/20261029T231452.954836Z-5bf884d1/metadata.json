@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "-I",
+    "-c",
+    "\nimport yfinance as yf\nt=['NVDA','AVGO','MU','TSM','AMD','KLAC','LRCX','AMAT','QCOM','ASML','INTC','MRVL','ARM','SMH','QQQ']\nd=yf.download(t,period='1d',interval='1m',prepost=True,auto_adjust=False,progress=False)\nc=d['Close'].ffill(); i=d.index\nclose=c[i<=i[i.hour<16][-1]].iloc[-1]; last=c.iloc[-1]\nimport pandas as pd\nprint(pd.DataFrame({'close':close,'last':last,'chg%':(last/close-1)*100}).round(2))\n"
+  ],
+  "duration_seconds": 1.0029602940194309,
+  "occurred_at": "2026-10-29T23:14:53.958724+00:00",
+  "output_truncated": false,
+  "returncode": 0,
+  "run_id": "20261029T231452.954836Z-5bf884d1",
+  "source_file": "inline.py",
+  "source_sha256": "3a13ca8d29945260fabdc93256a91f9e2aadeb749168eb0eb9cb70141509ee9b",
+  "source_snapshot": "source_snapshot.py",
+  "stderr_bytes": 0,
+  "stdout_bytes": 544
+}

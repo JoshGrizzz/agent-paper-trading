@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-10-29T12:02:44.531044-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 45.106829,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "716.5650",
+      "filled_at": "2026-10-29T09:30:00-04:00",
+      "limit_price": "718.00",
+      "order_id": "ord_000034",
+      "quantity": 10,
+      "side": "buy",
+      "symbol": "QQQ"
+    }
+  ],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r02/.runner/logs/20261029T160244.539901Z-44b25437",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "10168.7450",
+        "reserved": "0",
+        "total": "10168.7450"
+      },
+      "equity": "97925.0200",
+      "initial_cash": "100000.00",
+      "positions_market_value": "87756.2750",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-29T12:03:29.579011-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 95,
+        "average_cost": "220.3710526315789473684210526",
+        "latest_price": "214.0750",
+        "latest_price_at": "2026-10-29T12:01:00-04:00",
+        "market_value": "20337.1250",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 95,
+        "reserved_quantity": 0,
+        "symbol": "NVDA",
+        "unrealized_pnl": "-598.1249999999999999999999970"
+      },
+      {
+        "available_quantity": 94,
+        "average_cost": "720.4282446808510638297872340",
+        "latest_price": "717.2250",
+        "latest_price_at": "2026-10-29T12:01:00-04:00",
+        "market_value": "67419.1500",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 94,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-301.1049999999999999999999960"
+      }
+    ],
+    "settled_through": "2026-10-29T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r02",
+  "run_id": "20261029T160244.539901Z-44b25437",
+  "session_id": "sess_9257a0fb-47f6-4e73-af9f-af01535dc481",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

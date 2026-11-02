@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "-c",
+    "\nimport yfinance as yf\nfor s in ['SPY','SMH','QQQ','XLE','XLV','^VIX']:\n    d=yf.Ticker(s).history(period='2d',interval='5m',prepost=True)\n    r=d[d.index.date==d.index[-1].date()]\n    print(s, 'last', round(d['Close'].iloc[-1],2), d.index[-1].strftime('%H:%M'), 'low', round(r['Low'].min(),2), 'high', round(r['High'].max(),2))\n"
+  ],
+  "duration_seconds": 2.031376956962049,
+  "occurred_at": "2026-10-30T23:02:28.494602+00:00",
+  "output_truncated": false,
+  "returncode": 0,
+  "run_id": "20261030T230226.462078Z-121f532b",
+  "source_file": "inline.py",
+  "source_sha256": "a65d59483d7d89b9f7755b89934af9f261e468911a08b7996e9781c98919c9e5",
+  "source_snapshot": "source_snapshot.py",
+  "stderr_bytes": 0,
+  "stdout_bytes": 263
+}

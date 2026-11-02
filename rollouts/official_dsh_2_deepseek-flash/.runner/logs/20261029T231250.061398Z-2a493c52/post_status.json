@@ -1,0 +1,74 @@
+{
+  "account": {
+    "cash": {
+      "available": "11361.2340",
+      "reserved": "0",
+      "total": "11361.2340"
+    },
+    "equity": "95299.2940",
+    "initial_cash": "100000.00",
+    "positions_market_value": "83938.0600",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-29T19:13:29.541509-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 27,
+      "average_cost": "710.9480",
+      "latest_price": "715.7100",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "19324.1700",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 27,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "128.5740"
+    },
+    {
+      "available_quantity": 45,
+      "average_cost": "539.0016666666666666666666667",
+      "latest_price": "561.6700",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "25275.1500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "1020.074999999999999999999998"
+    },
+    {
+      "available_quantity": 26,
+      "average_cost": "762.9700",
+      "latest_price": "769.7900",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "20014.5400",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 26,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "177.3200"
+    },
+    {
+      "available_quantity": 105,
+      "average_cost": "180.7152380952380952380952381",
+      "latest_price": "184.0400",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "19324.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 105,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "349.0999999999999999999999995"
+    }
+  ],
+  "settled_through": "2026-10-29T15:29:00-04:00"
+}

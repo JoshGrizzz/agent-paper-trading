@@ -1,0 +1,31 @@
+2026-10-28 12:06:00-04:00
+Ticker
+GOOGL    324.03
+MSFT     527.67
+QQQ      722.34
+SMH      565.54
+SPY      771.48
+TLT       81.22
+USO      169.11
+XLE       68.87
+Name: 2026-10-28 12:06:00-04:00, dtype: float64
+low Ticker
+GOOGL    322.96
+MSFT     527.01
+QQQ      720.30
+SMH      560.52
+SPY      769.24
+TLT       81.22
+USO      165.25
+XLE       68.13
+dtype: float64
+high Ticker
+GOOGL    326.40
+MSFT     534.57
+QQQ      725.57
+SMH      566.20
+SPY      771.82
+TLT       81.77
+USO      169.29
+XLE       68.93
+dtype: float64

@@ -1,0 +1,141 @@
+{
+  "account": {
+    "cash": {
+      "available": "19781.8468",
+      "reserved": "0",
+      "total": "19781.8468"
+    },
+    "equity": "94508.8768",
+    "initial_cash": "100000.00",
+    "positions_market_value": "74727.0300",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T08:32:42.315679-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [],
+      "plan_id": "plan_000013",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "690.00",
+            "order_id": "ord_000046",
+            "quantity": 20,
+            "side": "sell",
+            "symbol": "QQQ"
+          },
+          {
+            "limit_price": "526.00",
+            "order_id": "ord_000047",
+            "quantity": 8,
+            "side": "sell",
+            "symbol": "SMH"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-30T08:32:31.596347-04:00",
+      "valid_from": "2026-10-30T08:33:00-04:00",
+      "valid_until": "2026-10-30T12:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 65,
+      "average_cost": "217.4007692307692307692307692",
+      "latest_price": "213.9500",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "13906.7500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 65,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "-224.2999999999999999999999980"
+    },
+    {
+      "available_quantity": 20,
+      "average_cost": "713.98978400000000000000000",
+      "latest_price": "715.7100",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "28628.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 20,
+      "symbol": "QQQ",
+      "unrealized_pnl": "68.80864000000000000000000"
+    },
+    {
+      "available_quantity": 8,
+      "average_cost": "547.9340",
+      "latest_price": "561.6700",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "8986.7200",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 16,
+      "reserved_quantity": 8,
+      "symbol": "SMH",
+      "unrealized_pnl": "219.7760"
+    },
+    {
+      "available_quantity": 26,
+      "average_cost": "422.7853846153846153846153846",
+      "latest_price": "410.9100",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "10683.6600",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 26,
+      "reserved_quantity": 0,
+      "symbol": "UNH",
+      "unrealized_pnl": "-308.7599999999999999999999996"
+    },
+    {
+      "available_quantity": 55,
+      "average_cost": "89.3300",
+      "latest_price": "88.0600",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "4843.3000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 55,
+      "reserved_quantity": 0,
+      "symbol": "XLP",
+      "unrealized_pnl": "-69.8500"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "42.5050",
+      "latest_price": "43.1400",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "2157.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "XLU",
+      "unrealized_pnl": "31.7500"
+    },
+    {
+      "available_quantity": 30,
+      "average_cost": "181.7200",
+      "latest_price": "184.0400",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "5521.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "69.6000"
+    }
+  ],
+  "settled_through": "2026-10-29T19:59:00-04:00"
+}

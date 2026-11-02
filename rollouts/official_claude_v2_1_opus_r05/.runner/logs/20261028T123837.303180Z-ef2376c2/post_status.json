@@ -1,0 +1,91 @@
+{
+  "account": {
+    "cash": {
+      "available": "39783.2250",
+      "reserved": "59836.00",
+      "total": "99619.2250"
+    },
+    "equity": "99619.2250",
+    "initial_cash": "99619.2250",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-28T08:39:49.804107-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "778.00",
+              "order_id": "ord_000005",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SPY"
+            },
+            {
+              "limit_price": "732.00",
+              "order_id": "ord_000006",
+              "quantity": 13,
+              "side": "buy",
+              "symbol": "QQQ"
+            },
+            {
+              "limit_price": "575.00",
+              "order_id": "ord_000007",
+              "quantity": 16,
+              "side": "buy",
+              "symbol": "SMH"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000001",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "772.50",
+            "order_id": "ord_000001",
+            "quantity": 32,
+            "side": "buy",
+            "symbol": "SPY"
+          },
+          {
+            "limit_price": "725.00",
+            "order_id": "ord_000002",
+            "quantity": 21,
+            "side": "buy",
+            "symbol": "QQQ"
+          },
+          {
+            "limit_price": "566.00",
+            "order_id": "ord_000003",
+            "quantity": 26,
+            "side": "buy",
+            "symbol": "SMH"
+          },
+          {
+            "limit_price": "69.00",
+            "order_id": "ord_000004",
+            "quantity": 75,
+            "side": "buy",
+            "symbol": "XLE"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-28T08:39:31.804235-04:00",
+      "valid_from": "2026-10-28T08:40:00-04:00",
+      "valid_until": "2026-10-28T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": null
+}

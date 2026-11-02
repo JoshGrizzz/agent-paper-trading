@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-30T08:37:38.131181-04:00",
+  "codex_session_id": "01a15e71-94e0-7832-bee6-0b0574d3c70c",
+  "duration_seconds": 56.880539,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r01/.runner/logs/20261030T123738.142474Z-2d2d4365",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "35227.6200",
+        "reserved": "0",
+        "total": "35227.6200"
+      },
+      "equity": "91734.6200",
+      "initial_cash": "100000.00",
+      "positions_market_value": "56507.0000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-30T08:38:34.938444-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "487.00",
+                "order_id": "ord_000039",
+                "quantity": 110,
+                "side": "sell",
+                "symbol": "SOXX"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "470.00",
+                "order_id": "ord_000040",
+                "quantity": 110,
+                "side": "sell",
+                "symbol": "SOXX"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000013",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "495.00",
+              "order_id": "ord_000038",
+              "quantity": 110,
+              "side": "sell",
+              "symbol": "SOXX"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-30T08:38:24.716365-04:00",
+        "valid_from": "2026-10-30T08:39:00-04:00",
+        "valid_until": "2026-10-30T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 0,
+        "average_cost": "510.50",
+        "latest_price": "513.7000",
+        "latest_price_at": "2026-10-29T16:00:00-04:00",
+        "market_value": "56507.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 110,
+        "reserved_quantity": 110,
+        "symbol": "SOXX",
+        "unrealized_pnl": "352.0000"
+      }
+    ],
+    "settled_through": "2026-10-29T19:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r01",
+  "run_id": "20261030T123738.142474Z-2d2d4365",
+  "session_id": "01a15e71-94e0-7832-bee6-0b0574d3c70c",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

@@ -1,0 +1,116 @@
+{
+  "account": {
+    "cash": {
+      "available": "335.9750",
+      "reserved": "4910.00",
+      "total": "5245.9750"
+    },
+    "equity": "100115.9750",
+    "initial_cash": "100000.00",
+    "positions_market_value": "94870.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T08:33:32.961835-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "710.00",
+              "order_id": "ord_000056",
+              "quantity": 4,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "713.00",
+              "order_id": "ord_000057",
+              "quantity": 4,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000015",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "706.00",
+            "order_id": "ord_000054",
+            "quantity": 5,
+            "side": "buy",
+            "symbol": "QQQ"
+          },
+          {
+            "limit_price": "690.00",
+            "order_id": "ord_000055",
+            "quantity": 2,
+            "side": "buy",
+            "symbol": "QQQ"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-30T08:33:09.667966-04:00",
+      "valid_from": "2026-10-30T08:34:00-04:00",
+      "valid_until": "2026-10-30T12:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 50,
+      "average_cost": "718.02450000000000000000000",
+      "latest_price": "715.7100",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "35785.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-115.72500000000000000000000"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "769.9360",
+      "latest_price": "769.7900",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "38489.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-7.3000"
+    },
+    {
+      "available_quantity": 300,
+      "average_cost": "67.85333333333333333333333333",
+      "latest_price": "68.6500",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "20595.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 300,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "239.0000000000000000000000010"
+    }
+  ],
+  "settled_through": "2026-10-29T11:59:00-04:00"
+}

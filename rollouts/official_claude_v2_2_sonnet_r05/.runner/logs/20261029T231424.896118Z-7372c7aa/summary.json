@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-10-29T19:14:24.874309-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 8.673647,
+  "fills": [],
+  "harness": "claude",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_claude_v2_2_sonnet_r05/.runner/logs/20261029T231424.896118Z-7372c7aa",
+  "model": "sonnet",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "11464.7000",
+        "reserved": "0",
+        "total": "11464.7000"
+      },
+      "equity": "99338.1900",
+      "initial_cash": "99830.8000",
+      "positions_market_value": "87873.4900",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-29T19:14:33.501424-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 69,
+        "average_cost": "721.6608695652173913043478261",
+        "latest_price": "715.7100",
+        "latest_price_at": "2026-10-29T16:00:00-04:00",
+        "market_value": "49383.9900",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 69,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-410.6100000000000000000000009"
+      },
+      {
+        "available_quantity": 50,
+        "average_cost": "771.4300",
+        "latest_price": "769.7900",
+        "latest_price_at": "2026-10-29T16:00:00-04:00",
+        "market_value": "38489.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 50,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-82.0000"
+      }
+    ],
+    "settled_through": "2026-10-29T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_claude_v2_2_sonnet_r05",
+  "run_id": "20261029T231424.896118Z-7372c7aa",
+  "session_id": "42cc7d58-61c9-4cb5-b7a7-92a79cbde6bd",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

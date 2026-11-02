@@ -1,0 +1,27 @@
+Failed to get ticker 'IWM' reason: Failed to perform, curl: (28) Resolving timed out after 10020 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'XLF' reason: Failed to perform, curl: (28) Resolving timed out after 10021 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'SNDK' reason: Failed to perform, curl: (28) Resolving timed out after 10020 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'SMH' reason: Failed to perform, curl: (28) Resolving timed out after 10020 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'AMZN' reason: Failed to perform, curl: (28) Resolving timed out after 10021 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'SOXX' reason: Failed to perform, curl: (28) Resolving timed out after 10020 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'META' reason: Failed to perform, curl: (28) Resolving timed out after 10020 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'ANET' reason: Failed to perform, curl: (28) Resolving timed out after 10022 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'VST' reason: Failed to perform, curl: (28) Resolving timed out after 10022 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'GEV' reason: Failed to perform, curl: (28) Resolving timed out after 10022 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$SOXX: possibly delisted; no price data found  (period=6mo)
+$SMH: possibly delisted; no price data found  (period=6mo)
+$META: possibly delisted; no price data found  (period=6mo)
+$SNDK: possibly delisted; no price data found  (period=6mo)
+
+4 Failed downloads:
+['SOXX', 'SMH', 'META', 'SNDK']: possibly delisted; no price data found  (period=6mo)
+Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "/opt/finance/lib/python3.12/site-packages/pandas/core/indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/finance/lib/python3.12/site-packages/pandas/core/indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+  File "/opt/finance/lib/python3.12/site-packages/pandas/core/indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds

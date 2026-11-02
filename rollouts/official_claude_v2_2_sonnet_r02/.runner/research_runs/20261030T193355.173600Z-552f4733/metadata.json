@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "-c",
+    "\nimport yfinance as yf\nfor t in ['SPY','VXX']:\n    h=yf.Ticker(t).history(period='2d',interval='5m',prepost=False)\n    print(t);print(h.tail(6)[['Open','High','Low','Close']].to_string())\n"
+  ],
+  "duration_seconds": 0.8797993750195019,
+  "occurred_at": "2026-10-30T19:33:56.054497+00:00",
+  "output_truncated": false,
+  "returncode": 0,
+  "run_id": "20261030T193355.173600Z-552f4733",
+  "source_file": "inline.py",
+  "source_sha256": "326ffc26627348d11a27be0201e49d8a4d730d19c7f8a2c50851de36808c8a48",
+  "source_snapshot": "source_snapshot.py",
+  "stderr_bytes": 0,
+  "stdout_bytes": 1160
+}

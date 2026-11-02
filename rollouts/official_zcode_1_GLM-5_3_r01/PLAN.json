@@ -4,8 +4,8 @@
       {
         "symbol": "QQQ",
         "side": "sell",
-        "quantity": 20,
-        "limit_price": "715.50"
+        "quantity": 40,
+        "limit_price": "688.00"
       }
     ]
   },
@@ -15,8 +15,8 @@
         {
           "symbol": "QQQ",
           "side": "sell",
-          "quantity": 20,
-          "limit_price": "711.00"
+          "quantity": 40,
+          "limit_price": "682.00"
         }
       ]
     },
@@ -25,14 +25,14 @@
         {
           "symbol": "QQQ",
           "side": "sell",
-          "quantity": 30,
-          "limit_price": "705.00"
+          "quantity": 60,
+          "limit_price": "672.00"
         },
         {
           "symbol": "SPCX",
           "side": "sell",
           "quantity": 40,
-          "limit_price": "145.00"
+          "limit_price": "132.00"
         }
       ]
     }

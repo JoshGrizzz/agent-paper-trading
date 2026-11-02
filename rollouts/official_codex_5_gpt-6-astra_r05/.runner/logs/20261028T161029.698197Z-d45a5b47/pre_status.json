@@ -1,0 +1,61 @@
+{
+  "account": {
+    "cash": {
+      "available": "42904.2500",
+      "reserved": "0",
+      "total": "42904.2500"
+    },
+    "equity": "99226.8750",
+    "initial_cash": "100000.00",
+    "positions_market_value": "56322.6250",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-28T12:10:29.686276-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "326.00",
+      "latest_price": "342.5300",
+      "latest_price_at": "2026-10-28T12:09:00-04:00",
+      "market_value": "15413.8500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "743.8500"
+    },
+    {
+      "available_quantity": 35,
+      "average_cost": "582.8500",
+      "latest_price": "628.4450",
+      "latest_price_at": "2026-10-28T12:08:00-04:00",
+      "market_value": "21995.5750",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "LMT",
+      "unrealized_pnl": "1595.8250"
+    },
+    {
+      "available_quantity": 80,
+      "average_cost": "237.00",
+      "latest_price": "236.4150",
+      "latest_price_at": "2026-10-28T12:09:00-04:00",
+      "market_value": "18913.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 80,
+      "reserved_quantity": 0,
+      "symbol": "VRT",
+      "unrealized_pnl": "-46.8000"
+    }
+  ],
+  "settled_through": "2026-10-28T11:59:00-04:00"
+}

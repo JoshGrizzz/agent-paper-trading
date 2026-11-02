@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-28T19:41:10.515207-04:00",
+  "codex_session_id": "01a15e75-3b39-79d2-987e-a09894549add",
+  "duration_seconds": 57.971981,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r03/.runner/logs/20261028T234110.527305Z-ac0ef5ca",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "50025.8900",
+        "reserved": "15320.00",
+        "total": "65345.8900"
+      },
+      "equity": "96296.6900",
+      "initial_cash": "100000.00",
+      "positions_market_value": "30950.8000",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-28T19:42:08.426809-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "769.00",
+                "order_id": "ord_000037",
+                "quantity": 12,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "772.00",
+                "order_id": "ord_000038",
+                "quantity": 8,
+                "side": "buy",
+                "symbol": "SPY"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000013",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "766.00",
+              "order_id": "ord_000036",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-28T19:41:58.148002-04:00",
+        "valid_from": "2026-10-28T19:42:00-04:00",
+        "valid_until": "2026-10-28T20:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 40,
+        "average_cost": "765.00",
+        "latest_price": "773.7700",
+        "latest_price_at": "2026-10-28T16:00:00-04:00",
+        "market_value": "30950.8000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "350.8000"
+      }
+    ],
+    "settled_through": "2026-10-28T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r03",
+  "run_id": "20261028T234110.527305Z-ac0ef5ca",
+  "session_id": "01a15e75-3b39-79d2-987e-a09894549add",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

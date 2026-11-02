@@ -1,0 +1,77 @@
+{
+  "account": {
+    "cash": {
+      "available": "47363.9450",
+      "reserved": "0",
+      "total": "47363.9450"
+    },
+    "equity": "99718.8665",
+    "initial_cash": "100000.00",
+    "positions_market_value": "52354.9215",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-29T12:03:29.700671-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 35,
+      "average_cost": "213.7600",
+      "latest_price": "213.9800",
+      "latest_price_at": "2026-10-29T12:02:00-04:00",
+      "market_value": "7489.3000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "7.7000"
+    },
+    {
+      "available_quantity": 35,
+      "average_cost": "709.5722857142857142857142857",
+      "latest_price": "717.0000",
+      "latest_price_at": "2026-10-29T12:02:00-04:00",
+      "market_value": "25095.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "259.9700000000000000000000005"
+    },
+    {
+      "available_quantity": 35,
+      "average_cost": "533.8742857142857142857142857",
+      "latest_price": "564.8749",
+      "latest_price_at": "2026-10-29T12:02:00-04:00",
+      "market_value": "19770.6215",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "1085.021500000000000000000000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-29T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-29T12:03:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-29T08:00:00-04:00",
+    "symbols": [
+      "NVDA",
+      "QQQ",
+      "SMH"
+    ],
+    "updated_symbols": [
+      "NVDA",
+      "QQQ",
+      "SMH"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "62323.9450",
+      "reserved": "0",
+      "total": "62323.9450"
+    },
+    "equity": "97656.5950",
+    "initial_cash": "100000.00",
+    "positions_market_value": "35332.6500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T13:13:07.399852-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "532.5800",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "530.50",
+      "order_id": "ord_000063",
+      "quantity": 15,
+      "side": "sell",
+      "symbol": "SMH"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "697.1300",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "697.00",
+      "order_id": "ord_000064",
+      "quantity": 10,
+      "side": "sell",
+      "symbol": "QQQ"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 35,
+      "average_cost": "213.7600",
+      "latest_price": "213.9500",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "7488.2500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "NVDA",
+      "unrealized_pnl": "6.6500"
+    },
+    {
+      "available_quantity": 25,
+      "average_cost": "709.5722857142857142857142857",
+      "latest_price": "693.9600",
+      "latest_price_at": "2026-10-30T11:59:00-04:00",
+      "market_value": "17349.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-390.3071428571428571428571425"
+    },
+    {
+      "available_quantity": 20,
+      "average_cost": "533.8742857142857142857142857",
+      "latest_price": "524.7700",
+      "latest_price_at": "2026-10-30T11:59:00-04:00",
+      "market_value": "10495.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 20,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "-182.0857142857142857142857140"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-30T11:59:00-04:00"
+}

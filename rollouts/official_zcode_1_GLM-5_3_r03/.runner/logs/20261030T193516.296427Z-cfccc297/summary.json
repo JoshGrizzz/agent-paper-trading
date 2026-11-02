@@ -1,0 +1,147 @@
+{
+  "as_of": "2026-10-30T15:35:16.286947-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 88.128587,
+  "fills": [],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r03/.runner/logs/20261030T193516.296427Z-cfccc297",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "62323.9450",
+        "reserved": "0",
+        "total": "62323.9450"
+      },
+      "equity": "96870.9950",
+      "initial_cash": "100000.00",
+      "positions_market_value": "34547.0500",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-30T15:36:44.361056-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "505.00",
+                "order_id": "ord_000071",
+                "quantity": 10,
+                "side": "sell",
+                "symbol": "SMH"
+              },
+              {
+                "limit_price": "199.00",
+                "order_id": "ord_000072",
+                "quantity": 10,
+                "side": "sell",
+                "symbol": "NVDA"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "500.00",
+                "order_id": "ord_000073",
+                "quantity": 10,
+                "side": "sell",
+                "symbol": "SMH"
+              },
+              {
+                "limit_price": "196.00",
+                "order_id": "ord_000074",
+                "quantity": 10,
+                "side": "sell",
+                "symbol": "NVDA"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000013",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "510.50",
+              "order_id": "ord_000069",
+              "quantity": 10,
+              "side": "sell",
+              "symbol": "SMH"
+            },
+            {
+              "limit_price": "202.50",
+              "order_id": "ord_000070",
+              "quantity": 10,
+              "side": "sell",
+              "symbol": "NVDA"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-30T15:36:08.765134-04:00",
+        "valid_from": "2026-10-30T15:37:00-04:00",
+        "valid_until": "2026-10-30T19:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 25,
+        "average_cost": "213.7600",
+        "latest_price": "203.3500",
+        "latest_price_at": "2026-10-30T15:11:00-04:00",
+        "market_value": "7117.2500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 35,
+        "reserved_quantity": 10,
+        "symbol": "NVDA",
+        "unrealized_pnl": "-364.3500"
+      },
+      {
+        "available_quantity": 25,
+        "average_cost": "709.5722857142857142857142857",
+        "latest_price": "687.7400",
+        "latest_price_at": "2026-10-30T15:27:00-04:00",
+        "market_value": "17193.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-545.8071428571428571428571425"
+      },
+      {
+        "available_quantity": 10,
+        "average_cost": "533.8742857142857142857142857",
+        "latest_price": "511.8150",
+        "latest_price_at": "2026-10-30T14:34:00-04:00",
+        "market_value": "10236.3000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 20,
+        "reserved_quantity": 10,
+        "symbol": "SMH",
+        "unrealized_pnl": "-441.1857142857142857142857140"
+      }
+    ],
+    "settled_through": "2026-10-30T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r03",
+  "run_id": "20261030T193516.296427Z-cfccc297",
+  "session_id": "sess_dd7c10cb-4e51-44c3-9263-7d7ad279522f",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

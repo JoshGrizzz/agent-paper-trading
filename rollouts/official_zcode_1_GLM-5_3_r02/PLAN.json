@@ -3,9 +3,15 @@
     "orders": [
       {
         "symbol": "QQQ",
-        "side": "buy",
-        "quantity": 11,
-        "limit_price": "715.00"
+        "side": "sell",
+        "quantity": 15,
+        "limit_price": "688.00"
+      },
+      {
+        "symbol": "NVDA",
+        "side": "sell",
+        "quantity": 25,
+        "limit_price": "202.50"
       }
     ]
   },
@@ -14,9 +20,15 @@
       "orders": [
         {
           "symbol": "QQQ",
-          "side": "buy",
-          "quantity": 11,
-          "limit_price": "722.00"
+          "side": "sell",
+          "quantity": 15,
+          "limit_price": "682.00"
+        },
+        {
+          "symbol": "NVDA",
+          "side": "sell",
+          "quantity": 25,
+          "limit_price": "199.50"
         }
       ]
     },
@@ -24,9 +36,15 @@
       "orders": [
         {
           "symbol": "QQQ",
-          "side": "buy",
-          "quantity": 11,
-          "limit_price": "729.00"
+          "side": "sell",
+          "quantity": 15,
+          "limit_price": "675.00"
+        },
+        {
+          "symbol": "NVDA",
+          "side": "sell",
+          "quantity": 25,
+          "limit_price": "196.50"
         }
       ]
     }

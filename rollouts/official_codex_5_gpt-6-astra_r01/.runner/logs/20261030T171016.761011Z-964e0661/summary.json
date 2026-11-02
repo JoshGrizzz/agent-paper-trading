@@ -1,0 +1,137 @@
+{
+  "as_of": "2026-10-30T13:10:16.750019-04:00",
+  "codex_session_id": "01a15e71-94e4-7660-b71f-40a4f0a80df6",
+  "duration_seconds": 108.511855,
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "234.00",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "234.00",
+      "order_id": "ord_000022",
+      "quantity": 25,
+      "side": "buy",
+      "symbol": "CVX"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_5_gpt-6-astra_r01/.runner/logs/20261030T171016.761011Z-964e0661",
+  "model": "gpt-6-astra",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "46348.0000",
+        "reserved": "0",
+        "total": "46348.0000"
+      },
+      "equity": "98143.6900",
+      "initial_cash": "100000.00",
+      "positions_market_value": "51795.6900",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-30T13:12:05.201071-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "325.00",
+                "order_id": "ord_000024",
+                "quantity": 30,
+                "side": "sell",
+                "symbol": "CDNS"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000012",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "330.00",
+              "order_id": "ord_000023",
+              "quantity": 30,
+              "side": "sell",
+              "symbol": "CDNS"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-30T13:11:44.434388-04:00",
+        "valid_from": "2026-10-30T13:12:00-04:00",
+        "valid_until": "2026-10-30T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 30,
+        "average_cost": "325.00",
+        "latest_price": "327.6000",
+        "latest_price_at": "2026-10-30T12:52:00-04:00",
+        "market_value": "19656.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 60,
+        "reserved_quantity": 30,
+        "symbol": "CDNS",
+        "unrealized_pnl": "156.0000"
+      },
+      {
+        "available_quantity": 25,
+        "average_cost": "234.00",
+        "latest_price": "235.3900",
+        "latest_price_at": "2026-10-30T12:52:00-04:00",
+        "market_value": "5884.7500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 25,
+        "reserved_quantity": 0,
+        "symbol": "CVX",
+        "unrealized_pnl": "34.7500"
+      },
+      {
+        "available_quantity": 12,
+        "average_cost": "1330.00",
+        "latest_price": "1420.1200",
+        "latest_price_at": "2026-10-30T13:08:00-04:00",
+        "market_value": "17041.4400",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 12,
+        "reserved_quantity": 0,
+        "symbol": "LLY",
+        "unrealized_pnl": "1081.4400"
+      },
+      {
+        "available_quantity": 40,
+        "average_cost": "236.00",
+        "latest_price": "230.3375",
+        "latest_price_at": "2026-10-30T13:08:00-04:00",
+        "market_value": "9213.5000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 40,
+        "reserved_quantity": 0,
+        "symbol": "VRT",
+        "unrealized_pnl": "-226.5000"
+      }
+    ],
+    "settled_through": "2026-10-30T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_5_gpt-6-astra_r01",
+  "run_id": "20261030T171016.761011Z-964e0661",
+  "session_id": "01a15e71-94e4-7660-b71f-40a4f0a80df6",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

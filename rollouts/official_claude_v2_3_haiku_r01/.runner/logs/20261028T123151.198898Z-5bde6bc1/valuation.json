@@ -1,0 +1,29 @@
+{
+  "account": {
+    "cash": {
+      "available": "100698.4000",
+      "reserved": "0",
+      "total": "100698.4000"
+    },
+    "equity": "100698.4000",
+    "initial_cash": "100698.4000",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-28T08:31:51.180722-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [],
+  "refreshed": false,
+  "settled_through": null,
+  "valuation_refresh": {
+    "end": null,
+    "missing_symbols": [],
+    "start": null,
+    "symbols": [],
+    "updated_symbols": []
+  }
+}

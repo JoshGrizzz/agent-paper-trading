@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "61979.9062",
+      "reserved": "0",
+      "total": "61979.9062"
+    },
+    "equity": "98187.9062",
+    "initial_cash": "100000.00",
+    "positions_market_value": "36208.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-28T12:06:13.752968-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "90.50",
+      "filled_at": "2026-10-28T09:46:00-04:00",
+      "limit_price": "90.50",
+      "order_id": "ord_000039",
+      "quantity": 400,
+      "side": "buy",
+      "symbol": "QLD"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 400,
+      "average_cost": "90.50",
+      "latest_price": "90.5200",
+      "latest_price_at": "2026-10-28T11:59:00-04:00",
+      "market_value": "36208.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 400,
+      "reserved_quantity": 0,
+      "symbol": "QLD",
+      "unrealized_pnl": "8.0000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-28T11:59:00-04:00"
+}

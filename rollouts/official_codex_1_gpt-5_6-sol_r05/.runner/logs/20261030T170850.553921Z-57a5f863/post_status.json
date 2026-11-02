@@ -1,0 +1,69 @@
+{
+  "account": {
+    "cash": {
+      "available": "57992.0550",
+      "reserved": "35700.00",
+      "total": "93692.0550"
+    },
+    "equity": "93692.0550",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-30T13:10:11.125713-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "185.30",
+              "order_id": "ord_000049",
+              "quantity": 190,
+              "side": "buy",
+              "symbol": "XLV"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "69.40",
+              "order_id": "ord_000050",
+              "quantity": 510,
+              "side": "buy",
+              "symbol": "XLE"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000018",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "89.25",
+            "order_id": "ord_000048",
+            "quantity": 400,
+            "side": "buy",
+            "symbol": "XLP"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-30T13:09:56.472327-04:00",
+      "valid_from": "2026-10-30T13:10:00-04:00",
+      "valid_until": "2026-10-30T15:30:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": "2026-10-30T11:59:00-04:00"
+}

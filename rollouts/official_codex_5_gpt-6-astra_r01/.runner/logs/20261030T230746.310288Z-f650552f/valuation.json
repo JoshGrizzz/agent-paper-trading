@@ -1,0 +1,92 @@
+{
+  "account": {
+    "cash": {
+      "available": "56150.2000",
+      "reserved": "0",
+      "total": "56150.2000"
+    },
+    "equity": "98209.5800",
+    "initial_cash": "100000.00",
+    "positions_market_value": "42059.3800",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T19:07:46.299185-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 30,
+      "average_cost": "325.00",
+      "latest_price": "328.0300",
+      "latest_price_at": "2026-10-30T15:59:00-04:00",
+      "market_value": "9840.9000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "90.9000"
+    },
+    {
+      "available_quantity": 25,
+      "average_cost": "234.00",
+      "latest_price": "235.5200",
+      "latest_price_at": "2026-10-30T16:02:00-04:00",
+      "market_value": "5888.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "CVX",
+      "unrealized_pnl": "38.0000"
+    },
+    {
+      "available_quantity": 12,
+      "average_cost": "1330.00",
+      "latest_price": "1417.5400",
+      "latest_price_at": "2026-10-30T16:02:00-04:00",
+      "market_value": "17010.4800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 12,
+      "reserved_quantity": 0,
+      "symbol": "LLY",
+      "unrealized_pnl": "1050.4800"
+    },
+    {
+      "available_quantity": 40,
+      "average_cost": "236.00",
+      "latest_price": "233.0000",
+      "latest_price_at": "2026-10-30T16:00:00-04:00",
+      "market_value": "9320.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "VRT",
+      "unrealized_pnl": "-120.0000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-30T15:29:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-30T19:07:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-30T08:00:00-04:00",
+    "symbols": [
+      "CDNS",
+      "CVX",
+      "LLY",
+      "VRT"
+    ],
+    "updated_symbols": [
+      "CDNS",
+      "CVX",
+      "LLY",
+      "VRT"
+    ]
+  }
+}

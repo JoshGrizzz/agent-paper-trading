@@ -1,0 +1,13 @@
+close Ticker                      GOOGL    META    MSFT    NVDA     QQQ     SMH     SPY    XLE     XLV
+Datetime                                                                                        
+2026-10-28 15:59:00-04:00  325.61  612.49  531.73  215.39  725.48  568.11  772.35  68.45  179.74
+last Ticker
+GOOGL    293.62
+META     617.54
+MSFT     544.46
+NVDA     214.03
+QQQ      717.67
+SMH      560.12
+SPY      769.18
+XLE       68.78
+XLV      181.19

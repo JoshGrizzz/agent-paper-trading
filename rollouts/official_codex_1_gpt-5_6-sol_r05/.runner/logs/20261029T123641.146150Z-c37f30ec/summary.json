@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-29T08:36:41.136084-04:00",
+  "codex_session_id": "01a15e78-f29b-7021-bb41-8065ff413351",
+  "duration_seconds": 73.162515,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r05/.runner/logs/20261029T123641.146150Z-c37f30ec",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "30950.3550",
+        "reserved": "49840.00",
+        "total": "80790.3550"
+      },
+      "equity": "95349.4130",
+      "initial_cash": "100000.00",
+      "positions_market_value": "14559.0580",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-29T08:37:54.210142-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "716.00",
+                "order_id": "ord_000043",
+                "quantity": 60,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "720.00",
+                "order_id": "ord_000044",
+                "quantity": 50,
+                "side": "buy",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000016",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "712.00",
+              "order_id": "ord_000042",
+              "quantity": 70,
+              "side": "buy",
+              "symbol": "QQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-29T08:37:43.573621-04:00",
+        "valid_from": "2026-10-29T08:38:00-04:00",
+        "valid_until": "2026-10-29T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 20,
+        "average_cost": "712.9400",
+        "latest_price": "727.9529",
+        "latest_price_at": "2026-10-28T16:00:00-04:00",
+        "market_value": "14559.0580",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 20,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "300.2580"
+      }
+    ],
+    "settled_through": "2026-10-28T18:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r05",
+  "run_id": "20261029T123641.146150Z-c37f30ec",
+  "session_id": "01a15e78-f29b-7021-bb41-8065ff413351",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

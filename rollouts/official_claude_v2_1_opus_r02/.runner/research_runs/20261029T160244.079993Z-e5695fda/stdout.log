@@ -1,0 +1,31 @@
+2026-10-29 12:02:00-04:00
+Ticker
+AAPL     349.11
+AMZN     247.09
+GOOGL    286.87
+IWM      284.65
+META     629.84
+MSFT     523.30
+NVDA     213.98
+QQQ      716.96
+SMH      564.87
+SPY      769.84
+TLT       81.22
+USO      165.12
+XLE         NaN
+Name: 2026-10-29 12:02:00-04:00, dtype: float64
+low Ticker
+AAPL     347.30
+AMZN     241.24
+GOOGL    280.36
+IWM      282.15
+META     616.80
+MSFT     519.56
+NVDA     212.08
+QQQ      711.62
+SMH      555.50
+SPY      767.27
+TLT       81.21
+USO      163.35
+XLE         NaN
+dtype: float64

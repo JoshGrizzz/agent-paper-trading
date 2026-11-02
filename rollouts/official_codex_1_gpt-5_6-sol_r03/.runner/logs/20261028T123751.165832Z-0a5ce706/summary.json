@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-28T08:37:51.123575-04:00",
+  "codex_session_id": "01a15e75-3b14-7270-b126-64b7db13446c",
+  "duration_seconds": 64.614353,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_1_gpt-5_6-sol_r03/.runner/logs/20261028T123751.165832Z-0a5ce706",
+  "model": "gpt-5.6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "63.3828",
+        "reserved": "0",
+        "total": "63.3828"
+      },
+      "equity": "103614.3128",
+      "initial_cash": "100000.00",
+      "positions_market_value": "103550.9300",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-28T08:38:55.694993-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "82.50",
+                "order_id": "ord_000035",
+                "quantity": 1283,
+                "side": "sell",
+                "symbol": "USD"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "0.01",
+                "order_id": "ord_000036",
+                "quantity": 1283,
+                "side": "sell",
+                "symbol": "USD"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000012",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "83.50",
+              "order_id": "ord_000034",
+              "quantity": 1283,
+              "side": "sell",
+              "symbol": "USD"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-28T08:38:38.996656-04:00",
+        "valid_from": "2026-10-28T08:39:00-04:00",
+        "valid_until": "2026-10-28T12:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 0,
+        "average_cost": "80.25",
+        "latest_price": "80.7100",
+        "latest_price_at": "2026-10-27T16:00:00-04:00",
+        "market_value": "103550.9300",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 1283,
+        "reserved_quantity": 1283,
+        "symbol": "USD",
+        "unrealized_pnl": "590.1800"
+      }
+    ],
+    "settled_through": "2026-10-27T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_1_gpt-5_6-sol_r03",
+  "run_id": "20261028T123751.165832Z-0a5ce706",
+  "session_id": "01a15e75-3b14-7270-b126-64b7db13446c",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

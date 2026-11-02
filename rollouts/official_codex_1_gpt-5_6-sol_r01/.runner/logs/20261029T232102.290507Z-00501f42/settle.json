@@ -1,0 +1,36 @@
+{
+  "account": {
+    "cash": {
+      "available": "35227.6200",
+      "reserved": "0",
+      "total": "35227.6200"
+    },
+    "equity": "92215.8700",
+    "initial_cash": "100000.00",
+    "positions_market_value": "56988.2500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-29T19:21:02.279819-04:00",
+  "command": "settle",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 110,
+      "average_cost": "510.50",
+      "latest_price": "518.0750",
+      "latest_price_at": "2026-10-29T12:01:00-04:00",
+      "market_value": "56988.2500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 110,
+      "reserved_quantity": 0,
+      "symbol": "SOXX",
+      "unrealized_pnl": "833.2500"
+    }
+  ],
+  "settled": false,
+  "settled_through": "2026-10-29T11:59:00-04:00"
+}

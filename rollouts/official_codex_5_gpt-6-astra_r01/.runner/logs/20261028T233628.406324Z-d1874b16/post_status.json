@@ -1,0 +1,83 @@
+{
+  "account": {
+    "cash": {
+      "available": "57458.0000",
+      "reserved": "10700.00",
+      "total": "68158.0000"
+    },
+    "equity": "98420.8000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "30262.8000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-28T19:40:06.322200-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "540.00",
+              "order_id": "ord_000018",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "MSFT"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000009",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "535.00",
+            "order_id": "ord_000017",
+            "quantity": 20,
+            "side": "buy",
+            "symbol": "MSFT"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-28T19:39:43.229648-04:00",
+      "valid_from": "2026-10-28T19:40:00-04:00",
+      "valid_until": "2026-10-28T20:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 60,
+      "average_cost": "325.00",
+      "latest_price": "342.4200",
+      "latest_price_at": "2026-10-28T15:59:00-04:00",
+      "market_value": "20545.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 60,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "1045.2000"
+    },
+    {
+      "available_quantity": 40,
+      "average_cost": "236.00",
+      "latest_price": "242.9400",
+      "latest_price_at": "2026-10-28T16:00:00-04:00",
+      "market_value": "9717.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "VRT",
+      "unrealized_pnl": "277.6000"
+    }
+  ],
+  "settled_through": "2026-10-28T15:29:00-04:00"
+}

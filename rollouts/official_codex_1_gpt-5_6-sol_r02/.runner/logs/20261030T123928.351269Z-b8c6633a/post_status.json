@@ -1,0 +1,69 @@
+{
+  "account": {
+    "cash": {
+      "available": "39175.4062",
+      "reserved": "58432.50",
+      "total": "97607.9062"
+    },
+    "equity": "97607.9062",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-30T08:40:40.500041-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "185.50",
+              "order_id": "ord_000048",
+              "quantity": 315,
+              "side": "buy",
+              "symbol": "XOM"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "69.50",
+              "order_id": "ord_000049",
+              "quantity": 840,
+              "side": "buy",
+              "symbol": "XLE"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000017",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "233.50",
+            "order_id": "ord_000047",
+            "quantity": 250,
+            "side": "buy",
+            "symbol": "CVX"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-30T08:40:29.267144-04:00",
+      "valid_from": "2026-10-30T08:41:00-04:00",
+      "valid_until": "2026-10-30T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": "2026-10-29T11:59:00-04:00"
+}

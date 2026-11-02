@@ -1,0 +1,134 @@
+{
+  "as_of": "2026-10-30T13:08:45.045281-04:00",
+  "codex_session_id": null,
+  "duration_seconds": 87.103292,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "697.1300",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "697.00",
+      "order_id": "ord_000095",
+      "quantity": 15,
+      "side": "sell",
+      "symbol": "QQQ"
+    },
+    {
+      "candidate": "primary",
+      "fill_price": "761.4000",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "758.00",
+      "order_id": "ord_000096",
+      "quantity": 4,
+      "side": "sell",
+      "symbol": "SPY"
+    }
+  ],
+  "harness": "zcode",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_zcode_1_GLM-5_3_r05/.runner/logs/20261030T170845.068631Z-909fcec7",
+  "model": "GLM-5.3",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "26326.1580",
+        "reserved": "0",
+        "total": "26326.1580"
+      },
+      "equity": "96360.9180",
+      "initial_cash": "100000.00",
+      "positions_market_value": "70034.7600",
+      "valuation_errors": [],
+      "valuation_status": "stale"
+    },
+    "as_of": "2026-10-30T13:10:12.105495-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "684.00",
+                "order_id": "ord_000102",
+                "quantity": 12,
+                "side": "sell",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "678.00",
+                "order_id": "ord_000103",
+                "quantity": 15,
+                "side": "sell",
+                "symbol": "QQQ"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000020",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "689.00",
+              "order_id": "ord_000101",
+              "quantity": 10,
+              "side": "sell",
+              "symbol": "QQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-30T13:09:41.269604-04:00",
+        "valid_from": "2026-10-30T13:10:00-04:00",
+        "valid_until": "2026-10-30T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 35,
+        "average_cost": "720.7947963800904977375565611",
+        "latest_price": "690.3090",
+        "latest_price_at": "2026-10-30T13:05:00-04:00",
+        "market_value": "34515.4500",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 50,
+        "reserved_quantity": 15,
+        "symbol": "QQQ",
+        "unrealized_pnl": "-1524.289819004524886877828055"
+      },
+      {
+        "available_quantity": 47,
+        "average_cost": "770.7316892911010558069381598",
+        "latest_price": "755.7300",
+        "latest_price_at": "2026-10-30T12:51:00-04:00",
+        "market_value": "35519.3100",
+        "price_source": "yahoo_finance",
+        "price_status": "stale",
+        "quantity": 47,
+        "reserved_quantity": 0,
+        "symbol": "SPY",
+        "unrealized_pnl": "-705.0793966817496229260935106"
+      }
+    ],
+    "settled_through": "2026-10-30T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_zcode_1_GLM-5_3_r05",
+  "run_id": "20261030T170845.068631Z-909fcec7",
+  "session_id": "sess_e8e6497d-b4c5-4478-a928-30c73df58701",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

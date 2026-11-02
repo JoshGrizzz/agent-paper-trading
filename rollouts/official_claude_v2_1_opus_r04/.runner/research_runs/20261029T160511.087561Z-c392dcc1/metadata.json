@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "-c",
+    "\nimport yfinance as yf\nt=['SPY','QQQ','SMH','XLV','XLE','MSFT','GOOGL','NVDA','META','AMZN','AAPL','CL=F','^TNX']\nd=yf.download(t,period='1d',interval='15m',prepost=False,auto_adjust=False,progress=False,threads=False)['Close']\nprint(d.dropna(how='all').between_time('09:30','12:00').round(2).to_string())\n"
+  ],
+  "duration_seconds": 2.951241481991019,
+  "occurred_at": "2026-10-29T16:05:14.039684+00:00",
+  "output_truncated": false,
+  "returncode": 0,
+  "run_id": "20261029T160511.087561Z-c392dcc1",
+  "source_file": "inline.py",
+  "source_sha256": "c00d43b472c6cd9678d7a50aaecfe072d0f63b9ec9b3e6076f753208141211b8",
+  "source_snapshot": "source_snapshot.py",
+  "stderr_bytes": 0,
+  "stdout_bytes": 2921
+}

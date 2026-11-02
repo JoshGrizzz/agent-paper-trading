@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "-I",
+    "-c",
+    "\nimport yfinance as yf\nd=yf.download(['SPY','QQQ'],period='1d',interval='5m',prepost=True,progress=False,auto_adjust=False)\nprint(d['Close'].dropna().tail(12))\n"
+  ],
+  "duration_seconds": 1.1993153999792412,
+  "occurred_at": "2026-10-30T19:36:50.082589+00:00",
+  "output_truncated": false,
+  "returncode": 0,
+  "run_id": "20261030T193648.882533Z-7ed11b59",
+  "source_file": "inline.py",
+  "source_sha256": "e8ffcfb7ae372e6ef3ec0c01a7480fef2cb941c258aa967fc883594bfcdd5ec0",
+  "source_snapshot": "source_snapshot.py",
+  "stderr_bytes": 0,
+  "stdout_bytes": 700
+}

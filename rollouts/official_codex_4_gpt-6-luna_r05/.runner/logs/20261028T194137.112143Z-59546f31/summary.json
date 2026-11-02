@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-10-28T15:41:37.102055-04:00",
+  "codex_session_id": "01a15e78-f281-7820-8edb-7a4d97b2566b",
+  "duration_seconds": 48.816126,
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "726.00",
+      "filled_at": "2026-10-28T14:37:00-04:00",
+      "limit_price": "726.00",
+      "order_id": "ord_000015",
+      "quantity": 10,
+      "side": "sell",
+      "symbol": "QQQ"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_4_gpt-6-luna_r05/.runner/logs/20261028T194137.112143Z-59546f31",
+  "model": "gpt-6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "33811.2100",
+        "reserved": "0",
+        "total": "33811.2100"
+      },
+      "equity": "98913.6100",
+      "initial_cash": "100000.00",
+      "positions_market_value": "65102.4000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-28T15:42:25.860452-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [],
+    "positions": [
+      {
+        "available_quantity": 90,
+        "average_cost": "702.69696",
+        "latest_price": "723.3600",
+        "latest_price_at": "2026-10-28T15:40:00-04:00",
+        "market_value": "65102.4000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 90,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "1859.67360"
+      }
+    ],
+    "settled_through": "2026-10-28T15:29:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_4_gpt-6-luna_r05",
+  "run_id": "20261028T194137.112143Z-59546f31",
+  "session_id": "01a15e78-f281-7820-8edb-7a4d97b2566b",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

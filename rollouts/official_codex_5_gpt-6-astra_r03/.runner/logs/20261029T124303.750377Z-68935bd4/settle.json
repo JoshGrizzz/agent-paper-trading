@@ -1,0 +1,62 @@
+{
+  "account": {
+    "cash": {
+      "available": "57617.1000",
+      "reserved": "0",
+      "total": "57617.1000"
+    },
+    "equity": "96566.2870",
+    "initial_cash": "100000.00",
+    "positions_market_value": "38949.1870",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-29T08:43:03.715837-04:00",
+  "command": "settle",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 30,
+      "average_cost": "326.00",
+      "latest_price": "342.4200",
+      "latest_price_at": "2026-10-28T15:59:00-04:00",
+      "market_value": "10272.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "492.6000"
+    },
+    {
+      "available_quantity": 30,
+      "average_cost": "712.9100",
+      "latest_price": "727.9529",
+      "latest_price_at": "2026-10-28T16:00:00-04:00",
+      "market_value": "21838.5870",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 30,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "451.2870"
+    },
+    {
+      "available_quantity": 100,
+      "average_cost": "69.25",
+      "latest_price": "68.3800",
+      "latest_price_at": "2026-10-28T16:00:00-04:00",
+      "market_value": "6838.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 100,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "-87.0000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-28T19:59:00-04:00"
+}

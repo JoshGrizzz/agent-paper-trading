@@ -1,0 +1,86 @@
+{
+  "account": {
+    "cash": {
+      "available": "35379.0240",
+      "reserved": "0",
+      "total": "35379.0240"
+    },
+    "equity": "92582.0140",
+    "initial_cash": "100000.00",
+    "positions_market_value": "57202.9900",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T19:01:19.978937-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "primary",
+      "fill_price": "517.2300",
+      "filled_at": "2026-10-30T15:35:00-04:00",
+      "limit_price": "511.00",
+      "order_id": "ord_000048",
+      "quantity": 13,
+      "side": "sell",
+      "symbol": "SMH"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 19,
+      "average_cost": "710.9480",
+      "latest_price": "687.4900",
+      "latest_price_at": "2026-10-30T15:25:00-04:00",
+      "market_value": "13062.3100",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 19,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-445.7020"
+    },
+    {
+      "available_quantity": 10,
+      "average_cost": "539.0016666666666666666666667",
+      "latest_price": "522.8500",
+      "latest_price_at": "2026-10-30T16:00:00-04:00",
+      "market_value": "5228.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "-161.5166666666666666666666670"
+    },
+    {
+      "available_quantity": 26,
+      "average_cost": "762.9700",
+      "latest_price": "750.8800",
+      "latest_price_at": "2026-10-30T14:33:00-04:00",
+      "market_value": "19522.8800",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 26,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-314.3400"
+    },
+    {
+      "available_quantity": 105,
+      "average_cost": "180.7152380952380952380952381",
+      "latest_price": "184.6600",
+      "latest_price_at": "2026-10-30T15:31:00-04:00",
+      "market_value": "19389.3000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 105,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "414.1999999999999999999999995"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-30T18:59:00-04:00"
+}

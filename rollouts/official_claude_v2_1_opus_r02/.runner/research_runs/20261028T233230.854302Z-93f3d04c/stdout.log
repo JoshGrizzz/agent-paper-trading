@@ -1,0 +1,23 @@
+2026-10-28 19:32:28-04:00
+Ticker
+AMZN     252.90
+GOOGL    293.61
+META     617.45
+MSFT     545.00
+NVDA     213.91
+QQQ      717.36
+SMH      558.00
+SPY      768.78
+XLE       68.78
+Name: 2026-10-28 19:32:28-04:00, dtype: float64
+Ticker
+AMZN     254.87
+GOOGL    326.95
+META     613.15
+MSFT     529.85
+NVDA     215.60
+QQQ      727.95
+SMH      568.31
+SPY      773.77
+XLE       68.38
+Name: 2026-10-28 16:00:00-04:00, dtype: float64

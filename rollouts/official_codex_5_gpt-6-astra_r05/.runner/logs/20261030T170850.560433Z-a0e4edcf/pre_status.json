@@ -1,0 +1,87 @@
+{
+  "account": {
+    "cash": {
+      "available": "22079.1500",
+      "reserved": "0",
+      "total": "22079.1500"
+    },
+    "equity": "99316.9000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "77237.7500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T13:08:50.547249-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "326.00",
+      "latest_price": "327.0800",
+      "latest_price_at": "2026-10-30T12:51:00-04:00",
+      "market_value": "14718.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "48.6000"
+    },
+    {
+      "available_quantity": 10,
+      "average_cost": "1338.5100",
+      "latest_price": "1419.5200",
+      "latest_price_at": "2026-10-30T13:07:00-04:00",
+      "market_value": "14195.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "LLY",
+      "unrealized_pnl": "810.1000"
+    },
+    {
+      "available_quantity": 35,
+      "average_cost": "582.8500",
+      "latest_price": "640.4100",
+      "latest_price_at": "2026-10-30T13:07:00-04:00",
+      "market_value": "22414.3500",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "LMT",
+      "unrealized_pnl": "2014.6000"
+    },
+    {
+      "available_quantity": 80,
+      "average_cost": "237.00",
+      "latest_price": "230.4800",
+      "latest_price_at": "2026-10-30T13:07:00-04:00",
+      "market_value": "18438.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 80,
+      "reserved_quantity": 0,
+      "symbol": "VRT",
+      "unrealized_pnl": "-521.6000"
+    },
+    {
+      "available_quantity": 40,
+      "average_cost": "186.00",
+      "latest_price": "186.7800",
+      "latest_price_at": "2026-10-30T13:07:00-04:00",
+      "market_value": "7471.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "XOM",
+      "unrealized_pnl": "31.2000"
+    }
+  ],
+  "settled_through": "2026-10-30T11:59:00-04:00"
+}

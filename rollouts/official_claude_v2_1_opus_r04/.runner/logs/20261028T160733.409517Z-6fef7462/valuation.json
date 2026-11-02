@@ -1,0 +1,92 @@
+{
+  "account": {
+    "cash": {
+      "available": "30793.7420",
+      "reserved": "0",
+      "total": "30793.7420"
+    },
+    "equity": "100214.4045",
+    "initial_cash": "99957.4400",
+    "positions_market_value": "69420.6625",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-28T12:07:33.387659-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 26,
+      "average_cost": "564.3880",
+      "latest_price": "565.3600",
+      "latest_price_at": "2026-10-28T12:06:00-04:00",
+      "market_value": "14699.3600",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 26,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "25.2720"
+    },
+    {
+      "available_quantity": 45,
+      "average_cost": "771.4300",
+      "latest_price": "771.3875",
+      "latest_price_at": "2026-10-28T12:06:00-04:00",
+      "market_value": "34712.4375",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-1.9125"
+    },
+    {
+      "available_quantity": 115,
+      "average_cost": "68.4700",
+      "latest_price": "68.9050",
+      "latest_price_at": "2026-10-28T12:06:00-04:00",
+      "market_value": "7924.0750",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 115,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "50.0250"
+    },
+    {
+      "available_quantity": 67,
+      "average_cost": "177.6300",
+      "latest_price": "180.3700",
+      "latest_price_at": "2026-10-28T12:06:00-04:00",
+      "market_value": "12084.7900",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 67,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "183.5800"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-28T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-28T12:07:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-28T08:00:00-04:00",
+    "symbols": [
+      "SMH",
+      "SPY",
+      "XLE",
+      "XLV"
+    ],
+    "updated_symbols": [
+      "SMH",
+      "SPY",
+      "XLE",
+      "XLV"
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "account": {
+    "cash": {
+      "available": "27004.2500",
+      "reserved": "15900.00",
+      "total": "42904.2500"
+    },
+    "equity": "99789.6000",
+    "initial_cash": "100000.00",
+    "positions_market_value": "56885.3500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-29T08:38:55.261143-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "1345.00",
+              "order_id": "ord_000022",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "LLY"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000011",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "1325.00",
+            "order_id": "ord_000021",
+            "quantity": 12,
+            "side": "buy",
+            "symbol": "LLY"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-29T08:38:27.239489-04:00",
+      "valid_from": "2026-10-29T08:39:00-04:00",
+      "valid_until": "2026-10-29T12:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "326.00",
+      "latest_price": "342.4200",
+      "latest_price_at": "2026-10-28T15:59:00-04:00",
+      "market_value": "15408.9000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "738.9000"
+    },
+    {
+      "available_quantity": 35,
+      "average_cost": "582.8500",
+      "latest_price": "629.7500",
+      "latest_price_at": "2026-10-28T16:00:00-04:00",
+      "market_value": "22041.2500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "LMT",
+      "unrealized_pnl": "1641.5000"
+    },
+    {
+      "available_quantity": 80,
+      "average_cost": "237.00",
+      "latest_price": "242.9400",
+      "latest_price_at": "2026-10-28T16:00:00-04:00",
+      "market_value": "19435.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 80,
+      "reserved_quantity": 0,
+      "symbol": "VRT",
+      "unrealized_pnl": "475.2000"
+    }
+  ],
+  "settled_through": "2026-10-28T19:59:00-04:00"
+}

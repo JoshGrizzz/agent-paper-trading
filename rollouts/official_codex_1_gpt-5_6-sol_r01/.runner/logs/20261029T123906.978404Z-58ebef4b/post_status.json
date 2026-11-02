@@ -1,0 +1,69 @@
+{
+  "account": {
+    "cash": {
+      "available": "35227.6200",
+      "reserved": "56155.00",
+      "total": "91382.6200"
+    },
+    "equity": "91382.6200",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-29T08:40:16.881741-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "69.50",
+              "order_id": "ord_000033",
+              "quantity": 800,
+              "side": "buy",
+              "symbol": "TQQQ"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "99.00",
+              "order_id": "ord_000034",
+              "quantity": 560,
+              "side": "buy",
+              "symbol": "SOXL"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000011",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "510.50",
+            "order_id": "ord_000032",
+            "quantity": 110,
+            "side": "buy",
+            "symbol": "SOXX"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-29T08:40:06.537904-04:00",
+      "valid_from": "2026-10-29T08:41:00-04:00",
+      "valid_until": "2026-10-29T12:00:00-04:00"
+    }
+  ],
+  "positions": [],
+  "settled_through": "2026-10-28T19:59:00-04:00"
+}

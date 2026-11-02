@@ -1,0 +1,122 @@
+{
+  "account": {
+    "cash": {
+      "available": "39851.9705",
+      "reserved": "0",
+      "total": "39851.9705"
+    },
+    "equity": "97764.6788",
+    "initial_cash": "100000.00",
+    "positions_market_value": "57912.7083",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-29T08:36:44.349265-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 15,
+      "average_cost": "210.3850",
+      "latest_price": "216.3800",
+      "latest_price_at": "2026-10-28T15:59:00-04:00",
+      "market_value": "3245.7000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 15,
+      "reserved_quantity": 0,
+      "symbol": "IBB",
+      "unrealized_pnl": "89.9250"
+    },
+    {
+      "available_quantity": 27,
+      "average_cost": "715.1503703703703703703703704",
+      "latest_price": "727.9529",
+      "latest_price_at": "2026-10-28T16:00:00-04:00",
+      "market_value": "19654.7283",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 27,
+      "reserved_quantity": 0,
+      "symbol": "QQQ",
+      "unrealized_pnl": "345.6682999999999999999999992"
+    },
+    {
+      "available_quantity": 24,
+      "average_cost": "539.7266666666666666666666667",
+      "latest_price": "568.3100",
+      "latest_price_at": "2026-10-28T16:00:00-04:00",
+      "market_value": "13639.4400",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 24,
+      "reserved_quantity": 0,
+      "symbol": "SMH",
+      "unrealized_pnl": "685.9999999999999999999999992"
+    },
+    {
+      "available_quantity": 70,
+      "average_cost": "68.52046875000000000000000",
+      "latest_price": "68.3800",
+      "latest_price_at": "2026-10-28T16:00:00-04:00",
+      "market_value": "4786.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 70,
+      "reserved_quantity": 0,
+      "symbol": "XLE",
+      "unrealized_pnl": "-9.83281250000000000000000"
+    },
+    {
+      "available_quantity": 70,
+      "average_cost": "181.7200",
+      "latest_price": "179.7400",
+      "latest_price_at": "2026-10-28T15:59:00-04:00",
+      "market_value": "12581.8000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 70,
+      "reserved_quantity": 0,
+      "symbol": "XLV",
+      "unrealized_pnl": "-138.6000"
+    },
+    {
+      "available_quantity": 22,
+      "average_cost": "179.1634146341463414634146341",
+      "latest_price": "182.0200",
+      "latest_price_at": "2026-10-28T16:02:00-04:00",
+      "market_value": "4004.4400",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 22,
+      "reserved_quantity": 0,
+      "symbol": "XOM",
+      "unrealized_pnl": "62.8448780487804878048780498"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-28T18:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-29T08:36:00-04:00",
+    "missing_symbols": [
+      "IBB",
+      "QQQ",
+      "SMH",
+      "XLE",
+      "XLV",
+      "XOM"
+    ],
+    "start": "2026-10-29T08:00:00-04:00",
+    "symbols": [
+      "IBB",
+      "QQQ",
+      "SMH",
+      "XLE",
+      "XLV",
+      "XOM"
+    ],
+    "updated_symbols": []
+  }
+}

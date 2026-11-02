@@ -1,0 +1,69 @@
+{
+  "account": {
+    "cash": {
+      "available": "11464.7000",
+      "reserved": "0",
+      "total": "11464.7000"
+    },
+    "equity": "96448.4400",
+    "initial_cash": "99830.8000",
+    "positions_market_value": "84983.7400",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T15:37:03.617515-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [],
+      "plan_id": "plan_000003",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "680.00",
+            "order_id": "ord_000006",
+            "quantity": 20,
+            "side": "sell",
+            "symbol": "QQQ"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-30T15:36:55.290887-04:00",
+      "valid_from": "2026-10-30T15:37:00-04:00",
+      "valid_until": "2026-10-30T19:00:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 49,
+      "average_cost": "721.6608695652173913043478261",
+      "latest_price": "687.7100",
+      "latest_price_at": "2026-10-30T15:28:00-04:00",
+      "market_value": "47451.9900",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 69,
+      "reserved_quantity": 20,
+      "symbol": "QQQ",
+      "unrealized_pnl": "-2342.610000000000000000000001"
+    },
+    {
+      "available_quantity": 50,
+      "average_cost": "771.4300",
+      "latest_price": "750.6350",
+      "latest_price_at": "2026-10-30T14:34:00-04:00",
+      "market_value": "37531.7500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 50,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "-1039.7500"
+    }
+  ],
+  "settled_through": "2026-10-29T11:59:00-04:00"
+}

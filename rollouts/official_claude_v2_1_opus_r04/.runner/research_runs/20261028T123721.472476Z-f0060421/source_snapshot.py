@@ -1,0 +1,1 @@
+import yfinance as yf; d=yf.download(['SPY','QQQ','SMH','NVDA','GOOGL','MSFT','XLE','GLD','AVGO','MU','VRT','GEV','IWM','TSM'],period='5d',interval='1d',prepost=False,auto_adjust=False,progress=False); print(d['Close'].round(2).to_string())

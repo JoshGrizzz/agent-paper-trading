@@ -1,0 +1,33 @@
+{
+  "account": {
+    "cash": {
+      "available": "107079.0501",
+      "reserved": "0",
+      "total": "107079.0501"
+    },
+    "equity": "107079.0501",
+    "initial_cash": "100000.00",
+    "positions_market_value": "0",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-28T12:08:55.978352-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "209.7300",
+      "filled_at": "2026-10-28T09:30:00-04:00",
+      "limit_price": "209.00",
+      "order_id": "ord_000029",
+      "quantity": 503,
+      "side": "sell",
+      "symbol": "TECL"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [],
+  "settled": true,
+  "settled_through": "2026-10-28T11:59:00-04:00"
+}

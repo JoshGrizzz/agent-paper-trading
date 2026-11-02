@@ -1,0 +1,47 @@
+{
+  "account": {
+    "cash": {
+      "available": "61979.9062",
+      "reserved": "0",
+      "total": "61979.9062"
+    },
+    "equity": "98519.9062",
+    "initial_cash": "100000.00",
+    "positions_market_value": "36540.0000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-28T19:40:06.487276-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 400,
+      "average_cost": "90.50",
+      "latest_price": "91.3500",
+      "latest_price_at": "2026-10-28T15:59:00-04:00",
+      "market_value": "36540.0000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 400,
+      "reserved_quantity": 0,
+      "symbol": "QLD",
+      "unrealized_pnl": "340.0000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-28T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-28T19:40:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-28T08:00:00-04:00",
+    "symbols": [
+      "QLD"
+    ],
+    "updated_symbols": [
+      "QLD"
+    ]
+  }
+}

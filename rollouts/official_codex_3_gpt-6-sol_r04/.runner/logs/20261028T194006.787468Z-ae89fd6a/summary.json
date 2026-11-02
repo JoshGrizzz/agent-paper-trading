@@ -1,0 +1,73 @@
+{
+  "as_of": "2026-10-28T15:40:06.775905-04:00",
+  "codex_session_id": "01a15e77-3ec7-7220-baed-0d063c399c8a",
+  "duration_seconds": 90.236217,
+  "fills": [],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_3_gpt-6-sol_r04/.runner/logs/20261028T194006.787468Z-ae89fd6a",
+  "model": "gpt-6-sol",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "73394.0200",
+        "reserved": "0",
+        "total": "73394.0200"
+      },
+      "equity": "94871.3200",
+      "initial_cash": "100000.00",
+      "positions_market_value": "21477.3000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-28T15:41:36.958199-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [],
+        "plan_id": "plan_000008",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "71.30",
+              "order_id": "ord_000027",
+              "quantity": 150,
+              "side": "sell",
+              "symbol": "TQQQ"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-28T15:41:22.014478-04:00",
+        "valid_from": "2026-10-28T15:42:00-04:00",
+        "valid_until": "2026-10-28T19:00:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 150,
+        "average_cost": "69.3000",
+        "latest_price": "71.5910",
+        "latest_price_at": "2026-10-28T15:39:00-04:00",
+        "market_value": "21477.3000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 300,
+        "reserved_quantity": 150,
+        "symbol": "TQQQ",
+        "unrealized_pnl": "687.3000"
+      }
+    ],
+    "settled_through": "2026-10-27T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_3_gpt-6-sol_r04",
+  "run_id": "20261028T194006.787468Z-ae89fd6a",
+  "session_id": "01a15e77-3ec7-7220-baed-0d063c399c8a",
+  "session_resumed": true,
+  "settled": false,
+  "valuation_refreshed": true
+}

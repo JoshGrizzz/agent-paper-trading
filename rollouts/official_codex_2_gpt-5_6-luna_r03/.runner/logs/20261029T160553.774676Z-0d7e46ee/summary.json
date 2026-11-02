@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-10-29T12:05:53.764135-04:00",
+  "codex_session_id": "01a15e75-3b19-7e61-b59f-bf7749bac1b5",
+  "duration_seconds": 38.730434,
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "716.5650",
+      "filled_at": "2026-10-29T09:30:00-04:00",
+      "limit_price": "715.00",
+      "order_id": "ord_000052",
+      "quantity": 25,
+      "side": "sell",
+      "symbol": "QQQ"
+    }
+  ],
+  "harness": "codex",
+  "log_directory": "/home/josh/tst-ttt/rollouts/official_codex_2_gpt-5_6-luna_r03/.runner/logs/20261029T160553.774676Z-0d7e46ee",
+  "model": "gpt-5.6-luna",
+  "ok": true,
+  "post_status": {
+    "account": {
+      "cash": {
+        "available": "32940.6700",
+        "reserved": "10200.00",
+        "total": "43140.6700"
+      },
+      "equity": "96879.6700",
+      "initial_cash": "100000.00",
+      "positions_market_value": "53739.0000",
+      "valuation_errors": [],
+      "valuation_status": "fresh"
+    },
+    "as_of": "2026-10-29T12:06:32.433095-04:00",
+    "command": "status",
+    "fills": [],
+    "ok": true,
+    "open_plans": [
+      {
+        "backups": [
+          {
+            "orders": [
+              {
+                "limit_price": "515.00",
+                "order_id": "ord_000055",
+                "quantity": 15,
+                "side": "buy",
+                "symbol": "MSFT"
+              }
+            ],
+            "priority": 1,
+            "status": "accepted"
+          },
+          {
+            "orders": [
+              {
+                "limit_price": "510.00",
+                "order_id": "ord_000056",
+                "quantity": 20,
+                "side": "buy",
+                "symbol": "MSFT"
+              }
+            ],
+            "priority": 2,
+            "status": "accepted"
+          }
+        ],
+        "plan_id": "plan_000019",
+        "primary": {
+          "orders": [
+            {
+              "limit_price": "520.00",
+              "order_id": "ord_000054",
+              "quantity": 10,
+              "side": "buy",
+              "symbol": "MSFT"
+            }
+          ],
+          "status": "accepted"
+        },
+        "status": "pending",
+        "submitted_at": "2026-10-29T12:06:24.499895-04:00",
+        "valid_from": "2026-10-29T12:07:00-04:00",
+        "valid_until": "2026-10-29T15:30:00-04:00"
+      }
+    ],
+    "positions": [
+      {
+        "available_quantity": 75,
+        "average_cost": "713.0092307692307692307692308",
+        "latest_price": "716.5200",
+        "latest_price_at": "2026-10-29T12:04:00-04:00",
+        "market_value": "53739.0000",
+        "price_source": "yahoo_finance",
+        "price_status": "fresh",
+        "quantity": 75,
+        "reserved_quantity": 0,
+        "symbol": "QQQ",
+        "unrealized_pnl": "263.3076923076923076923076900"
+      }
+    ],
+    "settled_through": "2026-10-29T11:59:00-04:00"
+  },
+  "reasoning_effort": "high",
+  "rollout_id": "official_codex_2_gpt-5_6-luna_r03",
+  "run_id": "20261029T160553.774676Z-0d7e46ee",
+  "session_id": "01a15e75-3b19-7e61-b59f-bf7749bac1b5",
+  "session_resumed": true,
+  "settled": true,
+  "valuation_refreshed": true
+}

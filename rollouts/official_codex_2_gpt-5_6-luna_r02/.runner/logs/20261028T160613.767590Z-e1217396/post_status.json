@@ -1,0 +1,96 @@
+{
+  "account": {
+    "cash": {
+      "available": "15751.4250",
+      "reserved": "15400.00",
+      "total": "31151.4250"
+    },
+    "equity": "97359.7250",
+    "initial_cash": "100000.00",
+    "positions_market_value": "66208.3000",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-28T12:06:37.643289-04:00",
+  "command": "status",
+  "fills": [],
+  "ok": true,
+  "open_plans": [
+    {
+      "backups": [
+        {
+          "orders": [
+            {
+              "limit_price": "767.00",
+              "order_id": "ord_000034",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "priority": 1,
+          "status": "accepted"
+        },
+        {
+          "orders": [
+            {
+              "limit_price": "764.00",
+              "order_id": "ord_000035",
+              "quantity": 20,
+              "side": "buy",
+              "symbol": "SPY"
+            }
+          ],
+          "priority": 2,
+          "status": "accepted"
+        }
+      ],
+      "plan_id": "plan_000010",
+      "primary": {
+        "orders": [
+          {
+            "limit_price": "770.00",
+            "order_id": "ord_000033",
+            "quantity": 20,
+            "side": "buy",
+            "symbol": "SPY"
+          }
+        ],
+        "status": "accepted"
+      },
+      "status": "pending",
+      "submitted_at": "2026-10-28T12:06:30.014863-04:00",
+      "valid_from": "2026-10-28T12:07:00-04:00",
+      "valid_until": "2026-10-28T15:30:00-04:00"
+    }
+  ],
+  "positions": [
+    {
+      "available_quantity": 140,
+      "average_cost": "256.5178571428571428571428571",
+      "latest_price": "252.4600",
+      "latest_price_at": "2026-10-28T12:05:00-04:00",
+      "market_value": "35344.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 140,
+      "reserved_quantity": 0,
+      "symbol": "AMZN",
+      "unrealized_pnl": "-568.0999999999999999999999940"
+    },
+    {
+      "available_quantity": 40,
+      "average_cost": "760.3550",
+      "latest_price": "771.5975",
+      "latest_price_at": "2026-10-28T12:05:00-04:00",
+      "market_value": "30863.9000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "SPY",
+      "unrealized_pnl": "449.7000"
+    }
+  ],
+  "settled_through": "2026-10-26T15:29:00-04:00"
+}

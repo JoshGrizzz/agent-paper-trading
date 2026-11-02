@@ -2,10 +2,10 @@
   "primary": {
     "orders": [
       {
-        "symbol": "CDNS",
+        "symbol": "XOM",
         "side": "buy",
-        "quantity": 45,
-        "limit_price": "326.00"
+        "quantity": 50,
+        "limit_price": "184.00"
       }
     ]
   },
@@ -13,10 +13,10 @@
     {
       "orders": [
         {
-          "symbol": "CDNS",
+          "symbol": "XOM",
           "side": "buy",
-          "quantity": 35,
-          "limit_price": "328.50"
+          "quantity": 40,
+          "limit_price": "186.00"
         }
       ]
     }

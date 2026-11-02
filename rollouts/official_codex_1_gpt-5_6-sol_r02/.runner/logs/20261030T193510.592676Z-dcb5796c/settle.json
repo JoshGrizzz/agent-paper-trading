@@ -1,0 +1,36 @@
+{
+  "account": {
+    "cash": {
+      "available": "39232.9062",
+      "reserved": "0",
+      "total": "39232.9062"
+    },
+    "equity": "98080.4062",
+    "initial_cash": "100000.00",
+    "positions_market_value": "58847.5000",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T15:35:10.580415-04:00",
+  "command": "settle",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 250,
+      "average_cost": "233.50",
+      "latest_price": "235.3900",
+      "latest_price_at": "2026-10-30T12:52:00-04:00",
+      "market_value": "58847.5000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 250,
+      "reserved_quantity": 0,
+      "symbol": "CVX",
+      "unrealized_pnl": "472.5000"
+    }
+  ],
+  "settled": false,
+  "settled_through": "2026-10-30T11:59:00-04:00"
+}

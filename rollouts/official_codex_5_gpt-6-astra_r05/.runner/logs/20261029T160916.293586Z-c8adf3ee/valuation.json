@@ -1,0 +1,92 @@
+{
+  "account": {
+    "cash": {
+      "available": "29519.1500",
+      "reserved": "0",
+      "total": "29519.1500"
+    },
+    "equity": "101447.3490",
+    "initial_cash": "100000.00",
+    "positions_market_value": "71928.1990",
+    "valuation_errors": [],
+    "valuation_status": "fresh"
+  },
+  "as_of": "2026-10-29T12:09:16.258030-04:00",
+  "command": "refresh-valuation",
+  "fills": [],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 45,
+      "average_cost": "326.00",
+      "latest_price": "343.8750",
+      "latest_price_at": "2026-10-29T12:08:00-04:00",
+      "market_value": "15474.3750",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 45,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "804.3750"
+    },
+    {
+      "available_quantity": 10,
+      "average_cost": "1338.5100",
+      "latest_price": "1369.3199",
+      "latest_price_at": "2026-10-29T12:08:00-04:00",
+      "market_value": "13693.1990",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 10,
+      "reserved_quantity": 0,
+      "symbol": "LLY",
+      "unrealized_pnl": "308.0990"
+    },
+    {
+      "available_quantity": 35,
+      "average_cost": "582.8500",
+      "latest_price": "645.7550",
+      "latest_price_at": "2026-10-29T12:08:00-04:00",
+      "market_value": "22601.4250",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 35,
+      "reserved_quantity": 0,
+      "symbol": "LMT",
+      "unrealized_pnl": "2201.6750"
+    },
+    {
+      "available_quantity": 80,
+      "average_cost": "237.00",
+      "latest_price": "251.9900",
+      "latest_price_at": "2026-10-29T12:08:00-04:00",
+      "market_value": "20159.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "fresh",
+      "quantity": 80,
+      "reserved_quantity": 0,
+      "symbol": "VRT",
+      "unrealized_pnl": "1199.2000"
+    }
+  ],
+  "refreshed": true,
+  "settled_through": "2026-10-29T11:59:00-04:00",
+  "valuation_refresh": {
+    "end": "2026-10-29T12:09:00-04:00",
+    "missing_symbols": [],
+    "start": "2026-10-29T08:00:00-04:00",
+    "symbols": [
+      "CDNS",
+      "LLY",
+      "LMT",
+      "VRT"
+    ],
+    "updated_symbols": [
+      "CDNS",
+      "LLY",
+      "LMT",
+      "VRT"
+    ]
+  }
+}

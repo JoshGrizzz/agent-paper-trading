@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "-I",
+    "-c",
+    "\nimport yfinance as yf\nt=['SPY','QQQ','SMH','XLE','MU','TSM','NVDA','MSFT','GOOGL','^TNX','CL=F']\nd=yf.download(t,period='1d',interval='1m',prepost=True,auto_adjust=False,progress=False)\nc=d['Close'].ffill(); print(d.index[-1]); print(c.iloc[-1].round(2).to_string()); print(d['Low'].min().round(2).to_string()); print(d['High'].max().round(2).to_string())\n"
+  ],
+  "duration_seconds": 0.9598820639948826,
+  "occurred_at": "2026-10-28T16:08:29.934945+00:00",
+  "output_truncated": false,
+  "returncode": 0,
+  "run_id": "20261028T160828.974230Z-d6999fb7",
+  "source_file": "inline.py",
+  "source_sha256": "debab5a825e0700e2c7e2364bfbd8c3c72cef42ff8b27443e3f4a62cc6331631",
+  "source_snapshot": "source_snapshot.py",
+  "stderr_bytes": 0,
+  "stdout_bytes": 575
+}

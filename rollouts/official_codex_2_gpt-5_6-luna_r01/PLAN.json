@@ -3,9 +3,9 @@
     "orders": [
       {
         "symbol": "VTI",
-        "side": "buy",
-        "quantity": 250,
-        "limit_price": "374.00"
+        "side": "sell",
+        "quantity": 126,
+        "limit_price": "371.25"
       }
     ]
   },
@@ -14,9 +14,9 @@
       "orders": [
         {
           "symbol": "VTI",
-          "side": "buy",
-          "quantity": 251,
-          "limit_price": "373.00"
+          "side": "sell",
+          "quantity": 126,
+          "limit_price": "370.25"
         }
       ]
     },
@@ -24,9 +24,9 @@
       "orders": [
         {
           "symbol": "VTI",
-          "side": "buy",
-          "quantity": 252,
-          "limit_price": "372.00"
+          "side": "sell",
+          "quantity": 126,
+          "limit_price": "369.25"
         }
       ]
     }

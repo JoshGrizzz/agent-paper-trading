@@ -1,0 +1,59 @@
+Ticker
+AAPL     346.43
+AMZN     238.34
+AVGO     323.76
+GLD      356.35
+GOOGL    278.89
+IWM      278.20
+META     618.54
+MSFT     520.51
+NVDA     203.34
+QQQ      688.59
+SMH      519.24
+SPY      755.89
+TLT       81.59
+USO      171.63
+XLE       69.82
+XLV      185.82
+^TNX       4.93
+^VIX      20.73
+LOW
+Ticker
+AAPL     344.13
+AMZN     229.36
+AVGO     322.57
+GLD      356.16
+GOOGL    278.61
+IWM      278.17
+META     610.14
+MSFT     514.35
+NVDA     203.10
+QQQ      688.59
+SMH      518.63
+SPY      755.32
+TLT       81.38
+USO      169.05
+XLE       69.29
+XLV      185.25
+^TNX       4.91
+^VIX      18.54
+OPEN
+Ticker
+AAPL       NaN
+AMZN       NaN
+AVGO       NaN
+GLD        NaN
+GOOGL      NaN
+IWM        NaN
+META       NaN
+MSFT       NaN
+NVDA       NaN
+QQQ        NaN
+SMH        NaN
+SPY        NaN
+TLT        NaN
+USO        NaN
+XLE        NaN
+XLV        NaN
+^TNX      4.93
+^VIX     18.60

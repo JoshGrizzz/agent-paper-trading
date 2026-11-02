@@ -1,0 +1,86 @@
+{
+  "account": {
+    "cash": {
+      "available": "46348.0000",
+      "reserved": "0",
+      "total": "46348.0000"
+    },
+    "equity": "99094.4500",
+    "initial_cash": "100000.00",
+    "positions_market_value": "52746.4500",
+    "valuation_errors": [],
+    "valuation_status": "stale"
+  },
+  "as_of": "2026-10-30T13:10:16.750019-04:00",
+  "command": "settle",
+  "fills": [
+    {
+      "candidate": "backup_1",
+      "fill_price": "234.00",
+      "filled_at": "2026-10-30T09:30:00-04:00",
+      "limit_price": "234.00",
+      "order_id": "ord_000022",
+      "quantity": 25,
+      "side": "buy",
+      "symbol": "CVX"
+    }
+  ],
+  "ok": true,
+  "open_plans": [],
+  "positions": [
+    {
+      "available_quantity": 60,
+      "average_cost": "325.00",
+      "latest_price": "342.7600",
+      "latest_price_at": "2026-10-29T15:59:00-04:00",
+      "market_value": "20565.6000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 60,
+      "reserved_quantity": 0,
+      "symbol": "CDNS",
+      "unrealized_pnl": "1065.6000"
+    },
+    {
+      "available_quantity": 25,
+      "average_cost": "234.00",
+      "latest_price": "235.1700",
+      "latest_price_at": "2026-10-30T11:59:00-04:00",
+      "market_value": "5879.2500",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 25,
+      "reserved_quantity": 0,
+      "symbol": "CVX",
+      "unrealized_pnl": "29.2500"
+    },
+    {
+      "available_quantity": 12,
+      "average_cost": "1330.00",
+      "latest_price": "1373.7000",
+      "latest_price_at": "2026-10-29T16:03:00-04:00",
+      "market_value": "16484.4000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 12,
+      "reserved_quantity": 0,
+      "symbol": "LLY",
+      "unrealized_pnl": "524.4000"
+    },
+    {
+      "available_quantity": 40,
+      "average_cost": "236.00",
+      "latest_price": "245.4300",
+      "latest_price_at": "2026-10-29T16:00:00-04:00",
+      "market_value": "9817.2000",
+      "price_source": "yahoo_finance",
+      "price_status": "stale",
+      "quantity": 40,
+      "reserved_quantity": 0,
+      "symbol": "VRT",
+      "unrealized_pnl": "377.2000"
+    }
+  ],
+  "settled": true,
+  "settled_through": "2026-10-30T11:59:00-04:00"
+}
